@@ -1,0 +1,5 @@
+[0] Config.pm:340> INFO - This is Biber 2.4
+[0] Config.pm:343> INFO - Logfile is 'safety.blg'
+[31] biber:287> INFO - === Sam Mär  2, 2019, 10:41:58
+[106] Utils.pm:163> ERROR - safety.bcf is malformed, last biblatex run probably failed. Deleted 
+[106] Biber.pm:113> INFO - ERRORS: 1

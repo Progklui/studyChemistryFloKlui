@@ -1,0 +1,44 @@
+% This file was created with JabRef 2.10.
+% Encoding: UTF-8
+
+
+@Electronic{Tollenstest,
+  Title                    = {Tollens' Test},
+  Author                   = {Gamini Gunawardena},
+  Url                      = {https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Supplemental_Modules_(Organic_Chemistry)/Aldehydes_and_Ketones/Reactivity_of_Aldehydes_and_Ketones/Tollens%E2%80%99_Test},
+  Year                     = {2019},
+
+  Owner                    = {Florian Kluibenschedl},
+  Timestamp                = {2019.03.01}
+}
+
+@Book{PhysicalChemistryAtkings,
+  Title                    = {Physical Chemistry},
+  Author                   = {Peter Atkins, Julio de Paula, James Keeler},
+  Publisher                = {Oxford University Press},
+  Year                     = {2018},
+
+  Address                  = {Oxford, United Kingdom},
+  Edition                  = {11th},
+
+  Owner                    = {Florian Kluibenschedl},
+  Timestamp                = {2019.02.26}
+}
+
+@Article{TheGoldenPenny,
+  Title                    = {The "Golden Penny" Demonstration},
+  Author                   = {Steven Szczepankiewicz and Joseph Bieron and Mariusz Kozik},
+  Journal                  = {Journal of Chemical Education},
+  Year                     = {1995},
+
+  Month                    = {May},
+  Number                   = {5},
+  Pages                    = {386-388},
+  Volume                   = {72},
+
+  Doi                      = {10.1021/ed072p386},
+  Owner                    = {Florian Kluibenschedl},
+  Timestamp                = {2019.03.01},
+  Url                      = {https://pubs.acs.org/doi/pdf/10.1021/ed072p386}
+}
+

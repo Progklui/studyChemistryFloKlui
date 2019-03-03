@@ -1,0 +1,204 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english,ngerman]{babel}
+
+%% ========================================================================
+%%%% MISC usepackages
+%% ========================================================================
+
+%% Chemistry
+\usepackage{chemfig,chemmacros, cancel}
+\chemsetup{modules = all}
+\chemsetup[redox]{explicit-sign = true}
+\chemsetup[phases]{pos=sub}
+%\chemsetup[reactions]{before-tag = {R}, tag-open = [, tag-close = ]}
+  
+%% Maths
+\usepackage{amsmath,amssymb,amsthm,textcomp}
+
+%% Physics
+\usepackage{siunitx}
+
+%% Graphics
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{rotating}
+%\usepackage{subfig}
+
+%% Tables and Lists
+\usepackage{enumerate}
+\usepackage{multicol}
+\usepackage{geometry}
+\usepackage{tabu}
+\usepackage{listings}
+\usepackage{tabularx}
+
+%% Structures and Style
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{booktabs}
+\usepackage{colortbl}
+
+\usepackage{xcolor}
+\usepackage{xfrac}
+\usepackage[export]{adjustbox}[2011/08/13]
+
+\usepackage{booktabs}
+\usepackage{float}
+
+%% Citing and Settings
+\usepackage[backend=biber,
+style=numeric,
+backref=true, 
+natbib=true, %% offering natbib-compatible commands
+hyperref=true, %% using hyperref-package references
+sorting= none,
+doi=true,
+maxcitenames=10,
+maxbibnames=100,
+citestyle=numeric
+]{biblatex}
+
+\addbibresource{references.bib}
+
+\usepackage[toc,automake]{glossaries}
+\include{abbrevations}
+\makeglossaries
+
+\usepackage[colorlinks=true,linkcolor=blue]{hyperref}
+
+%% Figure settings
+\renewcommand{\figurename}{Abbildung}
+\renewcommand{\tablename}{Tabelle}
+\renewcommand{\listfigurename}{Abbildungsverzeichnis}
+\renewcommand{\listtablename}{Tabellenverzeichnis}
+
+%% ========================================================================
+%%%% Document Information
+%% ========================================================================
+
+%% Title
+\title{Bestimmung der relativen Atommasse von Zinn bzw. Bestimmung der Zusammensetzung der chemischen Formel eines Zinnoxids} % Title
+\author{Autor: Florian \textsc{Kluibenschedl}} % Author name
+\date{Bericht verfasst am: \today} % Date for the report
+
+\begin{document}
+  \renewtagform{reaction}[Rgl. ]{}{}
+  
+  \maketitle % Insert the title, author and date
+  
+  \begin{center}
+    \begin{tabular}{r l}
+      Versuchsdurchführung am: & 04. März 2019\\ % Date the experiment was performed
+      Gruppe, Matrikelnummer: & 3, 11805747 \\
+      Assistent: & Professor Smith % Instructor/supervisor
+    \end{tabular}
+  \end{center}
+
+
+  \begin{abstract}
+    
+  \end{abstract}
+  
+  \section{Theoretische Grundlagen}
+  
+    \subsection{Motivation} \label{sec:Motivation}
+      Zinn ist ein Metall und wird von Salpetersäure zu einem Zinnoxid oxidiert. Mitunter aufgrund seiner Lage im Periodensystem (4. Hauptgruppe) ergeben sich für die genaue Zusammensetzung des Oxids mehrere Möglichkeiten. Unter Berücksichtigung, dass sowohl das braune \ch{NO2} als auch das farblose \ch{NO} (beide giftig) entstehen können, ergeben sich für ein Zinnoxid mit der unbekannten Zusammensetzung Sn\textsubscript{x}O\textsubscript{y} die Reaktionsgleichungen \ref{rec:NOzwei} und \ref{rec:NO}.
+
+      \begin{reactions}
+        2 H\pch[]  +  NO3\mch[] + $\el$ &-> NO2 + H2O \\
+        $\mathrm{y}$ H2O + $\mathrm{x}$ Sn &-> Sn\textsubscript{x}O\textsubscript{y} + 2 $\el$ + 2 H2O \\
+        $\sum :$ $\mathrm{2y}$ H\pch[] + $\mathrm{2y}$ NO3\mch[] + $\mathrm{x}$ Sn &-> Sn\textsubscript{x}O\textsubscript{y} + $\mathrm{2y}$ NO2 + $\mathrm{y}$ H2O \label{rec:NOzwei}
+      \end{reactions}
+      
+      \begin{reactions}
+        4 H\pch[]  +  NO3\mch[] + 3 $\el$ &-> NO + 2 H2O \\
+        $\mathrm{y}$ H2O + $\mathrm{x}$ Sn &-> Sn\textsubscript{x}O\textsubscript{y} + 2 $\el$ + 2 H2O \\
+        $\sum :$ $\mathrm{2y}$ H\pch[] + $\mathrm{2y}$ NO3\mch[] + $\mathrm{3x}$ Sn &-> 3 Sn\textsubscript{x}O\textsubscript{y} + $\mathrm{2y}$ NO + $\mathrm{y}$ H2O \label{rec:NO}
+      \end{reactions}
+      
+      Indem man nun einen vollständigen Reaktionsumsatz durch erhitzen und entsprechendes Abrauchen der Salpetersäure erzwingt, kann die Massendifferenz zwischen Edukt (\ch{Sn}) und Produkt (Sn\textsubscript{x}O\textsubscript{y}, wasserfrei) bestimmt werden. Nimmt man nun die Atommasse von Zinn und Sauerstoff als bekannt an, errechnet sich daraus die  Zusammensetzung des Zinnoxids. Umgekehrt, unter der Annahme, dass die Atommasse von Sauerstoff und die Zusammensetzung von Sn\textsubscript{x}O\textsubscript{y} bekannt sind, lässt sich die Atommasse von Zinn bestimmen.
+      Analog zu Versuch 1 lassen sich mit dem beschriebenen Verfahren beide Größen nicht gleichzeitig bestimmen.
+  
+    \subsection{Ziel des Experiments}
+    
+    Auf Basis der obigen Überlegungen ist das Ziel, eine möglichst exakte Bestimmung der Molmasse von Zinn durchzuführen.
+    
+  \section{Experimenteller Teil}
+  
+    \subsection{Verwendete Materialien}
+              
+      \begin{table}[H]
+        \centering
+        \caption[Materialienliste, Quelle: Autor]{Auflistung der verwendeten Geräte und Chemikalien}
+        \label{tab:Materialien}
+        
+        \begin{tabular}{@{}ll|ll@{}}
+          \toprule
+            Geräte & Hersteller & Chemikalie & Hersteller \\ \midrule
+            Porzellantiegel &  & elementares \ch{Sn} &  \\
+            \SI[mode=text,separate-uncertainty]{10.0(1)}{\milli\litre} Messzylinder &  & halbkonzentrierte \ch{HNO3} &  \\
+            Sandbad &  &  &  \\
+            Bunsenbrenner &  &  &  \\
+            Analysenwaage &  &  &  \\ \bottomrule
+        \end{tabular}
+      \end{table}
+    
+    \subsection{Versuchsdurchführung} \label{sec:Versuch}
+    
+      Aufgrund der Giftigkeit der beim Versuch entstehenden nitrosen Gase (\ch{NO}\textsubscript{x}) wurden die folgenden Schritte bis auf das Wiegen alle im Abzug durchgeführt. 
+      
+      Die Masse des Porzellantiegels ($=m_{Tiegel}$) und des Zinnstücks ($=m_{\ch{Sn}}$) waren vorgegeben. Das Zinnstück wurde nun im Porzellantiegel mit ca. \SI[mode=text]{3}{\milli\litre} halbkonzentrierter \ch{HNO3} versetzt\footnote{mithilfe eines \SI[mode=text]{10}{\milli\litre} Messzylinders}. Es wurde abgewartet, bis keine braunen Dämpfe mehr sichtbar waren. Im Anschluss hat man den Porzellantiegel im Sandbad erhitzt, mit dem Zweck, die flüssige Phase abzudampfen, um im nächsten Schritt einen Siedeverzug durch zu starkes Erhitzen zu vermeiden. Im Anschluss wurde der Porzellantiegel\footnote{Rückstand im Porzellantiegel nun weiß, bräunlich} für ca. \SI[mode=text]{10}{\minute} über die Bunsenbrennerflamme gehalten, um verbleibende unerwünschte Rückstände (\ch{HNO3} und \ch{H2O}) so gut wie möglich zu entfernen. Das Resultat war ein gelblicher, poröser Feststoff. Der Tiegel wurde nun abgekühlt und dessen Masse ($= m_{Tiegel+Zinnoxid}$) mithilfe einer Analysenwaage bestimmt.
+     
+    \subsection{Auswertung}
+      
+      Im Folgenden wird eine Beziehung hergeleitet, mit der die Atommasse von Zinn bzw. die Zusammensetzung des Zinnoxids mit den gemessenen Daten berechnet werden kann. 
+      
+      Angenommen, die Atommassen von Zinn und Sauerstoff sind bekannt. Gesucht ist somit eine Beziehung, mit der sich x und y in der allgemeinen Formel Sn\textsubscript{x}O\textsubscript{y} berechnen lassen. Die Erhaltung der Stoffmenge liefert \eqref{eq:Stoffmengenerhaltung}. Die Atommasse von Sn\textsubscript{x}O\textsubscript{y} berechnet sich wie in \eqref{eq:Molmasse} dargestellt.
+    
+      \begin{equation}
+        x * n_{\ch{O}} - y * n_{\ch{Sn}} = 0 \label{eq:Stoffmengenerhaltung} 
+      \end{equation}
+      
+      \begin{equation}
+        M_{Sn\textsubscript{x}O\textsubscript{y}} = x * M_{\ch{Sn}} + y * M_{\ch{O}}  \Leftrightarrow m_{Sn\textsubscript{x}O\textsubscript{y}} = x * m_{\ch{Sn}} + y * m_{\ch{O}} \label{eq:Molmasse}
+      \end{equation} 
+      
+      Die Lösungen des linearen Gleichungssystems sind in \eqref{eq:x} und \eqref{eq:y} angeführt.
+      
+      \begin{equation}
+        x = \frac{M_{\ch{O}} * m_{\ch{Sn}} * m_{Sn\textsubscript{x}O\textsubscript{y}}}{M_{\ch{Sn}} * m_{\ch{O}}^2 + M_{\ch{O}} * m_{\ch{Sn}}^2} \label{eq:x}
+      \end{equation}
+      
+      \begin{equation}
+        y = \label{eq:y}
+      \end{equation}
+      
+      Nimmt 
+    \subsection{Messergebnisse und Literaturwerte}
+    
+      In Tabelle \ref{tab:Messdaten} sind alle Messwerte, die im Rahmen der Versuchsdurchführung wie in \ref{sec:Versuch} beschrieben, gemessen wurden. Ebenso sind die verwendeten Literaturwerte derjenigen Messgrößen aufgelistet, die für die Berechnungen notwendig waren.
+      
+      \begin{table}[H]
+        \centering
+        \caption[Mess- und Literaturdaten, Quelle: Autor]{Mess- und Literaturdaten}
+        \label{tab:Messdaten}
+          \begin{tabular}{@{}ll|ll@{}}
+            \toprule
+             Messgröße & Messwert & Größe bzw. Konstante & Wert \\ \midrule
+             $=m_{Tiegel}$ &  & R & \SI[mode=text]{8.314}{\joule\per\kelvin\per\mol} \\
+             $=m_{\ch{Sn}}$ &  &  &  \\
+             $= m_{Tiegel+Zinnoxid}$ &  &  &  \\ \bottomrule
+          \end{tabular}
+       \end{table}      
+      
+  \section{Ergebnisse und Diskussion}
+  
+  \pagebreak
+  
+  \listofreactions
+  \printbibliography[title=Literaturverzeichnis]
+  \listoffigures
+  \listoftables
+  
+\end{document}

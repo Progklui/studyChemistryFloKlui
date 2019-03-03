@@ -1,0 +1,86 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.6 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist[entry]{none/global}
+    \entry{Versuchsvorschrift}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=6caaa2383085eff8e2ff7c055cc0aadd}{%
+           prefix={et},
+           prefix_i={e\bibinitperiod},
+           family={al.},
+           family_i={a\bibinitperiod},
+           given={Wolfgang\bibnamedelima Viertl},
+           given_i={W\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+      }
+      \strng{namehash}{6caaa2383085eff8e2ff7c055cc0aadd}
+      \strng{fullhash}{6caaa2383085eff8e2ff7c055cc0aadd}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Versuchsvorschriften PR Allgemeine Chemie - Universität Innsbruck}
+      \field{year}{2019}
+    \endentry
+    \entry{NaOHDarstellung}{online}{}
+      \name{author}{1}{}{%
+        {{hash=c11058bdd03349da3cd02fa58118f948}{%
+           family={chemie.de},
+           family_i={c\bibinitperiod}}}%
+      }
+      \strng{namehash}{c11058bdd03349da3cd02fa58118f948}
+      \strng{fullhash}{c11058bdd03349da3cd02fa58118f948}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{year}{2019}
+      \verb{url}
+      \verb http://www.chemie.de/lexikon/Chloralkali-Elektrolyse.html#2._Amalgamverfahren.html
+      \endverb
+    \endentry
+    \entry{PhysicalChemistryAtkings}{book}{}
+      \name{author}{1}{}{%
+        {{hash=acf65009d7cc07d943e652781262212a}{%
+           family={Peter\bibnamedelima Atkins},
+           family_i={P\bibinitperiod\bibinitdelim A\bibinitperiod},
+           suffix={Julio\bibnamedelimb de\bibnamedelima Paula},
+           suffix_i={J\bibinitperiod\bibinitdelim d\bibinitperiod\bibinitdelim P\bibinitperiod},
+           given={James\bibnamedelima Keeler},
+           given_i={J\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Oxford, United Kingdom}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{acf65009d7cc07d943e652781262212a}
+      \strng{fullhash}{acf65009d7cc07d943e652781262212a}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{11th}
+      \field{title}{Physical Chemistry}
+      \field{year}{2018}
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+

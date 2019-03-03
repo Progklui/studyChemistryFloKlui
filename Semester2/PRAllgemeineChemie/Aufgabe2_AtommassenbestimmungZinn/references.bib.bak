@@ -1,0 +1,43 @@
+% This file was created with JabRef 2.10.
+% Encoding: UTF-8
+
+
+@Periodical{Salzs,
+  Title                    = {Dichtetabelle Salzsäure},
+  Year                     = {2019},
+
+  Editor                   = {internetchemie.info},
+  Month                    = {März},
+  Url                      = {https://www.internetchemie.info/chemie-lexikon/daten/s/salzsaeure-dichtetabelle.php},
+
+  Owner                    = {Florian Kluibenschedl},
+  Timestamp                = {2019.02.26}
+}
+
+@Periodical{Magnesium,
+  Title                    = {Magnesium},
+  Year                     = {2019},
+
+  Editor                   = {PubChem},
+  Language                 = {Englisch},
+  Month                    = {March},
+  Note                     = {Last Modification: 16.02.2019; Create Date: 16.09.2004},
+  Url                      = {https://pubchem.ncbi.nlm.nih.gov/compound/magnesium#section=Top},
+
+  Keywords                 = {ElementalProperties, Magnesium},
+  Owner                    = {Florian Kluibenschedl},
+  Timestamp                = {2019.02.23}
+}
+
+@Periodical{LambdaHydrogen,
+  Title                    = {Wärmeleitfähigkeit von Gasen in Abhängigkeit der Temperatur},
+  Year                     = {2019},
+
+  Editor                   = {schweizer-fn.de},
+  Month                    = {März},
+  Url                      = {https://www.schweizer-fn.de/stoff/wleit_gase/wleit_gase.php},
+
+  Owner                    = {Florian Kluibenschedl},
+  Timestamp                = {2019.02.26}
+}
+

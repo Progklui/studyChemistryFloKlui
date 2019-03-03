@@ -1,0 +1,93 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.6 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist[entry]{none/global}
+    \entry{InorganicChemistry}{book}{}
+      \name{author}{5}{}{%
+        {{hash=768c9606afd59ac272ce600d425a08c7}{%
+           family={Atkins},
+           family_i={A\bibinitperiod},
+           given={Peter},
+           given_i={P\bibinitperiod}}}%
+        {{hash=505dea70b92e6cd16b6157ec671e0128}{%
+           family={Overton},
+           family_i={O\bibinitperiod},
+           given={Tina},
+           given_i={T\bibinitperiod}}}%
+        {{hash=1cf8a4f75455661f2d4c10c3d91b008c}{%
+           family={Rourke},
+           family_i={R\bibinitperiod},
+           given={Jonathan},
+           given_i={J\bibinitperiod}}}%
+        {{hash=038eae52a3a48ddb7e179d8834d689e4}{%
+           family={Weller},
+           family_i={W\bibinitperiod},
+           given={Mark},
+           given_i={M\bibinitperiod}}}%
+        {{hash=07c128aa869370c0ce1ee6291afcf310}{%
+           family={Armstrong},
+           family_i={A\bibinitperiod},
+           given={Fraser},
+           given_i={F\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Oxford}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{034af0f390314a7b14731597b0a009cf}
+      \strng{fullhash}{034af0f390314a7b14731597b0a009cf}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{6th edition}
+      \field{title}{Inorganic Chemistry}
+      \field{year}{2014}
+    \endentry
+    \entry{TaschenatlasAnallytik}{book}{}
+      \name{author}{1}{}{%
+        {{hash=22992cbefdee163032738737c47e543d}{%
+           family={Schwedt},
+           family_i={S\bibinitperiod},
+           given={Georg},
+           given_i={G\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Weinheim}%
+      }
+      \list{publisher}{1}{%
+        {Wiley-VCH Verlag GmbH \& Co.}%
+      }
+      \strng{namehash}{22992cbefdee163032738737c47e543d}
+      \strng{fullhash}{22992cbefdee163032738737c47e543d}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{3. Auflage}
+      \field{title}{Taschenatlas der Analytik}
+      \field{year}{2007}
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+

@@ -1,0 +1,221 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english,ngerman]{babel}
+%% ========================================================================
+%%%% MISC usepackages
+%% ========================================================================
+
+%% Chemistry
+\usepackage{chemfig,chemmacros}
+\chemsetup{modules = all}
+\chemsetup[redox]{explicit-sign = true}
+\chemsetup[phases]{pos=sub}
+%\chemsetup[reactions]{before-tag = {R}, tag-open = [, tag-close = ]}
+  
+%% Maths
+\usepackage{amsmath,amssymb,amsthm,textcomp}
+
+%% Physics
+\usepackage{siunitx}
+
+%% Graphics
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{rotating}
+%\usepackage{subfig}
+
+%% Tables and Lists
+\usepackage{enumerate}
+\usepackage{multicol}
+\usepackage{geometry}
+\usepackage{tabu}
+\usepackage{listings}
+\usepackage{tabularx}
+
+%% Structures and Style
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{booktabs}
+\usepackage{colortbl}
+
+\usepackage{xcolor}
+\usepackage{xfrac}
+\usepackage[export]{adjustbox}[2011/08/13]
+
+\usepackage{booktabs}
+\usepackage{float}
+
+%% Citing and Settings
+\usepackage[backend=biber,
+style=numeric,
+backref=true, 
+natbib=true, %% offering natbib-compatible commands
+hyperref=true, %% using hyperref-package references
+sorting= none,
+doi=true,
+maxcitenames=10,
+maxbibnames=100,
+citestyle=numeric
+]{biblatex}
+
+\addbibresource{references.bib}
+
+\usepackage[toc,automake]{glossaries}
+\include{abbrevations}
+\makeglossaries
+
+\usepackage[colorlinks=true,linkcolor=blue]{hyperref}
+
+%% Figure settings
+\renewcommand{\figurename}{Abbildung}
+\renewcommand{\tablename}{Tabelle}
+\renewcommand{\listfigurename}{Abbildungsverzeichnis}
+\renewcommand{\listtablename}{Tabellenverzeichnis}
+
+%% ========================================================================
+%%%% Document Information
+%% ========================================================================
+
+%% Title
+\title{Bestimmung der Gleichgewichtskonstante für ein Homogenes Gleichgewicht} % Title
+\author{Autor: Florian \textsc{Kluibenschedl}} % Author name
+\date{Bericht verfasst am: \today} % Date for the report
+
+\begin{document}
+  \renewtagform{reaction}[Rgl. ]{}{}
+  
+  \maketitle % Insert the title, author and date
+  
+  \begin{center}
+    \begin{tabular}{r l}
+      Versuchsdurchführung am: & 04. März 2019\\ % Date the experiment was performed
+      Gruppe, Matrikelnummer: & 3, 11805747 \\
+      Assistent: & Professor Smith % Instructor/supervisor
+    \end{tabular}
+  \end{center}
+
+
+  \begin{abstract}
+    
+  \end{abstract}
+  
+  \section{Theoretische Grundlagen}
+  
+    \subsection{Motivation} \label{sec:Motivation}
+      
+      Das orange-gelbe \ch{Fe\pch[3]\aq} Ion bildet mit farblosem \ch{SCN\mch\aq} das blutrot gefärbte Komplexion \ch{[Fe(OH2)5SCN]\pch[2]} gemäß \ref{rec:Komplexreaktion}. 
+
+      \begin{reaction}
+        [Fe(OH2)6]\pch[3] + SCN\mch -> [Fe(OH2)5SCN]\pch[2] + H2O \label{rec:Komplexreaktion} \\
+      \end{reaction}
+      
+      Bei \ch{[Fe(OH2)5SCN]\pch[2]} handelt es sich um einen Charge-Transfer Komplex\footnote{high-spin}, was die tiefrote Farbe erklärt - Absorbtionsmaximum $\lambda _{max} = $ \SI[mode=text]{485}{\nano\meter} \cite[S. 540]{InorganicChemistry}. Die Intensität der Farbe korreliert mit der Konzentration, weswegen sich die Vis-Photometrie zur Konzentrationsbestimmung eignet \cite[S. 108]{TaschenatlasAnallytik}. Sind die Konzentrationen aller Spezies in \ref{rec:Komplexreaktion} bekannt, errechnet sich nach \eqref{eq:Beta} die entsprechende Komplexbildungskonstante $\beta$. Die Konzentration von \ch{H2O} wird dabei als Konstant angenommen.
+      
+      \begin{equation}
+        \beta = \frac{[\ch{[Fe(OH2)5SCN]\pch[2]}]}{[[\ch{Fe(OH2)6]\pch[3]}] * [\ch{SCN\mch}]} \label{eq:Beta}
+      \end{equation}
+      
+    \subsection{Ziel des Experiments}
+    
+    Auf Basis der obigen Überlegungen ist das Ziel, eine möglichst exakte Bestimmung der Komplexbildungskonstante der beschriebenen Reaktion mithilfe von Vis-Photometrie durchzuführen. 
+    
+  \section{Experimenteller Teil}
+  
+    \subsection{Verwendete Materialien}
+              
+      \begin{table}[H]
+        \centering
+        \caption[Materialienliste, Quelle: Autor]{Auflistung der verwendeten Geräte und Chemikalien}
+        \label{tab:Materialien}
+        
+        \begin{tabular}{@{}ll|ll@{}}
+          \toprule
+            Geräte & Hersteller & Chemikalie & Hersteller \\ \midrule
+            \SI[mode=text]{16x160}{\milli\meter} Reagenzgläser - 6 Stück &  & \SI[mode=text]{0.002}{M} \ch{NaSCN} Lösung &  \\
+            6100-Vis Photometer &  & \SI[mode=text]{0.2}{M} \ch{Fe(NO3)3} Lösung &  \\
+            \SI[mode=text,separate-uncertainty]{10.00(5)}{\milli\litre} Vollpipette &  & deionisiertes Wasser &  \\
+            \SI[mode=text,separate-uncertainty]{10.0(1)}{\milli\litre} Messzylinder &  &  &  \\
+            \SI[mode=text,separate-uncertainty]{50.0(1)}{\milli\litre} Messzylinder &  &  &  \\
+            Glasküvetten \O \SI[mode=text]{1.6}{\centi\meter} &  &  &  \\ 
+            Messpipette  &  &  &  \\ \bottomrule
+        \end{tabular}
+      \end{table}
+    
+    \subsection{Versuchsdurchführung} \label{sec:Versuch}
+      
+      Um die Konzentrationen bestimmen zu können, wurde eine Verdünnungsreihe erstellt. Dazu wurden 6 gereinigte Reagenzgläser jeweils mit \SI[mode=text]{10}{\milli\liter} einer \SI[mode=text]{0.002}{M} \ch{NaSCN} Lösung gefüllt\footnote{Vollpipette}. In Reagenzglas 1 wurden \SI[mode=text]{10}{\milli\liter} einer \SI[mode=text]{0.2}{M} \ch{Fe(NO3)3} Lösung pipettiert\footnote{Vollpipette}. In diesem Reagenzglas liegt \ch{Fe\pch[3]\aq} im Überschuss vor ($[\ch{SCN\mch}] << [\ch{Fe\pch[3]\aq}]$, also $\ch{[Fe(OH2)5SCN]\pch[2]} = [\ch{SCN\mch}]_{0}$), weswegen es im Folgenden als Standard verwendet wurde. Anschließend wurden \SI[mode=text]{10}{\milli\liter} einer \SI[mode=text]{0.2}{M} \ch{Fe(NO3)3} in einen \SI[mode=text]{50}{\milli\liter} Messzylinder pipettiert und mit deionisiertem Wasser auf \SI[mode=text]{25}{\milli\liter} aufgefüllt. Nach dem homogenisieren wurden \SI[mode=text]{10}{\milli\liter} entnommen\footnote{Vollpipette} und in Reagenzglas 2 pipettiert. Mit einer Messpipette wurden weitere \SI[mode=text]{5}{\milli\liter} vom Messzylinder entnommen und verworfen. Die verbleibenden \SI[mode=text]{10}{\milli\liter} wurden mit deionisiertem Wasser auf \SI[mode=text]{25}{\milli\liter} aufgefüllt, wovon wieder \SI[mode=text]{10}{\milli\liter} entnommen und in Reagenzglas 3 pipettiert wurden. Diese Prozedur wurde wiederholt, bis man 6 Reagenzgläser mit jeweils verschiedenen Konzentrationen an \ch{Fe\pch[3]\aq}, \ch{SCN\mch\aq} und \ch{[Fe(OH2)5SCN]\pch[2]} hatte - deutlich erkennbar an der abnehmenden Intensität der roten Färbung. \\
+      
+      Die Messung mit dem Vis-Photometer erfolgte in Glasküvetten ($d =$ \SI[mode=text]{1.6}{\centi\meter}), die \SI[mode=text]{10}{\milli\liter} der Probelösung aus den Reagenzgläsern der Verdünnungsreihe enthielten\footnote{Probelösung wurde mit einem \SI[mode=text]{10}{\milli\liter} Messzylinder überführt; es wurde darauf geachtet, eine saubere, trockene Küvette zu verwenden, um ungewollte Änderungen der Konzentrationen zu verhindern}. Die Messung der Extinktion $E_{\lambda _{max}}$ erfolgte beim Absorptionsmaximum $\lambda _{max} = $ \SI[mode=text]{485}{\nano\meter}. Für die Messung wurde die Methode \textit{Eisenthiocyanat - Nr. 1001} verwendete, die bereits eine entsprechende Kalibriergerade enthält\footnote{zuvor wurde eine Hintergrundkorrektur der Grundabsorption von \ch{H2O} - Lösungsmittel - durchgeführt}. Als Ergebnis der Messung erhält man die Konzentration von \ch{[Fe(OH2)5SCN]\pch[2]}. 
+     
+    \subsection{Auswertung}
+    
+      Um die Komplexbildungskonstante berechnen zu können, müssen die Gleichgewichtskonzentrationen der an der Reaktion beteiligten Spezies bekannt sein. 
+      
+      Bei der Verdünnungsreihe wird in jedem Schritt die Konzentration von \ch{SCN\mch}  halbiert, da das Volumen durch die Zugabe von jeweils \SI[mode=text]{10}{\milli\liter} der verdünnten \ch{Fe(NO3)3} verdoppelt wird ($V_{2} =$ \SI[mode=text]{20}{\milli\liter}). Für die \ch{Fe\pch[3]\aq} Konzentration in den Reagenzgläsern ergibt sich eine Folge, wie in \eqref{eq:FolgeKonzentrationen} dargestellt. Die genannten Konzentrationen entsprechen den Anfangskonzentrationen und sind in aufgelistet. 
+    
+      \begin{equation}
+        [\ch{Fe\pch[3]\aq}]_{n+1} = \frac{V_{n}}{V_{n+1}} * [\ch{Fe\pch[3]\aq}]_{n} = \frac{10}{25} * [\ch{Fe\pch[3]\aq}]_{n} = 0.4 * [\ch{Fe\pch[3]\aq}]_{n}\label{eq:FolgeKonzentrationen}
+      \end{equation}
+    
+      Die Gleichgewichtskonzentrationen lassen sich wie in \eqref{eq:GGeins} und \eqref{eq:GGzwei} angeführt berechnen. $[\ch{[Fe(OH2)5SCN]\pch[2]}]_{eq.}$ wurde mit dem Vis Photometer bestimmt.
+      
+      \begin{equation}
+        [\ch{Fe\pch[3]\aq}]_{eq.} = [\ch{Fe\pch[3]\aq}]_{0} - [\ch{[Fe(OH2)5SCN]\pch[2]}]_{eq.} \label{eq:GGeins}
+      \end{equation}
+      
+      \begin{equation}
+        [\ch{SCN\mch\aq}]_{eq.} = [\ch{SCN\mch\aq}]_{0} - [\ch{[Fe(OH2)5SCN]\pch[2]}]_{eq.} \label{eq:GGzwei}
+      \end{equation}
+      
+      Durch Einsetzen der Gleichgewichtskonzentration in \eqref{eq:Beta} errechnet sich die gesuchte Komplexbildungskonstante. Die theoretischen Konzentrationen von \ch{[Fe(OH2)5SCN]\pch[2]} lassen sich ausgehend von der gemessenen Extinktion, dem bekannten molaren Extinktionskoefizienten $\varepsilon_{\lambda_{max}} =$ \SI[mode=text]{4250}{\liter\per\mole\per\centi\meter} und der Schichtdicke $d =$ \SI[mode=text]{1.6}{\centi\meter} mit dem Lamber-Beer'schen Gesetz berechnen:
+      
+      \begin{equation}
+        [\ch{[Fe(OH2)5SCN]\pch[2]}]_{theoret., eq.} = \frac{E_{\lambda_{max}}}{\varepsilon_{\lambda_{max}} * d} \label{eq:theor}
+      \end{equation}
+      
+    \subsection{Messergebnisse und Literaturwerte}
+    
+      In Tabelle \ref{tab:Messdatenzwei} sind alle Messwerte angeführt, die im Rahmen der Versuchsdurchführung wie in \ref{sec:Versuch} beschrieben, gemessen wurden. Tabelle \ref{tab:Messdateneins} enthält die Konzentrationen der Verdünnungsreihe.
+      
+      \begin{table}[H]
+        \centering
+        \caption[Ausgangs- und Anfangskonzentrationen, Quelle: Autor]{Ausgangs- und Anfangskonzentrationen}
+        \label{tab:Messdateneins}
+          \begin{tabular}{@{}llll|lll@{}}
+            \toprule
+             Nr. & $V_{1}$ in ml & [\ch{SCN\mch\aq}] in M & [\ch{Fe\pch\aq}] in M & $V_{2}$ in ml & $[\ch{SCN\mch\aq}]_{0}$ in M & $[\ch{Fe\pch\aq}]_{0}$ in M \\ \midrule
+             1 & 10 & 0.002 & 0.2 & 20 & 0.001 & 0.1 \\
+             2 & 10 & 0.002 & 0.08 & 20 & 0.001 & 0.04 \\
+             3 & 10 & 0.002 & 0.03 & 20 & 0.001 & 0.02 \\
+             4 & 10 & 0.002 & 0.01 & 20 & 0.001 & 0.006 \\
+             5 & 10 & 0.002 & 0.005 & 20 & 0.001 & 0.003 \\
+             6 & 10 & 0.002 & 0.002 & 20 & 0.001 & 0.001 \\ \bottomrule
+          \end{tabular}
+      \end{table}
+       
+      \begin{table}[H]
+        \centering
+        \caption[Messergebnisse und Komplexbildungskonstanten, Quelle: Autor]{Messergebnisse und Komplexbildungskonstanten}
+        \label{tab:Messdatenzwei}
+          \begin{tabular}{@{}llll|l|ll@{}}
+            \toprule
+             Nr. & $[\ch{Fe\pch}]_{eq.}$ in M & $[\ch{SCN\mch}]_{eq.}$ in M & $[\ch{[Fe(OH2)5SCN]\pch[2]}]_{eq.}$ in M & $\beta$ & $E_{\lambda_{max}}$ & $[\ch{[Fe(OH2)5SCN]\pch[2]}]_{th., eq.}$ in M \\ \midrule
+             1 & \num{1d-4} &  &  &  &  & \\
+             2 & \num{1d-4} &  &  &  &  & \\
+             3 & \num{1d-4} &  &  &  &  & \\
+             4 & \num{1d-4} &  &  &  &  & \\
+             5 & \num{1d-4} &  &  &  &  & \\
+             6 & \num{1d-4} &  &  &  &  & \\ \bottomrule
+          \end{tabular}
+       \end{table}      
+      
+  \section{Ergebnisse und Diskussion}
+  
+  \pagebreak
+  
+  \listofreactions
+  \printbibliography[title=Literaturverzeichnis]
+  \listoffigures
+  \listoftables
+  
+\end{document}

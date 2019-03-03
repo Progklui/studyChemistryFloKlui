@@ -1,0 +1,383 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english,ngerman]{babel}
+%% ========================================================================
+%%%% MISC usepackages
+%% ========================================================================
+
+%% Chemistry
+\usepackage{chemfig,chemmacros}
+\chemsetup{modules = all}
+\chemsetup[redox]{explicit-sign = true}
+\chemsetup[phases]{pos=sub}
+%\chemsetup[reactions]{before-tag = {R}, tag-open = [, tag-close = ]}
+  
+%% Maths
+\usepackage{amsmath,amssymb,amsthm,textcomp}
+
+%% Physics
+\usepackage{siunitx}
+
+%% Graphics
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{rotating}
+%\usepackage{subfig}
+
+%% Tables and Lists
+\usepackage{enumerate}
+\usepackage{multicol}
+\usepackage{geometry}
+\usepackage{tabu}
+\usepackage{listings}
+\usepackage{tabularx}
+
+%% Structures and Style
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{booktabs}
+\usepackage{colortbl}
+
+\usepackage{xcolor}
+\usepackage{xfrac}
+\usepackage[export]{adjustbox}[2011/08/13]
+
+\usepackage{booktabs}
+\usepackage{float}
+
+\usepackage{fancyhdr}
+
+%% Citing and Settings
+\usepackage[backend=biber,
+style=numeric,
+backref=true, 
+natbib=true, %% offering natbib-compatible commands
+hyperref=true, %% using hyperref-package references
+sorting= none,
+doi=true,
+maxcitenames=10,
+maxbibnames=100,
+citestyle=numeric
+]{biblatex}
+
+\addbibresource{references.bib}
+
+\usepackage[toc,automake]{glossaries}
+\include{abbrevations}
+\makeglossaries
+
+\usepackage[colorlinks=true,linkcolor=blue]{hyperref}
+
+%% Figure settings
+\renewcommand{\figurename}{Abbildung}
+\renewcommand{\tablename}{Tabelle}
+\renewcommand{\listfigurename}{Abbildungsverzeichnis}
+\renewcommand{\listtablename}{Tabellenverzeichnis}
+
+%% Commands chemistry
+
+\NewChemState\ElPot{ symbol=E , subscript-pos=right , superscript= , unit=\volt}
+
+
+%% ========================================================================
+%%%% Document Information
+%% ========================================================================
+
+%% Title
+\title{Elektrochemie \cite{Versuchsvorschrift}} % Title
+\author{Autor: Florian \textsc{Kluibenschedl}} % Author name
+\date{Bericht verfasst am: \today} % Date for the report
+
+% Page style - headers
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{PR Allgemeine Chemie A - SS2019}
+\lhead{Institut für Allgemeine Chemie - Universität Innsbruck}
+\rfoot{Experiment 9 - Seite \thepage}
+
+\begin{document}
+  \renewtagform{reaction}[Rgl. ]{}{}
+  
+  \maketitle % Insert the title, author and date
+  
+  \begin{center}
+    \begin{tabular}{r p{4cm}}
+      Versuchsdurchführung am: & 04. März 2019\\ % Date the experiment was performed
+      Gruppe, Matrikelnummer: & 3, 11805747 \\
+      Lehrveranstaltung: & PR Allgemeine Chemie A \\
+      Institut: & Allgemeine, Anorganische und Theoretische Chemie \\
+      Assistent: & Pann Johann % Instructor/supervisor
+    \end{tabular}
+  \end{center}
+
+
+  \begin{abstract}
+    
+  \end{abstract}
+  
+  \section{Theoretische Grundlagen}
+  
+    \subsection{Motivation} \label{sec:Motivation}
+      
+      Redoxreaktionen kommen in beinahe allen Bereichen der Chemie vor. Auch in der Industrie werden Redoxreaktionen z. B. zur Herstellung wichtiger Chemikalien verwendet, wie etwa die Darstellung von \ch{NaOH} im Rahmen der Elektrolyse einer Kochsalzlösung \cite{NaOHDarstellung}. Ein tieferes Verständnis dieser Reaktionen ist somit absolut vonnöten. 
+      
+      Das physikalische Prinzip hinter den Redoxreaktionen ist die Übertragung von Elektronen, damit die Elemente stabilere Zustände erreichen. In der Spannungsreihe werden die Elemente nach ihrer Tendenz, Elektronen aufzunehmen klassifiziert. 
+  
+    \subsection{Ziel des Experiments}
+    
+      Auf Basis der obigen Überlegungen ist das Ziel, ein besseres Verständnis der Redoxchemie zu erhalten. Dabei werden zuerst die Potentiale dreier galvanischer Zellen bestimmt. Anschließend wird die Faraday-Konstante bestimmt, die für Elektrolysen von Bedeutung ist. Zum Abschluss werden das Löslichkeitsprodukt von \ch{Cu(OH)2\sld} und die Komplexbildungskonstante von \ch{[Cu(NH3)4]\pch[2]} bestimmt. Die erhaltenen Daten sollen mit den Literaturwerten verglichen werden. 
+    
+  \section{Experimenteller Teil}
+  
+    \subsection{Verwendete Materialien}
+              
+      \begin{table}[H]
+        \centering
+        \caption[Materialienliste, Quelle: Autor]{Auflistung der verwendeten Geräte und Chemikalien für alle beschriebenen Experimente}
+        \label{tab:Materialien}
+        
+        \begin{tabular}{@{}ll|ll@{}}
+          \toprule
+            Geräte & Hersteller & Chemikalie & Hersteller \\ \midrule
+            2 \SI[mode=text]{100}{\milli\litre} Bechergläser &  & \SI[mode=text]{1}{M} \ch{Zn(NO3)2}-Lösung &  \\
+            \SI[mode=text,separate-uncertainty=true]{100}{\milli\litre} Rundkolben &  & \SI[mode=text]{1}{M} \ch{Cu(NO3)2}-Lösung &  \\
+            \SI[mode=text,separate-uncertainty]{10.00(5)}{\milli\litre} Vollpipette &  & \SI[mode=text]{1}{M} \ch{Pb(NO3)2}-Lösung &  \\
+            \SI[mode=text,separate-uncertainty]{10.0(1)}{\milli\litre} Bürette &  & \SI[mode=text]{1}{M} \ch{KNO3}-Lösung &  \\
+            Stromschlüssel &  & konz. \ch{HCl} &  \\
+            Voltmeter &  & \SI[mode=text]{0.1}{M} \ch{CuSO4}-Lösung &  \\
+            \ch{Zn}-Stab &  & \SI[mode=text]{0.1}{M} \ch{KOH}-Lösung &  \\ 
+            \ch{Pb}-Stab &  & deionisiertes Wasser &  \\ 
+            \ch{Cu}-Plättchen &  & \ch{Cu}-Stab &  \\ 
+            Schleifpapier &  & \ch{Pb}-Stab &  \\
+             &  & \ch{Zn}-Stab &  \\ \bottomrule
+        \end{tabular}
+      \end{table}
+      
+    \pagebreak
+    
+    \subsection{Untersuchung von elektrochemischen Zellen unter Standardbedingungen}
+      
+      Kupfer (\ElPot[superscript=0](\ch{Cu}){0.337}) ist ein edles Metall und kann von den unedleren Metallen Blei (\ElPot[superscript=0](\ch{Pb}){-0.763}) und Zink (\ElPot[superscript=0](\ch{Zn}){-0.126}) reduziert werden\footnote{die angegebenen Standardpotentiale wurden \cite[S. 881]{PhysicalChemistryAtkings} entnommen}. In diesem Experiment werden die Potentiale von drei galvanischen Zellen bestimmt: 
+      
+      \begin{center}
+        (I): \ch{Cu\sld}/\ch{Cu(NO3)2\aq} (\SI[mode=text]{1}{M}) // \ch{Pb(NO3)2\aq} (\SI[mode=text]{1}{M})/\ch{Pb\sld}
+          
+        (II): \ch{Pb\sld}/\ch{Pb(NO3)2\aq} (\SI[mode=text]{1}{M}) // \ch{Zn(NO3)2\aq} (\SI[mode=text]{1}{M})/\ch{Zn\sld}
+          
+        (III): \ch{Cu\sld}/\ch{Cu(NO3)2\aq} (\SI[mode=text]{1}{M}) // \ch{Zn(NO3)2\aq} (\SI[mode=text]{1}{M})/\ch{Zn\sld}
+      \end{center}
+        
+      Die zugehörigen Redoxgleichungen können wie folgt angegeben werden:
+      
+      \begin{reactions}
+        Cu\sld{} + Pb\pch[2]\aq{} &-> Cu\pch[2]\aq{} + Pb\sld \\
+        Pb\sld{} + Zn\pch[2]\aq{} &-> Pb\pch[2]\aq{} + Zn\sld \\
+        Cu\sld{} + Pb\pch[2]\aq{} &-> Zn\pch[2]\aq{} + Zn\sld
+      \end{reactions}
+      
+      Da alle Reaktanden in Standardkonzentration vorliegen ($c_{i} = \SI[mode=text]{1}{M}$), können die gemessen Potentiale mit den theoretischen Standardpotentialen, die aus Literaturwerten errechnet wurden, verglichen werden. Die theoretischen Standardpotentiale der Reaktionen können dabei wie in \eqref{eq:LiteraturStandard} angeführt berechnet werden. 
+      
+      \begin{equation}
+        \ElPot*[superscript=0](Lit.){} = \ElPot*[superscript=0](Red.){} - \ElPot*[superscript=0](Ox.){} \label{eq:LiteraturStandard}
+      \end{equation}
+      
+      Die Nernstgleichung \eqref{eq:Nernst}\footnote{$R = \SI[mode=text]{8.314}{\joule\per\mole\per\kelvin}, F = \SI[mode=text]{96485}{\ampere\second\per\mole}, z = $ Anzahl an übertragenen Elektronen, $Q = $ Massenwirkungsgesetz nicht im Gleichgewicht \cite{PhysicalChemistryAtkings}} gibt einerseits die Abhängigkeit des Potential von Temperatur und Konzentration der beteiligten Spezies an. Andererseits eignet sie sich, um die Gleichgewichtskonstante einer Redoxreaktion zu berechnen. 
+        
+      \begin{equation}
+        \ElPot*[](){} = \ElPot*[superscript=0](Lit.){} - \frac{R * T}{z * F} * \ln Q \label{eq:Nernst}
+      \end{equation}
+      
+      Die Gibbs Energie kann aus \ElPot*[](){} berechnet werden ($\gibbs*[superscript=](){} = - z * F * \ElPot*[](){}$). Im Gleichgewicht ($Q = K$) ist \gibbs[superscript=](){0} $\Rightarrow$ \ElPot[](){0}. Eingesetzt in die Nernstgleichung kann nun durch umformen die Gleichgewichtskonstante berechnet werden:
+      
+      \begin{equation}
+        K = e^{\frac{z F}{R T} * \ElPot*[superscript=0](Lit.){}} \label{eq:Gleichgewichtskonstante}
+      \end{equation}
+      
+      \subsubsection{Versuchsdurchführung} \label{sec:VersuchZellen}
+        
+        Zunächst wurden die jeweiligen Metallelektroden (\ch{Cu}-Plättchen, Zink- und Bleistab) mit Schleifpapier gesäubert\footnote{um eine etwaige Oxidschicht zu entfernen} und anschließend etwas konz. \ch{HCl} gereinigt. Die Metallelektroden wurden jeweils in ein \SI[mode=text]{100}{\milli\liter} Becherglas gegeben und dieses mit ca. \SI[mode=text]{30}{\milli\liter} der zugehörigen \SI[mode=text]{1}{M} Salzlösung befüllt. Der Stromschlüssel wurde mit \SI[mode=text]{1}{M} \ch{KNO3}-Lösung unter Vermeidung von Luftblasen befüllt und in die beiden als Halbzellen fungierenden Bechergläser gestellt\footnote{es wurde darauf geachtet, dass er in beide Lösungen ungefähr gleich tief eintauchte}. Das Voltmeter wurde an die beiden Metallelektroden angeschlossen. Nachdem sich der Messwert stabilisiert hatte (ca. \SI[mode=text]{5}{\second}, wurde er abgelesen. 
+        
+        Die Messung der Potentialdifferenzen wurde pro galvanischem Element dreimal wiederholt, wobei die Metallelektroden zwischen jeder Messung wie oben beschrieben gründlich gesäubert wurde, um unerwünschte kinetische Effekte an den Oberflächen möglichst zu vermeiden.      
+      
+      \subsubsection{Messergebnisse und Literaturwerte}
+    
+        In Tabelle \ref{tab:MessdatenPotentialdifferenzenZellen} sind alle Messwerte, die im Rahmen der Versuchsdurchführung wie in \ref{sec:VersuchZellen} beschrieben, gemessen wurden. 
+      
+        \begin{table}[H]
+          \centering
+          \caption[Messdaten, Quelle: Autor]{Messdaten}
+          \label{tab:MessdatenPotentialdifferenzenZellen}
+            \begin{tabular}{@{}l|l|l@{}}
+              \toprule
+               \ElPot*[superscript=0]($\ch{Cu}/\ch{Cu\pch[2]}//\ch{Pb\pch[2]}/\ch{Pb}$){} in V & \ElPot*[superscript=0]($\ch{Pb}/\ch{Pb\pch[2]}//\ch{Zn\pch[2]}/\ch{Zn}$){} in V & \ElPot*[superscript=0]($\ch{Cu}/\ch{Cu\pch[2]}//\ch{Zn\pch[2]}/\ch{Zn}$){} in V \\ \midrule
+                &  &   \\
+                &  &   \\
+                &  &   \\ \bottomrule
+            \end{tabular}
+         \end{table}      
+      
+      \subsubsection{Ergebnisse und Diskussion}
+      
+      In Tabelle \ref{tab:MessdatenPotentialdifferenzenZellenlit} werden die aus \ref{tab:MessdatenPotentialdifferenzenZellen} errechneten, gemessen Standardpotentiale aufgelistet und mit zugehörigen Literaturwerten verglichen. Die angegebenen thermodynamischen Gleichgewichtskonstante wurden aus dem Literaturwert nach \eqref{eq:Gleichgewichtskonstante} berechnet und zeigen, dass das Gleichgewicht aller drei Reaktionen stark auf Seite der Produkte liegt. Die Unterschiede der gemessenen von den Literaturwerten kann durch Verunreinigungen erklärt werden.
+      
+      \begin{table}[H]
+        \centering
+        \caption[Messdaten und Vergleiche mit der Literatur, Quelle: Autor]{Messdaten und Literaturwerte}
+        \label{tab:MessdatenPotentialdifferenzenZellenlit}
+          \begin{tabular}{@{}l|l|ll@{}}
+            \toprule
+             Zelle & \ElPot*[superscript=0](exp.){} in V & \ElPot*[superscript=0](Lit.){} in V & $K_{Lit.}$ \\ \midrule
+             $\ch{Cu}/\ch{Cu\pch[2]}//\ch{Pb\pch[2]}/\ch{Pb}$ & \num[separate-uncertainty]{0.5 \pm 0.01} $(s= ;N=3;\alpha=0.95)$ & 0.463 &  \\
+             $\ch{Pb}/\ch{Pb\pch[2]}//\ch{Zn\pch[2]}/\ch{Zn}$ & \num[separate-uncertainty]{0.5 \pm 0.01} $(s= ;N=3;\alpha=0.95)$ & 0.637 &  \\
+             $\ch{Cu}/\ch{Cu\pch[2]}//\ch{Zn\pch[2]}/\ch{Zn}$ & \num[separate-uncertainty]{0.5 \pm 0.01} $(s= ;N=3;\alpha=0.95)$ & 1.10 &  \\ \bottomrule
+         \end{tabular}
+      \end{table} 
+    
+    \pagebreak
+    
+    \subsection{Bestimmung des Löslichkeitsproduktes von \ch{Cu(OH)2\sld}}
+      
+      \ch{Cu(OH)2\sld} löst sich wie in \ref{rec:LosungCUOH} beschrieben. Das Löslichkeitsprodukt berechnet sich wie in \eqref{eq:Loslichkeitprodukt} angeführt.  
+      
+      \begin{reaction}
+        Cu(OH)2\sld{} <<=> Cu\pch[2]\aq{} + 2 OH\mch\aq{} \label{rec:LosungCUOH}      
+      \end{reaction}
+      
+      \begin{equation}
+        K_{L} = [\ch{Cu\pch[2]\aq}] * [\ch{OH\mch\aq}]^2 \label{eq:Loslichkeitprodukt}
+      \end{equation}
+      
+      Ist  die Konzentration von \ch{OH\mch\aq} im Gleichgewicht bekannt, kann durch Messen von [\ch{Cu\pch[2]\aq}] das gesuchte Löslichkeitsprodukt berechnet werden. Dazu wurde die folgende galvanische Zelle verwendet:
+      
+      \begin{center}
+        \ch{Cu\sld}/\ch{Cu(OH)2\sld},\ch{OH\mch\aq} // \ch{Cu\pch[2]\aq} (\SI[mode=text]{0.1}{M})/\ch{Cu\sld}
+      \end{center}
+      
+      Die Spannung dieser Zelle kann mithilfe der Nernstgleichung berechnet werden. Da es sich um eine sogenannte Konzentrationszelle handelt\footnote{bei einer Konzentrationszelle wird die Redoxreaktion nur durch eine Konzentrationsunterschied hervorgerufen}, ist \ElPot[superscript=0](){0} und die Nernstgleichung vereinfacht sich zu:
+      
+      \begin{equation}
+        \ElPot*[](){} = - \frac{R * T}{z * F} * \ln \frac{[\ch{Cu\pch[2]\aq}]_{Anode}}{[\ch{Cu\pch[2]\aq}]_{Kathode}} \label{eq:Elpot}
+      \end{equation}
+      
+      Die Konzentration von \ch{Cu\pch[2]} im Kathodenraum ist bekannt ($[\ch{Cu\pch[2]\aq}]_{Kathode} = \SI[mode=text]{0.1}{M}$). Durch umformen \ref{eq:Elpot} von erhält man einen Ausdruck, mit dem die Konzentration von \ch{Cu\pch[2]} im Anodenraum berechnet werden kann:
+      
+      \begin{equation}
+        [\ch{Cu\pch[2]\aq}]_{Anode} = [\ch{Cu\pch[2]\aq}]_{Kathode} * e^{- \frac{\ElPot*[](){} * z * F}{R * T}} 
+      \end{equation} \\
+      
+      Nun kann das gesuchte Löslichkeitsprodukt berechnet werden:
+      
+      \begin{equation}
+        K_{L} = [\ch{Cu\pch[2]\aq}]_{Kathode} * e^{- \frac{\ElPot*[](){} * z * F}{R * T}} * [\ch{OH\mch\aq}]^2 \label{eq:Loslichkeitsproduktfinale}
+      \end{equation}
+      
+      \subsubsection{Versuchsdurchführung} \label{sec:VersuchsdurchfuhrungLoslichkeit}
+      
+      Je ein \SI[mode=text]{100}{\milli\liter} Becherglas wurde mit \SI[mode=text]{50}{\milli\liter} einer \SI[mode=text]{0.1}{M} \ch{CuSO4} bzw. \SI[mode=text]{50}{\milli\liter} einer \SI[mode=text]{0.1}{M} \ch{KOH}. Als Stromschlüssel wurde derselbe wie in \ref{sec:VersuchZellen} verwendet. Dieser wurde in etwa gleich tief in beide Bechergläser eingetaucht. Zwei \ch{Cu}-Elektroden wurden mit Schleifpapier und konz. \ch{HCl} gereinigt und mit deionisiertem Wasser gespült\footnote{um keine störenden Ionen in die Zelle zu bringen}. Nach dem Trocknen wurden sie an das Voltmeter angeschlossen und in die beiden Bechergläser getaucht. Die Spannung wurde notiert\footnote{es wurde darauf geachtet, die Spannung unmittelbar nach dem Eintauchen in die Lösung zu messen, da es durch Polarisationseffekte sehr schnell zur Spannungsänderung kommt}. Es wurden zwei weitere Messungen nach dem gleichem Prinzip durchgeführt.
+      
+      Anschließend wurde die oben beschriebene Messung mit \SI[mode=text]{1}{M} \ch{KOH} durchgeführt. 
+      
+      \subsubsection{Messergebnisse}
+      
+        \begin{table}[H]
+          \centering
+          \caption[Messdaten der Bestimmung des Löslichkeitsproduktes, Quelle: Autor]{Messdaten}
+          \label{tab:MessdatenPotentialLoslichkeit}
+            \begin{tabular}{@{}l|l@{}}
+              \toprule
+               \ElPot*[superscript=0]($\ch{Cu}/\ch{Cu(OH)2}//\ch{Cu\pch[2]}/\ch{Cu}$){} in V für \SI[mode=text]{0.1}{M} \ch{KOH} & \ElPot*[superscript=0]($\ch{Cu}/\ch{Cu(OH)2}//\ch{Cu\pch[2]}/\ch{Cu}$){} in V für \SI[mode=text]{1}{M} \ch{KOH} \\ \midrule
+                &  \\
+                &  \\
+                &  \\ \bottomrule
+            \end{tabular}
+        \end{table}
+         
+      \subsubsection{Ergebnisse und Diskussion}
+      
+        \begin{table}[H]
+          \centering
+          \caption[Messergebnisse der Bestimmung des Löslichkeitsproduktes, Quelle: Autor]{Messergebnisse und daraus errechnete Größen}
+          \label{tab:MessdatenPotentialLoslichkeitErgebnisse}
+            \begin{tabular}{@{}l|lll@{}}
+              \toprule
+                & \ElPot*[superscript=0]($\ch{Cu}/\ch{Cu(OH)2}//\ch{Cu\pch[2]}/\ch{Cu}$){} in V  & $[\ch{Cu\pch[2]\aq}]_{eq.}$ in M & $K_{L}$ \\ \midrule
+               \SI[mode=text]{0.1}{M} \ch{KOH} & \num[separate-uncertainty]{0.5 \pm 0.01} $(s= ;N=3;\alpha=0.95)$ & 0.463 & \\
+               \SI[mode=text]{1}{M} \ch{KOH} & \num[separate-uncertainty]{0.5 \pm 0.01} $(s= ;N=3;\alpha=0.95)$ & 0.463 &   \\ \bottomrule
+            \end{tabular}
+        \end{table}
+        
+      \pagebreak
+        
+      \subsection{Bestimmung der Komplexbildungskonstante von \ch{[Cu(NH3)4]\pch[2]}}
+        
+        Kupfer reagiert mit Ammoniak unter Bildung eines Tetramminkupfer-(II) Komplexes. Die entsprechende Komplexbildungskonstante lässt sich wie in dargestellt berechnen.
+        
+        \begin{reaction}
+          Cu\pch[2]\aq{} + 4 NH3\aq{} <=>> [Cu(NH3)4]\pch[2]\aq \label{rec:Komplexbilgun}
+        \end{reaction}
+        
+        \begin{equation}
+          \beta = \frac{[\ch{[Cu(NH3)4]\pch[2]\aq}]}{\ch{Cu\pch[2]\aq} * \ch{4 NH3\aq}} \label{eq:Komplexbildungskonstanten}
+        \end{equation}
+        
+        Um diese Komplexbildungskonstante zu berechnen, kann folgende galvanische Zelle verwendet werden:
+        
+        \begin{center}
+          \ch{Cu\sld}/\ch{[Cu(NH3)4]\pch[2]\aq},\ch{NH3\aq} // \ch{Cu\pch[2]\aq} (\SI[mode=text]{0.1}{M})/\ch{Cu\sld}
+        \end{center}
+        
+        Liegt Ammoniak im Überschuss vor, kann angenommen werden, dass die Konzentration von \ch{[Cu(NH3)4]\pch[2]\aq} annähernd konstant bleibt. Dennoch ist aufgrund des Gleichgewichts etwas \ch{Cu\pch[2]\aq} in Lösung. Durch Messung des Zellpotentials kann mithilfe der Nernstgleichung dessen Konzentration berechnet werden. Es handelt sich wieder um eine Konzentrationszelle!
+        
+        \begin{equation}
+          \ElPot*[](){} = - \frac{R * T}{z * F} * \ln \frac{[\ch{Cu\pch[2]\aq}]_{Anode}}{[\ch{Cu\pch[2]\aq}]_{Kathode}}
+        \end{equation}
+        
+        Die Konzentration von Kupfer im Kathodenraum ist bekannt ($[\ch{Cu\pch[2]\aq}]_{Kathode} = \SI[mode=text]{0.1}{M}$). Somit kann die gesuchte Kupferkonzentration im Anodenraum berechnet werden:
+        
+        \begin{equation}
+          [\ch{Cu\pch[2]\aq}]_{Anode} = [\ch{Cu\pch[2]\aq}]_{Kathode} * e^{- \frac{\ElPot*[](){} * z * F}{R * T}}
+        \end{equation}
+        
+        Des weiteren kann angenommen werden, dass die Konzentration von Ammoniak konstant bleibt ($[\ch{NH3\aq}] = \SI[mode=text]{1}{M}$). Die Konzentration vom Komplex kann ebenfalls berechnet werden und daraus die Komplexbildungskonstante durch einsetzen der Konzentrationen in \eqref{eq:Komplexbildungskonstanten}. 
+        
+        \subsubsection{Versuchsdurchführung} \label{sec.VersuchsdurchfuhrungKomplexbildung}
+          
+          In einem \SI[mode=text]{100}{\milli\liter} Becherglas wurden \SI[mode=text]{50}{\milli\liter}\footnote{Vollpipette} \SI[mode=text]{1}{M} \ch{NH3}-Lösung und \SI[mode=text]{0.25}{\milli\liter}\footnote{Bürette} \SI[mode=text]{0.1}{M} \ch{CuSO4}-Lösung vermengt. Ein weiteres \SI[mode=text]{100}{\milli\liter} Becherglas wurde mit \SI[mode=text]{50}{\milli\liter}\footnote{Vollpipette} einer \SI[mode=text]{0.1}{M} \ch{CuSO4}-Lösung gefüllt. Der Stromschlüssel wurde wie bereits zuvor mit \SI[mode=text]{0.1}{M} \ch{KNO3}-Lösung gefüllt und in die beiden Bechergläser gestellt. Die mit Schleifpapier und konz. \ch{HCl} gesäuberten und mit deionisiertem Wasser gespülten \ch{Cu}-Elektroden wurden nach dem Trocknen an das Voltmeter angeschlossen und in die beiden Bechergläser gegeben. Die gemessen Spannung wurde notiert. 
+          Nach entsprechender Reinigung der Elektroden mit Schleifpapier und \ch{HCl} wurde die Messung weitere zweimal durchgeführt. 
+          
+        \subsubsection{Messergebnisse} \label{sec:MessergebnisseKomplexbildung}
+        
+        \begin{table}[H]
+          \centering
+          \caption[Messdaten der Bestimmung der Komplexbildungskonstante, Quelle: Autor]{Messdaten}
+          \label{tab:MessdatenPotentialKomplexbildungskonstante}
+            \begin{tabular}{@{}l|l@{}}
+              \toprule
+               \ElPot*[superscript=](){} in V & [\ch{Cu\pch[2]\aq}] in M \\ \midrule
+                &  \\
+                &  \\
+                &  \\ \bottomrule
+            \end{tabular}
+        \end{table}
+        
+        \subsubsection{Ergebnisse und Diskussion}
+        
+        Die Konzentration von \ch{[Cu(NH3)4]\pch[2]\aq} wird wie folgt berechnet:
+        
+        \begin{equation}
+          [\ch{[Cu(NH3)4]\pch[2]\aq}] = \frac{0.025 * 0.1}{0.05025} = \SI[mode=text]{5d-4}{M}
+        \end{equation}
+        
+        Die weiteren, aus \ref{tab:MessdatenPotentialKomplexbildungskonstante} erhaltenen Werte lauten: $\ElPot*[superscript=](){} = \SI[mode=text, separate-uncertainty]{0.52 \pm 0.003}{V} (s=;N=3;\alpha=0.95)$, $[\ch{Cu\pch[2]\aq}] = \SI[mode=text, separate-uncertainty]{0.52 \pm 1.8d-19}{M} (s=;N=3;\alpha=0.95)$. \\
+        
+        Mit $[\ch{NH3\aq}] = \SI[mode=text]{1}{M}$ errechnet sich daraus die gesuchte Komplexbildungskonstante durch einsetzen in \eqref{eq:Komplexbildungskonstanten}: $\beta = \SI[mode=text, separate-uncertainty]{1.4 \pm 0.003d14}{V} (s=;N=3;\alpha=0.95)$.
+        
+  \pagebreak
+  
+  \listofreactions
+  \printbibliography[title=Literaturverzeichnis]
+  \listoffigures
+  \listoftables
+  
+\end{document}

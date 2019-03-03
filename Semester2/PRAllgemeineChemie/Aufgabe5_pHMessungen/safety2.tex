@@ -1,0 +1,410 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english,ngerman]{babel}
+
+%% ========================================================================
+%%%% MISC usepackages
+%% ========================================================================
+
+%% Chemistry
+\usepackage{chemfig,chemmacros}
+\chemsetup{modules = all}
+\chemsetup[redox]{explicit-sign = true}
+\chemsetup[phases]{pos=sub}
+%\chemsetup[reactions]{before-tag = {R}, tag-open = [, tag-close = ]}
+  
+%% Maths
+\usepackage{amsmath,amssymb,amsthm,textcomp}
+
+%% Physics
+\usepackage{siunitx}
+
+%% Graphics
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{rotating}
+%\usepackage{subfig}
+
+%% Tables and Lists
+\usepackage{enumerate}
+\usepackage{multicol}
+\usepackage{geometry}
+\usepackage{tabu}
+\usepackage{listings}
+\usepackage{tabularx}
+
+%% Structures and Style
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{booktabs}
+\usepackage{colortbl}
+
+\usepackage{xcolor}
+\usepackage{xfrac}
+\usepackage[export]{adjustbox}[2011/08/13]
+
+\usepackage{booktabs}
+\usepackage{float}
+
+%% Citing and Settings
+\usepackage[backend=biber,
+style=numeric,
+backref=true, 
+natbib=true, %% offering natbib-compatible commands
+hyperref=true, %% using hyperref-package references
+sorting= none,
+doi=true,
+maxcitenames=10,
+maxbibnames=100,
+citestyle=numeric
+]{biblatex}
+
+\addbibresource{references.bib}
+
+\usepackage[toc,automake]{glossaries}
+\include{abbrevations}
+\makeglossaries
+
+\usepackage[colorlinks=true,linkcolor=blue]{hyperref}
+
+%% Figure settings
+\renewcommand{\figurename}{Abbildung}
+\renewcommand{\tablename}{Tabelle}
+\renewcommand{\listfigurename}{Abbildungsverzeichnis}
+\renewcommand{\listtablename}{Tabellenverzeichnis}
+
+%% ========================================================================
+%%%% Document Information
+%% ========================================================================
+
+%% Title
+\title{\pH-Experimente} % Title
+\author{Autor: Florian \textsc{Kluibenschedl}} % Author name
+\date{Bericht verfasst am: \today} % Date for the report
+
+\begin{document}
+  \renewtagform{reaction}[Rgl. ]{}{}
+  
+  \maketitle % Insert the title, author and date
+  
+  \begin{center}
+    \begin{tabular}{r l}
+      Versuchsdurchführung am: & 04. März 2019\\ % Date the experiment was performed
+      Gruppe, Matrikelnummer: & 3, 11805747 \\
+      Assistent: & Professor Smith % Instructor/supervisor
+    \end{tabular}
+  \end{center}
+
+
+  \begin{abstract}
+    
+  \end{abstract}
+  
+  \section{Theoretische Grundlagen}
+  
+    \subsection{Motivation} \label{sec:Motivation}
+      Säuren und Basen spielen bei der Betrachtung vieler chemischer Prozesse eine bedeutende Rolle. Wesentliche Begriffe sind dabei die Säure- bzw. Basenstärke (ausgedrückt durch \pKa und \pKb) und der \pH- bzw. \pOH-Wert. Um die Wirkungsweise von Säuren und Basen besser zu verstehen, ist eine Kenntniss dieser Größen unumgänglich.  
+  
+    \subsection{Ziel des Experiments}
+    
+      Auf Basis der obigen Überlegungen ist das Ziel, die Eigenschaften dreier Säure-Base Systeme näher zu untersuchen. Dazu soll zunächst der \pKa von Essigsäure bestimmt werden. Mit diesem Ergebnis wird der \pH-Wert einer Natriumacetat Lösung bestimmt und abschließend wird ein Essigsäure-Natriumacetat Puffer näher untersucht.
+    
+  \section{Experimenteller Teil}
+    
+    \subsection{Verwendete Materialien}
+              
+      \begin{table}[H]
+        \centering
+        \caption[Materialienliste, Quelle: Autor]{Auflistung der verwendeten Geräte und Chemikalien}
+        \label{tab:Materialien}
+        
+        \begin{tabular}{@{}ll|ll@{}}
+          \toprule
+            Geräte & Hersteller & Chemikalie & Hersteller \\ \midrule
+            pH Meter &  & Technischer Puffer - $\pH=7$ &  \\
+            pH Messkette &  & Technischer Puffer - $\pH=4.01$ &  \\
+            \SI[mode=text,separate-uncertainty]{25.000(45)}{\milli\litre} Vollpipette &  & \SI[mode=text,separate-uncertainty]{0.1}{M} Essigsäure &  \\
+            \SI[mode=text,separate-uncertainty]{10.0(1)}{\milli\litre} Bürette &  & \SI[mode=text,separate-uncertainty]{0.1}{M} Natriumacetat &  \\
+            \SI[mode=text,separate-uncertainty]{50}{\milli\litre} Bechergläser &  & \SI[mode=text,separate-uncertainty]{0.1}{M} \ch{NaOH} &  \\
+            Magnetrührer &  & \SI[mode=text,separate-uncertainty]{0.1}{M} \ch{HCl} &  \\
+            Rührfische &  & deionisiertes Wasser &  \\ \bottomrule
+        \end{tabular}
+      \end{table}
+    
+    \subsection{Kalibrierung des pH-Messgerätes}  \label{sec:Kalibrierung}
+      
+      Die beiden Pufferlösungen wurden in je ein \SI[mode=text]{50}{\milli\litre} Becherglas gefüllt. Ein Rührfischchen wurde hinzugegeben und das Becherglas auf einen Magnetrührer gestellt. Während den Messungen wurde langsam gerührt, um eine möglichst homogene Verteilung der Ionen zu ermöglichen. Das \pH-Meter wurde mit den Pufferlösungen bei $\pH=7$ und $\pH=4.01$ kalibriert\footnote{die Handhabung des \pH-Meter erfolgte dabei wie in der Versuchsvorschrift beschrieben und wird deswegen nicht extra angeführt}. Dabei wurde die Spannung bei den beiden bekannten \pH-Werten gemessen. Bei $\pH=7$ wurde eine Spannung von \SI[mode=text]{2}{\milli\volt} und bei $\pH=4$ von \SI[mode=text]{2}{\milli\volt} notiert. Daraus errechnet sich für die Steigung der Kalibriergeraden $k =$ \SI[mode=text]{2}{\milli\volt\per\pH} und den Ordinatenabschnitt $d =$ \SI[mode=text]{2}{\milli\volt}. Man erhält folgende Kalibriergerade:
+      
+      \begin{equation}
+        y = k * x + d = 
+      \end{equation}
+      
+    \subsection{Beschreibung der Versuchsdurchführungen} \label{sec:Versuch}
+    
+      Die jeweilige Probelösung wurde in einem \SI[mode=text]{50}{\milli\litre} Becherglas vorgelegt, ein Rührfisch hinzugegeben und das Becherglas auf einen Magnetrührer gestellt. Während den Messungen wurde langsam gerührt, wie in \ref{sec:Kalibrierung} beschrieben. Der \pH-Wert wurde bei jedem Versuch 3 mal gemessen. Zwischen den Messungen wurde die Messkette mit deionisiertem Wasser gespült, um unerwünschten Konzentrationsveränderungen durch Fremdionen vorzubeugen. Für die \pH-Messung wurde zuerst die \pH-Messkette . 
+      
+      \begin{table}[H]
+        \centering
+        \caption[Probelösungen für die pH Messungen, Quelle: Autor]{Auflistung der verwendeten Probelösungen für die pH Messungen}
+        \label{tab:ProbeL}
+        
+        \begin{tabular}{@{}l|p{12cm}@{}}
+          \toprule
+            Experiment & Zusammensetzung der Probelösungen inkl. Mengenangabe \\ \midrule \midrule
+            siehe \ref{sec:pKAEssigs} & ca. \SI[mode=text]{40}{\milli\liter} \SI[mode=text]{0.1}{M} Essigsäure \\ \midrule
+            siehe \ref{sec:HydrolyseNatrium} & ca. \SI[mode=text]{40}{\milli\liter} \SI[mode=text]{0.1}{M} Natriumacetat \\
+             & ca. \SI[mode=text]{40}{\milli\liter} Leitungswasser aus dem Hahn \\ 
+             & ca. \SI[mode=text]{40}{\milli\liter} deionisiertes Wasser \\ \midrule
+            siehe \ref{sec:SauerBase} & (I): ca. \SI[mode=text]{40}{\milli\liter} einer Lösung von je \SI[mode=text]{25.0}{\milli\liter} (Vollpipette) \SI[mode=text]{0.1}{M} Essigsäure und \SI[mode=text]{0.1}{M} Natriumacetat \\
+             & (II): zu (I) wurde \SI[mode=text]{1}{\milli\liter} \SI[mode=text]{0.1}{M} \ch{HCl} zugegeben (aus einer Bürette, der Flüssigkeitsstand im Becherglas vor und nach der Zugabe wurde notiert) - pH und Temperaturmessung erfolgten erst nach starkem Rühren (für \SI[mode=text]{1}{\minute}) \\
+             & (III): zu (II) wurden \SI[mode=text]{2}{\milli\liter} \SI[mode=text]{0.1}{M} \ch{NaOH} zugegeben (aus einer Bürette, der Flüssigkeitsstand im Becherglas vor und nach der Zugabe wurde notiert) - pH und Temperaturmessung erfolgten erst nach starkem Rühren (für \SI[mode=text]{1}{\minute}) \\ 
+             & (IV): zu ca. \SI[mode=text]{40}{\milli\liter} deionisiertem Wasser wurde \SI[mode=text]{1}{\milli\liter} \SI[mode=text]{0.1}{M} \ch{HCl} zugegeben (aus einer Bürette, der Flüssigkeitsstand im Becherglas vor und nach der Zugabe wurde notiert) - pH und Temperaturmessung erfolgten erst nach starkem Rühren (für \SI[mode=text]{1}{\minute}) \\ 
+             & (V): zu (IV) wurden \SI[mode=text]{2}{\milli\liter} \SI[mode=text]{0.1}{M} \ch{NaOH} zugegeben (aus einer Bürette, der Flüssigkeitsstand im Becherglas vor und nach der Zugabe wurde notiert) - pH und Temperaturmessung erfolgten erst nach starkem Rühren (für \SI[mode=text]{1}{\minute}) \\ \bottomrule
+        \end{tabular}
+      \end{table}
+      
+    \subsection{Bestimmung des \pKa von Essigsäure} \label{sec:pKAEssigs}
+      
+      In \ref{rec:EssigsProtolyse} ist die Protolysereaktion der Essigsäure dargestellt. Wie man sieht, erhöht sie die Konzentration der Hydronium-Ionen, weswegen ein \pH-Wert im sauren Bereich erwartet wird. Die Messung des \pH-Wertes erfolgte wie in \ref{sec:Versuch} beschrieben.\\
+      
+      \begin{reaction}
+        CH3COOH + H2O <<=> CH3COO\mch[] + H3O\pch \label{rec:EssigsProtolyse} \\
+      \end{reaction} \\
+      
+      Die Säurekonstante \Ka berechnet sich wie in \eqref{eq:Ka} beschrieben. $c_{0}$ ist dabei die Anfangskonzentration der Essigsäure, x die Konzentration von \ch{H3O\pch} und \ch{CH3COO\mch}.\\
+      
+      \begin{equation}
+        \Ka = \frac{[\ch{CH3COO\mch\aq}]_{eq.}*[\ch{H3O\pch\aq}]_{eq.}}{[\ch{CH3COOH\aq}]_{eq.}} = \frac{[\ch{CH3COO\mch\aq}]_{eq.}^2}{[\ch{CH3COOH\aq}]_{eq.}} = \frac{x^2}{c_{0}-x} \label{eq:Ka}
+      \end{equation} \\
+      
+      Wird angenommen, dass Essigsäure eine schwache Säure ist, kann $x$ gegenüber $c_{0}$ ($c_{0} >> x$) vernachlässigt werden und es ergibt sich \eqref{eq:Kazwei}.
+      
+      \begin{equation}
+        \Ka \approx \frac{x^2}{c_{0}} \label{eq:Kazwei}
+      \end{equation}
+      
+      Der Protolysegrad kann mit \eqref{eq:Protolysegrad} berechnet werden.
+      
+      \begin{equation}
+        \alpha = \frac{[\ch{CH3COO\mch}]_{eq.}}{[\ch{CH3COOH}]_{0}} = \frac{x}{c_{0}} \label{eq:Protolysegrad}
+      \end{equation}
+      
+      \subsubsection{Messergebnisse und Literaturwerte} \label{sec:MessergebnisseEssigs}
+      
+        \begin{table}[H]
+          \centering
+          \caption[Messdaten von \ref{sec:pKAEssigs} und daraus abgeleitete Größen, Quelle: Autor]{Messdaten und daraus abgeleitete Größen}
+          \label{tab:MessdatenEssigs}
+            \begin{tabular}{@{}ll|llll@{}}
+              \toprule
+               T in \si{\degreeCelsius} & gemessener \pH-Wert & [\ch{H3O\pch}] in M & \Ka & $K_{s,circa}$ & $\alpha$ \\ \midrule
+               &  &  &  &  &  \\
+               &  &  &  &  &  \\ 
+               &  &  &  &  &  \\ \bottomrule
+            \end{tabular}
+         \end{table}
+       
+       \subsubsection{Ergebnisse und Diskussion}
+       
+         Aus den oben angegebenen Daten errechnen sich folgende Werte: $\Ka = $ \num[separate-uncertainty]{2.90 \pm 1 e-5} ($s = ,\alpha = 0.95, N = 3$), $\pKa = $ \num[separate-uncertainty]{3.75 \pm 0.3} ($s = ,\alpha = 0.95, N = 3$), $\alpha = $ \SI[mode=text,separate-uncertainty]{3.75 \pm 0.3 e-5}{\percent} ($s = ,\alpha = 0.95, N = 3$), $K_{s,circa} = $ \num[separate-uncertainty]{2.90 \pm 1 e-5} ($s = ,\alpha = 0.95, N = 3$), $\pKa _{circa} = $ \num[separate-uncertainty]{3.75 \pm 0.3} ($s = ,\alpha = 0.95, N = 3$). \\
+       
+         Um \SI[mode=text]{500}{\milli\liter} einer \SI[mode=text]{0.1}{M} Essigsäure-Lösung herzustellen werden \SI[mode=text]{4.72}{\milli\liter} einer \SI[mode=text]{60}{\percent}-igen Essigsäure ($\rho = $ \SI[mode=text]{1.06}{\gram\per\milli\liter}, $M_{\ch{CH3COOH}} = $ \SI[mode=text]{60.05}{\g\per\mole}) benötigt. Die Berechnung erfolgte dabei wie \eqref{eq:Konzentration} und \eqref{eq:Volumen} in beschrieben.
+       
+         \begin{equation}
+           c_{60\%} = 0.6 * \frac{\rho}{M_{\ch{CH3COOH}}}  \label{eq:Konzentration}
+         \end{equation}
+       
+         \begin{equation}
+           V_{60\%} = V_{0.1 M} * \frac{c_{0.1 M}}{c_{60\%}} = \frac{5}{3} * V_{0.1 M} * \frac{c_{0.1 M} * M_{\ch{CH3COOH}}}{\rho} \label{eq:Volumen}
+         \end{equation}
+       
+         Zur Herstellung der Lösung eignet sich z. B. eine geeichte Messpipette, mit der \SI[mode=text]{4.72}{\milli\liter} der \SI[mode=text]{60}{\percent}-igen Essigsäure entnommen und quantitativ in einen \SI[mode=text]{500}{\milli\liter} Messkolben\footnote{der auf dieses Volumen geeicht ist} transferiert werden.
+     
+    \subsection{Hydrolyse von Natriumacetat} \label{sec:HydrolyseNatrium}
+     
+       Natriumacetat ist die konjugierte Base von Essigsäure und reagiert mit \ch{H2O} wie in \ref{rec:NaAcProtolyse} beschrieben. Die Messung des \pH-Wertes erfolgte wie in \ref{sec:Versuch} beschrieben.
+       
+       \begin{reaction}
+         CH3COO\mch\aq{} + H2O <=>> CH3COOH\aq{} + OH\mch\aq \label{rec:NaAcProtolyse} \\
+       \end{reaction} \\
+       
+       Die entsprechende Basenkonstante \Kb berechnet sich wie in \ref{eq:Kb} beschrieben ($c_{0} = \SI[mode=text]{0.1}{\mole\per\liter}$). Der Wert von \Ka wurde in \ref{sec:MessergebnisseEssigs} berechnet. Durch Auflösen der quadratischen Gleichung nach $x$ kann $[\ch{OH\mch\aq}]$ berechnet werden. Daraus errechnet sich $[\ch{H3O\pch\aq}]$ und der gesuchte theoretische \pH-Wert. 
+       
+       \begin{equation}
+         \Kb = \frac{[\ch{CH3COOH\aq}]_{eq.} * [\ch{OH\mch\aq}]_{eq.}}{[\ch{CH3COO\mch\aq}]_{eq.}} = \frac{x^2}{c_{0}-x} = \frac{\num{e-14}}{\Ka} \label{eq:Kb}
+       \end{equation}
+       
+       Wird die \pH-Wert Berechnung nur näherungsweise durchgeführt, wird \ref{eq:Kbzwei} verwendet.
+       
+       \begin{equation}
+         \Kb \approx \frac{x^2}{c_{0}} \label{eq:Kbzwei}
+       \end{equation}
+       
+       Man erhält demnach folgende theoretische Werte für den \pH: $\pH_{theor.} = $ \num[separate-uncertainty]{2.90 \pm 1 e-5} ($s = ,\alpha = 0.95, N = 3$), $\pH_{circa} = $ \num[separate-uncertainty]{2.90 \pm 1 e-5} ($s = ,\alpha = 0.95, N = 3$). \\
+       
+       Der \pH-Wert von Leitungswasser wurde \SI[mode=text]{20}{\second} und \SI[mode=text]{2}{\minute} nach Probenahme bestimmt. Bei den erneuten Messungen wurden immer neue Proben genommen. Die Messung des \pH-Wertes erfolgte wie in \ref{sec:Versuch} beschrieben. \\
+       
+       Der \pH-Wert von deionisiertem Wasser wurde \SI[mode=text]{20}{\second} und \SI[mode=text]{2}{\minute} nach Probenahme bestimmt. Bei den erneuten Messungen wurden immer neue Proben genommen. Die Messung des \pH-Wertes erfolgte wie in \ref{sec:Versuch} beschrieben.
+       
+       \subsubsection{Messergebnisse und Literaturwerte}
+       
+         \begin{table}[H]
+          \centering
+          \caption[Messdaten der \ch{NaCH3COO\aq}-Lösung, Quelle: Autor]{Messdaten der \ch{NaCH3COO\aq}-Lösung}
+          \label{tab:MessdatenNatriumAc}
+            \begin{tabular}{@{}ll|l@{}}
+              \toprule
+               T in \si{\degreeCelsius} & gemessener \pH-Wert & [\ch{H3O\pch}] in M \\ \midrule
+               &  &  \\
+               &  &  \\ 
+               &  &  \\ \bottomrule
+            \end{tabular}
+         \end{table}
+         
+         \begin{table}[H]
+          \centering
+          \caption[Messdaten von Leitungswasser, Quelle: Autor]{Messdaten von Leitungswasser}
+          \label{tab:MessdatenNatriumAcLeitungs}
+            \begin{tabular}{@{}lll|lll@{}}
+              \toprule
+               $t = \SI[mode=text]{20}{\second}$ & T in \si{\degreeCelsius} & gemessener \pH-Wert & $t = \SI[mode=text]{2}{\minute}$ & T in \si{\degreeCelsius} & gemessener \pH-Wert \\ \midrule
+                 &  &  &  &  &  \\
+                 &  &  &  &  &  \\ 
+                 &  &  &  &  &  \\ \bottomrule
+            \end{tabular}
+         \end{table}  
+     
+         \begin{table}[H]
+          \centering
+          \caption[Messdaten von deionisiertem Wasser, Quelle: Autor]{Messdaten von deionisiertem Wasser}
+          \label{tab:MessdatenNatriumAcdeionWasser}
+            \begin{tabular}{@{}lll|lll@{}}
+              \toprule
+               $t = \SI[mode=text]{20}{\second}$ & T in \si{\degreeCelsius} & gemessener \pH-Wert & $t = \SI[mode=text]{2}{\minute}$ & T in \si{\degreeCelsius} & gemessener \pH-Wert \\ \midrule
+                 &  &  &  &  &  \\
+                 &  &  &  &  &  \\ 
+                 &  &  &  &  &  \\ \bottomrule
+            \end{tabular}
+         \end{table}
+       
+       \subsubsection{Ergebnisse und Diskussion}
+         
+         Der gemessene \pH-Wert der \ch{NaCH3COO} Lösung besitzt folgenden Wert: $\pH_{exp.} = $ \num[separate-uncertainty]{2.90 \pm 1 e-5} ($s = ,\alpha = 0.95, N = 3$). Um bessere Ergebnisse zu bekommen, ist evtl. eine exaktere Kalibrierung des \pH-Meters im basischen durchzuführen. \\
+         
+         Der gemessene \pH-Wert des Leitungswassers besitzt folgenden Wert: $\pH = $ \num[separate-uncertainty]{2.90 \pm 1 e-5} ($s = ,\alpha = 0.95, N = 3$) nach \SI[mode=text]{20}{\second} und $\pH = $ \num[separate-uncertainty]{2.90 \pm 1 e-5} ($s = ,\alpha = 0.95, N = 3$) nach \SI[mode=text]{2}{\minute}. Damit liegt der \pH-Wert etwas im alkalischen Bereich, jedoch immer noch in dem für Trinkwasser zu empfehlenden Bereich \cite{LeitungswasserRichtlinien}. Die Basizität könnte durch erhöhten Carbonat-Gehalt erklärt werden. \ch{CO3\mch[2]} reagiert bekanntlich in wässriger Lösung als Base. \\
+         
+         Der gemessene \pH-Wert des deionisierten Wasser besitzt folgenden Wert: $\pH = $ \num[separate-uncertainty]{2.90 \pm 1 e-5} ($s = ,\alpha = 0.95, N = 3$) nach \SI[mode=text]{20}{\second} und $\pH = $ \num[separate-uncertainty]{2.90 \pm 1 e-5} ($s = ,\alpha = 0.95, N = 3$) nach \SI[mode=text]{2}{\minute}. Deionisiertes Wasser besitzt keine gelösten Salz-Ionen. Die einzigen Ionen, die einen Stromfluss ermöglichen können, sind die durch Autoprotolyse entstehenden Hydronium- und Oxonium-Ionen, wobei deren Konzentration relativ gering ist (jeweils \SI[mode=text]{d-7}{M}). Deionisiertes Wasser ist demnach praktisch ein Nichtleiter, was die \pH-Messung mit einer \pH-Messkette, bei der Strom fießt, erschwert. \\
+         
+         Um \SI[mode=text]{250}{\milli\liter} einer \SI[mode=text]{0.1}{M} \ch{NaCH3COO}\footnote{$M_{\ch{NaCH3COO}} = \SI[mode=text]{136.08}{\gram\per\mole}$} Lösung herzustellen, werden \SI[mode=text]{3.4}{\gram} benötigt. Dazu wird die entsprechende Menge auf einem Wägepapier abgewogen und quantitativ in einen \SI[mode=text]{250}{\milli\liter} Maßkolben transferiert. Dieser wird unter homogenisieren bis zur Marke aufgefüllt. 
+    
+    \subsection{Säure/Base Puffer} \label{sec:SauerBase}
+    
+      Puffersysteme besitzen die Eigenschaft, den \pH-Wert in einem gewissen Bereich konstant zu halten. Das bedeutet, dass sich der \pH-Wert nach Zugabe einer starken Säure bzw. Base nicht erwartungsgemäß stark ändert. Puffersysteme bestehen aus einem konjugierten Säure/Base System einer schwachen Säure mit der konjugierten, starken Base bzw. einer starken Säure mit der konjugierten, schwachen Base. Wie in \ref{sec:pKAEssigs} bestimmt, handelt es sich bei der Essigsäure um eine schwache Säure, mit der zugehörigen starken Base \ch{CH3COO\mch}. Sie kann somit ein Puffersystem bilden. Im Folgenden soll der \pH-Wert eines \ch{CH3COOH}/\ch{CH3COO\mch} Puffers im Verhältnis 1:1 und die \pH-Änderung nach Zugabe von \ch{HCl} bzw. \ch{NaOH} bestimmt werden. Die zugehörigen Reaktionsgleichungen lauten wie folgt:
+      
+      \begin{reactions}
+        CH3COO\mch\aq{} + HCl\aq{} &-> CH3COOH\aq{} + Cl\mch\aq{} \label{rec:Protonenzugabe} \\
+        CH3COOH\aq{} + OH\mch\aq{} &-> CH3COO\mch\aq{} + H2O 
+      \end{reactions} 
+      
+      Zur Berechnung des \pH-Werts einer Pufferlösung vor und nach der Zugabe der Säure bzw. Base verwendet man die Henderson-Hasselbach Gleichung:
+      
+      \begin{equation}
+        \pH = \pKa + \log _{10} \frac{[\ch{CH3COO\mch\aq}]}{[\ch{CH3COOH\aq}]} \label{eq:HendersonHasselbach}
+      \end{equation}
+      
+      Es wird erwartet, dass der \pH-Wert des \ch{CH3COOH}/\ch{CH3COO\mch} (1:1) Puffers dem \pKa Wert der Essigsäure entspricht (in \ref{sec:pKAEssigs} bestimmt). Setzt man in \eqref{eq:HendersonHasselbach} die beiden Konzentrationen ein, ergibt sich aufgrund dem 1:1 Verhältnis der Konzentrationen $\log _{10} 1 = 0$ und damit $\pH = \pKa$. \\
+      
+      Wird \SI[mode=text]{1}{\milli\liter} einer \SI[mode=text]{0.1}{M} \ch{HCl} hinzugegeben, errechnet sich der \pH-Wert wie in \eqref{eq:HendersonHasselbachsauer} angegeben (\pKa der Essigsäure in \ref{sec:pKAEssigs} bestimmt). Der Einfachheit wegen wurde mit Stoffmengen anstelle von Konzentrationen gerechnet, da sich die Volumina im Bruch sowieso kürzen.
+      
+      \begin{equation}
+        \pH = \pKa + \log _{10} \frac{n_{\ch{CH3COO\mch\aq}} - 0.0001}{n_{\ch{CH3COOH\aq}} + 0.0001} = \pKa + \log _{10} \frac{0.0025 - 0.0001}{0.0025 + 0.0001} \label{eq:HendersonHasselbachsauer}
+      \end{equation}
+      
+      Werden \SI[mode=text]{2}{\milli\liter} einer \SI[mode=text]{0.1}{M} \ch{NaOH} hinzugegeben, errechnet sich der \pH-Wert wie in \eqref{eq:HendersonHasselbachbasisch} angegeben (\pKa der Essigsäure in \ref{sec:pKAEssigs} bestimmt). Der Einfachheit wegen wurde mit Stoffmengen anstelle von Konzentrationen gerechnet, da sich die Volumina im Bruch sowieso kürzen.
+      
+      \begin{equation}
+        \pH = \pKa + \log _{10} \frac{n_{\ch{CH3COO\mch\aq}} - 0.0001}{n_{\ch{CH3COOH\aq}} + 0.0001} = \pKa + \log _{10} \frac{0.0024 + 0.0002}{0.0026 - 0.0002} \label{eq:HendersonHasselbachbasisch}
+      \end{equation}
+      
+      Ist der \pH-Wert eines \ch{CH3COOH}/\ch{CH3COO\mch} Puffers bekannt, kann mit Gleichung \eqref{eq:Zusammensetzung}, die durch Umstellen von \eqref{eq:HendersonHasselbach} erhalten wurde, dessen Zusammensetzung berechnet werden (\pKa der Essigsäure in \ref{sec:pKAEssigs} bestimmt). Für $\pH=4.5$ ergibt sich $\frac{[\ch{CH3COO\mch\aq}]}{[\ch{CH3COOH\aq}]} = $.
+      
+      \begin{equation}
+        \frac{[\ch{CH3COO\mch\aq}]}{[\ch{CH3COOH\aq}]} = 10^{\pH - \pKa} \label{eq:Zusammensetzung}
+      \end{equation}
+      
+      \subsubsection{Messergebnisse} \label{sec:MessergebnissePuffer}
+        
+        \begin{table}[H]
+          \centering
+          \caption[Messdaten des Puffersystems, Quelle: Autor]{Messdaten des Puffersystems}
+          \label{tab:MessdatenPuffersystem}
+            \begin{tabular}{@{}ll|ll|ll@{}}
+              \toprule
+               T in \si{\degreeCelsius} & \pH-Wert & T in \si{\degreeCelsius} & \pH-Wert nach \ch{HCl} Zugabe & T in \si{\degreeCelsius} & \pH-Wert nach \ch{NaOH} Zugabe \\ \midrule
+                 &  &  &  &  &  \\
+                 &  &  &  &  &  \\ 
+                 &  &  &  &  &  \\ \bottomrule
+            \end{tabular}
+         \end{table}
+         
+         \begin{table}[H]
+          \centering
+          \caption[Messdaten des Wassersystems, Quelle: Autor]{Messdaten des Wassersystems}
+          \label{tab:MessdatenPuffersystem}
+            \begin{tabular}{@{}ll|ll@{}}
+              \toprule
+                T in \si{\degreeCelsius} & \pH-Wert nach \ch{HCl} Zugabe & T in \si{\degreeCelsius} & \pH-Wert nach \ch{NaOH} Zugabe \\ \midrule
+                  &  &  &  \\
+                  &  &  &  \\ 
+                  &  &  &  \\ \bottomrule
+            \end{tabular}
+         \end{table}
+      
+      \subsubsection{Ergebnisse und Diskussion}
+      
+        Der \pH-Wert des \ch{CH3COOH}/\ch{CH3COO\mch} Puffers beträgt somit: $\pH = $ \num[separate-uncertainty]{2.90 \pm 1 e-5} ($s = ,\alpha = 0.95, N = 3$). Dieser ist nun aber gleich dem \pKa der Essigsäure ($\pKa = \pH$ bei 1:1 Puffer), wie bereits in \ref{sec:SauerBase} erklärt. \\
+        
+        In Tabelle \ref{tab:Messdatenvergleich} werden die gemessen \pH-Werte, die in \ref{sec:MessergebnissePuffer} präsentiert wurden mit den theoretisch berechneten Werten von \ref{sec:SauerBase} und \ref{sec:weitereBerechnungen} verglichen.
+        
+        \begin{table}[H]
+          \centering
+          \caption[Vergleich der Messdaten mit den theoretischen Werten, Quelle: Autor]{Vergleich der Messdaten mit den theoretischen Werten}
+          \label{tab:Messdatenvergleich}
+            \begin{tabular}{@{}l|lllll@{}}
+              \toprule
+                & \ch{HCl} zu Puffer & \ch{HCl} und \ch{NaOH} zu Puffer & \ch{HCl} zu \ch{H2O} & \ch{NaOH} zu \ch{H2O} \\ \midrule
+                gemessen &  &  &  &  \\
+                berechnet &  &  &  &  \\ \bottomrule
+            \end{tabular}
+         \end{table}
+         
+         Wie zu erwarten konnte beobachtet werden, dass sich der \pH-Wert vom \ch{CH3COOH}/\ch{CH3COO\mch} Puffer nach Zugabe von \ch{HCl} bzw. \ch{NaOH} nicht dramatisch ändert. Wird anstelle des Puffers \ch{H2O} verwendet und die gleiche Menge an \ch{HCl} bzw. \ch{NaOH} hinzugegeben, konnte eine dramatische \pH-Änderung beobachtet werden. \ch{H2O} ist damit erwartungsgemäß kein Puffer.
+        
+      \subsubsection{Weitere \pH-Wert Berechnungen} \label{sec:weitereBerechnungen}
+      
+        Werden zu \SI[mode=text]{50}{\milli\liter} deionisiertem Wasser \SI[mode=text]{1}{\milli\liter} einer \SI[mode=text]{0.1}{M} \ch{HCl} hinzugegeben, errechnet sich der \pH-Wert wie in \eqref{eq:pHWasser} angegeben.
+        
+        \begin{equation}
+          \pH = -\log _{10} \frac{0.001 * 0.1}{0.05 + 0.001} = 2.71 \label{eq:pHWasser}
+        \end{equation}\\
+        
+        Werden zu \SI[mode=text]{50}{\milli\liter} deionisiertem Wasser \SI[mode=text]{1}{\milli\liter} einer \SI[mode=text]{0.1}{M} \ch{HCl} und \SI[mode=text]{2}{\milli\liter} einer \SI[mode=text]{0.1}{M} \ch{NaOH} hinzugegeben, errechnet sich der \pH-Wert wie in \eqref{eq:pHWasserzwei} angegeben. Die Berechnung erfolgt analog dazu, wenn \SI[mode=text]{1}{\milli\liter} einer \SI[mode=text]{0.1}{M} \ch{NaOH} hinzugegeben werden, da der Rest mit der \ch{HCl} neutralisiert wird.\\
+        
+        \begin{equation}
+          \pH = 14 + \log _{10} \frac{0.001 * 0.1}{0.05 + 0.001} = 11.29 \label{eq:pHWasserzwei}
+        \end{equation}\\
+        
+        Die Reaktionsgleichungen eines \ch{NH3}/\ch{NH4Cl} Puffers\footnote{schwache Base mit starker konjugierter Säure} mit \ch{HCl} und \ch{NaOH} lauten wie folgt:
+        
+        \begin{reactions}
+          NH3\aq{} + HCl\aq{} &-> NH4\pch\aq{} + Cl\mch\aq{} \\
+          NH4\pch\aq{} + OH\mch\aq{} &-> NH3\aq{} + H2O
+        \end{reactions}
+  \pagebreak
+  
+  \listofreactions
+  \printbibliography[title=Literaturverzeichnis]
+  \listoffigures
+  \listoftables
+  
+\end{document}

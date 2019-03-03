@@ -1,0 +1,223 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english,ngerman]{babel}
+%% ========================================================================
+%%%% MISC usepackages
+%% ========================================================================
+
+%% Chemistry
+\usepackage{chemfig,chemmacros}
+\chemsetup{modules = all}
+\chemsetup[redox]{explicit-sign = true}
+\chemsetup[phases]{pos=sub}
+%\chemsetup[reactions]{before-tag = {R}, tag-open = [, tag-close = ]}
+  
+%% Maths
+\usepackage{amsmath,amssymb,amsthm,textcomp}
+
+%% Physics
+\usepackage{siunitx}
+
+%% Graphics
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{rotating}
+%\usepackage{subfig}
+
+%% Tables and Lists
+\usepackage{enumerate}
+\usepackage{multicol}
+\usepackage{geometry}
+\usepackage{tabu}
+\usepackage{listings}
+\usepackage{tabularx}
+
+%% Structures and Style
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{booktabs}
+\usepackage{colortbl}
+
+\usepackage{xcolor}
+\usepackage{xfrac}
+\usepackage[export]{adjustbox}[2011/08/13]
+
+\usepackage{booktabs}
+\usepackage{float}
+
+%% Citing and Settings
+\usepackage[backend=biber,
+style=numeric,
+backref=true, 
+natbib=true, %% offering natbib-compatible commands
+hyperref=true, %% using hyperref-package references
+sorting= none,
+doi=true,
+maxcitenames=10,
+maxbibnames=100,
+citestyle=numeric
+]{biblatex}
+
+\addbibresource{references.bib}
+
+\usepackage[toc,automake]{glossaries}
+\include{abbrevations}
+\makeglossaries
+
+\usepackage[colorlinks=true,linkcolor=blue]{hyperref}
+
+%% Figure settings
+\renewcommand{\figurename}{Abbildung}
+\renewcommand{\tablename}{Tabelle}
+\renewcommand{\listfigurename}{Abbildungsverzeichnis}
+\renewcommand{\listtablename}{Tabellenverzeichnis}
+
+%% ========================================================================
+%%%% Document Information
+%% ========================================================================
+
+%% Title
+\title{Bestimmung der Gleichgewichtskonstante für ein heterogenes Gleichgewicht} % Title
+\author{Autor: Florian \textsc{Kluibenschedl}} % Author name
+\date{Bericht verfasst am: \today} % Date for the report
+
+\begin{document}
+  \renewtagform{reaction}[Rgl. ]{}{}
+  
+  \maketitle % Insert the title, author and date
+  
+  \begin{center}
+    \begin{tabular}{r l}
+      Versuchsdurchführung am: & 04. März 2019\\ % Date the experiment was performed
+      Gruppe, Matrikelnummer: & 3, 11805747 \\
+      Assistent: & Professor Smith % Instructor/supervisor
+    \end{tabular}
+  \end{center}
+
+
+  \begin{abstract}
+    
+  \end{abstract}
+  
+  \section{Theoretische Grundlagen}
+  
+    \subsection{Motivation} \label{sec:Motivation}
+    
+      Salze besitzen in Wasser unterschiedliche Löslichkeiten. Kochsalz \ch{NaCl} löst sich beispielsweise sehr gut. Beim gelben \ch{PbI2} handelt es sich um ein schwerlösliches Salz. Die entsprechende Lösereaktion wird in \ref{rec:LosungPblei} beschrieben. 
+           
+      \begin{reaction}
+        PbI2\sld{} <<=> Pb\pch[2]\aq{} +  2 * I\mch\aq{} \label{rec:LosungPblei}
+      \end{reaction}
+      
+      Werden nun zu einer Lösung von \ch{Pb\pch[2]\aq} Ionen \ch{I\mch\aq} Ionen hinzugegeben, fällt \ch{PbI2\sld} aus, wenn das Löslichkeitsprodukt knapp überschritten wird. Dieser Punkt ist erkennbar durch den charakteristischen, gelben Niederschlag von \ch{PbI2\sld}. Es liegt also eine annähernd gesättigte Lösung vor und man kann annehmen, dass das Ionenprodukt von \ch{Pb\pch[2]\aq} und \ch{I\mch} dem Löslichkeitsprodukt entspricht. Ist die Menge an beteiligtem \ch{Pb\pch[2]\aq} und \ch{I\mch\aq} bekannt, kann somit über das Ionenprodukt das Löslichkeitsprodukt berechnet werden.
+      
+      Da Blei unter anderem giftig ist, ist eine exakte Kenntnis der Bleikonzentration vonnöten, um z. B. zu überprüfen, ob bestimmte Grenzwerte eingehalten werden. Die Konzentration von \ch{Pb\pch[2]\aq} Ionen kann bei bekanntem Löslichkeitsprodukt berechnet werden.
+   
+    \subsection{Ziel des Experiments}
+    
+      Auf Basis der obigen Überlegungen ist das Ziel, über Titration eine möglichst exakte Bestimmung des Löslichkeitsproduktes von \ch{PbI2\sld} durchzuführen.
+    
+  \section{Experimenteller Teil}
+  
+    \subsection{Verwendete Materialien}
+              
+      \begin{table}[H]
+        \centering
+        \caption[Materialienliste, Quelle: Autor]{Auflistung der verwendeten Geräte und Chemikalien}
+        \label{tab:Materialien}
+        
+        \begin{tabular}{@{}ll|ll@{}}
+          \toprule
+            Geräte & Hersteller & Chemikalie & Hersteller \\ \midrule
+            \SI[mode=text]{600}{\milli\liter} Becherglas &  & \SI[mode=text]{0.5}{M} \ch{Pb(NO3)2} Lösung &  \\
+            \SI[mode=text,separate-uncertainty=true]{25.000(75)}{\milli\liter} Bürette &  & \SI[mode=text]{0.02}{M} \ch{KI} Lösung & \\
+            \SI[mode=text,separate-uncertainty]{25.000(45)}{\milli\liter} Vollpipette &  & deionisiertes \ch{H2O} &  \\
+            \SI[mode=text,separate-uncertainty]{100}{\milli\liter} Erlenmeyerkolben &  &  &  \\
+            digitales Thermometer &  &  &  \\
+            Stativ mit Klammern &  &  &  \\
+            Magnetrührer &  &  &  \\
+            Rührfisch &  &  &  \\ \bottomrule
+        \end{tabular}
+      \end{table}
+    
+    \subsection{Versuchsdurchführung}  \label{sec:Versuch}
+    
+      Zunächst wurden \SI[mode=text]{25}{\milli\liter} einer \SI[mode=text]{0.5}{M} \ch{Pb(NO3)3} Lösung in einen \SI[mode=text]{100}{\milli\liter} Erlenmeyerkolben pipettiert und mit einer \SI[mode=text]{0.02}{M} \ch{KI} Lösung bis zum Endpunkt titriert. Dabei wurde die Lösung konstant mit dem Rührfisch und Magnetrührer bei \SI[mode=text]{400}{rpm} gerührt. Am Endpunkt konnte das ausfallende \ch{PbI2\sld} (gelbe) nicht mehr durch Rühren gelöst werden.
+      
+      Die nächsten Titrationen erfolgten bei unterschiedlichen Konzentrationen der \ch{Pb(NO3)3} Lösung. Dazu wurde eine Verdünnungsreihe erstellt. \SI[mode=text]{25}{\milli\liter} der \SI[mode=text]{0.5}{M} \ch{Pb(NO3)3} Lösung wurden mit \SI[mode=text]{25}{\milli\liter} deionisiertem Wasser verdünnt. Von der resultierenden \SI[mode=text]{0.25}{M} \ch{Pb(NO3)3} Lösung wurden \SI[mode=text]{25}{\milli\liter} mit der \SI[mode=text]{0.02}{M} \ch{KI} Lösung wie oben bescchrieben titriert. Der verbleibende Rest der verdünnten Lösung (\SI[mode=text]{25}{\milli\liter}) wurde mit deionisiertem Wasser auf \SI[mode=text]{50}{\milli\liter} aufgefüllt. Die resultierende \SI[mode=text]{0.125}{M} \ch{Pb(NO3)3} Lösung wurde wie oben beschrieben titriert und verdünnt. Diese Prozedur wurde wiederholt und man erhielt eine \SI[mode=text]{0.063}{M}, \SI[mode=text]{0.031}{M} und \SI[mode=text]{0.016}{M} \ch{Pb(NO3)3} Lösung. Der Verbrauch an \ch{KI} Lösung sowie die Temperatur am Endpunkt der Titration\footnote{es wurde darauf geachtet, starke Temperaturunterschiede zu vermeiden, da die Löslichkeit stark temperaturabhängig ist und die Ergebnisse sonst nicht vergleichbar wären} wurden jeweils notiert. Die gesättigte \ch{PbI2} Lösung wurde im Schwermetall-Abfall entsorgt.
+    
+     
+    \subsection{Auswertung} \label{sec:Auswertung}
+      
+      Die Konzentration von \ch{Pb\pch[2]\aq} und \ch{I\mch\aq} kann mit dem von der Gesamtkonzentration abhängigen Löslichkeitsprodukt $K_{L,c}$ berechnet werden - siehe \eqref{eq:Klc}. Dabei wird angenommen, dass die Aktivität des Feststoffes \ch{PbI2\sld} gleich eins ist. \\
+      
+      \begin{equation}
+        K_{L,c} = \frac{a_{\ch{Pb\pch[2]\aq}} * a_{\ch{I\mch\aq}}^2}{a_{\ch{PbI2\sld}}} = a_{\ch{Pb\pch[2]\aq}} * a_{\ch{I\mch\aq}}^2 = f_{\ch{Pb\pch[2]\aq}} [\ch{Pb\pch[2]\aq}] * f_{\ch{I\mch\aq}}^2 [\ch{I\mch\aq}]^2 \label{eq:Klc}
+      \end{equation} \\
+      
+      Unter der Annahme, dass die Wechselwirkungen zwischen den Ionen und Molekülen der Lösung vernachlässigt werden können, ergibt sich aus \eqref{eq:Klc} das bekannte Löslichkeitsprodukt $K_{L}$ - siehe \eqref{eq:Kl}. Es gilt also $\lim_{c_{ges.}\to 0} f_{i} = 1 \Leftrightarrow \lim_{c_{ges.}\to 0} K_{L,c} = K_{L}$.
+      
+      \begin{equation}
+        K_{L} = [\ch{Pb\pch[2]\aq}] * [\ch{I\mch\aq}]^2 \label{eq:Kl}
+      \end{equation} \\
+      
+      Die symbolische Konzentration von \ch{PbI2} in der Lösung wird durch die Löslichkeit $L_{M}$ ausgedrückt. Sie errechnet sich aus dem Löslichkeitsprodukt - siehe \eqref{eq:solubility}.
+      
+      \begin{equation}
+        L_{M} = [\ch{Pb\pch[2]\aq}] = \frac{1}{2} [\ch{I\mch\aq}] = \sqrt[3]{\frac{K_{L}}{4}} \label{eq:solubility}
+      \end{equation} \\
+      
+      Im Folgenden werden weitere Beziehungen angegeben, die für die Berechnung der Werte in Tabelle \ref{tab:Messdaten} benötigt wurden. Die Berechnung von [\ch{Pb(NO3)3}] wird nicht angeführt, da dies bereits in \ref{sec:Versuch} erledigt wurde.
+      
+      \begin{equation}
+        pK_{L,c} = -\log_{10} (K_{L,c})
+      \end{equation}
+      
+      \begin{equation}
+        V_{Ende} = V_{\ch{KI}} + V_{\ch{Pb(NO3)3}}
+      \end{equation}
+      
+      \begin{equation}
+        [\ch{Pb\pch[2]\aq}]_{eq.} = \frac{[\ch{Pb(NO3)3}] * V_{\ch{Pb(NO3)3}}}{V_{Ende}}
+      \end{equation}
+      
+      \begin{equation}
+        [\ch{I\mch\aq}]_{eq.} = \frac{[\ch{KI}] * V_{\ch{KI}}}{V_{Ende}}
+      \end{equation}
+      
+      
+      
+    \subsection{Messergebnisse und Literaturwerte}
+    
+      In Tabelle \ref{tab:Messdaten} sind alle Messwerte, die im Rahmen der Versuchsdurchführung wie in \ref{sec:Versuch} beschrieben, gemessen wurden. Volumina sind in ml, Konzentrationen in M angegeben. Die einzelnen aus den Messdaten errechneten Werte wurden gemäß den in \ref{sec:Auswertung} angeführten Gleichungen berechnet.
+      
+      \begin{table}[H]
+        \centering
+        \caption[Messdaten und daraus abgeleitete Größen, Quelle: Autor]{Messdaten und daraus abgeleitete Größen}
+        \label{tab:Messdaten}
+          \begin{tabular}{@{}l|llll|ll|lll@{}}
+            \toprule
+             Nr. & $V_{\ch{Pb(NO3)3}}$ & [\ch{Pb(NO3)3}] & $V_{\ch{KI}}$ & $V_{Ende}$ & $[\ch{Pb\pch[2]\aq}]_{eq.}$ & $[\ch{I\mch\aq}]_{eq.}$ & $K_{L,c}$ & $pK_{L,c}$ & T in \si{\degreeCelsius} \\ \midrule
+             1 & 25 & 0.5 &  &  &  &  &  &  \\
+             2 & 25 & 0.25 &  &  &  &  &  &  \\
+             3 & 25 & 0.125 &  &  &  &  &  &  \\
+             4 & 25 & 0.063 &  &  &  &  &  &  \\
+             5 & 25 & 0.031 &  &  &  &  &  &  \\
+             6 & 25 & 0.016 &  &  &  &  &  &  \\ \bottomrule
+          \end{tabular}
+       \end{table}      
+      
+  \section{Ergebnisse und Diskussion}
+    
+    Mithilfe der Daten in Tabelle \ref{tab:Messdaten} errechnen sich folgende Werte: $K_{L,c} = $ \num[separate-uncertainty]{2.90 \pm 1 e-5} ($s = ,\alpha = 0.95, N = 3$), $pK_{L,c} = $ \num[separate-uncertainty]{3.75 \pm 0.3} ($s = ,\alpha = 0.95, N = 3$), $L_{M} = $\SI[mode=text, separate-uncertainty]{3.75 \pm 0.3}{\mole\per\liter} ($s = ,\alpha = 0.95, N = 3$) $\equiv$ \SI[mode=text, separate-uncertainty]{3.75 \pm 0.3}{\gram\per\liter} ($s = ,\alpha = 0.95, N = 3$).
+    
+    Eine Auftragung der $pK_{L,c}$ Werte von Tabelle \ref{tab:Messdaten} gegen $[\ch{Pb\pch[2]\aq}]_{eq.}$ ergibt Diagramm.
+    
+  \pagebreak
+  
+  \listofreactions
+  \printbibliography[title=Literaturverzeichnis]
+  \listoffigures
+  \listoftables
+  
+\end{document}
