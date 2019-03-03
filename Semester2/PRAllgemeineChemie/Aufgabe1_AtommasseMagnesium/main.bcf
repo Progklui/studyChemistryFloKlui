@@ -2026,9 +2026,10 @@
     <bcf:datasource type="file" datatype="bibtex">references.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">PhysicalChemistryAtkings</bcf:citekey>
-    <bcf:citekey order="2">Salzs</bcf:citekey>
-    <bcf:citekey order="3">LambdaHydrogen</bcf:citekey>
+    <bcf:citekey order="1">Versuchsvorschrift</bcf:citekey>
+    <bcf:citekey order="2">PhysicalChemistryAtkings</bcf:citekey>
+    <bcf:citekey order="3">Salzs</bcf:citekey>
+    <bcf:citekey order="4">LambdaHydrogen</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="none/global" type="entry" sortscheme="none" sortnamekeyscheme="global">
   <bcf:sorting>

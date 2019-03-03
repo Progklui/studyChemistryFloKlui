@@ -1,15 +1,15 @@
 [0] Config.pm:340> INFO - This is Biber 2.4
 [0] Config.pm:343> INFO - Logfile is 'main.blg'
-[31] biber:287> INFO - === Mit Feb 27, 2019, 10:42:58
+[31] biber:287> INFO - === Son Mär  3, 2019, 23:31:39
 [106] Biber.pm:348> INFO - Reading 'main.bcf'
-[217] Biber.pm:742> INFO - Found 2 citekeys in bib section 0
-[223] Biber.pm:3151> INFO - Processing section 0
-[251] Biber.pm:3308> INFO - Looking for bibtex format file 'references.bib' for section 0
-[256] bibtex.pm:1113> INFO - Decoding LaTeX character macros into UTF-8
-[259] bibtex.pm:974> INFO - Found BibTeX data source 'references.bib'
-[291] UCollate.pm:65> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[291] UCollate.pm:65> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[292] Biber.pm:3028> INFO - Sorting list 'none/global' of type 'entry' with scheme 'none' and locale 'de-DE'
-[292] Biber.pm:3032> INFO - No sort tailoring available for locale 'de-DE'
-[293] bbl.pm:519> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[298] bbl.pm:615> INFO - Output to main.bbl
+[217] Biber.pm:742> INFO - Found 1 citekeys in bib section 0
+[221] Biber.pm:3151> INFO - Processing section 0
+[246] Biber.pm:3308> INFO - Looking for bibtex format file 'references.bib' for section 0
+[249] bibtex.pm:1113> INFO - Decoding LaTeX character macros into UTF-8
+[251] bibtex.pm:974> INFO - Found BibTeX data source 'references.bib'
+[278] UCollate.pm:65> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[278] UCollate.pm:65> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[278] Biber.pm:3028> INFO - Sorting list 'none/global' of type 'entry' with scheme 'none' and locale 'de-DE'
+[278] Biber.pm:3032> INFO - No sort tailoring available for locale 'de-DE'
+[279] bbl.pm:519> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[283] bbl.pm:615> INFO - Output to main.bbl

@@ -47,6 +47,8 @@
 \usepackage{booktabs}
 \usepackage{float}
 
+\usepackage{fancyhdr}
+
 %% Citing and Settings
 \usepackage[backend=biber,
 style=numeric,
@@ -83,9 +85,17 @@ citestyle=numeric
 %% ========================================================================
 
 %% Title 
-\title{Herstellung von \ch{CuSO4 * 5 H2O} und chemisches Aufbringen von Metallüberzügen} % Title
+\title{Herstellung von \ch{CuSO4 * 5 H2O} und chemisches Aufbringen von Metallüberzügen \cite{Versuchsvorschrift}} % Title
 \author{Autor: Florian \textsc{Kluibenschedl}} % Author name
 \date{Bericht verfasst am: \today} % Date for the report
+
+% Page style - headers
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{PR Allgemeine Chemie A - SS2019}
+\lhead{Institut für Allgemeine Chemie - Universität Innsbruck}
+\rfoot{Experiment 7 - Seite \thepage}
+
 
 \begin{document}
   \renewtagform{reaction}[Rgl. ]{}{}
@@ -93,10 +103,12 @@ citestyle=numeric
   \maketitle % Insert the title, author and date
   
   \begin{center}
-    \begin{tabular}{r l}
+    \begin{tabular}{r p{4cm}}
       Versuchsdurchführung am: & 04. März 2019\\ % Date the experiment was performed
       Gruppe, Matrikelnummer: & 3, 11805747 \\
-      Assistent: & Professor Smith % Instructor/supervisor
+      Lehrveranstaltung: & PR Allgemeine Chemie A \\
+      Institut: & Allgemeine, Anorganische und Theoretische Chemie \\
+      Assistent: & Viertl Wolfgang % Instructor/supervisor
     \end{tabular}
   \end{center}
 
@@ -104,6 +116,8 @@ citestyle=numeric
   \begin{abstract}
     
   \end{abstract}
+  
+  \pagebreak
   
   \section{Herstellung von \ch{CuSO4 * 5 H2O}}
   
@@ -201,7 +215,7 @@ citestyle=numeric
         
     \subsection{Ergebnisse und Diskussion}
   
-  
+  \pagebreak
   
   \section{Versilbern von Glas}
   
@@ -264,6 +278,7 @@ citestyle=numeric
       
       Die entstandene Silberschicht in der Hohlfigur war schön homogen und gleichmäßig und wird der Hohlfigur lange anhaften. Eine dickere Silberschicht könnte man durch eine längere Wartezeit statt den zwei Stunden erreichen. 
   
+  \pagebreak
   
   \section{Verzinken von Münzen sowie Bilden einer Messinglegierung}
   

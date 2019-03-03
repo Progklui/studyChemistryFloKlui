@@ -45,6 +45,8 @@
 \usepackage{booktabs}
 \usepackage{float}
 
+\usepackage{fancyhdr}
+
 %% Citing and Settings
 \usepackage[backend=biber,
 style=numeric,
@@ -77,9 +79,16 @@ citestyle=numeric
 %% ========================================================================
 
 %% Title
-\title{Dünnschicht- und Säulenchromatographie} % Title
+\title{Dünnschicht- und Säulenchromatographie \cite{Versuchsvorschrift}} % Title
 \author{Autor: Florian \textsc{Kluibenschedl}} % Author name
 \date{Bericht verfasst am: \today} % Date for the report
+
+% Page style - headers
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{PR Allgemeine Chemie A - SS2019}
+\lhead{Institut für Allgemeine Chemie - Universität Innsbruck}
+\rfoot{Experiment 3 - Seite \thepage}
 
 \begin{document}
   \renewtagform{reaction}[Rgl. ]{}{}
@@ -87,10 +96,12 @@ citestyle=numeric
   \maketitle % Insert the title, author and date
   
   \begin{center}
-    \begin{tabular}{r l}
-      Versuchsdurchführung am: & 04. März 2019\\ % Date the experiment was performed
+    \begin{tabular}{r p{4cm}}
+      Versuchsdurchführung am: & 06. März 2019\\ % Date the experiment was performed
       Gruppe, Matrikelnummer: & 3, 11805747 \\
-      Assistent: & Professor Smith % Instructor/supervisor
+      Lehrveranstaltung: & PR Allgemeine Chemie A \\
+      Institut: & Allgemeine, Anorganische und Theoretische Chemie \\
+      Assistent: & Wurst Klaus % Instructor/supervisor
     \end{tabular}
   \end{center}
 
@@ -98,6 +109,8 @@ citestyle=numeric
   \begin{abstract}
     
   \end{abstract}
+  
+  \pagebreak
   
   \section{Trennung von Aminosäuren - Dünnschichtchromatographie}
   
@@ -181,6 +194,8 @@ citestyle=numeric
          \end{table}      
       
     \subsection{Ergebnisse und Diskussion}
+  
+  \pagebreak
   
   \section{Trennung von Pflanzenfarbstoffen - Säulenchromatographie}
   

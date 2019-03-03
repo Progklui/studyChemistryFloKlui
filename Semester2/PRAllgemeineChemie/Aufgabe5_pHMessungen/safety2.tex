@@ -46,6 +46,8 @@
 \usepackage{booktabs}
 \usepackage{float}
 
+\usepackage{fancyhdr}
+
 %% Citing and Settings
 \usepackage[backend=biber,
 style=numeric,
@@ -78,9 +80,16 @@ citestyle=numeric
 %% ========================================================================
 
 %% Title
-\title{\pH-Experimente} % Title
+\title{\pH-Experimente \cite{Versuchsvorschrift}} % Title
 \author{Autor: Florian \textsc{Kluibenschedl}} % Author name
 \date{Bericht verfasst am: \today} % Date for the report
+
+% Page style - headers
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{PR Allgemeine Chemie A - SS2019}
+\lhead{Institut für Allgemeine Chemie - Universität Innsbruck}
+\rfoot{Experiment 5 - Seite \thepage}
 
 \begin{document}
   \renewtagform{reaction}[Rgl. ]{}{}
@@ -88,10 +97,12 @@ citestyle=numeric
   \maketitle % Insert the title, author and date
   
   \begin{center}
-    \begin{tabular}{r l}
+    \begin{tabular}{r p{4cm}}
       Versuchsdurchführung am: & 04. März 2019\\ % Date the experiment was performed
       Gruppe, Matrikelnummer: & 3, 11805747 \\
-      Assistent: & Professor Smith % Instructor/supervisor
+      Lehrveranstaltung: & PR Allgemeine Chemie A \\
+      Institut: & Allgemeine, Anorganische und Theoretische Chemie \\
+      Assistent: & Fuhrmann Gerda % Instructor/supervisor
     \end{tabular}
   \end{center}
 
@@ -99,6 +110,8 @@ citestyle=numeric
   \begin{abstract}
     
   \end{abstract}
+  
+  \pagebreak
   
   \section{Theoretische Grundlagen}
   
@@ -162,7 +175,9 @@ citestyle=numeric
              & (V): zu (IV) wurden \SI[mode=text]{2}{\milli\liter} \SI[mode=text]{0.1}{M} \ch{NaOH} zugegeben (aus einer Bürette, der Flüssigkeitsstand im Becherglas vor und nach der Zugabe wurde notiert) - pH und Temperaturmessung erfolgten erst nach starkem Rühren (für \SI[mode=text]{1}{\minute}) \\ \bottomrule
         \end{tabular}
       \end{table}
-      
+    
+    \pagebreak
+    
     \subsection{Bestimmung des \pKa von Essigsäure} \label{sec:pKAEssigs}
       
       In \ref{rec:EssigsProtolyse} ist die Protolysereaktion der Essigsäure dargestellt. Wie man sieht, erhöht sie die Konzentration der Hydronium-Ionen, weswegen ein \pH-Wert im sauren Bereich erwartet wird. Die Messung des \pH-Wertes erfolgte wie in \ref{sec:Versuch} beschrieben.\\
@@ -219,7 +234,9 @@ citestyle=numeric
          \end{equation}
        
          Zur Herstellung der Lösung eignet sich z. B. eine geeichte Messpipette, mit der \SI[mode=text]{4.72}{\milli\liter} der \SI[mode=text]{60}{\percent}-igen Essigsäure entnommen und quantitativ in einen \SI[mode=text]{500}{\milli\liter} Messkolben\footnote{der auf dieses Volumen geeicht ist} transferiert werden.
-     
+    
+    \pagebreak
+    
     \subsection{Hydrolyse von Natriumacetat} \label{sec:HydrolyseNatrium}
      
        Natriumacetat ist die konjugierte Base von Essigsäure und reagiert mit \ch{H2O} wie in \ref{rec:NaAcProtolyse} beschrieben. Die Messung des \pH-Wertes erfolgte wie in \ref{sec:Versuch} beschrieben.
@@ -296,6 +313,8 @@ citestyle=numeric
          Der gemessene \pH-Wert des deionisierten Wasser besitzt folgenden Wert: $\pH = $ \num[separate-uncertainty]{2.90 \pm 1 e-5} ($s = ,\alpha = 0.95, N = 3$) nach \SI[mode=text]{20}{\second} und $\pH = $ \num[separate-uncertainty]{2.90 \pm 1 e-5} ($s = ,\alpha = 0.95, N = 3$) nach \SI[mode=text]{2}{\minute}. Deionisiertes Wasser besitzt keine gelösten Salz-Ionen. Die einzigen Ionen, die einen Stromfluss ermöglichen können, sind die durch Autoprotolyse entstehenden Hydronium- und Oxonium-Ionen, wobei deren Konzentration relativ gering ist (jeweils \SI[mode=text]{d-7}{M}). Deionisiertes Wasser ist demnach praktisch ein Nichtleiter, was die \pH-Messung mit einer \pH-Messkette, bei der Strom fießt, erschwert. \\
          
          Um \SI[mode=text]{250}{\milli\liter} einer \SI[mode=text]{0.1}{M} \ch{NaCH3COO}\footnote{$M_{\ch{NaCH3COO}} = \SI[mode=text]{136.08}{\gram\per\mole}$} Lösung herzustellen, werden \SI[mode=text]{3.4}{\gram} benötigt. Dazu wird die entsprechende Menge auf einem Wägepapier abgewogen und quantitativ in einen \SI[mode=text]{250}{\milli\liter} Maßkolben transferiert. Dieser wird unter homogenisieren bis zur Marke aufgefüllt. 
+    
+    \pagebreak
     
     \subsection{Säure/Base Puffer} \label{sec:SauerBase}
     
@@ -379,7 +398,9 @@ citestyle=numeric
          \end{table}
          
          Wie zu erwarten konnte beobachtet werden, dass sich der \pH-Wert vom \ch{CH3COOH}/\ch{CH3COO\mch} Puffer nach Zugabe von \ch{HCl} bzw. \ch{NaOH} nicht dramatisch ändert. Wird anstelle des Puffers \ch{H2O} verwendet und die gleiche Menge an \ch{HCl} bzw. \ch{NaOH} hinzugegeben, konnte eine dramatische \pH-Änderung beobachtet werden. \ch{H2O} ist damit erwartungsgemäß kein Puffer.
-        
+      
+      \pagebreak
+      
       \subsubsection{Weitere \pH-Wert Berechnungen} \label{sec:weitereBerechnungen}
       
         Werden zu \SI[mode=text]{50}{\milli\liter} deionisiertem Wasser \SI[mode=text]{1}{\milli\liter} einer \SI[mode=text]{0.1}{M} \ch{HCl} hinzugegeben, errechnet sich der \pH-Wert wie in \eqref{eq:pHWasser} angegeben.

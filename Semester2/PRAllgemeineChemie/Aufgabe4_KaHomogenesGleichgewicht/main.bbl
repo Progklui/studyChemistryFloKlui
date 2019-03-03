@@ -19,6 +19,25 @@
 
 \refsection{0}
   \sortlist[entry]{none/global}
+    \entry{Versuchsvorschrift}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=6caaa2383085eff8e2ff7c055cc0aadd}{%
+           prefix={et},
+           prefix_i={e\bibinitperiod},
+           family={al.},
+           family_i={a\bibinitperiod},
+           given={Wolfgang\bibnamedelima Viertl},
+           given_i={W\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+      }
+      \strng{namehash}{6caaa2383085eff8e2ff7c055cc0aadd}
+      \strng{fullhash}{6caaa2383085eff8e2ff7c055cc0aadd}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Versuchsvorschriften PR Allgemeine Chemie - Universität Innsbruck}
+      \field{year}{2019}
+    \endentry
     \entry{InorganicChemistry}{book}{}
       \name{author}{5}{}{%
         {{hash=768c9606afd59ac272ce600d425a08c7}{%
