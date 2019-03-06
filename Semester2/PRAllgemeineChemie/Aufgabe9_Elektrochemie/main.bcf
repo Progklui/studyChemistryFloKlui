@@ -2030,6 +2030,9 @@
     <bcf:citekey order="2">NaOHDarstellung</bcf:citekey>
     <bcf:citekey order="3">PhysicalChemistryAtkings</bcf:citekey>
     <bcf:citekey order="4">PhysicalChemistryAtkings</bcf:citekey>
+    <bcf:citekey order="5">Faraday</bcf:citekey>
+    <bcf:citekey order="6">LoslichkeitWerteCUOH</bcf:citekey>
+    <bcf:citekey order="7">KomplexFormation</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="none/global" type="entry" sortscheme="none" sortnamekeyscheme="global">
   <bcf:sorting>

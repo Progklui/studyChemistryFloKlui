@@ -142,15 +142,15 @@ citestyle=numeric
           \toprule
             Geräte & Hersteller & Chemikalie & Hersteller \\ \midrule
             2 \SI[mode=text]{100}{\milli\litre} Bechergläser &  & \SI[mode=text]{1}{M} \ch{Zn(NO3)2}-Lösung &  \\
-            \SI[mode=text,separate-uncertainty=true]{100}{\milli\litre} Rundkolben &  & \SI[mode=text]{1}{M} \ch{Cu(NO3)2}-Lösung &  \\
-            \SI[mode=text,separate-uncertainty]{10.00(5)}{\milli\litre} Vollpipette &  & \SI[mode=text]{1}{M} \ch{Pb(NO3)2}-Lösung &  \\
-            \SI[mode=text,separate-uncertainty]{10.0(1)}{\milli\litre} Bürette &  & \SI[mode=text]{1}{M} \ch{KNO3}-Lösung &  \\
+            Magnetrührer &  & \SI[mode=text]{1}{M} \ch{Cu(NO3)2}-Lösung &  \\
+            \SI[mode=text,separate-uncertainty]{25.00(5)}{\milli\litre} Vollpipette &  & \SI[mode=text]{1}{M} \ch{Pb(NO3)2}-Lösung &  \\
+            \SI[mode=text,separate-uncertainty]{25.0(1)}{\milli\litre} Bürette &  & \SI[mode=text]{1}{M} \ch{KNO3}-Lösung &  \\
             Stromschlüssel &  & konz. \ch{HCl} &  \\
             Voltmeter &  & \SI[mode=text]{0.1}{M} \ch{CuSO4}-Lösung &  \\
-            \ch{Zn}-Stab &  & \SI[mode=text]{0.1}{M} \ch{KOH}-Lösung &  \\ 
-            \ch{Pb}-Stab &  & deionisiertes Wasser &  \\ 
-            \ch{Cu}-Plättchen &  & \ch{Cu}-Stab &  \\ 
-            Schleifpapier &  & \ch{Pb}-Stab &  \\
+            Netzgerät &  & \SI[mode=text]{0.1}{M} \ch{KOH}-Lösung &  \\ 
+            Rührfische &  & deionisiertes Wasser &  \\ 
+            Schleifpapier &  & \ch{Cu}-Stab &  \\ 
+             &  & \ch{Pb}-Stab &  \\
              &  & \ch{Zn}-Stab &  \\ \bottomrule
         \end{tabular}
       \end{table}
@@ -162,19 +162,19 @@ citestyle=numeric
       Kupfer (\ElPot[superscript=0](\ch{Cu}){0.337}) ist ein edles Metall und kann von den unedleren Metallen Blei (\ElPot[superscript=0](\ch{Pb}){-0.763}) und Zink (\ElPot[superscript=0](\ch{Zn}){-0.126}) reduziert werden\footnote{die angegebenen Standardpotentiale wurden \cite[S. 881]{PhysicalChemistryAtkings} entnommen}. In diesem Experiment werden die Potentiale von drei galvanischen Zellen bestimmt: 
       
       \begin{center}
-        (I): \ch{Cu\sld}/\ch{Cu(NO3)2\aq} (\SI[mode=text]{1}{M}) // \ch{Pb(NO3)2\aq} (\SI[mode=text]{1}{M})/\ch{Pb\sld}
+        (I): \ch{Pb\sld}/\ch{Pb(NO3)2\aq} (\SI[mode=text]{1.0}{M}) // \ch{Cu(NO3)2\aq} (\SI[mode=text]{1.0}{M})/\ch{Cu\sld}
           
-        (II): \ch{Pb\sld}/\ch{Pb(NO3)2\aq} (\SI[mode=text]{1}{M}) // \ch{Zn(NO3)2\aq} (\SI[mode=text]{1}{M})/\ch{Zn\sld}
+        (II): \ch{Zn\sld}/\ch{Zn(NO3)2\aq} (\SI[mode=text]{1.0}{M}) // \ch{Pb(NO3)2\aq} (\SI[mode=text]{1.0}{M})/\ch{Pb\sld}
           
-        (III): \ch{Cu\sld}/\ch{Cu(NO3)2\aq} (\SI[mode=text]{1}{M}) // \ch{Zn(NO3)2\aq} (\SI[mode=text]{1}{M})/\ch{Zn\sld}
+        (III): \ch{Zn\sld}/\ch{Zn(NO3)2\aq} (\SI[mode=text]{1.0}{M}) // \ch{Cu(NO3)2\aq} (\SI[mode=text]{1.0}{M})/\ch{Cu\sld}
       \end{center}
         
       Die zugehörigen Redoxgleichungen können wie folgt angegeben werden:
       
       \begin{reactions}
-        Cu\sld{} + Pb\pch[2]\aq{} &-> Cu\pch[2]\aq{} + Pb\sld \\
-        Pb\sld{} + Zn\pch[2]\aq{} &-> Pb\pch[2]\aq{} + Zn\sld \\
-        Cu\sld{} + Pb\pch[2]\aq{} &-> Zn\pch[2]\aq{} + Zn\sld
+        Pb\sld{} + Cu\pch[2]\aq{} &-> Pb\pch[2]\aq{} + Cu\sld \\
+        Zn\sld{} + Pb\pch[2]\aq{} &-> Zn\pch[2]\aq{} + Pb\sld \\
+        Zn\sld{} + Cu\pch[2]\aq{} &-> Zn\pch[2]\aq{} + Cu\sld
       \end{reactions}
       
       Da alle Reaktanden in Standardkonzentration vorliegen ($c_{i} = \SI[mode=text]{1}{M}$), können die gemessen Potentiale mit den theoretischen Standardpotentialen, die aus Literaturwerten errechnet wurden, verglichen werden. Die theoretischen Standardpotentiale der Reaktionen können dabei wie in \eqref{eq:LiteraturStandard} angeführt berechnet werden. 
@@ -211,30 +211,112 @@ citestyle=numeric
           \label{tab:MessdatenPotentialdifferenzenZellen}
             \begin{tabular}{@{}l|l|l@{}}
               \toprule
-               \ElPot*[superscript=0]($\ch{Cu}/\ch{Cu\pch[2]}//\ch{Pb\pch[2]}/\ch{Pb}$){} in V & \ElPot*[superscript=0]($\ch{Pb}/\ch{Pb\pch[2]}//\ch{Zn\pch[2]}/\ch{Zn}$){} in V & \ElPot*[superscript=0]($\ch{Cu}/\ch{Cu\pch[2]}//\ch{Zn\pch[2]}/\ch{Zn}$){} in V \\ \midrule
-                &  &   \\
-                &  &   \\
-                &  &   \\ \bottomrule
+               \ElPot*[superscript=0]($\ch{Pb}/\ch{Pb\pch[2]}//\ch{Cu\pch[2]}/\ch{Cu}$){} in V & \ElPot*[superscript=0]($\ch{Zn}/\ch{Zn\pch[2]}//\ch{Pb\pch[2]}/\ch{Pb}$){} in V & \ElPot*[superscript=0]($\ch{Zn}/\ch{Zn\pch[2]}//\ch{Cu\pch[2]}/\ch{Cu}$){} in V \\ \midrule
+               0.511 & 0.414 & 0.973  \\
+               0.514 & 0.393 & 0.946  \\
+               0.512 & 0.401 & 1.031  \\ \bottomrule
             \end{tabular}
          \end{table}      
       
-      \subsubsection{Ergebnisse und Diskussion}
+      \subsubsection{Ergebnisse und Diskussion} \label{sec:ErgebnissePotentialeEins}
       
-      In Tabelle \ref{tab:MessdatenPotentialdifferenzenZellenlit} werden die aus \ref{tab:MessdatenPotentialdifferenzenZellen} errechneten, gemessen Standardpotentiale aufgelistet und mit zugehörigen Literaturwerten verglichen. Die angegebenen thermodynamischen Gleichgewichtskonstante wurden aus dem Literaturwert nach \eqref{eq:Gleichgewichtskonstante} berechnet und zeigen, dass das Gleichgewicht aller drei Reaktionen stark auf Seite der Produkte liegt. Die Unterschiede der gemessenen von den Literaturwerten kann durch Verunreinigungen erklärt werden.
+      In Tabelle \ref{tab:MessdatenPotentialdifferenzenZellenlit} werden die aus \ref{tab:MessdatenPotentialdifferenzenZellen} errechneten, gemessen Standardpotentiale aufgelistet und mit zugehörigen Literaturwerten verglichen. Die angegebenen thermodynamischen Gleichgewichtskonstanten wurden aus den Literaturwerten und gemessenen Potentialen nach \eqref{eq:Gleichgewichtskonstante} berechnet und zeigen, dass das Gleichgewicht aller drei Reaktionen stark auf Seite der Produkte liegt.
       
       \begin{table}[H]
         \centering
-        \caption[Messdaten und Vergleiche mit der Literatur, Quelle: Autor]{Messdaten und Literaturwerte}
+        \caption[Messdaten und Vergleiche mit der Literatur, Quelle: Autor]{Messdaten und Literaturwerte - $T_{Exp.}=\SI[mode=text]{22}{\degreeCelsius}$}
         \label{tab:MessdatenPotentialdifferenzenZellenlit}
-          \begin{tabular}{@{}l|l|ll@{}}
+          \begin{tabular}{@{}l|l|lll@{}}
             \toprule
-             Zelle & \ElPot*[superscript=0](exp.){} in V & \ElPot*[superscript=0](Lit.){} in V & $K_{Lit.}$ \\ \midrule
-             $\ch{Cu}/\ch{Cu\pch[2]}//\ch{Pb\pch[2]}/\ch{Pb}$ & \num[separate-uncertainty]{0.5 \pm 0.01} $(s= ;N=3;\alpha=0.95)$ & 0.463 &  \\
-             $\ch{Pb}/\ch{Pb\pch[2]}//\ch{Zn\pch[2]}/\ch{Zn}$ & \num[separate-uncertainty]{0.5 \pm 0.01} $(s= ;N=3;\alpha=0.95)$ & 0.637 &  \\
-             $\ch{Cu}/\ch{Cu\pch[2]}//\ch{Zn\pch[2]}/\ch{Zn}$ & \num[separate-uncertainty]{0.5 \pm 0.01} $(s= ;N=3;\alpha=0.95)$ & 1.10 &  \\ \bottomrule
+             Zelle & \ElPot*[superscript=0](exp.){} in V - $\alpha=0.05,N=3$ & \ElPot*[superscript=0](Lit.){} in V & $K_{Lit.}$ & $K_{Exp.}$ \\ \midrule
+             $\ch{Pb}/\ch{Pb\pch[2]}//\ch{Cu\pch[2]}/\ch{Cu}$ & \num[separate-uncertainty]{0.512 \pm 0.003} $(s=\num{\pm 0.0015})$ & 0.463 & \num{4.58e15} & \num{3.13e17}\\
+             $\ch{Zn}/\ch{Zn\pch[2]}//\ch{Pb\pch[2]}/\ch{Pb}$ & \num[separate-uncertainty]{0.403 \pm 0.020} $(s=\num{\pm 0.011})$ & 0.637 & \num{3.52e21} & \num{5.89e13}\\
+             $\ch{Zn}/\ch{Zn\pch[2]}//\ch{Cu\pch[2]}/\ch{Cu}$ & \num[separate-uncertainty]{0.983 \pm 0.080} $(s=\num{\pm 0.043})$ & 1.10 & \num{1.62e37} & \num{3.88e33}\\ \bottomrule
          \end{tabular}
       \end{table} 
+      
+      Wie aus der Tabelle ersichtlich, unterscheiden sich die gemessenen Werte der Potentiale doch recht stark von den Literaturwerten.  Gründe für diese Abweichungen sollen im Folgenden diskutiert werden. Die Messung der Blei-Kupfer Zelle war jene mit der höchsten Präzision\footnote{kleinste Standardabweichung} und geringsten Abweichung vom Literaturwert. Die Messungen der Zink-Blei Zelle und der Zink-Kupfer Zelle lieferten beide niedrigere Werte. \\ 
+      
+      Eine Erklärung für diese Beobachtungen könnten unterschiedliche Konzentrationen der vorgelegten Salzlösungen sein. Sind diese nämlich nicht \SI[mode=text]{1.0}{M}, so können die unterschiedlichen Werte mit der Nernstgleichung - \eqref{eq:Nernst} - erklärt werden. Der höhere Potentialwert für die Blei-Kupfer Zelle kann durch eine niedrigere Bleikonzentration erklärt werden bei entweder größerer Kupferkonzentration oder Kupferkonzentration von \SI[mode=text]{1.0}{M}. Die niedrigere Bleikonzentration würde bei entweder größerer Zinkkonzentration oder Zinkkonzentration von \SI[mode=text]{1.0}{M} auch den niedrigeren Wert der Zink-Blei Zelle erklären. Eine größere Zinkkonzentration widerum würde den geringeren Potentialwert der Zink-Kupfer Zelle erklären. Die Kupferkonzentration müsste damit entweder \SI[mode=text]{1.0}{M}, kleiner oder größer, aber nicht größer wie jene von Zink sein. 
+      
+      In diesem Sinne könnte eine niedrigere Blei-, größere Zinkkonzentration und größere Kupferkonzentration\footnote{nach unten durch 1 und nach oben durch die Zinkkonzentration beschränkt} die Abweichungen erklären. Ein Grund für das Zustandekommen der abweichenden Konzentrationen könnte sein, dass durch die nach Gebrauch wieder zurückgeleerten Lösungen der Studenten Verunreinigungen, zusätzliches Wasser, ... eingebracht werden. Grundsätzlich kann aber, denke ich, schon davon ausgegangen werden, dass die Konzentrationen stimmen. \\
+      
+      Beim Säubern der Elektroden wurde beobachtet, dass die Bleielektroden sich am schlechtesten reinigen ließen. Von einer unreineren Elektrode können die Elektronen auf das zu reduzierende Blei-(II)-Ion nicht so gut übertragen werden. Dies könnte die kleinere Gleichgewichtskonstante und damit das geringere Potential erklären. Die Blei-Halbzelle hätte damit ein effektiv negativeres Potential, was auch das größere Potential der Blei-Kupfer Zelle erklären könnte. 
+      
+      Ansonsten können diverse kinetische Hemmungen an den Oberflächen der Elektroden als Erklärung für die Abweichungen herangezogen werden. In dieser Hinsicht hat vielleicht auch die unterschiedliche (große) Oberfläche der Elektroden einen Einfluss. \\
+      
+      Des weiteren ist zu berücksichtigen, dass die Literaturwerte für \SI[mode=text]{25}{\degreeCelsius} angegeben werden, die Messungen jedoch bei etwa \SI[mode=text]{22}{\degreeCelsius} durchgeführt wurden\footnote{die Temperatur wurde bei den Messungen nicht explizit gemessen, kann jedoch durch den Erfahrungswert des vorherigen Praktikumstag abgeschätzt werden}. \\
+      
+      Um die Messergebnisse zu verbessern, wird an dieser Stelle folgendes vorgeschlagen: 
+      
+      \begin{itemize}
+        \item saubere Messapparatur mit Halterungen für die Elektroden aufzubauen
+        \item Verwendung von Elektroden mit gleicher Oberfläche
+        \item vor Messung eine titrimetrische Überprüfung der Konzentrationen der Salzlösungen durchzuführen
+        \item Messungen bei \SI[mode=text]{25}{\degreeCelsius} durchzuführen
+      \end{itemize}
     
+    \pagebreak
+    
+    \subsection{Elektrolyse - Bestimmung der Faraday Konstante}
+    
+      Bisher wurden elektrochemische Systeme betrachtet, die freiwillig ablaufen. Die oben beschriebenen galvanischen Zellen eignen sich somit unter anderem, um Batterien zu bauen, da sie unter Abgabe von Energie reagieren. Bei der Elektrolyse findet genau der umgekehrte Prozess statt. Es wird nun Energie, also Strom benötigt, um eine elektrochemische Reaktion aufrecht zu erhalten. 
+      
+      Die in einem bestimmten Zeitintervall übertragene Ladungsmenge $Q$ kann wie in \eqref{eq:Q} dargestellt aus dem zeitlichen Integral des Stromes berechnet werden, da dieser als Änderung der Ladung in einer besimmten Zeit definiert ist ($I=\frac{dQ}{dt}$). Zusätzlich ist die Ladungsmenge proportional zur Anzahl der übertragenen Elektronen $z * n$ ($n$ ist die Stoffmenge in mol). Der Proportionalitätsfaktor wird mit $F$ bezeichnet.
+      
+      \begin{equation}
+        Q = I \int_{0}^{t} dt = I * t = z * F * n = z * F * \frac{m}{M} \label{eq:Q}
+      \end{equation}
+      
+      Durch Umstellen kann die sogenannte Faraday-Konstante $F$ berechnet werden:
+      
+      \begin{equation}
+        F = \frac{I * t * M}{z * m} \label{eq:Faraday}
+      \end{equation}
+      
+      Wird nun über eine bestimmte Zeit ein bekannter Strom angelegt, kann durch Messung der Massendifferenz die Faraday-Konstante bestimmt werden.
+      
+      \subsubsection{Versuchsdurchführung}
+      
+        Zu Beginn wurde der Strom am Messgerät auf ca. \SI[mode=text]{0.5}{\ampere} eingestellt. Dazu wurde ein Kurzschluss herbeigeführt, um auf Strombegrenzung zu schalten. Im Anschluss wurde der Strom eingestellt. 
+        
+        Der Versuch wurde wie in Abbildung gezeigt aufgebaut. Das Strommessgerät wurde dazu seriell in den Stromkreis eingebaut, um die Messung bzw. Regulierung des exakten Stromes zu ermöglichen. Die beiden Kupferelektroden wurden mit Krokodilklemmen wie beschrieben angeschlossen. Als Elektrolytlösung wurden ca. \SI[mode=text]{50}{\milli\liter} einer \SI[mode=text]{1}{M} \ch{CuSO4}-Lösung verwendet. Die Elektroden wurden mit Schleifpapier gesäubert und in \SI[mode=text]{4}{M} \ch{HCl} gewaschen. Eine der Kupferelektroden wurde durch Biegung markiert und für ca. \SI[mode=text]{2}{\minute} im Trockenschrank bei ca. \SI[mode=text]{120}{\degreeCelsius} getrocknet. Nach dem Abkühlen wurden sie abgewogen und in das Becherglas gestellt. Es wurde darauf geachtet, dass sich die beiden Elektroden während der Elektrolyse nicht gegenseitig berühren\footnote{dazu diente eine kleine Styroporplatte}. Nachdem der Versuch vollständig wie beschrieben aufgebaut war, wurde der Strom eingeschalten und die Zeitmessung gestartet. Nach ca. \SI[mode=text]{10}{\minute} wurde die Elektrolyse abgebrochen, die Kupferelektroden entnommen, mit deionisiertem Wasser gespült und für ca. \SI[mode=text]{2}{\minute} im Trockenschrank bei ca. \SI[mode=text]{120}{\degreeCelsius} getrocknet. Nach dem Abkühlen wurde wieder abgewogen. 
+        
+      \subsubsection{Messergebnisse} \label{sec:MessergebnisseFaraday}
+      
+        \begin{table}[H]
+          \centering
+          \caption[Messdaten der Bestimmung der Faraday Konstante, Quelle: Autor]{Messdaten}
+          \label{tab:MessdatenFaraday}
+            \begin{tabular}{@{}l|ll@{}}
+              \toprule
+                & Anode & Kathode \\ \midrule
+               $m_{vorher}$ in g & 5.987 & 6.689 \\
+               $m_{vorher}$ in g & 5.906 & 6.787 \\
+               $\Delta m$ in g & -0.081 & 0.098 \\ \bottomrule
+            \end{tabular}
+        \end{table}
+        
+        Das Netzgerät wurde anfangs auf \SI[mode=text]{0.496}{\ampere} und \SI[mode=text]{3}{\volt} eingestellt - näheres siehe \ref{sec:ErgebnisseFaraday}. Gemessen wurde für \SI[mode=text]{10.1}{\minute}. $M_{\ch{Cu}}=\SI[mode=text]{63.54}{gram\per\mole}$
+        
+      \subsubsection{Ergebnisse und Diskussion} \label{sec:ErgebnisseFaraday}
+      
+        Werden die in \ref{sec:MessergebnisseFaraday} angegebenen Werte in \eqref{eq:Faraday} eingesetzt, ergeben sich folgende Werte für die Faraday-Konstante: $F_{Anode} = \SI[mode=text]{1.185d5}{\coulomb\per\mole}$, $F_{Kathode} = \SI[mode=text]{9.792d4}{\coulomb\per\mole}$, $F_{Mittelwert} = \SI[mode=text]{1.082d5}{\coulomb\per\mole}$. Ein Vergleich mit dem Literaturwert ($F = \SI[mode=text]{96485.309}{\coulomb\per\mole}$ \cite{Faraday}) zeigt, dass die aus der Massenzunahme ermittelte Faradaykonstante dem Literaturwert am nächsten kommt. Die zu hohe Konstante, die sich aus der geringeren Massenabnahme der Anode errechnet und der daraus resultierende hohe Mittelwert der beiden Messwerte bedarfen einer Erklärung. \\
+        
+        Angenommen, die komplette Versuchsdurchführung war von keinen Fehlern begleitet. Eine Erklärung für die geringere Massenabnahme der Anode könnte sein, dass als Parallelreaktion zur Oxidation von Kupfer die Oxidation von Wasser zu Sauerstoff ablief. Eine charakteristische Bläschenbildung konnte jedoch nicht beobachtet werden, weswegen diese Erklärung wegfällt. 
+        
+        Während der Elektrolyse wurde zweimal ein Stromabfall bemerkt - einmal auf ca. \SI[mode=text]{0.44}{\ampere} und ein zweites Mal auf ca. \SI[mode=text]{0.35}{\ampere}. Nach dem Stromabfall wurde wieder auf ca. \SI[mode=text]{0.5}{\ampere} eingestellt. Der für einige Zeit geringere Stromfluss bedeutet, dass in dieser Zeit der Reaktionsumsatz geringer war. Dies würde die größere Faraday-Konstante erklären. Allerdings erklärt der Stromabfall nicht, warum die Massenzunahme der Kathode deutlich größer ist wie der Betrag der Massenabnahme der Anode. Dass die aus der Massenzunahme der Kathode berechnete Faraday-Konstante mit dem Literaturwert recht gut übereinstimmt, zeigt, dass der beobachtete Stromabfall nicht allzu große Auswirkungen auf das Ergebnis hatte. Er erklärt den leicht zu großen Wert von $F_{Kathode}$.
+        
+        Am Wahrscheinlichsten ist, dass beim Entnehmen der Anode, Trocknen oder Abwiegen Teile der Elektrode sich ablösten. Bereits im Vorhinein wurde bemerkt, dass die Elektrode an einer Stelle etwas spröde war. An dieser könnte sich etwas abgelöst haben, was die geringere Massenabnahme wie -zunahme erklären würde.\\
+        
+        Um die Messergebnisse zu verbessern, wird an dieser Stelle folgendes vorgeschlagen: 
+      
+      \begin{itemize}
+        \item die beiden Elektroden besser befestigen - stabile Halterung
+        \item spröde bzw. brüchig erscheinende Elektroden sofort ersetzen
+        \item die Stabilität des Netzgerätes im Vorfeld für ein paar Minuten testen
+      \end{itemize}
+        
     \pagebreak
     
     \subsection{Bestimmung des Löslichkeitsproduktes von \ch{Cu(OH)2\sld}}
@@ -288,9 +370,9 @@ citestyle=numeric
             \begin{tabular}{@{}l|l@{}}
               \toprule
                \ElPot*[superscript=0]($\ch{Cu}/\ch{Cu(OH)2}//\ch{Cu\pch[2]}/\ch{Cu}$){} in V für \SI[mode=text]{0.1}{M} \ch{KOH} & \ElPot*[superscript=0]($\ch{Cu}/\ch{Cu(OH)2}//\ch{Cu\pch[2]}/\ch{Cu}$){} in V für \SI[mode=text]{1}{M} \ch{KOH} \\ \midrule
-                &  \\
-                &  \\
-                &  \\ \bottomrule
+               0.396 & 0.498 \\
+               0.401 & 0.512 \\
+               0.410 & 0.525 \\ \bottomrule
             \end{tabular}
         \end{table}
          
@@ -298,16 +380,29 @@ citestyle=numeric
       
         \begin{table}[H]
           \centering
-          \caption[Messergebnisse der Bestimmung des Löslichkeitsproduktes, Quelle: Autor]{Messergebnisse und daraus errechnete Größen}
+          \caption[Messergebnisse der Bestimmung des Löslichkeitsproduktes, Quelle: Autor]{Messergebnisse und daraus errechnete Größen - $T=\SI[mode=text]{22}{\degreeCelsius}$}
           \label{tab:MessdatenPotentialLoslichkeitErgebnisse}
             \begin{tabular}{@{}l|lll@{}}
               \toprule
                 & \ElPot*[superscript=0]($\ch{Cu}/\ch{Cu(OH)2}//\ch{Cu\pch[2]}/\ch{Cu}$){} in V  & $[\ch{Cu\pch[2]\aq}]_{eq.}$ in M & $K_{L}$ \\ \midrule
-               \SI[mode=text]{0.1}{M} \ch{KOH} & \num[separate-uncertainty]{0.5 \pm 0.01} $(s= ;N=3;\alpha=0.95)$ & 0.463 & \\
-               \SI[mode=text]{1}{M} \ch{KOH} & \num[separate-uncertainty]{0.5 \pm 0.01} $(s= ;N=3;\alpha=0.95)$ & 0.463 &   \\ \bottomrule
+               \SI[mode=text]{0.1}{M} \ch{KOH} & \num[separate-uncertainty]{0.402 \pm 0.013} $(s=\num{\pm 0.0071},\alpha=0.05,N=3)$ & \num{1.84e-15} & \num{1.84e-17} \\
+               \SI[mode=text]{1}{M} \ch{KOH} & \num[separate-uncertainty]{0.512 \pm 0.026} $(s=\num{\pm 0.014},\alpha=0.05,N=3)$ & \num{3.20e-19} & \num{3.20e-19}  \\ \bottomrule
             \end{tabular}
         \end{table}
         
+        Im Vergleich zum Literaturwert des Löslichkeitsproduktes (\num{4.8e-20} bei \SI[mode=text]{25}{\degreeCelsius} \cite{LoslichkeitWerteCUOH}) ist der gemessene Wert bei Verwendung der \SI[mode=text]{0.1}{M} \ch{KOH} um 3 Größenordnungen zu hoch. Der gemessene Wert bei Verwendung der \SI[mode=text]{1}{M} \ch{KOH} war nur mehr um 1 Größenordnung zu groß. Die Präzision beider Messungen liegt in einem annehmbaren Rahmen und ist vergleichbar mit den in \ref{sec:ErgebnissePotentialeEins} notierten. 
+        
+        Die größere \ch{OH\mch\aq} Konzentration hat zur Folge, dass gemäß der Formel für das Löslichkeitsprodukt die \ch{Cu\pch[2]\aq} Konzentration kleiner wird. Eine kleinere \ch{Cu\pch[2]\aq} Konzentration bewirkt nun, wie man mit der Nernstgleichung sieht, ein größeres Potential. Messtechnisch gesehen müsste eine größere Spannung besser zu messen sein. Das Problem bei dieser Erklärung ist jedoch, dass die Präzision bei höherer Spannung abnahm. \\
+        
+        Eine weitere Fehlerquelle könnte ein fehlerhaftes Ablese der Werte sein. Da die Elektroden sehr schnell polarisiert werden, änderte sich die gemessene Spannung sehr schnell. Es wurde zwar versucht, den ersten einigermaßen stabilen Messwert (nach ca. \SI[mode=text]{3}{\second} zu notieren, was aber aufgrund der Schwankungen recht schwierig war.
+        
+        Um die Messergebnisse zu verbessern, wird an dieser Stelle folgendes vorgeschlagen: 
+      
+        \begin{itemize}
+          \item größere \ch{KOH}-Konzentrationen zu verwenden
+          \item eine stabile Messapparatur mit Halterungen aufzubauen
+        \end{itemize}
+     
       \pagebreak
         
       \subsection{Bestimmung der Komplexbildungskonstante von \ch{[Cu(NH3)4]\pch[2]}}
@@ -351,14 +446,14 @@ citestyle=numeric
         
         \begin{table}[H]
           \centering
-          \caption[Messdaten der Bestimmung der Komplexbildungskonstante, Quelle: Autor]{Messdaten}
+          \caption[Messdaten der Bestimmung der Komplexbildungskonstante, Quelle: Autor]{Messdaten - $T=\SI[mode=text]{22}{\degreeCelsius}$}
           \label{tab:MessdatenPotentialKomplexbildungskonstante}
             \begin{tabular}{@{}l|l@{}}
               \toprule
                \ElPot*[superscript=](){} in V & [\ch{Cu\pch[2]\aq}] in M \\ \midrule
-                &  \\
-                &  \\
-                &  \\ \bottomrule
+               0.473 & \num{6.88e-18} \\
+               0.492 & \num{1.54e-18} \\
+               0.486 & \num{2.47e-18} \\ \bottomrule
             \end{tabular}
         \end{table}
         
@@ -367,12 +462,25 @@ citestyle=numeric
         Die Konzentration von \ch{[Cu(NH3)4]\pch[2]\aq} wird wie folgt berechnet:
         
         \begin{equation}
-          [\ch{[Cu(NH3)4]\pch[2]\aq}] = \frac{0.025 * 0.1}{0.05025} = \SI[mode=text]{5d-4}{M}
+          [\ch{[Cu(NH3)4]\pch[2]\aq}] = \frac{0.00025 * 0.1}{0.05025} = \SI[mode=text]{5d-4}{M}
         \end{equation}
         
-        Die weiteren, aus \ref{tab:MessdatenPotentialKomplexbildungskonstante} erhaltenen Werte lauten: $\ElPot*[superscript=](){} = \SI[mode=text, separate-uncertainty]{0.52 \pm 0.003}{V} (s=;N=3;\alpha=0.95)$, $[\ch{Cu\pch[2]\aq}] = \SI[mode=text, separate-uncertainty]{0.52 \pm 1.8d-19}{M} (s=;N=3;\alpha=0.95)$. \\
+        Die weiteren, aus \ref{tab:MessdatenPotentialKomplexbildungskonstante} erhaltenen Werte lauten: $\ElPot*[superscript=](){} = \SI[mode=text, separate-uncertainty]{0.484 \pm 0.018}{V}$ ($s=\num{\pm 0.0097},\alpha=0.05,N=3)$, $[\ch{Cu\pch[2]\aq}] = \SI[mode=text, separate-uncertainty]{3.63 \pm 5.33 d-18}{M}$ ($s=\num{\pm 2.9d-18},\alpha=0.05,N=3)$. \\
         
-        Mit $[\ch{NH3\aq}] = \SI[mode=text]{1}{M}$ errechnet sich daraus die gesuchte Komplexbildungskonstante durch einsetzen in \eqref{eq:Komplexbildungskonstanten}: $\beta = \SI[mode=text, separate-uncertainty]{1.4 \pm 0.003d14}{V} (s=;N=3;\alpha=0.95)$.
+        Mit $[\ch{NH3\aq}] = \SI[mode=text]{1}{M}$ errechnet sich daraus die gesuchte Komplexbildungskonstante durch einsetzen in \eqref{eq:Komplexbildungskonstanten}: $\beta = \SI[mode=text, separate-uncertainty]{2.0 \pm 2.3 d14}{}$ ($s=\num{\pm 1.3d14},\alpha=0.05,N=3)$. \\
+        
+        Im Vergleich zum Literaturwert für die Komplexbildungskonstante (\num{1.1d13} bei \SI[mode=text]{25}{\degreeCelsius} \cite{KomplexFormation}) ist der gemessene Wert um eine Größenordnung zu groß. 
+        
+        Nach Zugabe der \SI[mode=text]{0.25}{\milli\liter} \SI[mode=text]{0.10}{M} \ch{CuSO4} zur \ch{NH3}-Lösung wurde bemerkt, dass in der Bürette eine Luftblase war. Es wird vermutet, dass (aufgrund der Luftblase) zuviel \ch{CuSO4} hinzugegeben wurde. Damit wäre die Konzentration des Komplexes größer und damit auch die Komplexbildungskonstante. Zu beachten ist, dass die Präzision der Messung nicht sehr groß ist. Dies liegt aber vermutlich an der verwendeten Methode, da die Präzision des gemessenen Potentials vergleichbar mit den zuvor gemessenen ist. Um die Komplexbildungskonstante mit höherer Präzision angeben zu können, wird demnach auch eine höhere Präzision der Potentiale benötigt. Eine Verbesserung der Messapparatur wäre also sinnvoll. \\
+        
+        Um die Messergebnisse zu verbessern, wird an dieser Stelle folgendes vorgeschlagen: 
+      
+        \begin{itemize}
+          \item auf Luftblasen in der Bürette vor dem Ablassen schauen
+          \item Stromschlüssel nach längerer Benützung wechseln
+          \item Aufbau einer stabilen Messapparatur mit Halterungen
+          \item mehr Messungen mit Temperaturkontrolle
+        \end{itemize}
         
   \pagebreak
   

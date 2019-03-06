@@ -49,6 +49,8 @@
       \field{sortinit}{0}
       \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Chloralkali-Elektrolyse}
       \field{year}{2019}
       \verb{url}
       \verb http://www.chemie.de/lexikon/Chloralkali-Elektrolyse.html#2._Amalgamverfahren.html
@@ -79,6 +81,62 @@
       \field{edition}{11th}
       \field{title}{Physical Chemistry}
       \field{year}{2018}
+    \endentry
+    \entry{Faraday}{online}{}
+      \name{author}{1}{}{%
+        {{hash=d6937e124ed14d0c542b86739dd53cd9}{%
+           family={spektrum.de},
+           family_i={s\bibinitperiod}}}%
+      }
+      \strng{namehash}{d6937e124ed14d0c542b86739dd53cd9}
+      \strng{fullhash}{d6937e124ed14d0c542b86739dd53cd9}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Faraday-Konstante}
+      \field{year}{2019}
+      \verb{url}
+      \verb https://www.spektrum.de/lexikon/physik/faraday-konstante/4735
+      \endverb
+    \endentry
+    \entry{LoslichkeitWerteCUOH}{online}{}
+      \name{author}{1}{}{%
+        {{hash=a313d88e63136de5146df8baa8849823}{%
+           family={Lohninger},
+           family_i={L\bibinitperiod},
+           given={Hans},
+           given_i={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{a313d88e63136de5146df8baa8849823}
+      \strng{fullhash}{a313d88e63136de5146df8baa8849823}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Tabelle von Löslichkeitsprodukten - Teil 2}
+      \field{year}{2019}
+      \verb{url}
+      \verb http://anorganik.chemie.vias.org/loeslichkeitsprodukt_tabelle_teil2.html
+      \endverb
+    \endentry
+    \entry{KomplexFormation}{online}{}
+      \name{author}{1}{}{%
+        {{hash=a7f6b7da770ff1b12cd5d6885fba5d3f}{%
+           family={chem.libretexts.org},
+           family_i={c\bibinitperiod}}}%
+      }
+      \strng{namehash}{a7f6b7da770ff1b12cd5d6885fba5d3f}
+      \strng{fullhash}{a7f6b7da770ff1b12cd5d6885fba5d3f}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Complex Ion Formation Constants}
+      \field{year}{2019}
+      \verb{url}
+      \verb https://chem.libretexts.org/Ancillary_Materials/Reference/Reference_Tables/Equilibrium_Constants/E4%3A_Complex_Ion_Formation_Constants
+      \endverb
     \endentry
   \endsortlist
 \endrefsection

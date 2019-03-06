@@ -3,7 +3,7 @@
 
 
 @Manual{Versuchsvorschrift,
-  Title                    = {Versuchsvorschriften PR Allgemeine Chemie Universität Innsbruck},
+  Title                    = {Versuchsvorschriften PR Allgemeine Chemie - Universität Innsbruck},
   Author                   = {Wolfgang Viertl et al.},
   Year                     = {2019},
 
@@ -11,13 +11,34 @@
   Timestamp                = {2019.03.03}
 }
 
+@Electronic{KomplexFormation,
+  Title                    = {Complex Ion Formation Constants},
+  Author                   = {chem.libretexts.org},
+  Url                      = {https://chem.libretexts.org/Ancillary_Materials/Reference/Reference_Tables/Equilibrium_Constants/E4%3A_Complex_Ion_Formation_Constants},
+  Year                     = {2019},
+
+  Owner                    = {Florian Kluibenschedl},
+  Timestamp                = {2019.03.05}
+}
+
 @Electronic{NaOHDarstellung,
+  Title                    = {Chloralkali-Elektrolyse},
   Author                   = {chemie.de},
   Url                      = {http://www.chemie.de/lexikon/Chloralkali-Elektrolyse.html#2._Amalgamverfahren.html},
   Year                     = {2019},
 
   Owner                    = {Florian Kluibenschedl},
   Timestamp                = {2019.03.03}
+}
+
+@Electronic{LoslichkeitWerteCUOH,
+  Title                    = {Tabelle von Löslichkeitsprodukten - Teil 2},
+  Author                   = {Hans Lohninger},
+  Url                      = {http://anorganik.chemie.vias.org/loeslichkeitsprodukt_tabelle_teil2.html},
+  Year                     = {2019},
+
+  Owner                    = {Florian Kluibenschedl},
+  Timestamp                = {2019.03.05}
 }
 
 @Book{PhysicalChemistryAtkings,
@@ -31,5 +52,15 @@
 
   Owner                    = {Florian Kluibenschedl},
   Timestamp                = {2019.02.26}
+}
+
+@Electronic{Faraday,
+  Title                    = {Faraday-Konstante},
+  Author                   = {spektrum.de},
+  Url                      = {https://www.spektrum.de/lexikon/physik/faraday-konstante/4735},
+  Year                     = {2019},
+
+  Owner                    = {Florian Kluibenschedl},
+  Timestamp                = {2019.03.06}
 }
 
