@@ -102,6 +102,42 @@
       \verb https://www.schweizer-fn.de/stoff/wleit_gase/wleit_gase.php
       \endverb
     \endentry
+    \entry{Dampfdruck}{online}{}
+      \name{author}{1}{}{%
+        {{hash=f98bf866b925fdb5dbd50db7ee24110b}{%
+           family={internetchemie.info},
+           family_i={i\bibinitperiod}}}%
+      }
+      \strng{namehash}{f98bf866b925fdb5dbd50db7ee24110b}
+      \strng{fullhash}{f98bf866b925fdb5dbd50db7ee24110b}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Wasser Dampfdruck-Tabelle}
+      \field{year}{2019}
+      \verb{url}
+      \verb https://www.internetchemie.info/chemie-lexikon/daten/w/wasser-dampfdruck.php
+      \endverb
+    \endentry
+    \entry{zamg}{online}{}
+      \name{author}{1}{}{%
+        {{hash=5ba18c9da49cdb74e802983dacacf72f}{%
+           family={zamg.ac.at},
+           family_i={z\bibinitperiod}}}%
+      }
+      \strng{namehash}{5ba18c9da49cdb74e802983dacacf72f}
+      \strng{fullhash}{5ba18c9da49cdb74e802983dacacf72f}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Analyse für Tirol - Donnerstag, 7. März 2019}
+      \field{year}{2019}
+      \verb{url}
+      \verb https://www.zamg.ac.at/cms/de/wetter/wetterwerte-analysen/tirol/luftdruck/?mode=geo&druckang=red
+      \endverb
+    \endentry
   \endsortlist
 \endrefsection
 \endinput

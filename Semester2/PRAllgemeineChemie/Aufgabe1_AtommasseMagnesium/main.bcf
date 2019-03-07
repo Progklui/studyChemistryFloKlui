@@ -2030,6 +2030,9 @@
     <bcf:citekey order="2">PhysicalChemistryAtkings</bcf:citekey>
     <bcf:citekey order="3">Salzs</bcf:citekey>
     <bcf:citekey order="4">LambdaHydrogen</bcf:citekey>
+    <bcf:citekey order="5">Dampfdruck</bcf:citekey>
+    <bcf:citekey order="6">zamg</bcf:citekey>
+    <bcf:citekey order="7">PhysicalChemistryAtkings</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="none/global" type="entry" sortscheme="none" sortnamekeyscheme="global">
   <bcf:sorting>

@@ -2,6 +2,38 @@
 % Encoding: UTF-8
 
 
+@Manual{Versuchsvorschrift,
+  Title                    = {Versuchsvorschriften PR Allgemeine Chemie - Universität Innsbruck},
+  Author                   = {Wolfgang Viertl et al.},
+  Year                     = {2019},
+
+  Owner                    = {Florian Kluibenschedl},
+  Timestamp                = {2019.03.03}
+}
+
+@Book{PhysicalChemistryAtkings,
+  Title                    = {Physical Chemistry},
+  Author                   = {Peter Atkins, Julio de Paula, James Keeler},
+  Publisher                = {Oxford University Press},
+  Year                     = {2018},
+
+  Address                  = {Oxford, United Kingdom},
+  Edition                  = {11th},
+
+  Owner                    = {Florian Kluibenschedl},
+  Timestamp                = {2019.02.26}
+}
+
+@Electronic{zamg,
+  Title                    = {Analyse für Tirol - Donnerstag, 7. März 2019},
+  Author                   = {zamg.ac.at},
+  Url                      = {https://www.zamg.ac.at/cms/de/wetter/wetterwerte-analysen/tirol/luftdruck/?mode=geo&druckang=red},
+  Year                     = {2019},
+
+  Owner                    = {Florian Kluibenschedl},
+  Timestamp                = {2019.03.07}
+}
+
 @Periodical{Salzs,
   Title                    = {Dichtetabelle Salzsäure},
   Year                     = {2019},
@@ -12,21 +44,6 @@
 
   Owner                    = {Florian Kluibenschedl},
   Timestamp                = {2019.02.26}
-}
-
-@Periodical{Magnesium,
-  Title                    = {Magnesium},
-  Year                     = {2019},
-
-  Editor                   = {PubChem},
-  Language                 = {Englisch},
-  Month                    = {March},
-  Note                     = {Last Modification: 16.02.2019; Create Date: 16.09.2004},
-  Url                      = {https://pubchem.ncbi.nlm.nih.gov/compound/magnesium#section=Top},
-
-  Keywords                 = {ElementalProperties, Magnesium},
-  Owner                    = {Florian Kluibenschedl},
-  Timestamp                = {2019.02.23}
 }
 
 @Periodical{LambdaHydrogen,
