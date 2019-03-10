@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.10.12)  6 MAR 2019 23:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.10.12)  10 MAR 2019 01:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3440,15 +3440,21 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 93.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 \c__siunitx_mathtt_int=\count472
+
+Overfull \hbox (37.34186pt too wide) in paragraph at lines 112--113
+[]\OT1/cmr/m/n/9 Mithilfe von D[]unnschichtchromatographie konn-te die Zu-sam-m
+en-set-zung ei-nes Ami-nos[]aurengemisches
+ []
+
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 114.
+(babel)             in language  on input line 116.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 114.
+(babel)             in language  on input line 116.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 114.
+(babel)             in language  on input line 116.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 114.
- [1
+(babel)             in language  on input line 116.
+[1
 Non-PDF special ignored!
 
 
@@ -3456,16 +3462,12 @@ Non-PDF special ignored!
 \openout7 = `main.ist'.
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (6.85817pt too wide) in paragraph at lines 115--115
+Overfull \hbox (6.85817pt too wide) in paragraph at lines 117--117
 []\OT1/cmr/bx/n/14.4 Trennung von Ami-nos[]auren - D[]unnschichtchromatographie
  
  []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 115.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 115.
-Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 117.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 117.
@@ -3474,137 +3476,137 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 119.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 125.
+(babel)             in language  on input line 121.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 125.
+(babel)             in language  on input line 121.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 129.
+(babel)             in language  on input line 127.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 129.
+(babel)             in language  on input line 127.
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 131.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 131.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 133.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 133.
 
-Underfull \hbox (badness 7030) in paragraph at lines 141--141
+Underfull \hbox (badness 7030) in paragraph at lines 143--143
 []|\OT1/cmr/m/n/10 neutrales Lauf-mit-tel - [][]
  []
 
 
-Underfull \hbox (badness 3189) in paragraph at lines 142--142
+Underfull \hbox (badness 3189) in paragraph at lines 144--144
 []|\OT1/cmr/m/n/10 saures Lauf-mit-tel - [][] n-
  []
 
 
-Underfull \hbox (badness 1460) in paragraph at lines 142--142
+Underfull \hbox (badness 1460) in paragraph at lines 144--144
 \OT1/cmr/m/n/10 Butanol, [][] dei-on. Was-ser,
  []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 152.
+(babel)             in language  on input line 154.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 152.
+(babel)             in language  on input line 154.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 152.
+(babel)             in language  on input line 154.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 152.
+(babel)             in language  on input line 154.
 [2]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 155.
+(babel)             in language  on input line 157.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 155.
+(babel)             in language  on input line 157.
 
-<Graphiken/Versuchsanordnungen/VersuchsanordnungDC.png, id=112, 2347.77126pt x 
+<Graphiken/Versuchsanordnungen/VersuchsanordnungDC.png, id=115, 2347.77126pt x 
 1659.19875pt>
 File: Graphiken/Versuchsanordnungen/VersuchsanordnungDC.png Graphic file (type 
 png)
  <use Graphiken/Versuchsanordnungen/VersuchsanordnungDC.png>
 Package pdftex.def Info: Graphiken/Versuchsanordnungen/VersuchsanordnungDC.png 
-used on input line 158.
+used on input line 160.
 (pdftex.def)             Requested size: 305.22098pt x 215.7034pt.
 
-Underfull \hbox (badness 1158) in paragraph at lines 159--159
+Underfull \hbox (badness 1158) in paragraph at lines 161--161
 []\OT1/cmr/m/n/10 Abbildung 1: |sche-ma-ti-sche Ver-suchs-an-ord-nung: (1) Uhr-
 glas, (2) mit L[]osungsmitteld[]ampfen
  []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 162.
+(babel)             in language  on input line 164.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 162.
+(babel)             in language  on input line 164.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 162.
+(babel)             in language  on input line 164.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 162.
+(babel)             in language  on input line 164.
 [3]
-Overfull \hbox (0.50381pt too wide) in paragraph at lines 163--164
+Overfull \hbox (0.50381pt too wide) in paragraph at lines 165--166
 \OT1/cmr/m/n/10 schrie-ben. Das Be-cher-glas wur-de mit ei-nem Uhr-glas be-deck
 t, um das Ver-damp-fen des L[]osungsmittels
  []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 167.
+(babel)             in language  on input line 169.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 167.
+(babel)             in language  on input line 169.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 167.
+(babel)             in language  on input line 169.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 167.
+(babel)             in language  on input line 169.
 [4 <./Graphiken/Versuchsanordnungen/VersuchsanordnungDC.png>]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 167.
+(babel)             in language  on input line 169.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 167.
+(babel)             in language  on input line 169.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 177.
+(babel)             in language  on input line 179.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 177.
+(babel)             in language  on input line 179.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 199.
+(babel)             in language  on input line 201.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 199.
+(babel)             in language  on input line 201.
 
-Underfull \hbox (badness 10000) in paragraph at lines 201--202
+Underfull \hbox (badness 10000) in paragraph at lines 203--204
 
  []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 204.
+(babel)             in language  on input line 206.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 204.
+(babel)             in language  on input line 206.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 204.
+(babel)             in language  on input line 206.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 204.
+(babel)             in language  on input line 206.
 [5]
-<Graphiken/Versuchsanordnungen/AusgewerteteDCPlatten.png, id=147, 717.68124pt x
+<Graphiken/Versuchsanordnungen/AusgewerteteDCPlatten.png, id=150, 717.68124pt x
  659.46375pt>
 File: Graphiken/Versuchsanordnungen/AusgewerteteDCPlatten.png Graphic file (typ
 e png)
  <use Graphiken/Versuchsanordnungen/AusgewerteteDCPlatten.png>
 Package pdftex.def Info: Graphiken/Versuchsanordnungen/AusgewerteteDCPlatten.pn
-g used on input line 208.
+g used on input line 210.
 (pdftex.def)             Requested size: 287.06741pt x 263.78082pt.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 214.
+(babel)             in language  on input line 216.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 214.
+(babel)             in language  on input line 216.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 214.
+(babel)             in language  on input line 216.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 214.
+(babel)             in language  on input line 216.
 
 [6 <./Graphiken/Versuchsanordnungen/AusgewerteteDCPlatten.png>]
-Overfull \hbox (7.96815pt too wide) in paragraph at lines 215--215
+Overfull \hbox (7.96815pt too wide) in paragraph at lines 217--217
 []\OT1/cmr/bx/n/14.4 Trennung von Pflan-zen-farb-stof-fen - S[]aulenchromatogra
 phie 
  []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 215.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 215.
-Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 217.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 217.
@@ -3612,128 +3614,122 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 219.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 219.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 221.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 221.
 
-Underfull \hbox (badness 10000) in paragraph at lines 221--222
+Underfull \hbox (badness 10000) in paragraph at lines 223--224
 
  []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 225.
+(babel)             in language  on input line 227.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 225.
-
-Overfull \hbox (35.8095pt too wide) in paragraph at lines 227--228
-\OT1/cmr/m/n/10 zu-erst von-ein-an-der ge-trennt wer-den. Das Ziel des Ex-pe-ri
--ments ist so-mit, mit-hil-fe von S[]aulenchromatographie
- []
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 229.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 229.
+(babel)             in language  on input line 227.
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 231.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 231.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 233.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 233.
 
-Overfull \hbox (13.6125pt too wide) in paragraph at lines 238--249
+Overfull \hbox (13.6125pt too wide) in paragraph at lines 240--251
  [][] 
  []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 251.
+(babel)             in language  on input line 253.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 251.
+(babel)             in language  on input line 253.
 
-<Graphiken/Versuchsanordnungen/VersuchsanordnungSC.png, id=155, 1659.19875pt x 
+<Graphiken/Versuchsanordnungen/VersuchsanordnungSC.png, id=158, 1659.19875pt x 
 2347.77126pt>
 File: Graphiken/Versuchsanordnungen/VersuchsanordnungSC.png Graphic file (type 
 png)
  <use Graphiken/Versuchsanordnungen/VersuchsanordnungSC.png>
 Package pdftex.def Info: Graphiken/Versuchsanordnungen/VersuchsanordnungSC.png 
-used on input line 254.
+used on input line 256.
 (pdftex.def)             Requested size: 132.7386pt x 187.82553pt.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 258.
+(babel)             in language  on input line 260.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 258.
+(babel)             in language  on input line 260.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 258.
+(babel)             in language  on input line 260.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 258.
+(babel)             in language  on input line 260.
 
 [7]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 266.
+(babel)             in language  on input line 268.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 266.
+(babel)             in language  on input line 268.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 266.
+(babel)             in language  on input line 268.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 266.
+(babel)             in language  on input line 268.
  [8 <./Graphiken/Versuchsanordnungen/VersuchsanordnungSC.png>]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 267.
+(babel)             in language  on input line 269.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 267.
+(babel)             in language  on input line 269.
 
-<Graphiken/Versuchsanordnungen/LosungenSubstanzen.png, id=183, 906.38625pt x 62
+<Graphiken/Versuchsanordnungen/LosungenSubstanzen.png, id=186, 906.38625pt x 62
 7.34375pt>
 File: Graphiken/Versuchsanordnungen/LosungenSubstanzen.png Graphic file (type p
 ng)
  <use Graphiken/Versuchsanordnungen/LosungenSubstanzen.png>
 Package pdftex.def Info: Graphiken/Versuchsanordnungen/LosungenSubstanzen.png u
-sed on input line 272.
+sed on input line 274.
 (pdftex.def)             Requested size: 226.59601pt x 156.83554pt.
 
-<Graphiken/Versuchsanordnungen/SauleTrennungCarotinbande.png, id=185, 159.59625
+<Graphiken/Versuchsanordnungen/SauleTrennungCarotinbande.png, id=188, 159.59625
 pt x 862.22125pt>
 File: Graphiken/Versuchsanordnungen/SauleTrennungCarotinbande.png Graphic file 
 (type png)
 
 <use Graphiken/Versuchsanordnungen/SauleTrennungCarotinbande.png>
 Package pdftex.def Info: Graphiken/Versuchsanordnungen/SauleTrennungCarotinband
-e.png used on input line 283.
+e.png used on input line 285.
 (pdftex.def)             Requested size: 85.9996pt x 464.61897pt.
 
-<Graphiken/Versuchsanordnungen/TrennungChlorophyll.png, id=186, 149.55875pt x 5
+<Graphiken/Versuchsanordnungen/TrennungChlorophyll.png, id=189, 149.55875pt x 5
 02.87875pt>
 File: Graphiken/Versuchsanordnungen/TrennungChlorophyll.png Graphic file (type 
 png)
  <use Graphiken/Versuchsanordnungen/TrennungChlorophyll.png>
 Package pdftex.def Info: Graphiken/Versuchsanordnungen/TrennungChlorophyll.png 
-used on input line 289.
+used on input line 291.
 (pdftex.def)             Requested size: 85.9996pt x 289.16838pt.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 298.
+(babel)             in language  on input line 300.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 298.
+(babel)             in language  on input line 300.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 298.
+(babel)             in language  on input line 300.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 298.
+(babel)             in language  on input line 300.
 
 [9 <./Graphiken/Versuchsanordnungen/LosungenSubstanzen.png>]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 298.
+(babel)             in language  on input line 300.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 298.
+(babel)             in language  on input line 300.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 298.
+(babel)             in language  on input line 300.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 298.
+(babel)             in language  on input line 300.
  [10 <./Graphiken/Versuchsanordnungen/SauleTrennungCarotinbande.png> <./Graphik
-en/Versuchsanordnungen/TrennungChlorophyll.png>] (./main.lor)
-\tf@lor=\write10
-\openout10 = `main.lor'.
-
- (./main.lof)
-\tf@lof=\write11
-\openout11 = `main.lof'.
+en/Versuchsanordnungen/TrennungChlorophyll.png>] (./main.lof)
+\tf@lof=\write10
+\openout10 = `main.lof'.
 
  (./main.lot)
-\tf@lot=\write12
-\openout12 = `main.lot'.
+\tf@lot=\write11
+\openout11 = `main.lot'.
 
 
 
@@ -3742,23 +3738,23 @@ Package glossaries Warning: No \printglossary or \printglossaries found.
 This document will not have a glossary.
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 304.
+(babel)             in language  on input line 305.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 304.
+(babel)             in language  on input line 305.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 304.
+(babel)             in language  on input line 305.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 304.
+(babel)             in language  on input line 305.
 [11
 runsystem(makeindex -s main.ist -t main.glg -o main.gls main.glo)...executed sa
 fely (allowed).
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 304.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 304.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 305.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 305.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 304.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 304.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 305.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 305.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 2FDD265313D3B80E60CB28D390CCAD8C;1391.
 Package logreq Info: Writing requests to 'main.run.xml'.
@@ -3766,11 +3762,11 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 48591 strings out of 494860
- 974451 string characters out of 6177601
- 1406281 words of memory out of 5000000
- 50976 multiletter control sequences out of 15000+600000
- 20790 words of font info for 78 fonts, out of 8000000 for 9000
+ 48602 strings out of 494860
+ 974569 string characters out of 6177601
+ 1406280 words of memory out of 5000000
+ 50984 multiletter control sequences out of 15000+600000
+ 23122 words of font info for 87 fonts, out of 8000000 for 9000
  40 hyphenation exceptions out of 8191
  71i,17n,89p,10359b,1449s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
@@ -3778,21 +3774,23 @@ r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on main.pdf (11 pages, 2882200 bytes).
+st/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmtt10.pfb>
+Output written on main.pdf (11 pages, 2900197 bytes).
 PDF statistics:
- 294 PDF objects out of 1000 (max. 8388607)
- 254 compressed objects within 3 object streams
- 59 named destinations out of 1000 (max. 500000)
+ 301 PDF objects out of 1000 (max. 8388607)
+ 259 compressed objects within 3 object streams
+ 58 named destinations out of 1000 (max. 500000)
  187 words of extra memory for PDF output out of 10000 (max. 10000000)
 

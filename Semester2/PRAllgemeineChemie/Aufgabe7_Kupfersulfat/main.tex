@@ -104,7 +104,7 @@ citestyle=numeric
   
   \begin{center}
     \begin{tabular}{r p{4cm}}
-      Versuchsdurchführung am: & 04. März 2019\\ % Date the experiment was performed
+      Versuchsdurchführung am: & 08. März 2019\\ % Date the experiment was performed
       Gruppe, Matrikelnummer: & 3, 11805747 \\
       Lehrveranstaltung: & PR Allgemeine Chemie A \\
       Institut: & Allgemeine, Anorganische und Theoretische Chemie \\
@@ -125,26 +125,23 @@ citestyle=numeric
   
       \subsubsection{Motivation} \label{sec:MotivationKupfer}
         
-        Bei Kupfer handelt es sich um ein unedles Metall der 11. Gruppe (\ElPot[superscript=0](Red){0.34}). Damit ist Kupfer unlöslich in Wasser und \ch{HCl}. Das Nitrat-Ion der Salpetersäure (\ElPot[superscript=0](Red){0.96}) ist ein stärkeres Oxidationsmittel wie \ch{HCl} und kann deswegen Kupfer unter Entwicklung von \ch{NO} bzw. \ch{NO2} zu \ch{Cu\pch[2]} oxidieren - siehe \ref{rec:LosenKupfereins} und \ref{rec:LosenKupferzwei}. Da die nitrosen Gasen entweichen, liegt eine irreversible Reaktion vor.
+        Bei Kupfer handelt es sich um ein unedles Metall der 11. Gruppe (\ElPot[superscript=0](Red){0.34}). Damit ist Kupfer unlöslich in Wasser und \ch{HCl}. Das Nitrat-Ion der Salpetersäure (\ElPot[superscript=0](Red){0.96}) ist ein stärkeres Oxidationsmittel wie \ch{HCl} und kann deswegen Kupfer unter Entwicklung von \ch{NO} bzw. \ch{NO2} zu \ch{Cu\pch[2]} oxidieren. Da die nitrosen Gasen entweichen, liegt eine irreversible Reaktion vor.
         
-        \begin{reaction}
-          3 Cu\sld{} + 8 HNO3\aq$_{verdünnt}$ -> 3 Cu(NO3)2\aq{} + 2 NO\gas{} + 4 H2O \label{rec:LosenKupfereins}
-        \end{reaction} 
-          
-        \begin{reaction}
-          Cu\sld{} + 4 HNO3\aq$_{konz.}$ -> Cu(NO3)2\aq{} + 2 NO2\gas{} + 2 H2O \label{rec:LosenKupferzwei}
-        \end{reaction} \\
+        \begin{reactions}
+          3 Cu\sld{} + 8 HNO3\aq &-> 3 Cu(NO3)2\aq{} + 2 NO\gas{} + 4 H2O \label{rec:LosenKupfereins} \\
+          2 NO\gas{} + O2\gas{} &-> 2 NO2\gas{} 
+        \end{reactions} 
         
-        Um nun \ch{CuSO4 * 5 H2O} herzustellen, wird das erhaltene \ch{Cu(NO3)2\aq} mit \ch{H2SO4} umgesetzt und erwärmt, um \ch{HNO3} zu entfernen\footnote{der Siedepunkt von \ch{HNO3} (Sdpkt.: \SI[mode=text]{86}{\degreeCelsius}) ist im Vergleich zu jenem von \ch{H2SO4} (Sdpkt.: \SI[mode=text]{337}{\degreeCelsius}) niedriger, weswegen sie zuerst verdampft} - siehe \ref{rec:Kupfersulfat}. Lässt man die wässrige Lösung von \ch{CuSO4} länger stehen, kristallisiert \ch{CuSO4 * 5 H2O} aus.
+        Um nun \ch{CuSO4 * 5 H2O} herzustellen, wird das erhaltene \ch{Cu(NO3)2\aq} mit \ch{H2SO4} umgesetzt und erwärmt, um \ch{HNO3} und den Rest der Schwefelsäure zu entfernen\footnote{der Siedepunkt von \ch{HNO3} (Sdpkt.: \SI[mode=text]{86}{\degreeCelsius}) ist im Vergleich zu jenem von \ch{H2SO4} (Sdpkt.: \SI[mode=text]{337}{\degreeCelsius}) niedriger, weswegen sie zuerst verdampft} - siehe \ref{rec:Kupfersulfat}. Lässt man eine wässrige Lösung von \ch{CuSO4} länger stehen, kristallisiert \ch{CuSO4 * 5 H2O} aus.
         
         \begin{reaction}
           Cu(NO3)2\aq{} + H2SO4\aq{} -> CuSO4\aq{} + 2 HNO3\aq \label{rec:Kupfersulfat}
-        \end{reaction} \\
+        \end{reaction} 
          
-        Kupfersulfat wird hauptsächlich in der Landwirtschaft verwendet und dient dort unter anderem als Fungizid bzw. Futtermittelersatz, weswegen die Herstellung von großer industrieller Bedeutung ist und nach \ref{rec:technischeDarstellung} erfolgt.
+        Kupfersulfat wird hauptsächlich in der Landwirtschaft verwendet und dient dort unter anderem als Fungizid bzw. Futtermittelersatz, weswegen die Herstellung von großer industrieller Bedeutung ist und in großem Maßstab nach \ref{rec:technischeDarstellung} erfolgt.
         
         \begin{reaction}
-          Cu\sld{} + H2SO4\aq{} + 0.5 O2\gas{} -> CuSO4\aq{} + H2O \label{rec:technischeDarstellung}
+          Cu\sld{} + H2SO4\aq{} + 0.5 O2\gas{} <=> CuSO4\aq{} + H2O \label{rec:technischeDarstellung}
         \end{reaction}
         
    
@@ -164,29 +161,29 @@ citestyle=numeric
           \begin{tabular}{@{}ll|ll@{}}
             \toprule
               Geräte & Hersteller & Chemikalie & Hersteller \\ \midrule
-              Waage &  & \SI[mode=text]{14.5}{M} konz. \ch{HNO3} & Vorrat \\
-              \SI[mode=text,separate-uncertainty=true]{100}{\milli\liter} Becherglas &  & \SI[mode=text]{2}{M} \ch{H2SO4} & Vorrat \\
-              \SI[mode=text,separate-uncertainty]{10.0(1)}{\milli\liter} Messzylinder &  & Kupferwolle &  \\
-              Kirstallisierschale $\O =$ \SI[mode=text]{6}{\centi\meter} &  & deionisiertes Wasser &  \\
+              Waage &  & \SI[mode=text]{14.5}{M} konz. \ch{HNO3} & bezogen von \\
+              \SI[mode=text,separate-uncertainty=true]{100}{\milli\liter} Becherglas & DURAN & \SI[mode=text]{2}{M} \ch{H2SO4} & Vorrat \\
+              \SI[mode=text]{10}{\milli\liter} Messzylinder & DURAN & Kupferwolle & Vorrat \\
+              Uhrglas $\O =$ \SI[mode=text]{10}{\centi\meter} &  & deionisiertes Wasser &  \\
               Sandbad &  &  &  \\ \bottomrule
           \end{tabular}
         \end{table}
     
       \subsubsection{Versuchsdurchführung}  \label{sec:VersuchKupfersulfat}
         
-        Zunächst wurde \SI[mode=text]{1}{\gram} elementares Kupfer\footnote{Kupferwolle} in einem \SI[mode=text]{100}{\milli\liter} Becherglas mit \SI[mode=text]{5}{\milli\liter}\footnote{Messzylinder} einer \SI[mode=text]{14.5}{M} \ch{HNO3} versetzt. Nach dem Ende der Gasentwicklung blieb ein blaue \ch{Cu(NO3)2\aq} Lösung zurück. Zu dieser wurden \SI[mode=text]{10}{\milli\liter} einer \SI[mode=text]{2}{M} \ch{H2SO4} (entspricht einem in etwa \SI[mode=text]{20}{\percent}-igen Überschuss) hinzugegeben. Das Gemisch wurde vorsichtig im Sandbad eingedampft, bis man einen trockenen, blauen Rückstand erhielt. Dieser wurde in deionisiertem Wasser gelöst, wobei darauf geachtet wurde, nicht zuviel Wasser zum Lösen zu verwenden, um eine möglichst schnelle und quantitative Kristallisation zu ermöglichen. Die Lösung wurde in eine Kristallisierschale gegeben und dort zur Kristallisation stehen gelassen. 
+        Zunächst wurde \SI[mode=text]{1}{\gram} elementares Kupferwolle in einem \SI[mode=text]{100}{\milli\liter} Becherglas abgewogen und mit \SI[mode=text]{5}{\milli\liter}\footnote{Messzylinder} einer \SI[mode=text]{14.5}{M} \ch{HNO3} versetzt. Nach dem Ende der Gasentwicklung blieb ein blaue \ch{Cu(NO3)2\aq} Lösung zurück. Zu dieser wurden \SI[mode=text]{10}{\milli\liter} einer \SI[mode=text]{2}{M} \ch{H2SO4} (entspricht einem in etwa \SI[mode=text]{20}{\percent}-igen Überschuss) hinzugegeben. Das Gemisch wurde im Sandbad eingedampft, bis man einen trockenen, blauen Rückstand erhielt. Beim Eindampfen wurde ein Siedekapillare in die Lösung gegeben, um einen Siedeverzug möglichst zu verhindern. Der Rückstand wurde in deionisiertem Wasser gelöst, wobei darauf geachtet wurde, nicht zuviel Wasser zum Lösen zu verwenden, um eine möglichst schnelle und quantitative Kristallisation zu ermöglichen\footnote{etwas unter \SI[mode=text]{20}{\milli\liter} wurden zum Lösen verwendet}. Die Lösung wurde in ein Uhrglas gegeben und dort zur Kristallisation stehen gelassen. 
     
      
       \subsubsection{Auswertung} \label{sec:AuswertungKupfersulfat}
       
-        Zunächst soll berechnet werden, welcher Anteil (n/n) der eingesetzten \ch{HNO3} mit dem Kupfer reagiert hat. Die Rechenschritte werden im Folgenden dargestellt. Als zugrunde liegende Reaktionsgleichung wird dabei \ref{rec:LosenKupferzwei} angenommen.
+        Zunächst soll berechnet werden, welcher Anteil (n/n) der eingesetzten \ch{HNO3} mit dem Kupfer reagiert hat. Die Rechenschritte werden im Folgenden dargestellt. Als zugrunde liegende Reaktionsgleichung wird dabei \ref{rec:LosenKupfereins} angenommen.
         
         \begin{equation}
           n_{\ch{Cu}} = \frac{m_{\ch{Cu}}}{M_{\ch{Cu}}} = \frac{1}{63.55} = \SI[mode=text]{0.0157}{\mole}
         \end{equation}
         
         \begin{equation}
-          n_{\ch{HNO3}, reagiert} = 4 * n_{\ch{Cu}} = \SI[mode=text]{0.0629}{\mole}
+          n_{\ch{HNO3}, reagiert} = \frac{8}{3} * n_{\ch{Cu}} = \SI[mode=text]{0.0420}{\mole}
         \end{equation}
         
         \begin{equation}
@@ -194,10 +191,10 @@ citestyle=numeric
         \end{equation}
         
         \begin{equation}
-          \alpha_{\ch{HNO3}} = \frac{n_{\ch{HNO3}, reagiert}}{n_{\ch{HNO3}, gesamt}} * 100 \approx \SI[mode=text]{87}{\percent} 
-        \end{equation}
+          \alpha_{\ch{HNO3}} = \frac{n_{\ch{HNO3}, reagiert}}{n_{\ch{HNO3}, gesamt}} * 100 \approx \SI[mode=text]{58}{\percent} 
+        \end{equation} \\
         
-        Die in \ref{sec:VersuchKupfersulfat} angegebene Menge an verwendeter \SI[mode=text]{2}{M} \ch{H2SO4}, um den \SI[mode=text]{20}{\percent}-igen Überschuss zu erreichen, wird wie folgt berechnet.
+        Die in \ref{sec:VersuchKupfersulfat} angegebene Menge an verwendeter \SI[mode=text]{2}{M} \ch{H2SO4}, um den \SI[mode=text]{20}{\percent}-igen Überschuss zu erreichen, wird wie folgt berechnet:
         
         \begin{equation}
           n_{\ch{H2SO4}} = 1.2 * n_{\ch{Cu}} = \SI[mode=text]{0.0189}{\mole} 
@@ -205,16 +202,38 @@ citestyle=numeric
         
         \begin{equation}
           V_{\ch{H2SO4}} = \frac{n_{\ch{H2SO4}}}{[\ch{H2SO4]}} = \frac{0.0189}{2} = \SI[mode=text]{0.0094}{\liter} \approx \SI[mode=text]{10}{\milli\liter}
-        \end{equation}
+        \end{equation} \\
       
-        Die theoretische Ausbeute kann wie folgt berechnet werden ($M_{\ch{CuSO4 * 5 H2O}} = \SI[mode=text]{249.68}{\gram\per\mole}$ ).
+        Die theoretische Ausbeute kann wie folgt berechnet werden ($M_{\ch{CuSO4 * 5 H2O}} = \SI[mode=text]{249.68}{\gram\per\mole}$ ):
         
         \begin{equation}
           m_{\ch{CuSO4 * 5 H2O}} = n_{\ch{CuSO4 * 5 H2O}} * M_{\ch{CuSO4 * 5 H2O}} = n_{\ch{Cu}}  * M_{\ch{CuSO4 * 5 H2O}} = \SI[mode=text]{3.92}{\gram}
         \end{equation}
         
     \subsection{Ergebnisse und Diskussion}
-  
+
+    \subsection{Weitere Berechnungen bzw. Erklärungen}
+    
+      Wie bereits in \ref{sec:MotivationKupfer} angemerkt, löst sich Kupfer nicht in \ch{HCl}. Dies ist darauf zurückzuführen, dass \ch{HCl} kein Oxidationsmittel wie beispielsweise \ch{HNO3} oder \ch{H2SO4} ist. Begründen kann man dies durch Anwenden der Nernstgleicchung auf die entsprechende (theoretische) Lösereaktion.
+      
+      \begin{reaction}
+        Cu\sld{} + 2 HCl\aq{} -> Cu\pch[2]\aq{} + 2 Cl\mch\aq{} + H2\gas \label{rec:LosenCuHCl}
+      \end{reaction}
+      
+      Das Standardpotential dieser Reaktion lautet wie folgt: \ElPot[superscript=0](){-0.34}. Damit läuft die Reaktion bei Standardbedingungen nicht ab. Es verbleibt zu zweigen, dass man auch durch Konzentrationsänderungen die Reaktion nicht erzwingen kann. Dazu wird die Nernstgleichung formuliert.
+      
+      \begin{equation}
+        \ElPot*[](){} = \ElPot*[superscript=0](){-0.34} - \frac{R*T}{z*F} * \ln {\frac{a_{\ch{Cu\pch[2]\aq}}*a_{\ch{H2\gas}}*a_{\ch{Cl\mch\aq}}^2}{a_{\ch{HCl\aq}}^2 * a_{\ch{Cu\sld}}}} \label{eq:NernsteinsCu}
+      \end{equation}
+      
+      Da zu Beginn der Reaktion kein \ch{Cu\pch[2]\aq} und \ch{H2\gas} vorliegt, können die Aktivitäten der beiden gleich eins gesetzt werden. Auch die Aktivität von \ch{Cu\sld} ist per Definition eins. Gleichung \eqref{eq:NernsteinsCu} vereinfacht sich zu \eqref{eq:NernstzweiCu}.
+      
+      \begin{equation}
+        \ElPot*[](){} = \ElPot*[superscript=0](){-0.34} - \frac{R*T}{z*F} * \ln {\frac{1}{a_{\ch{HCl\aq}}^2}} \label{eq:NernstzweiCu}
+      \end{equation}
+      
+      Wenn man nun die Konzentration von \ch{HCl\aq} erhöht, wird der Logarithmus negativ. Nun ist $\ElPot*[superscript=0](){-0.34} < 0$ und $\frac{R*T}{z*F} * \ln {\frac{1}{a_{\ch{HCl\aq}}^2}} < 0$ und damit $\ElPot*[](){} < 0$, was zu zeigen war. Die Reaktion läuft damit nicht ab. Dass auch eine Temperaturänderung nichts an diesem Ergebnis ändert, ist offensichtlich.
+      
   \pagebreak
   
   \section{Versilbern von Glas}
@@ -223,10 +242,10 @@ citestyle=numeric
       
       \subsubsection{Motivation}
       
-        Die Glucose ist ein Aldehyd, das zur Carbonsäure oxidiert werden kann. Ein geeignetes Oxidationsmittel sind z. B.  Silberionen, die zu elementaren Silber reduziert werden. Die zugehörigen Reaktionsgleichungen werden unten angeführt. Ammoniak muss deswegen zugegeben werden, damit das Silber durch bilden eines Komplexes in Lösung geht, da dieses mit der Natronlauge wie beschrieben einen unlöslichen braunen Niederschlag bildet. Anstatt die Formel für die komplette Glucose anzuführen, wird nur die Aldehydfunktion betrachtet.
+        Die Glucose ist ein Aldehyd, das zur Carbonsäure oxidiert werden kann. Ein geeignetes Oxidationsmittel sind z. B.  Silberionen, die zu elementaren Silber reduziert werden. Die zugehörigen Reaktionsgleichungen werden unten angeführt. Ammoniak muss deswegen zugegeben werden, damit das Silber durch Bildung eines Komplexes in Lösung geht, da dieses mit der Natronlauge wie beschrieben einen unlöslichen braunen Niederschlag bildet. Anstatt die Formel für die komplette Glucose anzuführen, wird nur die Aldehydfunktion betrachtet.
         
         \begin{reaction}
-          CH3CHO\aq{} + 2 [Ag(NH3)2]\pch\aq{} + 2 OH\mch\aq -> CH3COOH\aq{} + 2 Ag\sld{} + 4 NH3\aq{} + H2O \\
+          RCHO\aq{} + 2 [Ag(NH3)2]\pch\aq{} + 2 OH\mch\aq -> RCOOH\aq{} + 2 Ag\sld{} + 4 NH3\aq{} + H2O \\
         \end{reaction}
         
         \begin{reaction}
@@ -238,16 +257,16 @@ citestyle=numeric
         \end{reaction}
         
         \begin{reactions}
-          $\sum :$ CH3CHO\aq{} + 2 Ag\pch\aq{} + 2 OH\mch\aq{} -> CH3COOH\aq{} + 2 Ag\sld{} + H2O
+          $\sum :$ RCHO\aq{} + 2 Ag\pch\aq{} + 2 OH\mch\aq{} -> RCOOH\aq{} + 2 Ag\sld{} + H2O
         \end{reactions} \\
         
         Die angegebenen Reaktionen gelten auch für den sogenannten Tollens' Test in der Analytik zur Identifikation von Aldehyden \cite{Tollenstest}. \\
         
-        Die Entstehung eines Silberspiegels an der Glaswand kann wie folgt erklärt werden: Silber lagert sich an der Glaswand an, da Glas an der Oberfläche freie, saure \ch{OH}-Gruppen besitzt. An diesen kann \ch{H\pch} gegen \ch{Ag\pch} ausgetauscht werden (Kationentauscher). Die eingelagerten \ch{Ag\pch} werden reduziert und bilden Kristallisationskeime für in Lösung befindliches \ch{Ag}.  Es entsteht ein Silberspiegel.
+        Die Entstehung eines Silberspiegels an der Glaswand kann wie folgt erklärt werden: Silber lagert sich an der Glaswand an, da Glas an der Oberfläche freie, saure \ch{OH}-Gruppen besitzt. An diesen kann \ch{H\pch} gegen \ch{Ag\pch} ausgetauscht werden (Kationentauscher). Die eingelagerten \ch{Ag\pch} werden reduziert und bilden Anlagerungspunkte für in Lösung befindliches \ch{Ag}.  Es entsteht ein Silberspiegel.
       
       \subsubsection{Ziel des Experiments}
       
-        Einer Hohlfigur einen lebenslänglichen Silberspiegel zu verpassen.
+        Einem Zentrifugenröhrchen einen lebenslänglichen Silberspiegel zu verpassen.
     
     \subsection{Experimenteller Teil}
     
@@ -260,23 +279,30 @@ citestyle=numeric
         
           \begin{tabular}{@{}ll|p{8cm}l@{}}
             \toprule
-              Geräte & Hersteller & Chemikalie & Hersteller \\ \midrule
-              Hohle Glasfigur &  & Lösung 1: \SI[mode=text]{13}{\gram} Zucker und \SI[mode=text]{1.3}{\gram} auf \SI[mode=text]{200}{\milli\liter} \ch{H2O} & Vorrat \\
-              Pasteur-Pipette &  & Lösung 2: \SI[mode=text]{1.7}{\gram} \ch{AgNO3} auf \SI[mode=text]{80}{\milli\liter} \ch{H2O} & Vorrat \\
+              Geräte & Hersteller & Chemikalie & bezogen von \\ \midrule
+              Zentrifugenröhrchen &  & Lösung 1: \SI[mode=text]{13}{\gram} Zucker und \SI[mode=text]{1.3}{\gram} auf \SI[mode=text]{200}{\milli\liter} \ch{H2O} & Vorrat \\
+              Pasteur-Pipette &  & Lösung 2: \SI[mode=text]{2.7}{\gram} \ch{AgNO3} auf \SI[mode=text]{80}{\milli\liter} \ch{H2O} &  \\
                &  & Lösung 3: \SI[mode=text]{2}{\gram} \ch{NaOH} auf \SI[mode=text]{80}{\milli\liter} \ch{H2O} &  \\
                &  & Lösung 4: \SI[mode=text]{10}{\gram} Natriumcitrat auf \SI[mode=text]{100}{\milli\liter} \ch{H2O} &  \\
-               &  & Lösung 5: Lösung 2 und 3 wurden im Verhältnis 1:1 (V/V) gemischt, der braune \ch{Ag2O} Niederschlag wurde durch tropfenweise Zugabe von \ch{NH3} gelöst &  \\
+               &  & Lösung 5: Lösung 2 und 3 wurden im Verhältnis 1:1 (V/V) gemischt, der braune \ch{Ag2O} Niederschlag wurde durch tropfenweise Zugabe von \ch{NH3} gelöst & Vorrat \\
                &  & Lösung 6: Lösung 1 und 5 wurden im Verhältnis 1:1 (V/V) gemischt &  \\ \bottomrule
           \end{tabular}
         \end{table}
       
       \subsubsection{Versuchsdurchführung}
         
-        Die benötigten Lösungen wurden wie in Tabelle \ref{tab:MaterialienSilberspiegel} angeführt hergestellt. Lösung 6 wurde in die mit deionisiertem Wasser ausgewaschene Hohlfigur transferiert. Nach zwei Stunden hatte sich ein schöner Silberspiegel gebildet. Die Lösung wurde entfernt und im Schwermetallabfall entsorgt. Der Silberspiegel wurde mit deionisiertem Wasser gewaschen, damit er länger beständig bleibt.
+        Die Lösungen 1 und 5 waren bereits wie in Tabelle \ref{tab:MaterialienSilberspiegel} beschrieben vorbereitet. Es musste nur mehr Lösung 6 wie angegeben hergestellt werden. Diese wurde in ein mit deionisiertem Wasser ausgewaschenes Zentrifugenröhrchen transferiert. Nach ca. zwei Stunden hatte sich ein schöner Silberspiegel gebildet. Die Lösung wurde entfernt und im Schwermetallabfall entsorgt. Der Silberspiegel wurde mit deionisiertem Wasser gewaschen, um ihn beständiger zu machen.
       
     \subsection{Ergebnisse und Diskussion}
       
-      Die entstandene Silberschicht in der Hohlfigur war schön homogen und gleichmäßig und wird der Hohlfigur lange anhaften. Eine dickere Silberschicht könnte man durch eine längere Wartezeit statt den zwei Stunden erreichen. 
+      Die entstandene Silberschicht im Zentrifugenröhrchen war nicht ganz so homogen und gleichmäßig wie erwartet. Auf einer Seite hatte sich ein glänzender Spiegel gebildet, auf der anderen Seite hingegen war dieser eher matt und brüchig. Beim Waschen mit Wasser lösten sich Teile von dieser Seite herunter. Außerdem hatte sich im unteren Teil des Zentrifugenröhrchens kein Silberspiegel gebildet. Die Lösung wurde zu Beginn nicht gut genug durchmischt, was eine ungleichmäßige Verteilung der Lösungen zur Folge hatte. Der brüchige Silberspiegel auf einer Seite kann durch unzureichende Reinigung des Zentrifugenröhrchens erklärt werden. Grundsätzlich könnte man eine dickere Silberschicht durch eine längere Wartezeit statt den zwei Stunden erreichen. In diesem Fall hätte es aber eher nicht dazu geführt, dass der Silberspiegel sich hätte besser und schöner ausbilden können. 
+      
+      Folgende Verbesserungen werden für eine erneute Durchführung vorgeschlagen:
+      
+      \begin{itemize}
+        \item das Zentrifugenröhrchen besser reinigen
+        \item die Lösung zu Beginn besser durchmischen
+      \end{itemize}
   
   \pagebreak
   
@@ -286,10 +312,11 @@ citestyle=numeric
       
       \subsubsection{Motivation}
         
-        Das scheinbare Vergolden, also das Vortäuschen von Gold, wo keines ist, war eines der wichtigsten Ziele der Alchemisten. Messing ist eine gold-glänzende Legierung und eignet sich also vortrefflich. Um eine solche herzustellen wird auf einer Kupferschicht elementares Zink abgeschieden und dieses dann kurz erhitzt. 
+        Das scheinbare Vergolden, also das Vortäuschen von Gold wo keines ist, war eines der wichtigsten Ziele der Alchemisten. Messing ist eine gold-glänzende Legierung und eignet sich dazu also vortrefflich. Um eine solche Legierung herzustellen wird auf einer Kupferschicht elementares Zink abgeschieden und dieses dann kurz erhitzt. 
         
       \subsubsection{Ziel des Experiments}
-              
+        
+        Das Ziel dieses Experiments ist, Kupfermünzen zu verzinken und anschließend durch erhitzen eine Messing Legierung zu bilden.         
     
     \subsection{Experimenteller Teil}
     
@@ -304,26 +331,26 @@ citestyle=numeric
             \toprule
               Geräte & Hersteller & Chemikalie & Hersteller \\ \midrule
               2 \SI[mode=text]{500}{\milli\liter} Bechergläser &  & \SI[mode=text]{18}{\gram} \ch{NaOH\sld}-Plätzchen & Vorrat \\
-              Magnetrührer &  & Zinkpulver & Vorrat \\
+              \SI[mode=text]{250}{\milli\liter} Becherglas &  & Zinkpulver & Vorrat \\
               Bunsenbrenner &  & Ethanol &  \\
-              Heizplatte &  & \SI[mode=text]{14}{\percent}-ige (w/w) \ch{HNO3} &  \\
+              Dreifuß &  & \SI[mode=text]{14}{\percent}-ige (w/w) \ch{HNO3} &  \\
               Kupfermünzen &  & deionisiertes Wasser &  \\
-              \SI[mode=text]{250}{\milli\liter} Becherglas  &  &  &  \\ 
-              Rührfisch &  &  &  \\ \bottomrule
+              Tiegelzange &  &  &  \\ 
+              große Kristallisierschale &  &  &  \\ \bottomrule
           \end{tabular}
         \end{table}
         
       \subsubsection{Versuchsdurchführung}
         
-        Zuerst wurde eine alkalische Zinklösung hergestellt. Dazu wurden in einem \SI[mode=text]{500}{\milli\liter} Becherglas \SI[mode=text]{50}{\milli\liter} deionisiertes Wasser vorgelegt, vorsichtig \SI[mode=text]{18}{\gram} \ch{NaOH\sld} hinzugegeben und unter Rühren mit Magnetrührer und Rührfisch bis zum Sieden erhitzt. Anschließend wurden \SI[mode=text]{6}{\gram} Zinkpulver hinzugegeben. Die nun heterogene Lösung wurde für weitere \SI[mode=text]{3}{\minute} unter Rühren erhitzt. Währenddessen wurden in einem \SI[mode=text]{500}{\milli\liter} Becherglas \SI[mode=text]{100}{\milli\liter} Ethanol auf ca. \SI[mode=text]{60}{\degreeCelsius} erhitzt. In dieser Lösung wurden die zu versilbernden Cent-Stücke für ca. \SI[mode=text]{2}{\minute} geschwenkt, um sie zu entfetten. Um eine Magnetisierung und daraus resultierende schlechtere Handhabung zu vermeiden, wurde auf Magnetrührer sowie Rührfisch verzichtet. Diese Utensilien wurden auch im Folgenden nicht mehr verwendet.
+        Zuerst wurde eine alkalische Zinklösung hergestellt. Dazu wurden in einem \SI[mode=text]{500}{\milli\liter} Becherglas \SI[mode=text]{50}{\milli\liter} deionisiertes Wasser vorgelegt, vorsichtig \SI[mode=text]{18}{\gram} \ch{NaOH\sld} hinzugegeben und gelöst. Unter Schwenken wurde über dem Bunsenbrenner bis zum Sieden erhitzt. Anschließend wurden \SI[mode=text]{6}{\gram} zerstoßenes Zinkpulver hinzugegeben. Die nun heterogene Lösung wurde für weitere \SI[mode=text]{3}{\minute} unter Schwenken erhitzt. 
         
-        Das Ethanol wurde abdekantiert und in das Becherglas wurden \SI[mode=text]{100}{\milli\liter} einer \SI[mode=text]{14}{\percent}-igen (w/w) \ch{HNO3} gegeben. Das Becherglas wurde nun wieder für \SI[mode=text]{2}{\minute} geschwenkt (bei Raumtemperatur). Nachdem die \ch{HNO3} abdekantiert wurde, wurden die Münzen mit deionisiertem Wasser kurz gespült. Die Münzen wurden auf ein Papiertuch gegeben\footnote{eine Berührung mit dem Fett der Finger wurde vermieden} und vorsichtig in die zu Beginn vorbereitete, heiße Zinksuspension transferiert\footnote{wobei darauf geachtet wurde, nicht zuviele Münzen in das Becherglas zu geben, um die Kontaktoberfläche der Münzen untereinander so gering wie möglich zu halten - außerdem wurde zwischenzeitlich mit einem Spatel umgerührt}. In dieser wurde unter Schwenken für ca. \SI[mode=text]{10}{\minute} bei ca. \SI[mode=text]{70}{\degreeCelsius} erhitzt. Im Anschluss wurde das Reaktionsgefäß mit deionisiertem Wasser aufgefüllt. Die überstehende Lösung wurde in den Schwermetallabfall abdekantiert. Die versilberten Münzen wurden mit deionisiertem Wasser gewaschen. Alle Zinkabfälle bzw. mit Zink behafteten Papiertücher, ... wurden in einem Becherglas gesammelt und im Abzug mit \ch{HCl} versetzt, damit sich das elementare Zink auflöst. Angefeuchtetes Zink kann mit Papier unmittelbar zum Brennen anfangen.
+        Währenddessen wurden in einem \SI[mode=text]{500}{\milli\liter} Becherglas \SI[mode=text]{100}{\milli\liter} Ethanol auf ca. \SI[mode=text]{60}{\degreeCelsius} erhitzt. In dieser Lösung wurden die zu versilbernden Cent-Stücke für ca. \SI[mode=text]{2}{\minute} geschwenkt, um sie zu entfetten. Um eine Magnetisierung und daraus resultierende schlechtere Handhabung zu vermeiden, wurde auf Magnetrührer sowie Rührfisch verzichtet. Diese Utensilien wurden auch im Folgenden nicht mehr verwendet. Das Ethanol wurde abdekantiert und in das Becherglas wurden \SI[mode=text]{100}{\milli\liter} einer \SI[mode=text]{14}{\percent}-igen (w/w) \ch{HNO3} gegeben. Das Becherglas wurde nun wieder für \SI[mode=text]{2}{\minute} geschwenkt (bei Raumtemperatur). Nach dem Abdekantieren der \ch{HNO3}, wurden die Münzen mit deionisiertem Wasser kurz gespült, auf ein Papiertuch gegeben\footnote{eine Berührung mit dem Fett der Finger wurde vermieden} und vorsichtig in die zu Beginn vorbereitete, heiße Zinksuspension transferiert. Dabei wurde darauf geachtet, nicht zuviele Münzen in das Becherglas zu geben, um die Kontaktoberfläche der Münzen untereinander so gering wie möglich zu halten. Die ca. \SI[mode=text]{60}{\degreeCelsius} heiße Lösung wurde für ca. \SI[mode=text]{4}{\minute} geschwenkt, bis sich auf den Münzen eine schöne Zinkschicht gebildet hatte. Die Münzen wurden in ein mit deionisiertem Wasser gefülltes \SI[mode=text]{100}{\milli\liter} Becherglas transferiert und mehrmals gewaschen. Alle Zinkabfälle bzw. mit Zink behafteten Papiertücher, ... wurden in einer großen Kristallisierschale gesammelt und im Abzug mit \ch{HCl} versetzt, damit sich das elementare Zink auflöst\footnote{angefeuchtetes Zink kann mit Papier unmittelbar zum Brennen anfangen}.
         
-        Ein Teil der versilberten Münzen wurde mit einer Tiegelzange bei mittlerer Hitze über eine Bunsenbrennerflamme gehalten. Es wurde gewartet, bis sich eine goldene Messingschicht ausbildete.
+        Ein Teil der versilberten Münzen wurde mit einer Tiegelzange bei mittlerer Hitze über eine Bunsenbrennerflamme gehalten. Es wurde gewartet, bis sich eine goldene Messingschicht ausbildete. Die Münzen wurden kurz in einem mit Wasser gefüllten \SI[mode=text]{100}{\milli\liter} Becherglas abgekühlt.
       
     \subsection{Ergebnisse und Diskussion}
       
-      Sowohl die Anlagerung von Zink an die Münzen als auch das Ausbilden der Messingschicht funktionierten zufriedenstellend. Es ist anzumerken, dass die Zinkschicht nicht überall gleichmäßig aufgetragen war. Bei manchen Münzen waren teilweise nicht verzinkte Stellen zu beobachten. Durch stärkeres und konstanteres Umrühren während der Verzinkung könnte man den Prozess beispielsweise verbessern. 
+      Sowohl die Anlagerung von Zink an die Münzen als auch das Ausbilden der Messingschicht funktionierten sehr gut. Die Zinkschicht war bei allen Münzen an allen Stellen schön gleichmäßig vorhanden und die Messingschicht bildete sich bei allen Münzen problemlos.
     
   \pagebreak
   

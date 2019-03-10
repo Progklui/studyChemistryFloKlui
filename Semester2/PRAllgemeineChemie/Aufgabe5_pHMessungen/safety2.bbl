@@ -38,6 +38,24 @@
       \field{title}{Versuchsvorschriften PR Allgemeine Chemie - Universität Innsbruck}
       \field{year}{2019}
     \endentry
+    \entry{Essigsaure}{online}{}
+      \name{author}{1}{}{%
+        {{hash=465f7f8831e4cb09ba6621dab2a4d6ee}{%
+           family={wikipedia.org},
+           family_i={w\bibinitperiod}}}%
+      }
+      \strng{namehash}{465f7f8831e4cb09ba6621dab2a4d6ee}
+      \strng{fullhash}{465f7f8831e4cb09ba6621dab2a4d6ee}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Essigsäure}
+      \field{year}{2019}
+      \verb{url}
+      \verb https://de.wikipedia.org/wiki/Essigs%C3%A4ure
+      \endverb
+    \endentry
     \entry{LeitungswasserRichtlinien}{online}{}
       \name{author}{1}{}{%
         {{hash=2afe5c5f065d08db80f627438cc7b3ac}{%
