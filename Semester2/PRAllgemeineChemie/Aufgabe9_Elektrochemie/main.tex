@@ -112,7 +112,9 @@ citestyle=numeric
 
 
   \begin{abstract}
+    Elektrochemie ist eine vielseitige Disziplin in der Chemie mit vielen nützlichen Anwendungen. Um ein besseres Verständnis der Möglichkeiten zu erlangen, wurden vier elektrochemische Systeme näher untersucht.
     
+    Die Standardpotentiale dreier galvanischer Zellen wurden bestimmt. Das Potential einer \ch{Pb\sld}/\ch{Pb(NO3)2\aq} (\SI[mode=text]{1.0}{M}) // \ch{Cu(NO3)2\aq} (\SI[mode=text]{1.0}{M})/\ch{Cu\sld} Zelle betrug \SI[separate-uncertainty]{0.512 \pm 0.003}{V} $(s=\num{\pm 0.0015})$. Das Potential einer \ch{Zn\sld}/\ch{Zn(NO3)2\aq} (\SI[mode=text]{1.0}{M}) // \ch{Pb(NO3)2\aq} (\SI[mode=text]{1.0}{M})/\ch{Pb\sld} Zelle betrug \SI[separate-uncertainty]{0.403 \pm 0.020}{V} $(s=\num{\pm 0.011})$ und das Potential einer \ch{Zn\sld}/\ch{Zn(NO3)2\aq} (\SI[mode=text]{1.0}{M}) // \ch{Cu(NO3)2\aq} (\SI[mode=text]{1.0}{M})/\ch{Cu\sld} Zelle war \SI[separate-uncertainty]{0.983 \pm 0.080}{V} $(s=\num{\pm 0.043})$. Eine Elektrolyse mit Kupferelektroden erlaubte die Bestimmung der Faraday-Konstante. Der Mittelwert der Messungen ergab eine Konstante von \SI[mode=text]{1.082d5}{\coulomb\per\mole}. Im Vergleich zum Literaturwert ist diese Konstante zu hoch, was jedoch durch Fehler beim Messvorgang, wie etwa Stromabfall, erklärt werden kann. Das Löslichkeitsprodukt von \ch{Cu(OH)2\sld} konnte zu \num{3.20e-19} bestimmt werden. Dieser zu große Wert weicht um eine Größenordnung vom Literaturwert (\num{4.8e-20} bei \SI[mode=text]{25}{\degreeCelsius} \cite{LoslichkeitWerteCUOH}) ab. Die Komplexbildungskonstante von \ch{[Cu(NH3)4]\pch[2]\aq} wurde bestimmt und beträgt \SI[mode=text, separate-uncertainty]{2.0 \pm 2.3 d14}{}. Auch dieser Wert ist im Vergleich zum Literaturwert (\num{1.1d13} bei \SI[mode=text]{25}{\degreeCelsius} \cite{KomplexFormation}) um eine Größenordnung zu groß. Als Gründe für diese Abweichungen werden Messfehler vermutet.
   \end{abstract}
   
   \pagebreak
@@ -123,11 +125,13 @@ citestyle=numeric
       
       Redoxreaktionen kommen in beinahe allen Bereichen der Chemie vor. Auch in der Industrie werden Redoxreaktionen z. B. zur Herstellung wichtiger Chemikalien verwendet, wie etwa die Darstellung von \ch{NaOH} im Rahmen der Elektrolyse einer Kochsalzlösung \cite{NaOHDarstellung}. Ein tieferes Verständnis dieser Reaktionen ist somit absolut vonnöten. 
       
-      Das physikalische Prinzip hinter den Redoxreaktionen ist die Übertragung von Elektronen, damit die Elemente stabilere Zustände erreichen. In der Spannungsreihe werden die Elemente nach ihrer Tendenz, Elektronen aufzunehmen klassifiziert. 
+      Das physikalische Prinzip hinter den Redoxreaktionen ist die Übertragung von Elektronen, damit die Elemente stabilere Zustände erreichen. In der Spannungsreihe werden die Elemente nach ihrer Tendenz, Elektronen aufzunehmen klassifiziert. \\
+      
+      Anmerkung zur Angabe von Konstanten im Protokoll: um Probleme mit mathematischen Funktionen wie etwa dem Logarithmus bzw. der Exponentialfunktion zu vermeiden, werden alle Gleichgewichtskonstanten dimensionslos angegeben. Dazu werden alle Spezies im jeweiligen Massenwirkungsgesetz durch die Standardkonzentration ($c_{Standard} = \SI[mode=text]{1}{M}$) dividiert.
   
     \subsection{Ziel des Experiments}
     
-      Auf Basis der obigen Überlegungen ist das Ziel, ein besseres Verständnis der Redoxchemie zu erhalten. Dabei werden zuerst die Potentiale dreier galvanischer Zellen bestimmt. Anschließend wird die Faraday-Konstante bestimmt, die für Elektrolysen von Bedeutung ist. Zum Abschluss werden das Löslichkeitsprodukt von \ch{Cu(OH)2\sld} und die Komplexbildungskonstante von \ch{[Cu(NH3)4]\pch[2]} bestimmt. Die erhaltenen Daten sollen mit den Literaturwerten verglichen werden. 
+      Auf Basis der obigen Überlegungen ist das Ziel, ein besseres Verständnis der Redoxchemie zu erhalten. Dabei werden zuerst die Potentiale dreier galvanischer Zellen bestimmt. Anschließend wird die Faraday-Konstante bestimmt, die für Elektrolyseprozesse von Bedeutung ist. Zum Abschluss werden das Löslichkeitsprodukt von \ch{Cu(OH)2\sld} und die Komplexbildungskonstante von \ch{[Cu(NH3)4]\pch[2]} bestimmt. Die erhaltenen Daten sollen mit den Literaturwerten verglichen werden. 
     
   \section{Experimenteller Teil}
   
@@ -140,18 +144,20 @@ citestyle=numeric
         
         \begin{tabular}{@{}ll|ll@{}}
           \toprule
-            Geräte & Hersteller & Chemikalie & Hersteller \\ \midrule
-            2 \SI[mode=text]{100}{\milli\litre} Bechergläser &  & \SI[mode=text]{1}{M} \ch{Zn(NO3)2}-Lösung &  \\
-            Magnetrührer &  & \SI[mode=text]{1}{M} \ch{Cu(NO3)2}-Lösung &  \\
-            \SI[mode=text,separate-uncertainty]{25.00(5)}{\milli\litre} Vollpipette &  & \SI[mode=text]{1}{M} \ch{Pb(NO3)2}-Lösung &  \\
-            \SI[mode=text,separate-uncertainty]{25.0(1)}{\milli\litre} Bürette &  & \SI[mode=text]{1}{M} \ch{KNO3}-Lösung &  \\
-            Stromschlüssel &  & konz. \ch{HCl} &  \\
-            Voltmeter &  & \SI[mode=text]{0.1}{M} \ch{CuSO4}-Lösung &  \\
-            Netzgerät &  & \SI[mode=text]{0.1}{M} \ch{KOH}-Lösung &  \\ 
-            Rührfische &  & deionisiertes Wasser &  \\ 
-            Schleifpapier &  & \ch{Cu}-Stab &  \\ 
-             &  & \ch{Pb}-Stab &  \\
-             &  & \ch{Zn}-Stab &  \\ \bottomrule
+            Geräte & Hersteller & Chemikalie & bezogen von \\ \midrule
+            2 \SI[mode=text]{100}{\milli\litre} Bechergläser & DURAN & \SI[mode=text]{1.0}{M} \ch{Zn(NO3)2}-Lösung & Vorrat \\
+            Magnetrührer & CAT M 6.1 & \SI[mode=text]{1.0}{M} \ch{Cu(NO3)2}-Lösung & Vorrat \\
+            \SI[mode=text,separate-uncertainty]{25.000(45)}{\milli\litre} Vollpipette & BRAND & \SI[mode=text]{1.0}{M} \ch{Pb(NO3)2}-Lösung & Vorrat \\
+            \SI[mode=text,separate-uncertainty]{25.000(75)}{\milli\litre} Bürette & BRAND & \SI[mode=text]{1.0}{M} \ch{KNO3}-Lösung & Vorrat \\
+            Stromschlüssel &  & konz. \ch{HCl} & Vorrat \\
+            Voltmeter & UNI-T UT61D & \SI[mode=text]{0.10}{M} \ch{CuSO4}-Lösung & Vorrat \\
+            Netzgerät & RS Pro IPS 303A & \SI[mode=text]{0.10}{M} \ch{KOH}-Lösung & Vorrat \\ 
+            Rührfische &  & \SI[mode=text]{1.0}{M} \ch{KOH}-Lösung & Vorrat \\ 
+            Schleifpapier &  & \SI[mode=text]{1.0}{M} \ch{NH3}-Lösung & Vorrat  \\
+             &  & deionisiertes Wasser & Vorrat  \\             
+             &  & \ch{Cu}-Stab & Vorrat \\
+             &  & \ch{Pb}-Stab & Vorrat \\ 
+             &  & \ch{Zn}-Stab & Vorrat \\ \bottomrule
         \end{tabular}
       \end{table}
       
@@ -159,7 +165,7 @@ citestyle=numeric
     
     \subsection{Untersuchung von elektrochemischen Zellen unter Standardbedingungen}
       
-      Kupfer (\ElPot[superscript=0](\ch{Cu}){0.337}) ist ein edles Metall und kann von den unedleren Metallen Blei (\ElPot[superscript=0](\ch{Pb}){-0.763}) und Zink (\ElPot[superscript=0](\ch{Zn}){-0.126}) reduziert werden\footnote{die angegebenen Standardpotentiale wurden \cite[S. 881]{PhysicalChemistryAtkings} entnommen}. In diesem Experiment werden die Potentiale von drei galvanischen Zellen bestimmt: 
+      Kupfer (\ElPot[superscript=0](\ch{Cu}){0.337}) ist ein edles Metall und kann von den unedleren Metallen Blei (\ElPot[superscript=0](\ch{Pb}){-0.126}) und Zink (\ElPot[superscript=0](\ch{Zn}){-0.763}) reduziert werden\footnote{die angegebenen Standardpotentiale wurden \cite[S. 881]{PhysicalChemistryAtkings} entnommen}. In diesem Experiment werden die Potentiale von drei galvanischen Zellen bestimmt: 
       
       \begin{center}
         (I): \ch{Pb\sld}/\ch{Pb(NO3)2\aq} (\SI[mode=text]{1.0}{M}) // \ch{Cu(NO3)2\aq} (\SI[mode=text]{1.0}{M})/\ch{Cu\sld}
@@ -177,7 +183,7 @@ citestyle=numeric
         Zn\sld{} + Cu\pch[2]\aq{} &-> Zn\pch[2]\aq{} + Cu\sld
       \end{reactions}
       
-      Da alle Reaktanden in Standardkonzentration vorliegen ($c_{i} = \SI[mode=text]{1}{M}$), können die gemessen Potentiale mit den theoretischen Standardpotentialen, die aus Literaturwerten errechnet wurden, verglichen werden. Die theoretischen Standardpotentiale der Reaktionen können dabei wie in \eqref{eq:LiteraturStandard} angeführt berechnet werden. 
+      Da alle Reaktanden in Standardkonzentration vorliegen ($c_{i} = \SI[mode=text]{1}{M}$), können die gemessen Potentiale mit den theoretischen Standardpotentialen, die aus Literaturwerten errechnet wurden, direkt verglichen werden. Die theoretischen Standardpotentiale der Reaktionen können dabei wie in \eqref{eq:LiteraturStandard} angeführt berechnet werden. 
       
       \begin{equation}
         \ElPot*[superscript=0](Lit.){} = \ElPot*[superscript=0](Red.){} - \ElPot*[superscript=0](Ox.){} \label{eq:LiteraturStandard}
@@ -197,13 +203,13 @@ citestyle=numeric
       
       \subsubsection{Versuchsdurchführung} \label{sec:VersuchZellen}
         
-        Zunächst wurden die jeweiligen Metallelektroden (\ch{Cu}-Plättchen, Zink- und Bleistab) mit Schleifpapier gesäubert\footnote{um eine etwaige Oxidschicht zu entfernen} und anschließend etwas konz. \ch{HCl} gereinigt. Die Metallelektroden wurden jeweils in ein \SI[mode=text]{100}{\milli\liter} Becherglas gegeben und dieses mit ca. \SI[mode=text]{30}{\milli\liter} der zugehörigen \SI[mode=text]{1}{M} Salzlösung befüllt. Der Stromschlüssel wurde mit \SI[mode=text]{1}{M} \ch{KNO3}-Lösung unter Vermeidung von Luftblasen befüllt und in die beiden als Halbzellen fungierenden Bechergläser gestellt\footnote{es wurde darauf geachtet, dass er in beide Lösungen ungefähr gleich tief eintauchte}. Das Voltmeter wurde an die beiden Metallelektroden angeschlossen. Nachdem sich der Messwert stabilisiert hatte (ca. \SI[mode=text]{5}{\second}, wurde er abgelesen. 
+        Zunächst wurden die jeweiligen Metallelektroden (Kupfer-, Zink- und Bleistab) mit Schleifpapier gesäubert\footnote{um eine etwaige Oxidschicht, Fett sowie anderen Schmutz zu entfernen} und anschließend etwas konz. \ch{HCl} gereinigt. Je ein Becherglas wurde mit ca. \SI[mode=text]{30}{\milli\liter} einer \SI[mode=text]{1.0}{M} Salzlösung befüllt. Die verwendeten Salzlösungen sind oben beschrieben. Der Stromschlüssel wurde mit \SI[mode=text]{1.0}{M} \ch{KNO3}-Lösung unter Vermeidung von Luftblasen befüllt und in die beiden als Halbzellen fungierenden Bechergläser gestellt\footnote{es wurde darauf geachtet, dass er in beide Lösungen ungefähr gleich tief eintauchte}. Das Voltmeter wurde an die beiden Metallelektroden angeschlossen. Diese wurden jeweils in ein Becherglas mit zugehöriger Salzlösung gestellt. Nachdem sich der Messwert stabilisiert hatte (ca. \SI[mode=text]{5}{\second}), wurde er abgelesen. 
         
-        Die Messung der Potentialdifferenzen wurde pro galvanischem Element dreimal wiederholt, wobei die Metallelektroden zwischen jeder Messung wie oben beschrieben gründlich gesäubert wurde, um unerwünschte kinetische Effekte an den Oberflächen möglichst zu vermeiden.      
+        Die Messung der Potentialdifferenzen wurde pro galvanischer Zelle dreimal wiederholt, wobei die Metallelektroden zwischen jeder Messung wie oben beschrieben gründlich gesäubert wurden, um unerwünschte kinetische Effekte an den Oberflächen möglichst zu vermeiden.      
       
       \subsubsection{Messergebnisse und Literaturwerte}
     
-        In Tabelle \ref{tab:MessdatenPotentialdifferenzenZellen} sind alle Messwerte, die im Rahmen der Versuchsdurchführung wie in \ref{sec:VersuchZellen} beschrieben, gemessen wurden. 
+        In Tabelle \ref{tab:MessdatenPotentialdifferenzenZellen} sind alle Messwerte aufgelistet, die im Rahmen der Versuchsdurchführung wie in \ref{sec:VersuchZellen} beschrieben, gemessen wurden. 
       
         \begin{table}[H]
           \centering
@@ -220,7 +226,7 @@ citestyle=numeric
       
       \subsubsection{Ergebnisse und Diskussion} \label{sec:ErgebnissePotentialeEins}
       
-      In Tabelle \ref{tab:MessdatenPotentialdifferenzenZellenlit} werden die aus \ref{tab:MessdatenPotentialdifferenzenZellen} errechneten, gemessen Standardpotentiale aufgelistet und mit zugehörigen Literaturwerten verglichen. Die angegebenen thermodynamischen Gleichgewichtskonstanten wurden aus den Literaturwerten und gemessenen Potentialen nach \eqref{eq:Gleichgewichtskonstante} berechnet und zeigen, dass das Gleichgewicht aller drei Reaktionen stark auf Seite der Produkte liegt.
+      In Tabelle \ref{tab:MessdatenPotentialdifferenzenZellenlit} werden die aus \ref{tab:MessdatenPotentialdifferenzenZellen} errechneten, gemessenen Standardpotentiale aufgelistet und mit den zugehörigen Literaturwerten verglichen. Die angegebenen thermodynamischen Gleichgewichtskonstanten wurden aus den Literaturwerten und gemessenen Potentialen nach \eqref{eq:Gleichgewichtskonstante} berechnet und zeigen, dass das Gleichgewicht aller drei Reaktionen stark auf Seite der Produkte liegt.
       
       \begin{table}[H]
         \centering
@@ -237,11 +243,11 @@ citestyle=numeric
       
       Wie aus der Tabelle ersichtlich, unterscheiden sich die gemessenen Werte der Potentiale doch recht stark von den Literaturwerten.  Gründe für diese Abweichungen sollen im Folgenden diskutiert werden. Die Messung der Blei-Kupfer Zelle war jene mit der höchsten Präzision\footnote{kleinste Standardabweichung} und geringsten Abweichung vom Literaturwert. Die Messungen der Zink-Blei Zelle und der Zink-Kupfer Zelle lieferten beide niedrigere Werte. \\ 
       
-      Eine Erklärung für diese Beobachtungen könnten unterschiedliche Konzentrationen der vorgelegten Salzlösungen sein. Sind diese nämlich nicht \SI[mode=text]{1.0}{M}, so können die unterschiedlichen Werte mit der Nernstgleichung - \eqref{eq:Nernst} - erklärt werden. Der höhere Potentialwert für die Blei-Kupfer Zelle kann durch eine niedrigere Bleikonzentration erklärt werden bei entweder größerer Kupferkonzentration oder Kupferkonzentration von \SI[mode=text]{1.0}{M}. Die niedrigere Bleikonzentration würde bei entweder größerer Zinkkonzentration oder Zinkkonzentration von \SI[mode=text]{1.0}{M} auch den niedrigeren Wert der Zink-Blei Zelle erklären. Eine größere Zinkkonzentration widerum würde den geringeren Potentialwert der Zink-Kupfer Zelle erklären. Die Kupferkonzentration müsste damit entweder \SI[mode=text]{1.0}{M}, kleiner oder größer, aber nicht größer wie jene von Zink sein. 
+      Eine Erklärung für diese Beobachtungen könnten unterschiedliche Konzentrationen der vorgelegten Salzlösungen sein. Sind diese nämlich nicht \SI[mode=text]{1.0}{M}, so können die unterschiedlichen Werte mit der Nernstgleichung - \eqref{eq:Nernst} - erklärt werden. Der höhere Potentialwert für die Blei-Kupfer Zelle kann durch eine niedrigere Bleikonzentration erklärt werden bei entweder größerer Kupferkonzentration oder Kupferkonzentration von \SI[mode=text]{1.0}{M}. Die niedrigere Bleikonzentration würde bei entweder größerer Zinkkonzentration oder Zinkkonzentration von \SI[mode=text]{1.0}{M} auch das niedrigere Potential der Zink-Blei Zelle erklären. Eine größere Zinkkonzentration widerum würde den geringeren Potentialwert der Zink-Kupfer Zelle erklären. Die Kupferkonzentration müsste damit entweder \SI[mode=text]{1.0}{M}, kleiner oder größer, aber nicht größer wie jene von Zink sein. 
       
-      In diesem Sinne könnte eine niedrigere Blei-, größere Zinkkonzentration und größere Kupferkonzentration\footnote{nach unten durch 1 und nach oben durch die Zinkkonzentration beschränkt} die Abweichungen erklären. Ein Grund für das Zustandekommen der abweichenden Konzentrationen könnte sein, dass durch die nach Gebrauch wieder zurückgeleerten Lösungen der Studenten Verunreinigungen, zusätzliches Wasser, ... eingebracht werden. Grundsätzlich kann aber, denke ich, schon davon ausgegangen werden, dass die Konzentrationen stimmen. \\
+      In diesem Sinne könnte eine niedrigere Blei-, größere Zinkkonzentration und größere Kupferkonzentration\footnote{nach unten durch 1 und nach oben durch die Zinkkonzentration beschränkt} die Abweichungen erklären. Ein Grund für das Zustandekommen der abweichenden Konzentrationen könnte sein, dass durch die nach Gebrauch wieder zurückgeleerten Lösungen der Studenten Verunreinigungen, zusätzliches Wasser, ... eingebracht wurden. Grundsätzlich kann aber, denke ich, schon davon ausgegangen werden, dass die Konzentrationen stimmen. \\
       
-      Beim Säubern der Elektroden wurde beobachtet, dass die Bleielektroden sich am schlechtesten reinigen ließen. Von einer unreineren Elektrode können die Elektronen auf das zu reduzierende Blei-(II)-Ion nicht so gut übertragen werden. Dies könnte die kleinere Gleichgewichtskonstante und damit das geringere Potential erklären. Die Blei-Halbzelle hätte damit ein effektiv negativeres Potential, was auch das größere Potential der Blei-Kupfer Zelle erklären könnte. 
+      Beim Säubern der Elektroden wurde beobachtet, dass die Bleielektroden sich am schlechtesten reinigen ließen. Von einer unreineren Elektrode können die Elektronen auf das zu reduzierende Blei-(II)-Ion nicht so gut übertragen werden. Dies könnte die kleinere Gleichgewichtskonstante und damit das geringere Potential der Zink-Blei Zelle erklären. Die Blei-Halbzelle hätte damit ein effektiv negativeres Potential, was auch das größere Potential der Blei-Kupfer Zelle erklären könnte. 
       
       Ansonsten können diverse kinetische Hemmungen an den Oberflächen der Elektroden als Erklärung für die Abweichungen herangezogen werden. In dieser Hinsicht hat vielleicht auch die unterschiedliche (große) Oberfläche der Elektroden einen Einfluss. \\
       
@@ -262,7 +268,7 @@ citestyle=numeric
     
       Bisher wurden elektrochemische Systeme betrachtet, die freiwillig ablaufen. Die oben beschriebenen galvanischen Zellen eignen sich somit unter anderem, um Batterien zu bauen, da sie unter Abgabe von Energie reagieren. Bei der Elektrolyse findet genau der umgekehrte Prozess statt. Es wird nun Energie, also Strom benötigt, um eine elektrochemische Reaktion aufrecht zu erhalten. 
       
-      Die in einem bestimmten Zeitintervall übertragene Ladungsmenge $Q$ kann wie in \eqref{eq:Q} dargestellt aus dem zeitlichen Integral des Stromes berechnet werden, da dieser als Änderung der Ladung in einer besimmten Zeit definiert ist ($I=\frac{dQ}{dt}$). Zusätzlich ist die Ladungsmenge proportional zur Anzahl der übertragenen Elektronen $z * n$ ($n$ ist die Stoffmenge in mol). Der Proportionalitätsfaktor wird mit $F$ bezeichnet.
+      Die in einem bestimmten Zeitintervall übertragene Ladungsmenge $Q$ kann wie in \eqref{eq:Q} dargestellt aus dem zeitlichen Integral des Stromes berechnet werden, da dieser als Änderung der Ladung in einer bestimmten Zeit definiert ist ($I=\frac{dQ}{dt}$). Zusätzlich ist die Ladungsmenge proportional zur Anzahl der übertragenen Elektronen $z * n$ ($n$ ist die Stoffmenge in mol). Der Proportionalitätsfaktor wird mit $F$ bezeichnet.
       
       \begin{equation}
         Q = I \int_{0}^{t} dt = I * t = z * F * n = z * F * \frac{m}{M} \label{eq:Q}
@@ -274,13 +280,19 @@ citestyle=numeric
         F = \frac{I * t * M}{z * m} \label{eq:Faraday}
       \end{equation}
       
-      Wird nun über eine bestimmte Zeit ein bekannter Strom angelegt, kann durch Messung der Massendifferenz die Faraday-Konstante bestimmt werden.
+      Wird nun über eine bestimmte Zeit ein bekannter Strom angelegt, kann durch Messung der Massendifferenz die Faraday-Konstante bestimmt werden. Im Folgenden wird eine Elektrolyse mit Kupferelektroden und einer \ch{CuSO4} Lösung betrachtet. 
       
       \subsubsection{Versuchsdurchführung}
-      
+        
+        \begin{figure}[h]
+          \includegraphics[scale=0.4, center]{Graphiken/Versuchsanordnungen/ElektrolyseAufbau.png} 
+          \caption[schematische Versuchsanordnung Bestimmung der Faraday-Konstante, Quelle: \cite{Versuchsvorschrift}]{schematische Versuchsanordnung der Elektrolyse \cite{Versuchsvorschrift}}
+          \label{fig:Versuchsanordnung}
+        \end{figure}
+    
         Zu Beginn wurde der Strom am Messgerät auf ca. \SI[mode=text]{0.5}{\ampere} eingestellt. Dazu wurde ein Kurzschluss herbeigeführt, um auf Strombegrenzung zu schalten. Im Anschluss wurde der Strom eingestellt. 
         
-        Der Versuch wurde wie in Abbildung gezeigt aufgebaut. Das Strommessgerät wurde dazu seriell in den Stromkreis eingebaut, um die Messung bzw. Regulierung des exakten Stromes zu ermöglichen. Die beiden Kupferelektroden wurden mit Krokodilklemmen wie beschrieben angeschlossen. Als Elektrolytlösung wurden ca. \SI[mode=text]{50}{\milli\liter} einer \SI[mode=text]{1}{M} \ch{CuSO4}-Lösung verwendet. Die Elektroden wurden mit Schleifpapier gesäubert und in \SI[mode=text]{4}{M} \ch{HCl} gewaschen. Eine der Kupferelektroden wurde durch Biegung markiert und für ca. \SI[mode=text]{2}{\minute} im Trockenschrank bei ca. \SI[mode=text]{120}{\degreeCelsius} getrocknet. Nach dem Abkühlen wurden sie abgewogen und in das Becherglas gestellt. Es wurde darauf geachtet, dass sich die beiden Elektroden während der Elektrolyse nicht gegenseitig berühren\footnote{dazu diente eine kleine Styroporplatte}. Nachdem der Versuch vollständig wie beschrieben aufgebaut war, wurde der Strom eingeschalten und die Zeitmessung gestartet. Nach ca. \SI[mode=text]{10}{\minute} wurde die Elektrolyse abgebrochen, die Kupferelektroden entnommen, mit deionisiertem Wasser gespült und für ca. \SI[mode=text]{2}{\minute} im Trockenschrank bei ca. \SI[mode=text]{120}{\degreeCelsius} getrocknet. Nach dem Abkühlen wurde wieder abgewogen. 
+        Der Versuch wurde wie in Abbildung \ref{fig:Versuchsanordnung} gezeigt aufgebaut. Das Strommessgerät wurde dazu seriell in den Stromkreis eingebaut, um die Messung bzw. Regulierung des exakten Stromes zu ermöglichen. Die beiden Kupferelektroden wurden mit Krokodilklemmen wie beschrieben angeschlossen. Als Elektrolytlösung wurden ca. \SI[mode=text]{50}{\milli\liter} einer \SI[mode=text]{1.0}{M} \ch{CuSO4}-Lösung in einem \SI[mode=text]{100}{\milli\liter} Becherglas verwendet. Die Elektroden wurden mit Schleifpapier gesäubert und in \SI[mode=text]{4}{M} \ch{HCl} gewaschen. Eine der Kupferelektroden wurde durch Biegung markiert. Die Elektroden wurden für ca. \SI[mode=text]{2}{\minute} im Trockenschrank bei ca. \SI[mode=text]{120}{\degreeCelsius} getrocknet. Nach dem Abkühlen wurden sie abgewogen und in das Becherglas gestellt. Es wurde darauf geachtet, dass sich die beiden Elektroden während der Elektrolyse nicht gegenseitig berühren\footnote{dazu diente eine kleine Styroporplatte als Abstandshalter}. Nachdem der Versuch vollständig wie beschrieben aufgebaut war, wurde der Strom eingeschalten und die Zeitmessung gestartet. Nach ca. \SI[mode=text]{10}{\minute} wurde die Elektrolyse abgebrochen, die Kupferelektroden entnommen, mit deionisiertem Wasser gespült und für ca. \SI[mode=text]{2}{\minute} im Trockenschrank bei ca. \SI[mode=text]{120}{\degreeCelsius} getrocknet. Nach dem Abkühlen wurde wieder abgewogen. 
         
       \subsubsection{Messergebnisse} \label{sec:MessergebnisseFaraday}
       
@@ -292,7 +304,7 @@ citestyle=numeric
               \toprule
                 & Anode & Kathode \\ \midrule
                $m_{vorher}$ in g & 5.987 & 6.689 \\
-               $m_{vorher}$ in g & 5.906 & 6.787 \\
+               $m_{nachher}$ in g & 5.906 & 6.787 \\
                $\Delta m$ in g & -0.081 & 0.098 \\ \bottomrule
             \end{tabular}
         \end{table}
@@ -307,7 +319,7 @@ citestyle=numeric
         
         Während der Elektrolyse wurde zweimal ein Stromabfall bemerkt - einmal auf ca. \SI[mode=text]{0.44}{\ampere} und ein zweites Mal auf ca. \SI[mode=text]{0.35}{\ampere}. Nach dem Stromabfall wurde wieder auf ca. \SI[mode=text]{0.5}{\ampere} eingestellt. Der für einige Zeit geringere Stromfluss bedeutet, dass in dieser Zeit der Reaktionsumsatz geringer war. Dies würde die größere Faraday-Konstante erklären. Allerdings erklärt der Stromabfall nicht, warum die Massenzunahme der Kathode deutlich größer ist wie der Betrag der Massenabnahme der Anode. Dass die aus der Massenzunahme der Kathode berechnete Faraday-Konstante mit dem Literaturwert recht gut übereinstimmt, zeigt, dass der beobachtete Stromabfall nicht allzu große Auswirkungen auf das Ergebnis hatte. Er erklärt den leicht zu großen Wert von $F_{Kathode}$.
         
-        Am Wahrscheinlichsten ist, dass beim Entnehmen der Anode, Trocknen oder Abwiegen Teile der Elektrode sich ablösten. Bereits im Vorhinein wurde bemerkt, dass die Elektrode an einer Stelle etwas spröde war. An dieser könnte sich etwas abgelöst haben, was die geringere Massenabnahme wie -zunahme erklären würde.\\
+        Am wahrscheinlichsten ist ein Mess- oder sogar Ablesefehler beim Abwiegen der Anode nach dem Trocknen. Wurde die Anode bei zu hoher Temperatur abgewogen, könnte der Auftrieb der heißen Luft die geringere Massendifferenz erklären. Auch könnten durch das Berühren mit den Fingern Fettreste, ... auf die Anode aufgebracht worden sein. \\
         
         Um die Messergebnisse zu verbessern, wird an dieser Stelle folgendes vorgeschlagen: 
       
@@ -315,6 +327,7 @@ citestyle=numeric
         \item die beiden Elektroden besser befestigen - stabile Halterung
         \item spröde bzw. brüchig erscheinende Elektroden sofort ersetzen
         \item die Stabilität des Netzgerätes im Vorfeld für ein paar Minuten testen
+        \item bessere Handhabung der Waage 
       \end{itemize}
         
     \pagebreak
@@ -334,16 +347,16 @@ citestyle=numeric
       Ist  die Konzentration von \ch{OH\mch\aq} im Gleichgewicht bekannt, kann durch Messen von [\ch{Cu\pch[2]\aq}] das gesuchte Löslichkeitsprodukt berechnet werden. Dazu wurde die folgende galvanische Zelle verwendet:
       
       \begin{center}
-        \ch{Cu\sld}/\ch{Cu(OH)2\sld},\ch{OH\mch\aq} // \ch{Cu\pch[2]\aq} (\SI[mode=text]{0.1}{M})/\ch{Cu\sld}
+        \ch{Cu\sld}/\ch{Cu(OH)2\sld},\ch{OH\mch\aq} // \ch{Cu\pch[2]\aq} (\SI[mode=text]{0.10}{M})/\ch{Cu\sld}
       \end{center}
       
-      Die Spannung dieser Zelle kann mithilfe der Nernstgleichung berechnet werden. Da es sich um eine sogenannte Konzentrationszelle handelt\footnote{bei einer Konzentrationszelle wird die Redoxreaktion nur durch eine Konzentrationsunterschied hervorgerufen}, ist \ElPot[superscript=0](){0} und die Nernstgleichung vereinfacht sich zu:
+      Die Spannung dieser Zelle kann mithilfe der Nernstgleichung berechnet werden. Da es sich um eine sogenannte Konzentrationszelle handelt\footnote{bei einer Konzentrationszelle wird die Redoxreaktion nur durch einen Konzentrationsunterschied hervorgerufen}, ist \ElPot[superscript=0](){0} und die Nernstgleichung vereinfacht sich zu:
       
       \begin{equation}
         \ElPot*[](){} = - \frac{R * T}{z * F} * \ln \frac{[\ch{Cu\pch[2]\aq}]_{Anode}}{[\ch{Cu\pch[2]\aq}]_{Kathode}} \label{eq:Elpot}
       \end{equation}
       
-      Die Konzentration von \ch{Cu\pch[2]} im Kathodenraum ist bekannt ($[\ch{Cu\pch[2]\aq}]_{Kathode} = \SI[mode=text]{0.1}{M}$). Durch umformen \ref{eq:Elpot} von erhält man einen Ausdruck, mit dem die Konzentration von \ch{Cu\pch[2]} im Anodenraum berechnet werden kann:
+      Die Konzentration von \ch{Cu\pch[2]} im Kathodenraum ist bekannt ($[\ch{Cu\pch[2]\aq}]_{Kathode} = \SI[mode=text]{0.10}{M}$). Durch umformen von \ref{eq:Elpot} erhält man einen Ausdruck, mit dem die Konzentration von \ch{Cu\pch[2]} im Anodenraum berechnet werden kann:
       
       \begin{equation}
         [\ch{Cu\pch[2]\aq}]_{Anode} = [\ch{Cu\pch[2]\aq}]_{Kathode} * e^{- \frac{\ElPot*[](){} * z * F}{R * T}} 
@@ -357,9 +370,9 @@ citestyle=numeric
       
       \subsubsection{Versuchsdurchführung} \label{sec:VersuchsdurchfuhrungLoslichkeit}
       
-      Je ein \SI[mode=text]{100}{\milli\liter} Becherglas wurde mit \SI[mode=text]{50}{\milli\liter} einer \SI[mode=text]{0.1}{M} \ch{CuSO4} bzw. \SI[mode=text]{50}{\milli\liter} einer \SI[mode=text]{0.1}{M} \ch{KOH}. Als Stromschlüssel wurde derselbe wie in \ref{sec:VersuchZellen} verwendet. Dieser wurde in etwa gleich tief in beide Bechergläser eingetaucht. Zwei \ch{Cu}-Elektroden wurden mit Schleifpapier und konz. \ch{HCl} gereinigt und mit deionisiertem Wasser gespült\footnote{um keine störenden Ionen in die Zelle zu bringen}. Nach dem Trocknen wurden sie an das Voltmeter angeschlossen und in die beiden Bechergläser getaucht. Die Spannung wurde notiert\footnote{es wurde darauf geachtet, die Spannung unmittelbar nach dem Eintauchen in die Lösung zu messen, da es durch Polarisationseffekte sehr schnell zur Spannungsänderung kommt}. Es wurden zwei weitere Messungen nach dem gleichem Prinzip durchgeführt.
+      Je ein \SI[mode=text]{100}{\milli\liter} Becherglas wurde mit \SI[mode=text]{50}{\milli\liter} einer \SI[mode=text]{0.10}{M} \ch{CuSO4} bzw. \SI[mode=text]{50}{\milli\liter} einer \SI[mode=text]{0.10}{M} \ch{KOH}. Als Stromschlüssel wurde derselbe wie in \ref{sec:VersuchZellen} verwendet. Dieser wurde in etwa gleich tief in beide Bechergläser eingetaucht. Zwei \ch{Cu}-Elektroden wurden mit Schleifpapier und konz. \ch{HCl} gereinigt und mit deionisiertem Wasser gespült\footnote{um keine störenden Ionen in die Zelle zu bringen}. Nach dem Trocknen wurden sie an das Voltmeter angeschlossen und in die beiden Bechergläser getaucht. Die Spannung wurde unmittelbar nach dem Eintauchen in die Lösung gemessen und notiert, da es durch Polarisationseffekte sehr schnell zur Spannungsänderung kommt. Es wurden zwei weitere Messungen nach dem gleichem Prinzip durchgeführt.
       
-      Anschließend wurde die oben beschriebene Messung mit \SI[mode=text]{1}{M} \ch{KOH} durchgeführt. 
+      Anschließend wurde die oben beschriebene Messung mit \SI[mode=text]{1.0}{M} \ch{KOH} durchgeführt. 
       
       \subsubsection{Messergebnisse}
       
@@ -390,11 +403,11 @@ citestyle=numeric
             \end{tabular}
         \end{table}
         
-        Im Vergleich zum Literaturwert des Löslichkeitsproduktes (\num{4.8e-20} bei \SI[mode=text]{25}{\degreeCelsius} \cite{LoslichkeitWerteCUOH}) ist der gemessene Wert bei Verwendung der \SI[mode=text]{0.1}{M} \ch{KOH} um 3 Größenordnungen zu hoch. Der gemessene Wert bei Verwendung der \SI[mode=text]{1}{M} \ch{KOH} war nur mehr um 1 Größenordnung zu groß. Die Präzision beider Messungen liegt in einem annehmbaren Rahmen und ist vergleichbar mit den in \ref{sec:ErgebnissePotentialeEins} notierten. 
+        Im Vergleich zum Literaturwert des Löslichkeitsproduktes (\num{4.8e-20} bei \SI[mode=text]{25}{\degreeCelsius} \cite{LoslichkeitWerteCUOH}) ist der gemessene Wert bei Verwendung der \SI[mode=text]{0.10}{M} \ch{KOH} um 3 Größenordnungen zu hoch. Der gemessene Wert bei Verwendung der \SI[mode=text]{1.0}{M} \ch{KOH} war nur mehr um 1 Größenordnung zu groß. Die Präzision beider Messungen liegt in einem annehmbaren Rahmen und ist vergleichbar mit den in \ref{sec:ErgebnissePotentialeEins} notierten. 
         
-        Die größere \ch{OH\mch\aq} Konzentration hat zur Folge, dass gemäß der Formel für das Löslichkeitsprodukt die \ch{Cu\pch[2]\aq} Konzentration kleiner wird. Eine kleinere \ch{Cu\pch[2]\aq} Konzentration bewirkt nun, wie man mit der Nernstgleichung sieht, ein größeres Potential. Messtechnisch gesehen müsste eine größere Spannung besser zu messen sein. Das Problem bei dieser Erklärung ist jedoch, dass die Präzision bei höherer Spannung abnahm. \\
+        Die größere \ch{OH\mch\aq} Konzentration hat zur Folge, dass gemäß der Formel für das Löslichkeitsprodukt die \ch{Cu\pch[2]\aq} Konzentration kleiner wird. Eine kleinere \ch{Cu\pch[2]\aq} Konzentration bewirkt nun, wie man mit der Nernstgleichung sieht, ein größeres Potential. Messtechnisch gesehen müsste eine größere Spannung besser zu messen sein. Das Problem bei dieser Erklärung ist jedoch, dass die Präzision bei höherer Spannung abnahm. Dennoch kann so erklärt werden, dass bei größerer \ch{OH\mch} Konzentration das experimentelle Löslichkeitsprodukt dem theoretischen näher kommt. Zu beachten ist jedoch, dass bei höherer Konzentration ab einem gewissen Punkt nicht mehr mit Konzentrationen gerechnet werden kann. \\
         
-        Eine weitere Fehlerquelle könnte ein fehlerhaftes Ablese der Werte sein. Da die Elektroden sehr schnell polarisiert werden, änderte sich die gemessene Spannung sehr schnell. Es wurde zwar versucht, den ersten einigermaßen stabilen Messwert (nach ca. \SI[mode=text]{3}{\second} zu notieren, was aber aufgrund der Schwankungen recht schwierig war.
+        Eine weitere Fehlerquelle könnte eine fehlerhafte Ablese der Werte sein. Da die Elektroden sehr schnell polarisiert werden, änderte sich die gemessene Spannung sehr schnell. Es wurde zwar versucht, den ersten einigermaßen stabilen Messwert (nach ca. \SI[mode=text]{3}{\second}) zu notieren, was aber aufgrund der Schwankungen recht schwierig war.
         
         Um die Messergebnisse zu verbessern, wird an dieser Stelle folgendes vorgeschlagen: 
       
@@ -407,7 +420,7 @@ citestyle=numeric
         
       \subsection{Bestimmung der Komplexbildungskonstante von \ch{[Cu(NH3)4]\pch[2]}}
         
-        Kupfer reagiert mit Ammoniak unter Bildung eines Tetramminkupfer-(II) Komplexes. Die entsprechende Komplexbildungskonstante lässt sich wie in dargestellt berechnen.
+        Kupfer reagiert mit Ammoniak unter Bildung eines Tetramminkupfer-(II) Komplexes. Die entsprechende Komplexbildungskonstante lässt sich wie in \eqref{eq:Komplexbildungskonstanten} dargestellt berechnen.
         
         \begin{reaction}
           Cu\pch[2]\aq{} + 4 NH3\aq{} <=>> [Cu(NH3)4]\pch[2]\aq \label{rec:Komplexbilgun}
@@ -420,7 +433,7 @@ citestyle=numeric
         Um diese Komplexbildungskonstante zu berechnen, kann folgende galvanische Zelle verwendet werden:
         
         \begin{center}
-          \ch{Cu\sld}/\ch{[Cu(NH3)4]\pch[2]\aq},\ch{NH3\aq} // \ch{Cu\pch[2]\aq} (\SI[mode=text]{0.1}{M})/\ch{Cu\sld}
+          \ch{Cu\sld}/\ch{[Cu(NH3)4]\pch[2]\aq},\ch{NH3\aq} // \ch{Cu\pch[2]\aq} (\SI[mode=text]{0.10}{M})/\ch{Cu\sld}
         \end{center}
         
         Liegt Ammoniak im Überschuss vor, kann angenommen werden, dass die Konzentration von \ch{[Cu(NH3)4]\pch[2]\aq} annähernd konstant bleibt. Dennoch ist aufgrund des Gleichgewichts etwas \ch{Cu\pch[2]\aq} in Lösung. Durch Messung des Zellpotentials kann mithilfe der Nernstgleichung dessen Konzentration berechnet werden. Es handelt sich wieder um eine Konzentrationszelle!
@@ -429,7 +442,7 @@ citestyle=numeric
           \ElPot*[](){} = - \frac{R * T}{z * F} * \ln \frac{[\ch{Cu\pch[2]\aq}]_{Anode}}{[\ch{Cu\pch[2]\aq}]_{Kathode}}
         \end{equation}
         
-        Die Konzentration von Kupfer im Kathodenraum ist bekannt ($[\ch{Cu\pch[2]\aq}]_{Kathode} = \SI[mode=text]{0.1}{M}$). Somit kann die gesuchte Kupferkonzentration im Anodenraum berechnet werden:
+        Die Konzentration von Kupfer im Kathodenraum ist bekannt ($[\ch{Cu\pch[2]\aq}]_{Kathode} = \SI[mode=text]{0.10}{M}$). Somit kann die gesuchte Kupferkonzentration im Anodenraum berechnet werden:
         
         \begin{equation}
           [\ch{Cu\pch[2]\aq}]_{Anode} = [\ch{Cu\pch[2]\aq}]_{Kathode} * e^{- \frac{\ElPot*[](){} * z * F}{R * T}}
@@ -439,7 +452,7 @@ citestyle=numeric
         
         \subsubsection{Versuchsdurchführung} \label{sec.VersuchsdurchfuhrungKomplexbildung}
           
-          In einem \SI[mode=text]{100}{\milli\liter} Becherglas wurden \SI[mode=text]{50}{\milli\liter}\footnote{Vollpipette} \SI[mode=text]{1}{M} \ch{NH3}-Lösung und \SI[mode=text]{0.25}{\milli\liter}\footnote{Bürette} \SI[mode=text]{0.1}{M} \ch{CuSO4}-Lösung vermengt. Ein weiteres \SI[mode=text]{100}{\milli\liter} Becherglas wurde mit \SI[mode=text]{50}{\milli\liter}\footnote{Vollpipette} einer \SI[mode=text]{0.1}{M} \ch{CuSO4}-Lösung gefüllt. Der Stromschlüssel wurde wie bereits zuvor mit \SI[mode=text]{0.1}{M} \ch{KNO3}-Lösung gefüllt und in die beiden Bechergläser gestellt. Die mit Schleifpapier und konz. \ch{HCl} gesäuberten und mit deionisiertem Wasser gespülten \ch{Cu}-Elektroden wurden nach dem Trocknen an das Voltmeter angeschlossen und in die beiden Bechergläser gegeben. Die gemessen Spannung wurde notiert. 
+          In einem \SI[mode=text]{100}{\milli\liter} Becherglas wurden \SI[mode=text]{50}{\milli\liter}\footnote{Vollpipette} \SI[mode=text]{1.0}{M} \ch{NH3}-Lösung und \SI[mode=text]{0.25}{\milli\liter}\footnote{Bürette} \SI[mode=text]{0.10}{M} \ch{CuSO4}-Lösung vermengt. Ein weiteres \SI[mode=text]{100}{\milli\liter} Becherglas wurde mit \SI[mode=text]{50}{\milli\liter}\footnote{Vollpipette} einer \SI[mode=text]{0.10}{M} \ch{CuSO4}-Lösung gefüllt. Der Stromschlüssel wurde wie bereits zuvor mit \SI[mode=text]{1.0}{M} \ch{KNO3}-Lösung gefüllt und in die beiden Bechergläser gestellt. Die mit Schleifpapier und konz. \ch{HCl} gesäuberten und mit deionisiertem Wasser gespülten \ch{Cu}-Elektroden wurden nach dem Trocknen an das Voltmeter angeschlossen und in die beiden Bechergläser gegeben. Die gemessen Spannung wurde notiert. 
           Nach entsprechender Reinigung der Elektroden mit Schleifpapier und \ch{HCl} wurde die Messung weitere zweimal durchgeführt. 
           
         \subsubsection{Messergebnisse} \label{sec:MessergebnisseKomplexbildung}

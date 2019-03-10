@@ -2027,12 +2027,16 @@
   </bcf:bibdata>
   <bcf:section number="0">
     <bcf:citekey order="1">Versuchsvorschrift</bcf:citekey>
-    <bcf:citekey order="2">NaOHDarstellung</bcf:citekey>
-    <bcf:citekey order="3">PhysicalChemistryAtkings</bcf:citekey>
-    <bcf:citekey order="4">PhysicalChemistryAtkings</bcf:citekey>
-    <bcf:citekey order="5">Faraday</bcf:citekey>
-    <bcf:citekey order="6">LoslichkeitWerteCUOH</bcf:citekey>
-    <bcf:citekey order="7">KomplexFormation</bcf:citekey>
+    <bcf:citekey order="2">LoslichkeitWerteCUOH</bcf:citekey>
+    <bcf:citekey order="3">KomplexFormation</bcf:citekey>
+    <bcf:citekey order="4">NaOHDarstellung</bcf:citekey>
+    <bcf:citekey order="5">PhysicalChemistryAtkings</bcf:citekey>
+    <bcf:citekey order="6">PhysicalChemistryAtkings</bcf:citekey>
+    <bcf:citekey order="7">Versuchsvorschrift</bcf:citekey>
+    <bcf:citekey order="8">Versuchsvorschrift</bcf:citekey>
+    <bcf:citekey order="9">Faraday</bcf:citekey>
+    <bcf:citekey order="10">LoslichkeitWerteCUOH</bcf:citekey>
+    <bcf:citekey order="11">KomplexFormation</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="none/global" type="entry" sortscheme="none" sortnamekeyscheme="global">
   <bcf:sorting>
