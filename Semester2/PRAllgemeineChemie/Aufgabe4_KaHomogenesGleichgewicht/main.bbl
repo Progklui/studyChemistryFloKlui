@@ -106,6 +106,26 @@
       \field{title}{Taschenatlas der Analytik}
       \field{year}{2007}
     \endentry
+    \entry{Wasseranalyse}{book}{}
+      \name{author}{1}{}{%
+        {{hash=15b31a1d71afc484343637e15d87b59d}{%
+           family={Pohling},
+           family_i={P\bibinitperiod},
+           given={Rolf},
+           given_i={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Spektrum}%
+      }
+      \strng{namehash}{15b31a1d71afc484343637e15d87b59d}
+      \strng{fullhash}{15b31a1d71afc484343637e15d87b59d}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Chemische Reaktionen der Wasseranalyse}
+      \field{year}{2015}
+    \endentry
   \endsortlist
 \endrefsection
 \endinput

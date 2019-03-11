@@ -2029,6 +2029,8 @@
     <bcf:citekey order="1">Versuchsvorschrift</bcf:citekey>
     <bcf:citekey order="2">InorganicChemistry</bcf:citekey>
     <bcf:citekey order="3">TaschenatlasAnallytik</bcf:citekey>
+    <bcf:citekey order="4">Wasseranalyse</bcf:citekey>
+    <bcf:citekey order="5">Wasseranalyse</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="none/global" type="entry" sortscheme="none" sortnamekeyscheme="global">
   <bcf:sorting>

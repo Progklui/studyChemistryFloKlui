@@ -4,7 +4,7 @@
 
 @Book{InorganicChemistry,
   Title                    = {Inorganic Chemistry},
-  Author                   = {Atkins and Overton and Rourke and Weller and Armstrong},
+  Author                   = {Peter Atkins and Tina Overton and Jonathan Rourke and Mark Weller and Fraser Armstrong},
   Publisher                = {Oxford University Press},
   Year                     = {2014},
 
@@ -41,3 +41,11 @@
   Timestamp                = {2019.02.28}
 }
 
+@Manual{Versuchsvorschrift,
+  Title                    = {Versuchsvorschriften PR Allgemeine Chemie - Universität Innsbruck},
+  Author                   = {Wolfgang Viertl et al.},
+  Year                     = {2019},
+
+  Owner                    = {Florian Kluibenschedl},
+  Timestamp                = {2019.03.03}
+}
