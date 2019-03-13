@@ -38,6 +38,86 @@
       \field{title}{Versuchsvorschriften PR Allgemeine Chemie - Universität Innsbruck}
       \field{year}{2019}
     \endentry
+    \entry{LibreOffice}{online}{}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labeltitlesource}{title}
+      \field{title}{LibreOffice}
+      \field{year}{2019}
+      \verb{url}
+      \verb https://de.libreoffice.org/
+      \endverb
+    \endentry
+    \entry{Mathematica}{online}{}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labeltitlesource}{title}
+      \field{title}{Mathematica Software}
+      \field{year}{2019}
+      \verb{url}
+      \verb https://www.wolfram.com/mathematica/?source=nav
+      \endverb
+    \endentry
+    \entry{solubilityConstants}{book}{}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labeltitlesource}{title}
+      \field{edition}{87}
+      \field{title}{CRC Handbook of Chemistry and Physics}
+      \field{year}{2019}
+    \endentry
+    \entry{solubitliyWikizwei}{online}{}
+      \name{author}{1}{}{%
+        {{hash=465f7f8831e4cb09ba6621dab2a4d6ee}{%
+           family={wikipedia.org},
+           family_i={w\bibinitperiod}}}%
+      }
+      \strng{namehash}{465f7f8831e4cb09ba6621dab2a4d6ee}
+      \strng{fullhash}{465f7f8831e4cb09ba6621dab2a4d6ee}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Lead(II) iodide}
+      \field{year}{2019}
+      \verb{url}
+      \verb https://en.wikipedia.org/wiki/Lead(II)_iodide
+      \endverb
+    \endentry
+    \entry{solubilityWikipedia}{online}{}
+      \name{author}{1}{}{%
+        {{hash=465f7f8831e4cb09ba6621dab2a4d6ee}{%
+           family={wikipedia.org},
+           family_i={w\bibinitperiod}}}%
+      }
+      \strng{namehash}{465f7f8831e4cb09ba6621dab2a4d6ee}
+      \strng{fullhash}{465f7f8831e4cb09ba6621dab2a4d6ee}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Blei(II)-iodid}
+      \field{year}{2019}
+      \verb{url}
+      \verb https://de.wikipedia.org/wiki/Blei(II)-iodid
+      \endverb
+    \endentry
+    \entry{solubilityOtherOne}{online}{}
+      \name{author}{1}{}{%
+        {{hash=fb58cde46c5685c235e8033fdbc8c1a0}{%
+           family={socratic.org},
+           family_i={s\bibinitperiod}}}%
+      }
+      \strng{namehash}{fb58cde46c5685c235e8033fdbc8c1a0}
+      \strng{fullhash}{fb58cde46c5685c235e8033fdbc8c1a0}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{year}{2019}
+      \verb{url}
+      \verb https://socratic.org/questions/use-the-value-ksp-1-4x10-8-for-pbi2-to-solve-the-following-problems
+      \endverb
+    \endentry
   \endsortlist
 \endrefsection
 \endinput
