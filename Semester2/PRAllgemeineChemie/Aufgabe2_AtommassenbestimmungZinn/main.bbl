@@ -38,6 +38,37 @@
       \field{title}{Versuchsvorschriften PR Allgemeine Chemie - Universität Innsbruck}
       \field{year}{2019}
     \endentry
+    \entry{Atommassentabelle}{online}{}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labeltitlesource}{title}
+      \field{title}{Tabelle der Atommassen}
+      \field{year}{2019}
+      \verb{url}
+      \verb http://www.chemie-master.de/FrameHandler.php?loc=http://www.chemie-master.de/pse/pse.php?modul=tab15
+      \endverb
+    \endentry
+    \entry{ReactionProof}{book}{}
+      \name{author}{1}{}{%
+        {{hash=cf08b8a45bd9cbb3ebca753e1760a309}{%
+           family={Morris\bibnamedelima Hein},
+           family_i={M\bibinitperiod\bibinitdelim H\bibinitperiod},
+           given={Susan\bibnamedelima Arena},
+           given_i={S\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {John Wiley \& Sons, Inc.}%
+      }
+      \strng{namehash}{cf08b8a45bd9cbb3ebca753e1760a309}
+      \strng{fullhash}{cf08b8a45bd9cbb3ebca753e1760a309}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{13}
+      \field{title}{Foundations of College Chemistry}
+      \field{year}{2011}
+    \endentry
   \endsortlist
 \endrefsection
 \endinput

@@ -2,42 +2,46 @@
 % Encoding: UTF-8
 
 
-@Periodical{Salzs,
-  Title                    = {Dichtetabelle Salzsäure},
+@Manual{Versuchsvorschrift,
+  Title                    = {Versuchsvorschriften PR Allgemeine Chemie - Universität Innsbruck},
+  Author                   = {Wolfgang Viertl et al.},
   Year                     = {2019},
 
-  Editor                   = {internetchemie.info},
-  Month                    = {März},
-  Url                      = {https://www.internetchemie.info/chemie-lexikon/daten/s/salzsaeure-dichtetabelle.php},
+  Owner                    = {Florian Kluibenschedl},
+  Timestamp                = {2019.03.03}
+}
+
+@Book{,
+  Title                    = {Foundations of College Chemistry},
+  Author                   = {Morris Hein, Susan Arena},
+  Publisher                = {John Wiley \& Sons, Inc.},
+  Year                     = {2011},
+  Edition                  = {13},
+
+  Owner                    = {Florian Kluibenschedl},
+  Timestamp                = {2019.03.13},
+  Url                      = {https://books.google.at/books?id=-XfMFmoqs2gC&pg=RA1-PA417&lpg=RA1-PA417&dq=Sn+%2B+HNO3&source=bl&ots=LKeRO8Xvc7&sig=ACfU3U3_xE4C1sBlV9k10yTPBw3H2klPyw&hl=de&sa=X&ved=2ahUKEwiU58GjgYDhAhXHpYsKHZ3TBpUQ6AEwBXoECAUQAQ#v=onepage&q=Sn%20%2B%20HNO3&f=false}
+}
+
+@Book{PhysicalChemistryAtkings,
+  Title                    = {Physical Chemistry},
+  Author                   = {Peter Atkins, Julio de Paula, James Keeler},
+  Publisher                = {Oxford University Press},
+  Year                     = {2018},
+
+  Address                  = {Oxford, United Kingdom},
+  Edition                  = {11th},
 
   Owner                    = {Florian Kluibenschedl},
   Timestamp                = {2019.02.26}
 }
 
-@Periodical{Magnesium,
-  Title                    = {Magnesium},
+@Electronic{Atommassentabelle,
+  Title                    = {Tabelle der Atommassen},
+  Url                      = {http://www.chemie-master.de/FrameHandler.php?loc=http://www.chemie-master.de/pse/pse.php?modul=tab15},
   Year                     = {2019},
 
-  Editor                   = {PubChem},
-  Language                 = {Englisch},
-  Month                    = {March},
-  Note                     = {Last Modification: 16.02.2019; Create Date: 16.09.2004},
-  Url                      = {https://pubchem.ncbi.nlm.nih.gov/compound/magnesium#section=Top},
-
-  Keywords                 = {ElementalProperties, Magnesium},
   Owner                    = {Florian Kluibenschedl},
-  Timestamp                = {2019.02.23}
-}
-
-@Periodical{LambdaHydrogen,
-  Title                    = {Wärmeleitfähigkeit von Gasen in Abhängigkeit der Temperatur},
-  Year                     = {2019},
-
-  Editor                   = {schweizer-fn.de},
-  Month                    = {März},
-  Url                      = {https://www.schweizer-fn.de/stoff/wleit_gase/wleit_gase.php},
-
-  Owner                    = {Florian Kluibenschedl},
-  Timestamp                = {2019.02.26}
+  Timestamp                = {2019.03.13}
 }
 

@@ -99,7 +99,7 @@ citestyle=numeric
   
   \begin{center}
     \begin{tabular}{r p{4cm}}
-      Versuchsdurchführung am: & 04. März 2019\\ % Date the experiment was performed
+      Versuchsdurchführung am: & 13. März 2019\\ % Date the experiment was performed
       Gruppe, Matrikelnummer: & 3, 11805747 \\
       Lehrveranstaltung: & PR Allgemeine Chemie A \\
       Institut: & Allgemeine, Anorganische und Theoretische Chemie \\
@@ -109,7 +109,9 @@ citestyle=numeric
 
 
   \begin{abstract}
+    Die Kenntnis von Methoden zur Bestimmung der Molmasse von Elementen liefert Einblicke in die Arbeitsweisen der ersten Chemiker und ist entscheidend, um das Zustandekommen des Periodensystem besser zu verstehen. 
     
+    Im Folgenden wurde die molare Masse von Zinn bestimmt, indem dieses mit halbkonzentrierter \ch{HNO3} umgesetzt und durch Glühen in das Zinn(IV)oxid (=Wägeform) überführt wurde. Aufgrund eines Missgeschicks beim Glühen ging der Großteil der Probe verloren, weswegen die molare Masse nicht bestimmt werden konnte. Dennoch wurde eine theoretische Auswertung sowie Fehleranalyse durchgeführt.
   \end{abstract}
   
   \pagebreak
@@ -117,7 +119,7 @@ citestyle=numeric
   \section{Theoretische Grundlagen}
   
     \subsection{Motivation} \label{sec:Motivation}
-      Zinn ist ein Metall und wird von Salpetersäure zu einem Zinnoxid oxidiert. Mitunter aufgrund seiner Lage im Periodensystem (4. Hauptgruppe) ergeben sich für die genaue Zusammensetzung des Oxids mehrere Möglichkeiten. Unter Berücksichtigung, dass sowohl das braune \ch{NO2} als auch das farblose \ch{NO} (beide giftig) entstehen können, ergeben sich für ein Zinnoxid mit der unbekannten Zusammensetzung Sn\textsubscript{x}O\textsubscript{y} die Reaktionsgleichungen \ref{rec:NOzwei} und \ref{rec:NO}.
+      Zinn ist ein Metall und wird von Salpetersäure zu einem Zinnoxid oxidiert. Mitunter aufgrund seiner Lage im Periodensystem (4. Hauptgruppe) ergeben sich für die genaue Zusammensetzung des Oxids mehrere Möglichkeiten. Unter Berücksichtigung, dass sowohl das braune \ch{NO2} als auch das farblose \ch{NO} (beide giftig) entstehen, ergeben sich für ein Zinnoxid mit der unbekannten Zusammensetzung Sn\textsubscript{x}O\textsubscript{y} die Reaktionsgleichungen \ref{rec:NOzwei} und \ref{rec:NO}. Anzumerken ist, dass \ch{NO2} eigentlich durch Oxidation von \ch{NO} mit Luftsauerstoff entsteht, was aber nichts am zu berechnenden Stoffmengenverhältnis ändert.
 
       \begin{reactions}
         2 H\pch[]  +  NO3\mch[] + $\el$ &-> NO2 + H2O \\
@@ -131,7 +133,9 @@ citestyle=numeric
         $\sum :$ $\mathrm{2y}$ H\pch[] + $\mathrm{2y}$ NO3\mch[] + $\mathrm{3x}$ Sn &-> 3 Sn\textsubscript{x}O\textsubscript{y} + $\mathrm{2y}$ NO + $\mathrm{y}$ H2O \label{rec:NO}
       \end{reactions}
       
-      Indem man nun einen vollständigen Reaktionsumsatz durch erhitzen und entsprechendes Abrauchen der Salpetersäure erzwingt, kann die Massendifferenz zwischen Edukt (\ch{Sn}) und Produkt (Sn\textsubscript{x}O\textsubscript{y}, wasserfrei) bestimmt werden. Nimmt man nun die Atommasse von Zinn und Sauerstoff als bekannt an, errechnet sich daraus die  Zusammensetzung des Zinnoxids. Umgekehrt, unter der Annahme, dass die Atommasse von Sauerstoff und die Zusammensetzung von Sn\textsubscript{x}O\textsubscript{y} bekannt sind, lässt sich die Atommasse von Zinn bestimmen.
+      Durch Erhitzen und entsprechendes Abrauchen der Salpetersäure erzwingt man einen vollständigen Reaktionsumsatz - \ch{NO2} und \ch{NO} sind beides Gase, die entweichen und demnach nicht mehr für eine etwaige Rückreaktion zur Verfügung stehen, was zur Folge hat, dass das Gleichgewicht stark auf der Seite der Produkte liegt. Im Anschluss kann die Massendifferenz zwischen Edukt (\ch{Sn}) und Produkt (Sn\textsubscript{x}O\textsubscript{y}, wasserfrei) bestimmt werden. 
+      
+      Nimmt man die Atommasse von Zinn und Sauerstoff als bekannt an, errechnet sich daraus die  Zusammensetzung des Zinnoxids. Unter der Annahme, dass die Atommasse von Sauerstoff und die Zusammensetzung von Sn\textsubscript{x}O\textsubscript{y} bekannt ist, lässt sich die Atommasse von Zinn bestimmen.
       Analog zu Versuch 1 lassen sich mit dem beschriebenen Verfahren beide Größen nicht gleichzeitig bestimmen.
   
     \subsection{Ziel des Experiments}
@@ -149,12 +153,14 @@ citestyle=numeric
         
         \begin{tabular}{@{}ll|ll@{}}
           \toprule
-            Geräte & Hersteller & Chemikalie & Hersteller \\ \midrule
-            Porzellantiegel &  & elementares \ch{Sn} &  \\
-            \SI[mode=text,separate-uncertainty]{10.0(1)}{\milli\litre} Messzylinder &  & halbkonzentrierte \ch{HNO3} &  \\
+            Geräte & Hersteller & Chemikalie & bezogen von \\ \midrule
+            Porzellantiegel &  & elementares \ch{Sn} & Vorrat \\
+            \SI[mode=text,separate-uncertainty]{10.0(1)}{\milli\litre} Messzylinder &  & halbkonzentrierte \ch{HNO3} & Vorrat \\
             Sandbad &  &  &  \\
             Bunsenbrenner &  &  &  \\
-            Analysenwaage &  &  &  \\ \bottomrule
+            Analysenwaage &  &  &  \\
+            Tondreieck &  &  &  \\ 
+            Dreifuß für Bunsenbrenner &  &  &  \\ \bottomrule
         \end{tabular}
       \end{table}
     
@@ -162,13 +168,15 @@ citestyle=numeric
     
       Aufgrund der Giftigkeit der beim Versuch entstehenden nitrosen Gase (\ch{NO}\textsubscript{x}) wurden die folgenden Schritte bis auf das Wiegen alle im Abzug durchgeführt. 
       
-      Die Masse des Porzellantiegels ($=m_{Tiegel}$) und des Zinnstücks ($=m_{\ch{Sn}}$) waren vorgegeben. Das Zinnstück wurde nun im Porzellantiegel mit ca. \SI[mode=text]{3}{\milli\litre} halbkonzentrierter \ch{HNO3} versetzt\footnote{mithilfe eines \SI[mode=text]{10}{\milli\litre} Messzylinders}. Es wurde abgewartet, bis keine braunen Dämpfe mehr sichtbar waren. Im Anschluss hat man den Porzellantiegel im Sandbad erhitzt, mit dem Zweck, die flüssige Phase abzudampfen, um im nächsten Schritt einen Siedeverzug durch zu starkes Erhitzen zu vermeiden. Im Anschluss wurde der Porzellantiegel\footnote{Rückstand im Porzellantiegel nun weiß, bräunlich} für ca. \SI[mode=text]{10}{\minute} über die Bunsenbrennerflamme gehalten, um verbleibende unerwünschte Rückstände (\ch{HNO3} und \ch{H2O}) so gut wie möglich zu entfernen. Das Resultat war ein gelblicher, poröser Feststoff. Der Tiegel wurde nun abgekühlt und dessen Masse ($= m_{Tiegel+Zinnoxid}$) mithilfe einer Analysenwaage bestimmt.
+      Die Masse des Porzellantiegels ($m_{Tiegel}$) und des darin befindlichen Zinn ($m_{\ch{Sn}}$) waren vorgegeben. Das Zinn wurde mithilfe eines \SI[mode=text]{10}{\milli\litre} Messzylinders im Porzellantiegel mit ca. \SI[mode=text]{3}{\milli\litre} halbkonzentrierter \ch{HNO3} versetzt. Dabei wurde die \ch{HNO3} portionsweise zugegeben. Es wurde abgewartet, bis keine braunen Dämpfe mehr sichtbar waren. Im Anschluss hat man den Porzellantiegel im Sandbad erhitzt, mit dem Zweck, die flüssige Phase abzudampfen, um im nächsten Schritt einen Siedeverzug zu vermeiden. Im Anschluss wurde der Porzellantiegel\footnote{Rückstand im Porzellantiegel nun weiß} für ca. \SI[mode=text]{10}{\minute} auf einem Tondreieck platziert und über die Bunsenbrennerflamme gehalten, um verbleibende Rückstände von \ch{HNO3} und \ch{H2O} so gut wie möglich zu entfernen und das Zinnoxid in die Wägeform zu bringen\footnote{der weiße Rückstand enthält diverse Zinnhydroxide sowie Zinn(II)oxid - durch starkes erhitzen werden diese in das gewünschte Zinn(IV)oxid überführt}. Anzumerken ist, dass der Porzellantiegel zu Beginn nicht direkt über die Flamme gehalten wurde, um einen Siedeverzug durch Wasserreste zu vermeiden. Erst nachdem die Gasentwicklung aufgehört hatte, wurde  bei voller Flamme direkt über dem Bunsenbrenner erhitzt\footnote{in Höhe der heißesten Flamme}. Das Resultat war ein gelblicher, poröser Feststoff. Der Tiegel wurde nun abgekühlt und dessen Masse ($m_{Tiegel+Zinnoxid}$) mithilfe einer Analysenwaage bestimmt.
+    
+    \pagebreak
      
-    \subsection{Auswertung}
+    \subsection{Auswertung} \label{sec:Auswertung}
       
-      Im Folgenden wird eine Beziehung hergeleitet, mit der die Atommasse von Zinn bzw. die Zusammensetzung des Zinnoxids mit den gemessenen Daten berechnet werden kann. 
+      Im Folgenden werden Beziehungen hergeleitet, mit der die Atommasse von Zinn bzw. die Zusammensetzung des Zinnoxids mit den gemessenen Daten berechnet werden können. 
       
-      Angenommen, die Atommassen von Zinn und Sauerstoff sind bekannt. Gesucht ist somit eine Beziehung, mit der sich x und y in der allgemeinen Formel Sn\textsubscript{x}O\textsubscript{y} berechnen lassen. Die Erhaltung der Stoffmenge liefert \eqref{eq:Stoffmengenerhaltung}. Die Atommasse von Sn\textsubscript{x}O\textsubscript{y} berechnet sich wie in \eqref{eq:Molmasse} dargestellt.
+      Angenommen, die Atommassen von Zinn und Sauerstoff sind bekannt. Gesucht ist somit eine Beziehung, mit der sich x und y in der allgemeinen Formel Sn\textsubscript{x}O\textsubscript{y} berechnen lassen. Die Erhaltung der Stoffmengen liefert \eqref{eq:Stoffmengenerhaltung}. Die Atommasse von Sn\textsubscript{x}O\textsubscript{y} berechnet sich wie in \eqref{eq:Molmasse} dargestellt.
     
       \begin{equation}
         x * n_{\ch{O}} - y * n_{\ch{Sn}} = 0 \label{eq:Stoffmengenerhaltung} 
@@ -178,20 +186,25 @@ citestyle=numeric
         M_{Sn\textsubscript{x}O\textsubscript{y}} = x * M_{\ch{Sn}} + y * M_{\ch{O}}  \Leftrightarrow m_{Sn\textsubscript{x}O\textsubscript{y}} = x * m_{\ch{Sn}} + y * m_{\ch{O}} \label{eq:Molmasse}
       \end{equation} 
       
-      Die Lösungen des linearen Gleichungssystems sind in \eqref{eq:x} und \eqref{eq:y} angeführt.
+      Die Lösungen des linearen Gleichungssystems werden unten angeführt. Durch einsetzen der gemessenen Massen sowie der Literaturwerte für die Atommassen kann so die Stöchiometrie berechnet werden. 
       
       \begin{equation}
         x = \frac{M_{\ch{O}} * m_{\ch{Sn}} * m_{Sn\textsubscript{x}O\textsubscript{y}}}{M_{\ch{Sn}} * m_{\ch{O}}^2 + M_{\ch{O}} * m_{\ch{Sn}}^2} \label{eq:x}
       \end{equation}
       
       \begin{equation}
-        y = \label{eq:y}
+        y = \frac{m_{Sn\textsubscript{x}O\textsubscript{y}}}{m_{\ch{O}}} * (1 - \frac{M_{\ch{O}} * m_{\ch{Sn}}^2}{M_{\ch{Sn}} * m_{\ch{O}}^2 + M_{\ch{O}} * m_{\ch{Sn}}^2}) \label{eq:y}
       \end{equation}
       
-      Nimmt 
+      Nimmt man umgekehrt die Zusammensetzung des Zinnoxids sowie Atommasse von Sauerstoff als bekannt voraus, errechnet sich die gesuchte molare Masse von Zinn wie unten angegeben.
+      
+      \begin{equation}
+        n_{Sn} = \frac{x}{y}n_{O} = \frac{x}{y} * \frac{m_{O}}{M_{O}} \Rightarrow M_{Sn} = \frac{y}{x} * \frac{m_{Sn}*M_{O}}{m_{O}} \label{eq:Mol}
+      \end{equation}
+      
     \subsection{Messergebnisse und Literaturwerte}
     
-      In Tabelle \ref{tab:Messdaten} sind alle Messwerte, die im Rahmen der Versuchsdurchführung wie in \ref{sec:Versuch} beschrieben, gemessen wurden. Ebenso sind die verwendeten Literaturwerte derjenigen Messgrößen aufgelistet, die für die Berechnungen notwendig waren.
+      In Tabelle \ref{tab:Messdaten} sind alle Messwerte angeführt, die im Rahmen der Versuchsdurchführung wie in \ref{sec:Versuch} beschrieben, gemessen wurden. Ebenso sind die verwendeten Literaturwerte derjenigen Messgrößen aufgelistet, die für die Berechnungen notwendig waren. Die Werte für die molaren Massen wurden \cite{Atommassentabelle} entnommen. 
       
       \begin{table}[H]
         \centering
@@ -199,15 +212,37 @@ citestyle=numeric
         \label{tab:Messdaten}
           \begin{tabular}{@{}ll|ll@{}}
             \toprule
-             Messgröße & Messwert & Größe bzw. Konstante & Wert \\ \midrule
-             $=m_{Tiegel}$ &  & R & \SI[mode=text]{8.314}{\joule\per\kelvin\per\mol} \\
-             $=m_{\ch{Sn}}$ &  &  &  \\
-             $= m_{Tiegel+Zinnoxid}$ &  &  &  \\ \bottomrule
+             Messgröße & Messwert & Molare Massen & Wert \\ \midrule
+             $m_{Tiegel}$ & \SI[mode=text]{24.2604}{\gram} & $M_{\ch{O}}$ & \SI[mode=text]{15.9994}{\gram\per\mole} \\
+             $m_{Tiegel+\ch{Sn}}$ & \SI[mode=text]{24.8375}{\gram} & $M_{\ch{Sn}}$ & \SI[mode=text]{118.7107}{\gram\per\mole} \\
+             $m_{Tiegel+Zinnoxid}$ & \SI[mode=text]{24.6634}{\gram} &  &  \\ \bottomrule
           \end{tabular}
        \end{table}      
       
+      Aus den Daten der Tabelle errechnen sich folgende Werte, die für die Berechnung wie in \ref{sec:Auswertung} angeführt, benötigt werden: $m_{Sn} = \SI[mode=text]{0.5771}{\gram}$, $m_{Sn\textsubscript{x}O\textsubscript{y}} = \SI[mode=text]{0.4030}{\gram}$, $m_{O} = \SI[mode=text]{-0.1741}{\gram}$.
+      
   \section{Ergebnisse und Diskussion}
-  
+    
+    Wie aus den Messdaten bereits ersichtlich, ist während der Durchführung ein Missgeschick passiert. Beim Glühvorgang kippte der Dreifuß um, da sich ein Standbein ohne Fremdverschuldung gelockert hatte. Die Folge war, dass der Porzellantiegel herunterfiel und dessen Inhalt verschüttet wurde. Das im Abzug verteilte Zinnoxid wurde mithilfe von Spatel und Papier aufgesammelt und in den Tiegel überführt. Die Menge dieser Überreste wurde in Tabelle \ref{tab:Messdaten} protokolliert. Wie aus der kleineren Masse wie beim mit Zinn gefüllten Porzellantiegel ersichtlich, konnte der Großteil nicht gerettet werden. Die erhaltene negative Masse für den Sauerstoff macht natürlich keinen Sinn und wurde nur der Vollständigkeit wegen angegeben. Im Folgenden werden die Ergebnisse und etwaige Fehlerquellen theoretisch diskutiert. \\
+    
+    Um die Zusammensetzung des Zinnoxids bei bekannter molarer Masse von Sauerstoff und Zinn zu berechnen, wird in \eqref{eq:x} und \eqref{eq:y} eingesetzt. Man erhält damit die Faktoren x und y und damit die Zusammensetzung von Sn\textsubscript{x}O\textsubscript{y}. 
+    
+    Um die molare Masse bei bekannter Zusammensetzung zu berechnen, werden die gemessenen Größen in \eqref{eq:Mol} eingesetzt. Dafür muss natürlich eine entsprechende Wahl für x und y in Sn\textsubscript{x}O\textsubscript{y} getroffen werden. Denkbare Oxide wären z. B. \ch{Sn2O}, \ch{SnO} sowie \ch{Sn2O3}. Man erhält für jedes Oxid eine entsprechende molare Masse. Ein Vergleich mit anderen Messmethoden bzw. mit dem Literaturwert erlaubt schlussendlich die Zuordnung, welches Oxid am wahrscheinlichsten entstanden ist.
+    
+    Ein Blick in die Literatur zeigt, dass bei Reaktion \ref{rec:NOzwei} bevorzugt \ch{SnO2} entsteht \cite{ReactionProof}. Die ablaufende Reaktiongsgleichung lautet dann wie folgt:
+    
+    \begin{reactions}
+        4 H\pch[] + 4 NO3\mch[] + Sn &-> SnO2 + 4 NO2 + 2 H2O \label{rec:NOzwei}
+    \end{reactions}
+    
+    Im Folgenden werden Fehlerquellen und ihre Auswirkungen auf das Ergebnis diskutiert. Beim Verdampfen der Flüssigkeit im Sandbad kann es bei zu hohen Temperaturen zum Siedeverzug kommen. Wird dabei Probe aus dem Porzellantiegel herausgeschleudert, verringert dies die gemessene Masse an Zinn(IV)oxid. Dies hat zur Folge, dass die berechnete molare Masse von Zinn zu groß ist. Ein Siedeverzug kann aber auch beim Glühen über der Bunsenbrennerflamme vorkommen. Wird der Porzellantiegel unmittelbar nach dem Sandbad direkt über die Bunsenbrennerflamme gehalten, ist ein Siedeverzug sehr wahrscheinlich, da immer noch Restfeuchte und \ch{HNO3} vorhanden sind, die bei zu schnellem erhitzen einen Siedeverzug verursachen können. Der Effekt auf das Ergebnis ist der selbe wie beschrieben. 
+    
+    Auch ein unvollständiger Reaktionsumsatz, wenn z. B. zu wenig \ch{HNO3} zugegeben wurde, hat eine größere bestimmte molare Masse zur Folge. 
+    
+    Weiters ist zu bedenken, dass das vorgelegten Zinn vermutlich bereits zu einem kleinen Teil durch Luftsauerstoff oxidiert wurde. Ebenso ist die Entstehung weiterer Zinnoxide neben \ch{SnO2} sowie der Verbleib von Resten an Wasser und \ch{HNO3} denkbar. In diesen Fällen wäre die bestimmte Masse an Zinn(IV)oxid zu groß und damit die molare Masse zu klein. Die meisten meiner Laborpartner, die denselben Versuch zur gleichen Zeit durchführten, bestimmten eine geringere molare Masse im Vergleich zum Literaturwert. Eine Erklärung hierfür könnten obige Argumente sein. \\
+    
+    Die Genauigkeit der Methode kann aufgrund des angeführten Missgeschick nicht diskutiert werden. Aufgrund der Werte der Laborpartner kann jedoch salopp gesagt werden, dass man recht genau hinkommt. Die Zielsetzung wurde dennoch nicht zufriedenstellend erfüllt.
+    
   \pagebreak
   
   \listofreactions
