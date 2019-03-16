@@ -2026,9 +2026,17 @@
     <bcf:datasource type="file" datatype="bibtex">references.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">PhysicalChemistryAtkings</bcf:citekey>
-    <bcf:citekey order="2">Salzs</bcf:citekey>
-    <bcf:citekey order="3">LambdaHydrogen</bcf:citekey>
+    <bcf:citekey order="1">Versuchsvorschrift</bcf:citekey>
+    <bcf:citekey order="2">EsterEigenschaften</bcf:citekey>
+    <bcf:citekey order="3">Essigsaurepentyl</bcf:citekey>
+    <bcf:citekey order="4">Clayden</bcf:citekey>
+    <bcf:citekey order="5">Clayden</bcf:citekey>
+    <bcf:citekey order="6">Versuchsvorschrift</bcf:citekey>
+    <bcf:citekey order="7">Essigsaurepentyl</bcf:citekey>
+    <bcf:citekey order="8">blei</bcf:citekey>
+    <bcf:citekey order="9">solubilityConstants</bcf:citekey>
+    <bcf:citekey order="10">Versuchsvorschrift</bcf:citekey>
+    <bcf:citekey order="11">solubilityPbS</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="none/global" type="entry" sortscheme="none" sortnamekeyscheme="global">
   <bcf:sorting>

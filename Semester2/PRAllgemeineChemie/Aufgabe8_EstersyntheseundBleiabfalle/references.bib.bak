@@ -2,40 +2,72 @@
 % Encoding: UTF-8
 
 
-@Book{PhysicalChemistryAtkings,
-  Title                    = {Physical Chemistry},
-  Author                   = {Peter Atkins, Julio de Paula, James Keeler},
+@Manual{Versuchsvorschrift,
+  Title                    = {Versuchsvorschriften PR Allgemeine Chemie - Universität Innsbruck},
+  Author                   = {Wolfgang Viertl et al.},
+  Year                     = {2019},
+
+  Owner                    = {Florian Kluibenschedl},
+  Timestamp                = {2019.03.03}
+}
+
+@Electronic{EsterEigenschaften,
+  Title                    = {Ester},
+  Author                   = {chemie.de},
+  Url                      = {http://www.chemie.de/lexikon/Ester.html#Besondere_Ester},
+  Year                     = {2019},
+
+  Owner                    = {Florian Kluibenschedl},
+  Timestamp                = {2019.03.01}
+}
+
+@Book{Clayden,
+  Title                    = {Organic Chemistry},
+  Author                   = {Jonathan Clayden and Nick Greeves and Stuart Warren},
   Publisher                = {Oxford University Press},
-  Year                     = {2018},
+  Year                     = {2012},
+  Edition                  = {2},
 
-  Address                  = {Oxford, United Kingdom},
-  Edition                  = {11th},
-
-  Owner                    = {Florian Kluibenschedl},
-  Timestamp                = {2019.02.26}
+  Owner                    = {adminkluilaptop},
+  Timestamp                = {2019.03.15}
 }
 
-@Periodical{Salzs,
-  Title                    = {Dichtetabelle Salzsäure},
+@Electronic{solubilityPbS,
+  Title                    = {Table of Solubility Product Constants},
+  Author                   = {owl.oit.umass.edu},
+  Url                      = {https://owl.oit.umass.edu/departments/Chemistry/appendix/ksp.html},
   Year                     = {2019},
 
-  Editor                   = {internetchemie.info},
-  Month                    = {März},
-  Url                      = {https://www.internetchemie.info/chemie-lexikon/daten/s/salzsaeure-dichtetabelle.php},
-
   Owner                    = {Florian Kluibenschedl},
-  Timestamp                = {2019.02.26}
+  Timestamp                = {2019.03.16}
 }
 
-@Periodical{LambdaHydrogen,
-  Title                    = {Wärmeleitfähigkeit von Gasen in Abhängigkeit der Temperatur},
+@Electronic{Essigsaurepentyl,
+  Title                    = {Essigsäurepentylester},
+  Author                   = {wikipedia.org},
+  Url                      = {https://de.wikipedia.org/wiki/Essigs%C3%A4urepentylester#Nat%C3%BCrliches_Vorkommen},
   Year                     = {2019},
 
-  Editor                   = {schweizer-fn.de},
-  Month                    = {März},
-  Url                      = {https://www.schweizer-fn.de/stoff/wleit_gase/wleit_gase.php},
+  Owner                    = {Florian Kluibenschedl},
+  Timestamp                = {2019.03.01}
+}
+
+@Electronic{,
+  Title                    = {Blei},
+  Author                   = {wikipedia.org},
+  Url                      = {https://de.wikipedia.org/wiki/Blei#Eigenschaften},
+  Year                     = {2019},
+
+  Owner                    = {adminkluilaptop},
+  Timestamp                = {2019.03.16}
+}
+
+@Book{solubilityConstants,
+  Title                    = {CRC Handbook of Chemistry and Physics},
+  Year                     = {2019},
+  Edition                  = {87},
 
   Owner                    = {Florian Kluibenschedl},
-  Timestamp                = {2019.02.26}
+  Timestamp                = {2019.03.12}
 }
 

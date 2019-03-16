@@ -45,6 +45,8 @@
 \usepackage{booktabs}
 \usepackage{float}
 
+\usepackage{fancyhdr}
+
 %% Citing and Settings
 \usepackage[backend=biber,
 style=numeric,
@@ -77,9 +79,16 @@ citestyle=numeric
 %% ========================================================================
 
 %% Title
-\title{Darstellung eines Esters und Aufarbeitung der Bleiabfälle aus Aufgabe 3} % Title
+\title{Darstellung eines Esters und Aufarbeitung von Bleiabfällen \cite{Versuchsvorschrift}} % Title
 \author{Autor: Florian \textsc{Kluibenschedl}} % Author name
 \date{Bericht verfasst am: \today} % Date for the report
+
+% Page style - headers
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{PR Allgemeine Chemie A - SS2019}
+\lhead{Institut für Allgemeine Chemie - Universität Innsbruck}
+\rfoot{Experiment 8 - Seite \thepage}
 
 \begin{document}
   \renewtagform{reaction}[Rgl. ]{}{}
@@ -87,151 +96,213 @@ citestyle=numeric
   \maketitle % Insert the title, author and date
   
   \begin{center}
-    \begin{tabular}{r l}
-      Versuchsdurchführung am: & 04. März 2019\\ % Date the experiment was performed
+    \begin{tabular}{r p{4cm}}
+      Versuchsdurchführung am: & 14. März 2019\\ % Date the experiment was performed
       Gruppe, Matrikelnummer: & 3, 11805747 \\
-      Assistent: & Professor Smith % Instructor/supervisor
+      Lehrveranstaltung: & PR Allgemeine Chemie A \\
+      Institut: & Allgemeine, Anorganische und Theoretische Chemie \\
+      Assistent: & Viertl Wolfgang % Instructor/supervisor
     \end{tabular}
   \end{center}
 
 
   \begin{abstract}
+    Da sich die Chemie mit den Eigenschaften von Stoffen beschäftigt, ist es oft notwendig, Stoffe künstlich herzustellen. Die Kenntnis diverser Synthesetechniken ist demnach von großer Bedeutung. 
+    
+    Im Folgenden wird die säurekatalysierte Synthese eines Essigsäurepentylesters ausgehend von Essigsäure und Pentan-1-ol beschrieben. Bei der praktischen Durchführung konnte eine Ausbeute von $\approx \SI[mode=text]{64}{\percent}$ erzielt werden. Der Ester war unlöslich in Wasser und verdünnter Essigsäure (1:9 - V/V) aber löslich in konz. Essigsäure und Pentan-1-ol. Die Brennprobe zeigte eine mittelmäßige Rußentwicklung. Außerdem roch die erhaltene Lösung stark nach Birne.\\
+    
+    Im zweiten Teil wurden Bleiabfälle aus Aufgabe 3 aufgearbeitet, da eine gesättigte \ch{PbI2} Lösung nicht den zulässigen Grenzwert an \ch{Pb\pch[2]\aq} einhält. Dazu wurde eine Umfällung mit \ch{Na2S} zum schwerer löslichen \ch{PbS} durchgeführt. Die erhaltene Lösung konnte ohne Bedenken in den Abfluss geleert werden. 
     
   \end{abstract}
   
+  \pagebreak 
+  
   \section{Darstellung eines Esters}
-   
+  
     \subsection{Theoretische Grundlagen}
   
-      \subsection{Motivation} \label{sec:Motivation}
+      \subsubsection{Motivation} \label{sec:Motivation}
+  
+        Ester stellen eine wichtige organische Stoffgruppe dar und kommen in vielen Bereichen zum Einsatz. So sind sie beispielsweise in Aromastoffen, Weichmachern oder Insektiziden enthalten \cite{EsterEigenschaften}. Der in diesem Versuch synthetisierte Essigsäurepentylester findet vor allem Verwendung als Lösungsmittel in der Lackindustrie und der Chromatographie und riecht nach Birne \cite{Essigsaurepentyl}. Die Darstellung erfolgt über säurekatalysierte Veresterung von Pentan-1-ol\footnote{im Folgenden wird der besseren Lesbarkeit wegen Pentan-1-ol mit Pentanol bezeichnet} mit Essigsäure - siehe \ref{fig:EssigsaureReaktion}. 
         
-        Ester stellen eine wichtige organische Stoffgruppe dar und kommen in vielen Bereichen zum Einsatz. So sind sie beispielsweise in Aromastoffen, Weichmachern oder Insektiziden enthalten \cite{EsterEigenschaften}. Der in diesem Versuch synthetisierte Essigsäurepentylester findet vor allem Verwendung als Lösungsmittel in der Lackindustrie und der Chromatographie \cite{Essigsaurepentyl}. Die Darstellung erfolgt über säurekatalysierte Veresterung von Pentan-1-ol mit Essigsäure - siehe . Als Katalysatoren eignen sich Säuren mit schwachen Nukleophilen als Anionen, weswegen in diesem Experiment Schwefelsäure verwendet wurde.
+        \begin{figure}[h]
+          \includegraphics[scale=0.55, center]{Graphiken/Reaktionen/ReactionEsters.png} 
+          \caption[Reaktionsgleichung der Darstellung des Essigsäurepentylesters, Quelle: Autor]{Reaktionsgleichung der Darstellung des Essigsäurepentylesters. Anm.: \ch{H2O} entsteht als weiteres Reaktionsprodukt}
+          \label{fig:EssigsaureReaktion}
+        \end{figure}
         
-  \begin{reaction}
-    Mg\sld{} + $\nu$ H\pch\aq -> Mg\pch[$\nu$] \aq{} + $\nu$ * 1/2 H2\gas{} \label{rec:MagnesiumWasserstoffAllgemein}
-  \end{reaction}
-  
-  Angenommen, es sei bekannt, dass Magnesium als zweifach positiv geladenes Ion vorkommt ($\nu = 2$ in \ref{rec:MagnesiumWasserstoffAllgemein}). Damit ist die Stöchiometrie der obigen Gleichung bekannt und man kann durch Messung der entstehenden Menge an Wasserstoff auf die an der Reaktion beteiligte Stoffmenge an Magnesium schließen. Ist zudem die zu Beginn eingesetzte Masse an Magnesium bekannt, errechnet sich daraus direkt die Molmasse. Nimmt man nun umgekehrt die molare Masse des Magnesiums als bekannt an, kann auf die stöchiometrischen Faktoren und damit die Ionenladung geschlossen werden. 
-  
-  Beide Größen gleichzeitig zu bestimmen ist mit der beschriebenen Methode nicht möglich, wobei durch einen Blick auf das Periodensystem getrost die Annahme getroffen werden kann, dass $\nu = 2$.
-  
-    \subsection{Ziel des Experiments}
+        Als Katalysatoren eignen sich Säuren mit schwachen Nukleophilen als Anionen, weswegen in diesem Experiment Schwefelsäure verwendet wurde. Der zugehörige Mechanismus wird im Folgenden beschrieben.
+        
+        \begin{figure}[h]
+          \includegraphics[scale=0.55, center]{Graphiken/Reaktionen/MechanismVeresterung.png} 
+          \caption[Reaktionsgleichung Mechanismus der Veresterung, Quelle: Autor]{Mechanismus der säurekatalysierten Veresterung \cite[S. 208]{Clayden}}
+          \label{fig:Mechanismus}
+        \end{figure}
+        
+        Im ersten Schritt wird das O-Atom der Carbonsäuregruppe protoniert. Es folgt ein nukleophiler Angriff des O-Atoms des Alkohols an das elektrophile C-Atom der Carbonsäuregruppe. Im nächsten Schritt wird das H-Atom des O-Atom vom Alkohol (grün) abgespalten und geht formal an ein O-Atom der ehemaligen Carbonsäuregruppe (rot). Es folgt die Abspaltung von \ch{H2O} und \ch{H\pch}. 
+        
+      \subsubsection{Ziel des Experiments}
     
-    Auf Basis der obigen Überlegungen ist das Ziel, eine möglichst exakte Bestimmung der Molmasse von Magnesium durchzuführen.
+        Auf Basis der obigen Überlegungen ist das Ziel, einen Essigsäurepentylester mit möglichst goßer Ausbeute zu synthetisieren. Außerdem sollen bestimmte Eigenschaften des Esters wie Löslichkeit, Geruch und Brennbarkeit bestimmt bzw. überprüft werden. 
     
-  \section{Experimenteller Teil}
+    \subsection{Experimenteller Teil}
   
-    \subsection{Verwendete Materialien}
+      \subsubsection{Verwendete Materialien}
               
-      \begin{table}[H]
-        \centering
-        \caption[Materialienliste, Quelle: Autor]{Auflistung der verwendeten Geräte und Chemikalien}
-        \label{tab:Materialien}
+        \begin{table}[H]
+          \centering
+          \caption[Materialienliste Estersynthese, Quelle: Autor]{Auflistung der verwendeten Geräte und Chemikalien}
+          \label{tab:Materialien}
         
-        \begin{tabular}{@{}ll|ll@{}}
-          \toprule
-            Geräte & Hersteller & Chemikalie & Hersteller \\ \midrule
-            \SI[mode=text]{600}{\milli\litre} Becherglas &  & metallisches \ch{Mg} &  \\
-            \SI[mode=text,separate-uncertainty=true]{25.000(75)}{\milli\litre} Bürette &  & \SI[mode=text]{4}{M} \ch{HCl} &  \\
-            \SI[mode=text,separate-uncertainty]{10.00(5)}{\milli\litre} Vollpipette &  & deionisiertes \ch{H2O} &  \\
-            \SI[mode=text,separate-uncertainty]{10.0(1)}{\milli\litre} Messzylinder &  &  &  \\
-            Thermometer &  &  &  \\
-            Stativ mit Klammern &  &  &  \\
-            \SI[mode=text]{14}{\centi\meter} Geodreieck &  &  &  \\ \bottomrule
-        \end{tabular}
-      \end{table}
+          \begin{tabular}{@{}ll|p{4.5cm}l@{}}
+            \toprule
+              Geräte & Hersteller & Chemikalie & Hersteller \\ \midrule
+              \SI[mode=text]{100}{\milli\litre} Rundkolben & DURAN & konz. \ch{H2SO4} - \SI[mode=text]{96}{\percent} (w/w), $\rho = \SI[mode=text]{1.84}{\gram\per\milli\liter}$ & Vorrat \\
+              Magnetrührer & CAT M 6.1 & Pentanol & Vorrat \\
+              \SI[mode=text,separate-uncertainty]{50}{\milli\litre} Messzylinder & BRAND & deionisiertes \ch{H2O} & Labor \\
+              Rührfische &  & Essigsäure &  \\
+              Dimrothkühler inkl. Kühlschläuche &  &  &  \\
+              Stativ mit Klammern &  &  &  \\
+              2 Universalklammern &  &  &  \\ 
+              Heizpilz &  &  &  \\
+              Glasrichter &  &  &  \\
+              Faltenfilter &  &  &  \\
+              \SI[mode=text]{600}{\milli\liter} Scheidetrichter &  &  &  \\ 
+              \SI[mode=text]{100}{\milli\liter} Becherglas & DURAN &  &  \\ 
+              Universalindikator-Papier &  &  &  \\ \bottomrule
+          \end{tabular}
+        \end{table}
     
-    \subsection{Versuchsdurchführung} \label{sec:Versuch}
+    \pagebreak
     
-    \begin{figure}[h]
-      \includegraphics[scale=0.3, center]{Graphiken/Versuchsanordnungen/VersuchsanordnungMagnesium.png} 
-      \caption[schematische Versuchsanordnung, Quelle: Autor]{schematische Versuchsanordnung: (1) Totvolumen, (2) \SI[mode=text]{25}{\milli\litre} Marke, (3) Gasraum - gefüllt mit \ch{H2} und \ch{H2O} Dampf, (4) Bürette - mit Klammern an einem Stativ befestigt, (5) Wasserstand in der Bürette, (6) Wassersäule, (7) Flüssigkeitsstand im Becherglas, (8) V-förmig geknichter Magnesiumstreifen, (9) Bindfaden, (10) \SI[mode=text]{600}{\milli\litre} Becherglas}
-      \label{fig:Versuchsanordnung}
-    \end{figure}
+      \subsubsection{Versuchsdurchführung} \label{sec:Versuch}
     
-    Zu Beginn wurde das Totvolumen der Bürette bestimmt. Dazu wurde diese mit destilliertem Wasser bis zur \SI[mode=text]{25}{\milli\litre} Marke aufgefüllt und anschließend das Wasser in einen \SI[mode=text]{25}{\milli\litre} Messzylinder bis zum Hahn abgelassen. Diese Prozedur wurde 3 mal wiederholt.\\
+        \begin{figure}[h]
+          \includegraphics[scale=0.3, center]{Graphiken/Versuchsanordnungen/VersuchsanordnungSynthese.png} 
+          \caption[schematische Versuchsanordnung Estersynthese, Quelle: Autor]{schematische Versuchsanordnung: (1) Magnetrührer, (2) Heizpilz, (3) \SI[mode=text]{100}{\milli\litre} Rundkolben, (4) Dimrothkühler, (5) Anschluss der Kühlschläuche inkl. Angabe der Flussrichtung}
+          \label{fig:Versuchsanordnung}
+        \end{figure}
+        
+        Die Apparatur wurde wie in Abbildung \ref{fig:Versuchsanordnung} dargestellt aufgebaut. Dabei wurde insbesondere darauf geachtet, Spannungen zwischen den Glasgeräten zu vermeiden. Die Schliffe  wurden gefettet. Die Kühlschläuche wurden wie gezeigt angeschlossen und vor der Befestigung des Kühlers auf Dichtheit überprüft. Rundkolben und Rückflusskühler wurden über Klammern an einem Stativ befestigt. In je einem \SI[mode=text,separate-uncertainty]{50}{\milli\litre} Messzylinder wurden \SI[mode=text]{25}{\milli\liter} konz. Essigsäure und \SI[mode=text]{15}{\milli\liter} Pentanol vorgelegt. \SI[mode=text]{1}{\milli\liter} konz. \ch{H2SO4} wurden in einem \SI[mode=text]{10}{\milli\liter} Messzylinder bereitgehalten. Die drei Reagienzen wurden in den Rundkolben überführt, ein Rührfisch zugegeben und der Rückflusskühler aufgesetzt. Anschließend wurde mit dem Heizpilz auf Stufe 2 für ca. \SI[mode=text]{45}{\minute} unter Rückfluss gekocht. Um den Abkühlvorgang nach dem Kochen zu beschleunigen, wurde der Heizpilz vorsichtig entfernt. Nach ca. \SI[mode=text]{7}{\minute} abkühlen an der Luft wurde der Kolben in ein Eisbad getaucht und der Rührfisch entfernt. Der Kolbenschliff wurde mit einem Papiertuch entfettet, um einen Verlust an Produkt zu vermeiden.
+        
+        Um das Produkt aufzuarbeiten, wurde die nun kalte Lösung im Rundkolben in einen \SI[mode=text]{600}{\milli\liter} Scheidetrichter transferiert. Es wurde zweimal mit \SI[mode=text]{100}{\milli\liter} deionisiertem Wasser extrahiert. Die leichtere wässrige Phase wurde beide Male verworfen. In einem \SI[mode=text]{100}{\milli\liter} Becherglas wurde die organische Phase mit \ch{Na2SO4} als Trocknungsmittel versetzt, bis der \textit{Schneegestöber-Effekt} einsetzte. In einem Faltenfilter wurde das feste \ch{Na2SO4} abfiltriert, wobei die nun wasserfreie organische Phase im gereinigten \SI[mode=text]{50}{\milli\liter} Messzylinder gesammelt wurde. Die erhaltene Lösung sollte nun wasserfrei sein und im Idealfall ausschließlich den Essigsäurepentylester enthalten. Die Volumen im Messzylinder entspricht der protokollierten Ausbeute. 
+        
+        Im Anschluss wurde die Löslichkeit in Wasser, konz. Essigsäure, verdünnter Essigsäure - 1:9 (V/V) und Pentanol getestet. Auch der \pH-Wert wurde mithilfe eines Universalindikator-Papiers bestimmt. 
+         
+      \subsubsection{Auswertung} \label{sec:AuswertungSynthese}
     
-    Der Versuch wurde wie in Abbildung dargestellt aufgebaut. Die Bürette wurde mit \SI[mode=text]{20}{\milli\litre} \ch{HCl} (\SI[mode=text]{4}{M}) gefüllt. Anschließend wurde mit destilliertem Wasser bis zum Bürettenrand aufgefüllt\footnote{beim Auffüllen wurde darauf geachtet, dass es zu einer möglichst geringen Aufwirbelung der Salzsäure kommt, um einem frühzeitigen Reaktionsstart vorzubeugen} und ein  Magnesiumstreifen bekannter Masse ca. \SI[mode=text]{3}{\centi\meter} in das Wasser eingetaucht. Um ein Absinken zu verhindern, hat man den Streifen V-förmig abgeknickt (um ihn zwischen den Bürettenwänden einzuklemmen) und an einem Bindfaden befestigt. Nach dem Versenken des Magnesiumstreifens wurde die Bürette bei Bedarf wieder mit destilliertem Wasser bis zum Rand aufgefüllt. 
+        Um die theoretische Ausbeute zu berechnen, muss der limitierende Faktor in der Reaktion berechnet werden. Dazu wird die Stoffmenge an eingesetzter Essigsäure mit jener von Pentanol verglichen. Diese errechnen sich wie unten dargestellt.
+        
+        \begin{equation}
+          n_{\ch{CH3COOH}} = \frac{\rho_{\ch{CH3COOH}} * V_{\ch{CH3COOH}}}{M_{\ch{CH3COOH}}} = \frac{1.05 * 25}{60.05} = \SI[mode=text]{0.44}{\mole}   
+        \end{equation}
+        
+        \begin{equation}
+          n_{Pentanol} = \frac{\rho_{Pentanol} * V_{Pentanol}}{M_{Pentanol}} = \frac{0.81 * 15}{88.15} = \SI[mode=text]{0.14}{\mole}   
+        \end{equation}
+        
+        Wie man sieht, ist der limitierende Faktor die Stoffmenge an Pentanol $\Rightarrow n_{Ester} = n_{Pentanol}$, da die Stöchiometrie der Reaktion 1:1 ist. Die theoretische Ausbeute kann nun wie folgt berechnet werden.
+        
+        \begin{equation}
+          m_{Ester} = n_{Ester} * M_{Ester} = \SI[mode=text]{17.9}{\gram} \Rightarrow V_{Ester} = \frac{m_{Ester}}{\rho_{Ester}} \approx \SI[mode=text]{20.4}{\milli\liter}
+        \end{equation}
+      
+      \subsubsection{Literaturwerte}
     
-    Die Reaktion wurde nun gestartet, indem die Bürette mit dem Daumen so fest wie möglich verschlossen\footnote{dabei wurde darauf geachtet, die Entstehung von Luftblasen zu vermeiden}  und verkehrt in das Becherglas getaucht wurde, wie in Abbildung gezeigt. Aufgrund der größeren Dichte von Salzsäure (\SI[mode=text]{1.19}{\gram\per\cubic\centi\metre} bei \SI[mode=text]{20}{\degreeCelsius} für eine 37 \%-ige Salzsäure \cite{Salzs}) im Vergleich zu destilliertem Wasser (\SI[mode=text]{0.997}{\gram\per\cubic\centi\metre} bei \SI[mode=text]{20}{\degreeCelsius}) diffundierte diese nach unten und reagierte mit dem Magnesiumstreifen unter Wasserstoffentwicklung. 
-    
-    Das Ende der Reaktion war erreicht, wenn das gesamte Magnesium reagiert hat\footnote{anzumerken ist, dass die \ch{HCl} in einem Überschuss zugegeben wurde, um eine möglichst vollständige Reaktion zu ermöglichen}, optiscch erkennbar durch ein vollständiges Auflösen. Mithilfe eines Lineals wurde der Abstand zwischen Flüssigkeitsstand in der Bürette und dem Flüssigkeitsstand des Becherglases bestimmt. Durch Ablesen der Markierung in der Bürette konnte unter Berücksichtigung des Totvolumens der Bürette das Volumen an enstandenem Wasserstoff bestimmt werden. Die Temperatur des Wassers wurde mit einem Badthermometer bestimmt. Die gesuchte Temperatur des Wasserstoff enstpricht aufgrund seiner hohen Wärmeleitfähigkeit ($\lambda_{\ch{H2}}$ = \SI[mode=text]{0.181}{\watt\per\meter\kelvin} im Vergleich zu $\lambda_{Luft}$ = \SI[mode=text]{0.026}{\watt\per\meter\kelvin} bei \SI[mode=text]{25}{\degreeCelsius} \cite{LambdaHydrogen}) annähernd der gemessenen Wassertemperatur.
-    
+        In Tabelle \ref{tab:Messdaten} sind die Dichten angeführt, die für die Auswertung des Versuchs wie in  \ref{sec:AuswertungSynthese} beschrieben, benötigt werden. Sie wurden der Versuchsvorschrift entnommen. \citep{Versuchsvorschrift}.
+      
+        \begin{table}[H]
+          \centering
+          \caption[Mess- und Literaturdaten, Quelle: Autor]{Mess- und Literaturdaten}
+          \label{tab:Messdaten}
+          \begin{tabular}{@{}ll@{}}
+            \toprule
+              & Wert \\ \midrule
+             $\rho_{\ch{CH3COOH}}$ & \SI[mode=text]{1.05}{\gram\per\milli\liter} \\
+             $\rho_{Pentanol}$ & \SI[mode=text]{0.81}{\gram\per\milli\liter} \\
+             $\rho_{Ester}$ & \SI[mode=text]{0.88}{\gram\per\milli\liter} \\ \bottomrule
+          \end{tabular}
+      \end{table}      
      
-    \subsection{Auswertung}
-    
-      Im Folgenden wird eine Beziehung hergeleitet, mit der die gebildete Stoffmenge mit den gemessenen Daten berechnet werden kann. 
-      Das oben skizzierte System erreicht seinen Gleichgewichtszustand, wenn der Innendruck gleich dem Aussendruck ist.
-    
-      \begin{equation}
-        p_{innen} = p_{außen} \label{eq:InnenAussen}
-      \end{equation}
-    
-      Der Innendruck (\ref{eq:Innendruck}) setzt sich zusammen aus dem Dampfdruck des Wassers \textit{$ p_{\ch{H2O}}$}, dem Druck des Wasserstoffs \textit{$ p_{\ch{H2}}$} und dem hydrostatischen Druck \textit{$ p_{h}$} (\ref{eq:hydrostatischerDruck}), der vom  verbleibenden Wasser in der Bürette ausgeübt wird. Der Außendruck entspricht dem Atmosphärendruck \textit{$ p_{Atm.}$}.
-    
-      \begin{equation} 
-        p_{h} = \rho * g * h \label{eq:hydrostatischerDruck}
-      \end{equation} 
-    
-      \begin{equation}
-        p_{innen} = p_{\ch{H2}} + p_{\ch{H2O}} + p_{h} \label{eq:Innendruck}
-      \end{equation}
-    
-      Wasserstoff verhält sich bei den gegebenen Bedingungen wie ein ideales Gas, weswegen die Stoffmenge an Wasserstoff mit der idealen Gasgleichung berechnet werden kann.
-    
-      \begin{equation}
-        n_{\ch{H2}} = \frac{p_{\ch{H2} * V_{Gas}}}{R*T} \label{eq:StoffmengeWasserstoff}
-      \end{equation}     
-    
-      Durch Umformen von \eqref{eq:Innendruck} und einsetzen in \eqref{eq:StoffmengeWasserstoff} erhält man zusammen mit \eqref{eq:hydrostatischerDruck} und \eqref{eq:InnenAussen} einen Ausdruck, mit dem sich die Stoffmenge von Wasserstoff auf Basis der Messdaten berechnen lässt.
-    
-    
-      \begin{equation}
-        n_{\ch{H2}} = \frac{V_{Gas}}{R*T} * (p_{Atm.} - \rho * g * h - p_{\ch{H2O}}) \label{eq:Stoffmenge}
-      \end{equation}
-    
-      \subsubsection{Berechnung der molaren Masse von Magnesium}
-    
-        Um die molare Masse von Magnesium berechnen zu können, wird die Ladung des Magnesiumions als bekannt vorausgesetzt (wie in \ref{sec:Motivation} bereits erläutert). Es wird angenommen, dass Magnesium als zweifach positives geladenes Ion auftritt ($\nu = 2$). Das Stoffmengenverhältnis von Magnesium und Wasserstoff in Reaktionsgleichung \ref{rec:MagnesiumWasserstoffAllgemein} ist demnach 1:1. Die gesuchte molare Masse lässt sich also wie in \eqref{eq:Molmasse} dargestellt berechnen.
-    
-        \begin{equation}
-          M_{\ch{Mg}} = \frac{m_{\ch{Mg}}}{n_{\ch{H2}}} \label{eq:Molmasse}
-        \end{equation}
-    
-      \subsubsection{Berechnung der Ionenladung von Magnesium}
-    
-        Es wird vorausgesetzt, dass die molare Masse von Magnesium bekannt ist. Diese wurde der Literatur entnommen. Die Stoffmenge von Magnesium kann also berechnet werden gemäß \ref{eq:StoffmengeMag}. Da zudem die Stoffmenge von Wasserstoff nach \ref{eq:Stoffmenge} bekannt ist, lässt sich über das Verhältnis der beiden der gesuchte stöchiometrische Faktor $\nu$ und damit die Ionenladung bestimmen.
-    
-        \begin{equation}
-          n_{\ch{Mg}} = \frac{m_{\ch{Mg}}}{M_{\ch{Mg}}} \label{eq:StoffmengeMag} 
-        \end{equation}
-    
-        \begin{equation}
-          \nu = \frac{2*n_{\ch{H2}}}{n_{\ch{Mg}}} = \frac{2*n_{\ch{H2}}*M_{\ch{Mg}}}{m_{\ch{Mg}}}
-        \end{equation}
+      Die für die Berechnung benötigten molaren Massen wurden mithilfe der in \ref{sec:Motivation} angegebenen Strukturformeln und einem Periodensystem berechnet. $M_{\ch{CH3COOH}} = \SI[mode=text]{60.05}{\gram\per\mole}$, $M_{Pentanol} = \SI[mode=text]{88.15}{\gram\per\mole}$, $M_{Ester} = \SI[mode=text]{130.19}{\gram\per\mole}$
       
-    \subsection{Messergebnisse und Literaturwerte}
-    
-      In Tabelle \ref{tab:Messdaten} sind alle Messwerte, die im Rahmen der Versuchsdurchführung wie in \ref{sec:Versuch} beschrieben, gemessen wurden. Ebenso sind die verwendeten Literaturwerte derjenigen Messgrößen aufgelistet, die für die Berechnungen notwendig waren.
+    %\pagebreak     
+     
+    \subsection{Ergebnisse und Diskussion}
       
-      \begin{table}[H]
-        \centering
-        \caption[Mess- und Literaturdaten, Quelle: Autor]{Mess- und Literaturdaten}
-        \label{tab:Messdaten}
+      Im \SI[mode=text]{50}{\milli\liter} Messzylinder konnten \SI[mode=text]{13}{\milli\liter} Essigsäurepentylester aufgefangen werden. Die Ausbeute errechnet sich dann als Verhältnis zur in \ref{sec:AuswertungSynthese} berechneten theoretischen Ausbeute zu $\approx \SI[mode=text]{64}{\percent}$. Ein Wert für die Literaturausbeute konnte nicht gefunden werden.  \\
+      
+      Es wurde beobachtet, dass das Produkt in deionisiertem Wasser und in verdünnter Essigsäure nicht löslich war, jedoch schon in konz. Essigsäure und Pentanol. Mit diesem Ergebnis kann unter anderem auf die Reinheit des Produktes geschlossen werden. Der Essigsäurepentylester ist unpolarer im Vergleich zu Wasser und verdünnter Essigsäure. Eine gute Löslichkeit in diesen Lösungsmitteln würde auf einen hohen Wassergehalt und damit geringe Reinheit hinweisen\footnote{in diesem Fall wäre zu hinterfragen, ob das Produkt überhaupt entstanden ist!}. Um die Reinheit des Produktes genauer zu untersuchen, müssten Dichteuntersuchungen, ... durchgeführt werden. 
+      
+      Das Indikatorpapier zeigte einen \pH-Wert im neutralen Bereich, was bedeutet, dass die Schwefelsäure bei der Extraktion erfolgreich aus der organischen Phase entfernt werden konnte.
+      
+      Das Produkt roch stark nach Birne, was einhergeht mit der Tatsache, dass man im Alltag auch vom Birnenester spricht \cite{Essigsaurepentyl}. Die Brennprobe der flüssigen Lösung zeigte eine orange Flamme mit mittelmäßiger Rußentwicklung im Vergleich zu einem Essigsäurebutylester. \\
+      
+      Zusammenfassend wird die Synthese als gelungen betrachtet. Die Ausbeute kann aufgrund des fehlenden Literaturwerts leider nicht in Relation gesetzt werden. Dennoch konnten die erwarteten Eigenschaften hinsichtlich Löslichkeit, Geruch und Brennbarkeit bestätigt werden. \\
+      
+      Um die Ausbeute zu erhöhen, kann beispielsweise für längere Zeit unter Rückfluss gekocht werden. Auch könnte man den Extraktionsprozess optimieren, indem man beispielsweise nicht zweimal mit je \SI[mode=text]{100}{\milli\liter} deionisiertem Wasser sondern z. B. viermal mit je \SI[mode=text]{50}{\milli\liter} extrahiert. Gemäß des Nernst'schen Verteilungsgleichgewichtes müsste eine höhere Ausbeute zu erwarten sein.
+     
+     \pagebreak
+     
+     \section{Aufarbeitung von Bleiabfällen}
+     
+       \subsection{Theoretische Grundlagen}
+         
+         \subsubsection{Motivation}
+           
+           Blei ist toxisch und mitunter umweltgefährdend \citep{blei}. Deswegen müssen bei der Entsorgung von Bleiabfällen bestimmte Grenzwerte eingehalten werden. Blei(II)iodid ist ein schwerlösliches Salz ($K_{L} = \num{9.8d-9}$ bei \SI[mode=text]{25}{\degreeCelsius} \cite{solubilityConstants}). Die Löslichkeit errechnet sich zu $\SI[mode=text]{1.35d-3}{\mole\per\liter} \equiv \SI[mode=text]{621.5}{\milli\gram\per\liter}$. Der Emmissionsrichtwert für Abwasser beträgt \SI[mode=text]{1.0}{\milli\gram\per\liter} \cite{Versuchsvorschrift}. Damit liegt die Konzentration an Blei in einer gesättigten \ch{PbI2} Lösung über dem Grenzwert, weswegen \ch{PbI2} Abfälle nicht im Abfluss entsorgt werden dürfen. 
+           
+           Ein Ausweg aus diesem Dilemma ist die Überführung von \ch{PbI2} in noch schwerer lösliches \ch{PbS} ($K_{L} = \num{3.2d-28}$ bei \SI[mode=text]{25}{\degreeCelsius} \cite{solubilityPbS}). Die Löslichkeit von \ch{PbS} errechnet sich zu $\SI[mode=text]{1.8d-14}{\mole\per\liter} \equiv \SI[mode=text]{4.28d-9}{\milli\gram\per\liter}$. Damit wird in einer gesättigten \ch{PbS} Lösung der oben angegeben Grenzwert nicht überschritten, weswegen diese im Abfluss entsorgt werden kann\footnote{natürlich ohne \ch{PbS}, welches im Feststoffabfall entsorgt wird}.
+           
+           Die Reaktionsgleich für die Umfällung lautet wie folgt.
+           
+           \begin{reaction}
+             PbI2\aq{} + Na2S\aq{} -> PbS\sld{} + 2 NaI\aq{}            
+           \end{reaction}
+           
+           Die oben angegebenen Werte für die jeweilige Löslichkeit können wie in dargestellt berechnet werden. Die Umrechnung in \si{\gram\per\liter} wird nicht explizit angeführt. 
+           
+           \begin{equation}
+             L_{M,\ch{PbI2}} = \sqrt[3]{\frac{K_{L,\ch{PbI2}}}{4}}
+           \end{equation}   
+           
+           \begin{equation}
+             L_{M,\ch{PbS}} = \sqrt{K_{L,\ch{PbS}}}
+           \end{equation}  
+                             
+         \subsubsection{Ziel des Experiments}
+         
+           Das Ziel des Experiments ist die Aufarbeitung von \ch{PbI2} Abfällen durch Umfällung mit \ch{Na2S}.
+           
+       \subsection{Experimenteller Teil}
+       
+         \subsubsection{Verwendete Materialien}
+              
+        \begin{table}[H]
+          \centering
+          \caption[Materialienliste Aufarbeitung der Bleiabfälle, Quelle: Autor]{Auflistung der verwendeten Geräte und Chemikalien}
+          \label{tab:MaterialienAbfall}
+        
           \begin{tabular}{@{}ll|ll@{}}
             \toprule
-             Messgröße & Messwert & Größe bzw. Konstante & Wert \\ \midrule
-             $m_{\ch{Mg}}$ &  & R & \SI[mode=text]{8.314}{\joule\per\kelvin\per\mol} \\
-             $V_{Gas}$ &  &  &  \\
-             $p_{Atm.}$ &  &  &  \\
-             $T_{Wasser}$ &  &  &  \\
-             $h$ &  &  &  \\
-             $V_{Tot.}$ &  &  &  \\ \bottomrule
+              Geräte & Hersteller & Chemikalie & Hersteller \\ \midrule
+              2 \SI[mode=text]{600}{\milli\litre} Becherglas & DURAN & \ch{PbI2} Lösung & Vorrat - aus Aufgabe 3 \\
+              Magnetrührer & CAT M 6.1 & festes \ch{Na2S} & Vorrat \\
+              Rührfische &  &  &  \\
+              Glastrichter mit Faltenfilter &  &  &  \\
+              Spatel &  &  &  \\ \bottomrule
           \end{tabular}
-       \end{table}      
-      
-  \section{Ergebnisse und Diskussion}
-  
+        \end{table}
+        
+        \subsubsection{Versuchsdurchführung}
+        
+         In einem \SI[mode=text]{600}{\milli\litre} Becherglas wurden ca. \SI[mode=text]{300}{\milli\litre} einer \ch{PbI2} Lösung vorgelegt und mit ca. \SI[mode=text]{8}{\gram} \ch{Na2S} versetzt\footnote{die zugegebene Sulfid-Menge sollte bei weitem ausreichen, fast das gesamte Blei zu fällen}. Bei \SI[mode=text]{200}{rpm} wurde bei \SI[mode=text]{300}{\degreeCelsius} bis zum Sieden erhitzt. Die entstehenden schwarzen Klumpen wurden mit einem Spatel zerstoßen, um etwaige Einschlüsse an \ch{PbI2} zu vermeiden. Nach dem Sieden wurde für weitere \SI[mode=text]{10}{\minute} bei \SI[mode=text]{140}{\degreeCelsius} erhitzt. Der Rührfisch wurde entfernt und die Lösung heiß filtriert. Dabei wurde ein Faltenfilter und Glastrichter verwendet.
+         
+         Die gefilterte Lösung konnte in den Abfluss geleert werden. Der Filter inkl. \ch{PbS} Rückstand wurde im Feststoffabfall entsorgt. 
+         
+       \subsection{Ergebnisse und Diskussion}
+       
+         Ergebnisse im klassischen Sinn gibt es in diesem Fall nicht. In welchem Ausmaß die Fällung tatsächlich erfolgte, lässt sich nicht ganz sicher sagen. Natürlich kann man auf die Gültigkeit des Löslichkeitsprodukts vertrauen. Dennoch kann es durch nicht ideale Reaktionsbedingungen wie z. B. Fremdioneneffekt zur Änderung der Löslichkeit kommen. Da die Löslichkeit wie oben angegeben wirklich klein ist, müsste sich diese jedoch um fast 9 Größenordnungen\footnote{damit der Grenzwert nicht eingehalten wird} ändern, was letztendlich doch unrealistisch ist. 
   \pagebreak
   
   \listofreactions

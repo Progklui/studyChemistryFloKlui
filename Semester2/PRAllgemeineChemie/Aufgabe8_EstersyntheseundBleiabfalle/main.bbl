@@ -19,68 +19,134 @@
 
 \refsection{0}
   \sortlist[entry]{none/global}
-    \entry{PhysicalChemistryAtkings}{book}{}
+    \entry{Versuchsvorschrift}{manual}{}
       \name{author}{1}{}{%
-        {{hash=acf65009d7cc07d943e652781262212a}{%
-           family={Peter\bibnamedelima Atkins},
-           family_i={P\bibinitperiod\bibinitdelim A\bibinitperiod},
-           suffix={Julio\bibnamedelimb de\bibnamedelima Paula},
-           suffix_i={J\bibinitperiod\bibinitdelim d\bibinitperiod\bibinitdelim P\bibinitperiod},
-           given={James\bibnamedelima Keeler},
-           given_i={J\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=6caaa2383085eff8e2ff7c055cc0aadd}{%
+           prefix={et},
+           prefix_i={e\bibinitperiod},
+           family={al.},
+           family_i={a\bibinitperiod},
+           given={Wolfgang\bibnamedelima Viertl},
+           given_i={W\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
       }
-      \list{location}{1}{%
-        {Oxford, United Kingdom}%
-      }
-      \list{publisher}{1}{%
-        {Oxford University Press}%
-      }
-      \strng{namehash}{acf65009d7cc07d943e652781262212a}
-      \strng{fullhash}{acf65009d7cc07d943e652781262212a}
+      \strng{namehash}{6caaa2383085eff8e2ff7c055cc0aadd}
+      \strng{fullhash}{6caaa2383085eff8e2ff7c055cc0aadd}
       \field{sortinit}{0}
       \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{edition}{11th}
-      \field{title}{Physical Chemistry}
-      \field{year}{2018}
+      \field{title}{Versuchsvorschriften PR Allgemeine Chemie - Universität Innsbruck}
+      \field{year}{2019}
     \endentry
-    \entry{Salzs}{periodical}{}
-      \name{editor}{1}{}{%
-        {{hash=f98bf866b925fdb5dbd50db7ee24110b}{%
-           family={internetchemie.info},
-           family_i={i\bibinitperiod}}}%
+    \entry{EsterEigenschaften}{online}{}
+      \name{author}{1}{}{%
+        {{hash=c11058bdd03349da3cd02fa58118f948}{%
+           family={chemie.de},
+           family_i={c\bibinitperiod}}}%
       }
-      \strng{namehash}{f98bf866b925fdb5dbd50db7ee24110b}
-      \strng{fullhash}{f98bf866b925fdb5dbd50db7ee24110b}
+      \strng{namehash}{c11058bdd03349da3cd02fa58118f948}
+      \strng{fullhash}{c11058bdd03349da3cd02fa58118f948}
       \field{sortinit}{0}
       \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{editor}
+      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{month}{März}
-      \field{title}{Dichtetabelle Salzsäure}
+      \field{title}{Ester}
       \field{year}{2019}
       \verb{url}
-      \verb https://www.internetchemie.info/chemie-lexikon/daten/s/salzsaeure-dichtetabelle.php
+      \verb http://www.chemie.de/lexikon/Ester.html#Besondere_Ester
       \endverb
     \endentry
-    \entry{LambdaHydrogen}{periodical}{}
-      \name{editor}{1}{}{%
-        {{hash=f628d07192eb2cb7637988daae11dcca}{%
-           family={schweizer-fn.de},
-           family_i={s\bibinithyphendelim f\bibinitperiod}}}%
+    \entry{Essigsaurepentyl}{online}{}
+      \name{author}{1}{}{%
+        {{hash=465f7f8831e4cb09ba6621dab2a4d6ee}{%
+           family={wikipedia.org},
+           family_i={w\bibinitperiod}}}%
       }
-      \strng{namehash}{f628d07192eb2cb7637988daae11dcca}
-      \strng{fullhash}{f628d07192eb2cb7637988daae11dcca}
+      \strng{namehash}{465f7f8831e4cb09ba6621dab2a4d6ee}
+      \strng{fullhash}{465f7f8831e4cb09ba6621dab2a4d6ee}
       \field{sortinit}{0}
       \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{editor}
+      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{month}{März}
-      \field{title}{Wärmeleitfähigkeit von Gasen in Abhängigkeit der Temperatur}
+      \field{title}{Essigsäurepentylester}
       \field{year}{2019}
       \verb{url}
-      \verb https://www.schweizer-fn.de/stoff/wleit_gase/wleit_gase.php
+      \verb https://de.wikipedia.org/wiki/Essigs%C3%A4urepentylester#Nat%C3%BCrliches_Vorkommen
+      \endverb
+    \endentry
+    \entry{Clayden}{book}{}
+      \name{author}{3}{}{%
+        {{hash=a17e660d5309236d0db9f4478e1a6a41}{%
+           family={Clayden},
+           family_i={C\bibinitperiod},
+           given={Jonathan},
+           given_i={J\bibinitperiod}}}%
+        {{hash=3060f9159435ca70a6c66681750de195}{%
+           family={Greeves},
+           family_i={G\bibinitperiod},
+           given={Nick},
+           given_i={N\bibinitperiod}}}%
+        {{hash=43eb3fb0e623eaa6bd1373551fdcf960}{%
+           family={Warren},
+           family_i={W\bibinitperiod},
+           given={Stuart},
+           given_i={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{a7ff58759d770ce708bb1e780d562894}
+      \strng{fullhash}{a7ff58759d770ce708bb1e780d562894}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2}
+      \field{title}{Organic Chemistry}
+      \field{year}{2012}
+    \endentry
+    \entry{blei}{online}{}
+      \name{author}{1}{}{%
+        {{hash=465f7f8831e4cb09ba6621dab2a4d6ee}{%
+           family={wikipedia.org},
+           family_i={w\bibinitperiod}}}%
+      }
+      \strng{namehash}{465f7f8831e4cb09ba6621dab2a4d6ee}
+      \strng{fullhash}{465f7f8831e4cb09ba6621dab2a4d6ee}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Blei}
+      \field{year}{2019}
+      \verb{url}
+      \verb https://de.wikipedia.org/wiki/Blei#Eigenschaften
+      \endverb
+    \endentry
+    \entry{solubilityConstants}{book}{}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labeltitlesource}{title}
+      \field{edition}{87}
+      \field{title}{CRC Handbook of Chemistry and Physics}
+      \field{year}{2019}
+    \endentry
+    \entry{solubilityPbS}{online}{}
+      \name{author}{1}{}{%
+        {{hash=5866aaa46ec35e3b846670f3989036e9}{%
+           family={owl.oit.umass.edu},
+           family_i={o\bibinitperiod}}}%
+      }
+      \strng{namehash}{5866aaa46ec35e3b846670f3989036e9}
+      \strng{fullhash}{5866aaa46ec35e3b846670f3989036e9}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Table of Solubility Product Constants}
+      \field{year}{2019}
+      \verb{url}
+      \verb https://owl.oit.umass.edu/departments/Chemistry/appendix/ksp.html
       \endverb
     \endentry
   \endsortlist
