@@ -1,0 +1,343 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english,ngerman]{babel}
+%% ========================================================================
+%%%% MISC usepackages
+%% ========================================================================
+
+%% Chemistry
+\usepackage{chemfig,chemmacros}
+\chemsetup{modules = all}
+\chemsetup[redox]{explicit-sign = true}
+\chemsetup[phases]{pos=sub}
+%\chemsetup[reactions]{before-tag = {R}, tag-open = [, tag-close = ]}
+  
+%% Maths
+\usepackage{amsmath,amssymb,amsthm,textcomp}
+
+%% Physics
+\usepackage{siunitx}
+
+%% Graphics
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{rotating}
+%\usepackage{subfig}
+
+%% Tables and Lists
+\usepackage{enumerate}
+\usepackage{multicol}
+\usepackage{geometry}
+\usepackage{tabu}
+\usepackage{listings}
+\usepackage{tabularx}
+
+%% Structures and Style
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{booktabs}
+\usepackage{colortbl}
+
+\usepackage{xcolor}
+\usepackage{xfrac}
+\usepackage[export]{adjustbox}[2011/08/13]
+
+\usepackage{booktabs}
+\usepackage{float}
+
+\usepackage{fancyhdr}
+
+%% Citing and Settings
+\usepackage[backend=biber,
+style=numeric,
+backref=true, 
+natbib=true, %% offering natbib-compatible commands
+hyperref=true, %% using hyperref-package references
+sorting= none,
+doi=true,
+maxcitenames=10,
+maxbibnames=100,
+citestyle=numeric
+]{biblatex}
+
+\addbibresource{references.bib}
+
+\usepackage[toc,automake]{glossaries}
+\include{abbrevations}
+\makeglossaries
+
+\usepackage[colorlinks=true,linkcolor=blue]{hyperref}
+
+%% Figure settings
+\renewcommand{\figurename}{Abbildung}
+\renewcommand{\tablename}{Tabelle}
+\renewcommand{\listfigurename}{Abbildungsverzeichnis}
+\renewcommand{\listtablename}{Tabellenverzeichnis}
+
+%% ========================================================================
+%%%% Document Information
+%% ========================================================================
+
+%% Title
+\title{Quantitative Anorganische Analyse \cite{Versuchsvorschrift}} % Title
+\author{Autor: Florian \textsc{Kluibenschedl}} % Author name
+\date{Bericht verfasst am: \today} % Date for the report
+
+% Page style - headers
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{PR Allgemeine Chemie A - SS2019}
+\lhead{Institut für Allgemeine Chemie - Universität Innsbruck}
+\rfoot{Experiment 10 - Seite \thepage}
+
+\begin{document}
+  \renewtagform{reaction}[Rgl. ]{}{}
+  
+  \maketitle % Insert the title, author and date
+  
+  \begin{center}
+    \begin{tabular}{r p{4cm}}
+      Versuchsdurchführung am: & 15. März 2019\\ % Date the experiment was performed
+      Gruppe, Matrikelnummer: & 3, 11805747 \\
+      Lehrveranstaltung: & PR Allgemeine Chemie A \\
+      Institut: & Allgemeine, Anorganische und Theoretische Chemie \\
+      Assistent: & Pann Johann % Instructor/supervisor
+    \end{tabular}
+  \end{center}
+
+
+  \begin{abstract}
+    
+  \end{abstract}
+  
+  \pagebreak 
+  
+  \section{Theoretische Grundlagen}
+  
+    \subsection{Motivation} \label{sec:Motivation}
+      
+      Ein großer Bereich der Chemie beschäftigt sich mit der Bestimmung von Konzentrationen diverser Substanzen in Proben. Eine Möglichkeit der quantitativen Analyse ist dabei die naßchemische Methode der Maßanalyse, auch Titration genannt. Die Idee ist, dass zur Probelösung, die eine Substanz unbekannter Konzentration enthält, eine stöchiometrische Menge einer Lösung bekannter Konzentration zugegeben wird. Über die gemessene, verbrauchte Stoffmenge und die Stöchiometrie der Reaktion errechnet sich die gesuchte Konzentration.
+      
+      Natürlich muss die ablaufende Reaktion gewisse Kriterien erfüllen. So sollte sie möglichst schnell ablaufen, wobei das Gleichgewicht klar auf Seite der Produkte liegt. Rückreaktionen sind unerwünscht. Eine eindeutige Stöchiometrie der Reaktion ist von Vorteil. Auch sollte der verwendete Titer  seine chemische Zusammensetzung möglichst beibehalten und keine Reaktionen aufgrund diverser äußerer Einflüsse (z. B. \ch{CO2\gas} aus der Luft) eingehen. Zudem sollte der Äquivalenz- bzw. Umschlagspunkt eindeutig erkennbar sein. 
+      
+    \subsection{Ziel des Experiments}
+    
+      Auf Basis der obigen Überlegungen ist das Ziel, eine möglichst exakte Bestimmung der Konzentration einer \ch{HCl} sowie einer \ch{Fe\pch[2]\aq} Lösung durchzuführen. Im dritten Versuch soll die Gesamthärte einer Leitungswasserprobe bestimmt werden.
+    
+  \section{Experimenteller Teil}
+  
+    \subsection{Verwendete Materialien}
+      
+      In Tabelle \ref{tab:Materialien} werden alle Geräte und Chemikalien aufgelistet, die für die folgenden drei quantitativen Analysen verwendet wurden. 
+      
+      \begin{table}[H]
+        \centering
+        \caption[Materialienliste, Quelle: Autor]{Auflistung der verwendeten Geräte und Chemikalien}
+        \label{tab:Materialien}
+        
+        \begin{tabular}{@{}ll|p{4.8cm}l@{}}
+          \toprule
+            Geräte & Hersteller & Chemikalie & bezogen von \\ \midrule
+            \SI[mode=text]{250}{\milli\litre} Erlenmeyerkolben & DURAN & \SI[mode=text]{0.10}{M} \ch{NaOH} Lösung & Vorrat \\
+            \SI[mode=text,separate-uncertainty=true]{25.000(75)}{\milli\litre} Bürette & BRAND & \ch{HCl} Lösung & Vorrat \\ 
+            \SI[mode=text,separate-uncertainty]{25.000(45)}{\milli\litre} Vollpipette & BRAND & Phenolphtalein-Lösung & Vorrat \\ \cline{3-4} 
+            Magnetrührer & CAT M 6.1 & \SI[mode=text]{0.020}{M} \ch{KMnO4} Lösung & Vorrat \\
+            Peleusball &  & \ch{Fe\pch[2]\aq} Lösung  & Vorrat \\ \cline{3-4} 
+            Stativ mit Klammern &  & Leitungswasser & Wasserhahn \\
+            Rührfisch &  & \ch{NH3}/\ch{NH4Cl} Puffer ($\pH=10$) & Vorrat \\
+            weißes Blatt Papier &  & Erio-T/\ch{NaCl} Indikatorverreibung & Vorrat  \\
+            \SI[mode=text,separate-uncertainty]{10.0(1)}{\milli\liter} Messzylinder & BRAND & \SI[mode=text]{0.010}{M} EDTA Lösung & Vorrat \\ 
+            Spatel &  &  &  \\ \bottomrule
+        \end{tabular}
+      \end{table}
+    
+    \pagebreak
+    
+    \subsection{Bestimmung der Konzentration einer Salzsäure}
+      
+      Die Kenntnis der Konzentration einer Säure ist von Bedeutung für analytische Zwecke in Umwelt, Technik, ... sowie für eine Vielzahl weiterer chemischer Experimente. Im Folgenden wird eine Methode zur Konzentrationsbestimmung der starken Säure \ch{HCl} behandelt. Die zugrunde liegende Reaktion ist jene von \ch{NaOH} mit \ch{HCl} - eine Neutralisationsreaktion.
+        
+        \begin{reaction}
+          HCl\aq{} + NaOH\aq{} -> NaCl\aq{} + H2O \label{rec:Neutralisation}        
+        \end{reaction}
+        
+        Die Reaktion ist exotherm, weswegen das Gleichgewicht auf der Seite der Produkte liegt. Die Rückreaktion findet fast nicht statt. Demnach eignet sich die Reaktion sehr gut für eine quantitative Bestimmung.
+        
+        Lässt man eine \ch{HCl} Lösung unbekannter Konzentration mit einer \ch{NaOH} Lösung bekannter Konzentration reagieren, kann auf die Konzentration der \ch{HCl} Lösung rückgeschlossen werden. Dazu muss man wissen, wann eine äquimolare Menge an \ch{NaOH} hinzugegeben wurde, was mithilfe eines Indikators geschieht. Wird die \ch{NaOH} tropfenweise zugegeben, steigt der \pH-Wert der Lösung kontinuierlich an. Da es sich bei \ref{rec:Neutralisation} um eine Reaktion zwischen einer starken Säure und Base handelt, steigt der \pH-Wert im Bereich des Umschlagpunktes sehr schnell. Die Lösung geht vom Sauren in den Basischen Zustand über. Wird nun ein Indikator verwendet, der im Bereich von $\pH=7$ seine Farbe oder Ähnliches verändert, kann über das gemessene Volumen an verbrauchter Natronlauge dessen Stoffmenge und damit die Konzentration der \ch{HCl} berechnet werden.
+        
+        Als Indikator eignet sich in diesem Fall Phenolphtalein, das selbst eine schwache Säure ist ($\pKa = 9.2$ \cite{Phenolphtalein}) und bei der oben angesprochenen \pH-Änderung deprotoniert wird. Das Anion ist rosa gefärbt und indiziert somit den Umschlagspunkt. Zu beachten ist, dass etwas zuviel \ch{NaOH} zugegeben wird, da der \pH-Wert beim Umschlagspunkt eigentlich 7 beträgt, der Farbumschlag aber erst bei höherem \pH-Wert erfolgt. Dieser Fehler ist zum Glück vernachlässigbar klein und wäre mit der Genauigkeit der verwendeten Geräte auch nicht messbar. \label{seite}
+        
+      \subsubsection{Versuchsdurchführung} \label{sec:VersuchSalz}
+        
+        Zu Beginn wurde eine \SI[mode=text,separate-uncertainty=true]{25}{\milli\litre} Bürette mit \ch{NaOH} gespült. Anschließend wurde sie mithilfe einer Universalklemme an einem Stativ befestigt und mit \SI[mode=text]{0.10}{M} \ch{NaOH} Maßlösung befüllt. Etwas Lösung wurde abgelassen, um auch den Bürettenhahn zu füllen. Etwaige Luftblasen in der Bürette, vor allem im Bürettenhahn wurden entfernt. Unter der Bürette wurde ein Magnetrührer platziert. 
+        
+        Nun wurden mit einer Vollpipette \SI[mode=text]{25}{\milli\liter} einer \ch{HCl} Lösung unbekannter Konzentration in einen \SI[mode=text]{250}{\milli\liter} Erlenmeyerkolben pipettiert und etwa 5 Tropfen Phenolphtalein-Lösung (=Indikator) hinzugegeben. Nach der Zugabe eines Rührfisch wurde der Kolben auf den zuvor vorbereiteten Magnetrührer gestellt. Um den Farbumschlag besser erkennen zu können, wurde ein weißes Papier unter dem Kolben platziert.  Unter Rühren (ca. \SI[mode=text]{70}{rpm}) wurde mit der \ch{NaOH} bis zum Umschlagpunkt (farblos auf rosa) titriert. Es wurde gewartet, bis der Farbumschlag für ca. \SI[mode=text]{5}{\second} bestehen blieb. Das hinzugegebene Volumen der \ch{NaOH} Lösung wurde notiert. Die Titration wurde ein weiteres Mal wiederholt. 
+      
+      \pagebreak
+      
+      \subsubsection{Auswertung}
+        
+         Die oben angegebene Neutralisationsreaktion folgt einer 1:1 Stöchiometrie, weswegen die Konzentration der \ch{HCl} wie folgt berechnet werden kann. $V_{HCl} = \SI[mode=text]{0.025}{\liter}$, $[\ch{NaOH}] = \SI[mode=text]{0.10}{\mole\per\liter}$
+         
+         \begin{equation}
+           [\ch{HCl}] = \frac{V_{\ch{NaOH}} * [\ch{NaOH}]}{V_{\ch{HCl}}} \label{eq:Hcl}
+         \end{equation}
+        
+      \subsubsection{Messdaten}
+        
+        In Tabelle \ref{tab:MessdatenSalz} werden die Volumina an verbrauchter \ch{NaOH} Lösung aufgelistet, die bei der Titration wie in \ref{sec:VersuchSalz} beschrieben, bestimmt wurden. 
+        
+        \begin{table}[H]
+          \centering
+          \caption[Messdaten der Bestimmung der Konzentration einer Salzsäure, Quelle: Autor]{Messdaten}
+          \label{tab:MessdatenSalz}
+            \begin{tabular}{@{}l|l@{}}
+              \toprule
+               Nr. & Volumen \\ \midrule
+               1 & \SI[mode=text]{22.8}{\milli\liter} \\
+               2 & \SI[mode=text]{22.8}{\milli\liter} \\ \bottomrule
+            \end{tabular}
+        \end{table} 
+        
+      \subsubsection{Ergebnisse und Diskussion} \label{eq:ErgebnisseHCL}
+        
+        Das gemessene Volumen beträgt demnach $V_{\ch{NaOH}} = \SI[mode=text]{22.8}{\milli\liter}$ ($s = \num{\pm 0}, \alpha=0.05,N=2$). Einsetzen in \eqref{eq:Hcl} ergibt $[\ch{HCl}] = \SI[mode=text]{91}{\milli\mole\per\liter}$. Da zweimal derselbe Messwert erhalten wurde, wird davon ausgegangen, dass diese Konzentration der tatsächlichen recht nahe kommt. Ein Literaturwert zum Vergleich ist nicht vorhanden. 
+        
+        Abweichungen vom Literaturwert könnten durch systematische Fehler erklärt werden. Ein Großteil möglicher Fehler wird in \ref{sec:ErgebnisseMang} aufgelistet, da diese Methode etwas fehleranfälliger ist. Eine Fehlerquelle, die speziell auf diese Methode zutrifft, wurde bereits auf Seite \pageref{seite} erwähnt. \\
+        
+        Aufgrund der Präzision der Ergebnisse und da während der Versuchsdurchführung keine Unregelmäßigkeiten auftraten, wird die Bestimmung der \ch{HCl} Konzentration als erfolgreich angesehen. 
+        
+    \pagebreak
+    
+    \subsection{Manganometrische Bestimmung der Eisen(II)-Konzentration}
+        
+        Um die Konzentration einer \ch{Fe\pch[2]\aq} Lösung zu bestimmen, kann dieses z. B. zu \ch{Fe\pch[3]\aq} oxidiert werden. Ein geeignetes Reduktionsmittel ist \ch{KMnO4}, das im Sauren mit \ch{Fe\pch[2]\aq} wie folgt reagiert.
+        
+        \begin{reaction}
+          8 H\pch{}\aq{} + 5 Fe\pch[2]\aq{} + MnO4\mch\aq{} -> Mn\pch[2]\aq{} + 5 Fe\pch[3]\aq{} + 4 H2O       
+        \end{reaction}
+        
+        Die \ch{Fe\pch[2]\aq} Lösung ist leicht grünlich bzw. farblos. Die \ch{KMnO4} Lösung violett und \ch{Mn\pch[2]\aq} ist wieder farblos. Ist das ganze \ch{Fe\pch[2]\aq} verbraucht, färbt sich die Lösung violett - der Äquivalenzpunkt ist erreicht. Die braune Farbe von \ch{Fe\pch[3]\aq} kann in dieser Betrachtung vernachlässigt werden. Demnach wird kein Indikator zur Endpunktsanzeige benötigt. 
+        
+      \subsubsection{Versuchsdurchführung} \label{sec:VersuchFe}
+        
+        Zu Beginn wurde eine \SI[mode=text,separate-uncertainty=true]{25}{\milli\litre} Bürette mit \ch{KMnO4} gespült. Anschließend wurde sie mithilfe einer Universalklemme an einem Stativ befestigt und mit \SI[mode=text]{0.020}{M} \ch{KMnO4} Maßlösung befüllt. Etwas Lösung wurde abgelassen, um auch den Bürettenhahn zu füllen. Etwaige Luftblasen in der Bürette, vor allem im Bürettenhahn wurden entfernt. Unter der Bürette wurde ein Magnetrührer platziert. 
+        
+        Nun wurden mit einer Vollpipette \SI[mode=text]{25}{\milli\liter} einer \ch{Fe\pch[2]} Lösung unbekannter Konzentration in einen \SI[mode=text]{250}{\milli\liter} Erlenmeyerkolben pipettiert. Nach der Zugabe eines Rührfisch wurde der Kolben auf den zuvor vorbereiteten Magnetrührer gestellt. Um den Farbumschlag besser erkennen zu können, wurde ein weißes Papier unter dem Kolben platziert.  Unter Rühren (ca. \SI[mode=text]{70}{rpm}) wurde mit der \ch{KMnO4} bis zum Umschlagspunkt (leicht grünlich auf blass rosa - violett) titriert. Das hinzugegebene Volumen der \ch{KMnO4} Lösung wurde notiert. Die Titration wurde ein weiteres Mal wiederholt.
+        
+      \subsubsection{Auswertung}
+        
+        Die oben angegebene Redoxreaktion folgt einer 5:1 (\ch{Fe\pch[2]\aq}:\ch{KMnO4}) Stöchiometrie, weswegen die Konzentration der \ch{Fe\pch[2]\aq} Lösung wie folgt berechnet werden kann. $V_{\ch{Fe\pch[2]}} = \SI[mode=text]{0.025}{\liter}$, $[\ch{KMnO4}] = \SI[mode=text]{0.020}{\mole\per\liter}$
+        
+        \begin{equation}
+           [\ch{Fe\pch[2]\aq}] = 5 * \frac{V_{\ch{KMnO4}} * [\ch{KMnO4}]}{V_{\ch{Fe\pch[2]}}} \label{eq:Mn}
+         \end{equation}
+         
+      \subsubsection{Messdaten}
+        
+        In Tabelle \ref{tab:MessdatenFe} werden die Volumina an verbrauchter \ch{KMnO4} Lösung aufgelistet, die bei der Titration wie in \ref{sec:VersuchFe} beschrieben, bestimmt wurden. 
+        
+        \begin{table}[H]
+          \centering
+          \caption[Messdaten der Bestimmung der Konzentration einer Eisen(II)-Lösung, Quelle: Autor]{Mess- und Literaturdaten}
+          \label{tab:MessdatenFe}
+            \begin{tabular}{@{}l|l@{}}
+              \toprule
+               Nr. & Volumen \\ \midrule
+               1 & \SI[mode=text]{20.5}{\milli\liter} \\
+               2 & \SI[mode=text]{20.5}{\milli\liter}  \\ \bottomrule
+            \end{tabular}
+        \end{table} 
+        
+      \subsubsection{Ergebnisse und Diskussion} \label{sec:ErgebnisseMang} 
+      
+        Das gemessene Volumen beträgt demnach $V_{\ch{KMnO4}} = \SI[mode=text]{20.5}{\milli\liter}$ ($s = \num{\pm 0}, \alpha=0.05,N=2$). Durch Einsetzen in \eqref{eq:Mn} ergibt sich $[\ch{Fe\pch[2]\aq}] = \SI[mode=text]{82}{\milli\mole\per\liter}$. Da zweimal das gleiche Volumen gemessen werden konnte, wird davon ausgegangen, dass die bestimmte Konzentration der tatsächlichen recht nahe kommt. Ein Literaturwert zum Vergleich ist nicht vorhanden. \\
+        
+        Im Falle einer großen Abweichung vom Literaturwert, wird aufgrund der großen Präzision von einem systematischen Fehler ausgegangen. Denkbar wären beispielsweise Ablesefehler auf der Bürette. Aufgrund der violetten Farbe der \ch{KMnO4} ist ein Ablesen mit dem Schelbach-Streifen nicht möglich. Auch die unübliche Oberflächenspannung der \ch{KMnO4} erschwert ein normiertes Ablesen. Des weiteren kann sich die Konzentration der \ch{KMnO4} durch Wasserrückstände in der Bürette beim Befüllen ändern. Wird die Bürette vor der Titration nicht mit \ch{KMnO4} gespült, hat dies eine geringere bestimmte Konzentration zur Folge. Zu beachten ist außerdem, dass sich beim Befüllen der Bürette häufig \ch{KMnO4}-Tröpfchen am Bürettenrand \textit{festsetzen}. Lösen sie sich während des Titriervorgangs, verringert sich das bestimmte Volumen und damit die bestimmte Konzentration. Ein \textit{Übertitrieren} ist nicht so leicht möglich wie bei anderen Titrationsmethoden - siehe z. B. \ref{sec:KomplexeErgebnisse}, da der Umschlagpunkt aufgrund des guten Kontrasts (von grünlich-braun auf violett) leicht zu erkennen ist. \\
+        
+        Die Bestimmung der Eisen(II)-Konzentration wird demnach als erfolgreich angesehen. Es wurde darauf geachtet, die oben angegebenen Fehlerquellen möglichst zu umgehen.
+        
+    \pagebreak
+    
+    \subsection{Bestimmung der Gesamthärte von Leitungswasser} \label{sec:harte}
+      
+      Die Kenntnis der Wasserhärte ist für viele Entscheidungen unumgänglich. So richtet sich unter anderem auch die Waschmitteldosierung nach der Gesamthärte des verwendeten Wassers. Unternehmen wie die Innsbrucker Kommunalbetriebe sind deswegen dazu verpflichtet, entsprechende Auskünfte zu geben \cite{ikb}.
+      
+      Chemisch betrachtet entspricht die Gesamthärte der Konzentration an gelösten Metallkationen. Alternativ zur Konzentration kann man die Härte auch in deutschen Härtegraden angeben. Da hauptsächlich \ch{Ca\pch[2]\aq} und \ch{Mg\pch[2]\aq} als gelöste Metallkationen vorkommen, eignet sich zu deren Konzentrationsbestimmung eine komplexometrische Titration. EDTA ist ein Komplexbildner, der aufgrund des Chelat-Effekts thermodynamisch stabile 1:1 Komplexe mit mehrwertigen Kationen bildet. Als Indikator wird Erio-T verwendet - ebenfalls ein Komplexbildner. Die Vorgänge, die während der Titration stattfinden werden im Folgenden kurz beschrieben. \\
+      
+      Zu einer Wasserprobe wird zunächst Erio-T (blau bei $\pH=10$) als Indikator zugegeben. Dieser bildet mit Magnesium einen roten Komplex nach Reaktionsgleichung \ref{rec:Indikator}. 
+        
+      \begin{reaction}
+        Mg\pch[2]\aq{} + H-ErioT\mch[2]\aq{} -> [Mg(ErioT)]\mch\aq{} + H\pch\aq{} \label{rec:Indikator}
+      \end{reaction}
+      
+      Nun wird EDTA hinzugetropft. Da die Probenlösung durch einen \ch{NH3}/\ch{NH4Cl} Puffer auf $\pH=10$ gehalten wird, liegt das \ch{H-EDTA\mch[3]\aq{}} Ion vor \cite[S. 142]{JanderBlasius}, welches mit den freien Calcium Ionen einen Komplex bildet, wie in \ref{rec:KomplexbildungCa} dargestellt. Zu berücksichtigen ist, dass die Komplexbildungskonstante von Calcium mit EDTA größer ist, als jene von Magnesium mit EDTA \cite{JanderBlasius}. Dies begründet die formale Reihenfolge der stattfindenden Reaktionen. 
+      
+      \begin{reaction}
+        Ca\pch[2]\aq{} + H-EDTA\mch[3]\aq{} -> [Ca(EDTA)]\mch[2]\aq{} + H\pch\aq{} \label{rec:KomplexbildungCa}
+      \end{reaction}
+      
+      Nach der Komplexierung aller Calcium Ionen werden die freien Magnesium Ionen analog komplexiert. Bei weiterer Zugabe von EDTA \textit{greift} dieses den \ch{[Mg(ErioT)]\mch[2]\aq{}} Komplex an und substitutiert den ErioT Liganden, da die zugehörige Komplexbildungskonstante größer ist - siehe \ref{rec:Substitutionzwei} und  \ref{rec:Substitution}. Der Äquivalenzpunkt ist nun erreicht, da gleich viel EDTA zugegeben wurde, wie \ch{Ca\pch[2]\aq{}} und \ch{Mg\pch[2]\aq{}} Ionen vorhanden waren. Erkennbar ist dieser Punkt an der nun blauen Lösung aufgrund des freien Erio-T.
+      
+      \begin{reactions}
+        Mg\pch[2]\aq{} + H-EDTA\mch[3]\aq{} &-> [Mg(EDTA)]\mch[2]\aq{} + H\pch\aq{} \label{rec:Substitutionzwei} \\
+        [Mg(ErioT)]\mch\aq{} + H-EDTA\mch[3]\aq{} &-> [Mg(EDTA)]\mch[2]\aq{}  + H-ErioT\mch[2]\aq{} \label{rec:Substitution}
+      \end{reactions}
+      
+      Wie aus den Reaktionen ersichtlich, wird \ch{Mg\pch[2]\aq{}} benötigt, um die Indikation zu ermöglichen. Ist dieses in der Wasserprobe nicht vorhanden, kann eine Indikatorverreibung mit \ch{Mg\pch[2]} Ionen verwendet werden. Grundsätzlich ist bei der Titration mit EDTA auf die korrekte Einstellung des \pH-Wertes zu achten, da die gebildeten Komplexe nicht bei allen \pH-Werten die gewünschte Stabilität haben. Auch sind Nebenreaktionen denkbar. Beispielsweise fällt bei $\pH=13$ Magnesium als Hydroxid aus und kann nicht mehr komplexiert werden \cite[S. 146]{JanderBlasius}.
+      
+      \subsubsection{Versuchsdurchführung} \label{sec:Versucharte}
+        Zu Beginn wurde eine \SI[mode=text,separate-uncertainty=true]{25.000(75)}{\milli\litre} Bürette mit EDTA Lösung gespült. Anschließend wurde sie mithilfe einer Universalklemme an einem Stativ befestigt und mit \SI[mode=text]{0.010}{M} EDTA Maßlösung befüllt. Etwas Lösung wurde abgelassen, um auch den Bürettenhahn zu füllen. Etwaige Luftblasen in der Bürette, vor allem im Bürettenhahn wurden entfernt. Unter der Bürette wurde ein Magnetrührer platziert. 
+        
+        Nun wurden mit einer Vollpipette 4-mal je \SI[mode=text]{25}{\milli\liter} einer Leitungswasserprobe aus dem Wasserhahn im Labor in einen \SI[mode=text]{250}{\milli\liter} Erlenmeyerkolben pipettiert. Mit einem \SI[mode=text]{10}{\milli\liter} Messzylinder wurden \SI[mode=text]{5}{\milli\liter} eines \ch{NH3}/\ch{NH4Cl} Puffers ($\pH=10$) zugegeben. Anschließend wurde eine Spatelspitze einer Erio-T/\ch{NaCl} Indikatorverreibung hinzugegeben. Nach der Zugabe eines Rührfisch wurde der Kolben auf den zuvor vorbereiteten Magnetrührer gestellt. Um den Farbumschlag besser erkennen zu können, wurde ein weißes Papier unter dem Kolben platziert.  Unter Rühren (ca. \SI[mode=text]{70}{rpm}) wurde mit der EDTA Lösung bis zum Umschlagspunkt (blass weinrot auf reines blau) titriert. In der Nähe des Umschlagpunktes wurde langsam titriert, um nicht zuviel hinzuzugeben. Das Volumen der verbrauchten EDTA Lösung wurde notiert. Die Titration wurde ein weiteres Mal wiederholt, wobei die selbe Leitungswasserprobe verwendet wurde.
+        
+      \subsubsection{Auswertung}
+        
+        Die Komplexierung der Metall-Kationen mit EDTA erfolgt wie oben angegeben im Verhältnis 1:1, weswegen die Gesamtkonzentration der Kationen im Leitungswasser wie folgt berechnet werden kann. $V_{Probe} = \SI[mode=text]{0.100}{\liter}$, $[EDTA] = \SI[mode=text]{0.010}{\mole\per\liter}$
+        
+        \begin{equation}
+           c_{gesamt} = \frac{V_{EDTA} * [EDTA]}{V_{Probe}} \label{eq:ED}
+        \end{equation}
+         
+        Wird angenommen, dass sich in der Lösung nur gelöste \ch{Ca\pch[2]\aq} befinden, kann die Gesamthärte auch in deutschen Härtegraden ($1 ^\circ dH = \SI[mode=text]{10}{\milli\gram}$ \ch{CaO} pro \SI[mode=text]{1}{\liter} Wasser \cite{deutscherharte}) angegeben werden. Zur Berechnung wurde folgende aus obiger Tatsache abgeleitete Gleichung verwendet.
+        
+        \begin{equation}
+          ^\circ dH = 100 * M_{\ch{CaO}} * \frac{V_{EDTA} * [EDTA]}{V_{Probe}} \label{eq:Harte}
+        \end{equation}              
+        
+        Die Wasserhärte erlaubt zudem eine Einteilung in hartes bzw. weiches Wasser \cite{Wasserharte}.
+        
+      \subsubsection{Messdaten}
+        
+        In Tabelle \ref{tab:MessdatenHarte} werden die Volumina an verbrauchter EDTA Lösung aufgelistet, die bei der Titration wie in \ref{sec:Versucharte} beschrieben, bestimmt wurden. 
+        
+        \begin{table}[H]
+          \centering
+          \caption[Messdaten der Bestimmung der Gesamthärte von Leitungswasser, Quelle: Autor]{Mess- und Literaturdaten}
+          \label{tab:MessdatenHarte}
+            \begin{tabular}{@{}l|l@{}}
+              \toprule
+               Nr. & Volumen \\ \midrule
+               1 & \SI[mode=text]{11.9}{\milli\liter} \\
+               2 & \SI[mode=text]{12.0}{\milli\liter} \\ \bottomrule
+            \end{tabular}
+        \end{table} 
+        
+      \subsubsection{Ergebnisse und Diskussion}  \label{sec:KomplexeErgebnisse}   
+      
+        Das gemessene Volumen beträgt demnach $V_{EDTA} = \SI[mode=text,separate-uncertainty]{11.95(22)}{\milli\liter}$ ($s = \num{\pm 0.071}, \alpha=0.05,N=2$). Durch Einsetzen in \eqref{eq:ED} und \eqref{eq:Harte} ergibt sich $c_{gesamt} = \SI[mode=text]{1.20}{\milli\mole\per\liter}$ und $^\circ dH = 6.7$. Dieser Wert stimmt mit dem von der IKB angegebenen Wert von $^\circ dH = 6.9$ (für Zone 1) relativ gut überein \cite{ikb}. Es handelt sich also um ein weiches Leitungswasser. \\
+        
+        Im Folgenden wird auf etwaige Fehlerquellen bei der komplexometrischen Titration eingegangen. Weitere Fehler, die bei Titrationen grundsätzlich auftreten, wurden bereits in \ref{sec:ErgebnisseHCL} und \ref{sec:ErgebnisseMang} erwähnt.  
+        
+        Wie bereits in \ref{sec:harte} erwähnt, hat der \pH-Wert einen großen Einfluss auf den Erfolg der Titration. Wird etwa vergessen, den \ch{NH3}/\ch{NH4Cl} Puffer zuzugeben, führt dies zu einer falschen Bestimmung der Konzentrationen, sofern diese überhaupt funktioniert. Eine weitere Fehlerquelle liegt in der Erkennung des Äuqivalenzpunktes. Wird etwa zuviel ErioT zugegeben, liegt eine dunkelrote Lösung vor. Der Kontrast zur bläulichen Lösung am Umschlagpunkt ist demnach nicht so groß ist, weswegen dieser schwerer zu bestimmen ist. Es wird tendenziell zuviel EDTA zugegeben, was eine zu groß bestimmte Ionenkonzentration und Härte zur Folge hat. \\
+        
+       Aufgrund der oben angeführten, guten Übereinstimmung mit dem Literaturwert und der geringen Streuung der Messwerte, werden die Ergebnisse als zufriedenstellend bewertet. Während der Versuchsdurchführung wurde insbesondere darauf geachtet, die angeführten Fehlerquellen möglichst zu vermeiden.
+       
+  \pagebreak
+  
+  \listofreactions
+  \printbibliography[title=Literaturverzeichnis]
+  %\listoffigures
+  \listoftables
+  
+\end{document}
