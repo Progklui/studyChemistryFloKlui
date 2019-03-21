@@ -38,6 +38,50 @@
       \field{title}{Versuchsvorschriften PR Allgemeine Chemie - Universität Innsbruck}
       \field{year}{2019}
     \endentry
+    \entry{PhysicalChemistryAtkings}{book}{}
+      \name{author}{1}{}{%
+        {{hash=acf65009d7cc07d943e652781262212a}{%
+           family={Peter\bibnamedelima Atkins},
+           family_i={P\bibinitperiod\bibinitdelim A\bibinitperiod},
+           suffix={Julio\bibnamedelimb de\bibnamedelima Paula},
+           suffix_i={J\bibinitperiod\bibinitdelim d\bibinitperiod\bibinitdelim P\bibinitperiod},
+           given={James\bibnamedelima Keeler},
+           given_i={J\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Oxford, United Kingdom}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{acf65009d7cc07d943e652781262212a}
+      \strng{fullhash}{acf65009d7cc07d943e652781262212a}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{11th}
+      \field{title}{Physical Chemistry}
+      \field{year}{2018}
+    \endentry
+    \entry{Kupfersulfat}{online}{}
+      \name{author}{1}{}{%
+        {{hash=acbe5c47f1e78b114c93ed3eec52752b}{%
+           family={seilnacht.com},
+           family_i={s\bibinitperiod}}}%
+      }
+      \strng{namehash}{acbe5c47f1e78b114c93ed3eec52752b}
+      \strng{fullhash}{acbe5c47f1e78b114c93ed3eec52752b}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Kupfer(II)-sulfat}
+      \field{year}{2019}
+      \verb{url}
+      \verb http://www.seilnacht.com/Chemie/ch_cuso4.htm
+      \endverb
+    \endentry
     \entry{Tollenstest}{online}{}
       \name{author}{1}{}{%
         {{hash=5ad1e85fd3c8931a4d9209c03cf7df10}{%
@@ -56,6 +100,45 @@
       \field{year}{2019}
       \verb{url}
       \verb https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Supplemental_Modules_(Organic_Chemistry)/Aldehydes_and_Ketones/Reactivity_of_Aldehydes_and_Ketones/Tollens%E2%80%99_Test
+      \endverb
+    \endentry
+    \entry{TheGoldenPenny}{article}{}
+      \name{author}{3}{}{%
+        {{hash=a01e0cd08517be93f10cf03079d304ce}{%
+           family={Szczepankiewicz},
+           family_i={S\bibinitperiod},
+           given={Steven},
+           given_i={S\bibinitperiod}}}%
+        {{hash=c58541d9cae22d546ab962d5177d8241}{%
+           family={Bieron},
+           family_i={B\bibinitperiod},
+           given={Joseph},
+           given_i={J\bibinitperiod}}}%
+        {{hash=d0d043b7f33c874b37f3c7de46321c2b}{%
+           family={Kozik},
+           family_i={K\bibinitperiod},
+           given={Mariusz},
+           given_i={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{1239ebebc02c330fc3b3eff8b2d6f03c}
+      \strng{fullhash}{1239ebebc02c330fc3b3eff8b2d6f03c}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Chemical Education}
+      \field{month}{05}
+      \field{number}{5}
+      \field{title}{The "Golden Penny" Demonstration}
+      \field{volume}{72}
+      \field{year}{1995}
+      \field{pages}{386\bibrangedash 388}
+      \range{pages}{3}
+      \verb{doi}
+      \verb 10.1021/ed072p386
+      \endverb
+      \verb{url}
+      \verb https://pubs.acs.org/doi/pdf/10.1021/ed072p386
       \endverb
     \endentry
   \endsortlist
