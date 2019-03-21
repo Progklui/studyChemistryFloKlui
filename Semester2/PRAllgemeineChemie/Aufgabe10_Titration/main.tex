@@ -14,6 +14,7 @@
   
 %% Maths
 \usepackage{amsmath,amssymb,amsthm,textcomp}
+\DeclareMathSymbol{*}{\mathbin}{symbols}{"01}
 
 %% Physics
 \usepackage{siunitx}
@@ -199,13 +200,13 @@ citestyle=numeric
             \end{tabular}
         \end{table} 
         
-      \subsubsection{Ergebnisse und Diskussion} \label{eq:ErgebnisseHCL}
+      \subsubsection{Ergebnisse und Diskussion} \label{sec:ErgebnisseHCLzz}
         
         Das gemessene Volumen beträgt demnach $V_{\ch{NaOH}} = \SI[mode=text]{22.8}{\milli\liter}$ ($s = \num{\pm 0}, \alpha=0.05,N=2$). Einsetzen in \eqref{eq:Hcl} ergibt $[\ch{HCl}] = \SI[mode=text]{91}{\milli\mole\per\liter}$. Da zweimal derselbe Messwert erhalten wurde, wird davon ausgegangen, dass diese Konzentration der tatsächlichen recht nahe kommt. Ein Literaturwert zum Vergleich ist nicht vorhanden. 
         
-        Abweichungen vom Literaturwert könnten durch systematische Fehler erklärt werden. Ein Großteil möglicher Fehler wird in \ref{sec:ErgebnisseMang} aufgelistet, da diese Methode etwas fehleranfälliger ist. Eine Fehlerquelle, die speziell auf diese Methode zutrifft, wurde bereits auf Seite \pageref{seite} erwähnt. \\
+        Abweichungen vom Literaturwert könnten durch systematische Fehler erklärt werden. Ein Großteil möglicher Fehler wird in \ref{sec:ErgebnisseMang} aufgelistet, da diese Methode etwas fehleranfälliger ist. Eine vernachlässigbare Fehlerquelle, die speziell auf diese Methode zutrifft, wurde bereits auf Seite \pageref{seite} erwähnt. \\
         
-        Aufgrund der Präzision der Ergebnisse und da während der Versuchsdurchführung keine Unregelmäßigkeiten auftraten, wird die Bestimmung der \ch{HCl} Konzentration als erfolgreich angesehen. 
+        Aufgrund der Präzision der Ergebnisse und da während der Versuchsdurchführung keine Unregelmäßigkeiten auftraten, wird die Bestimmung der \ch{HCl} Konzentration als erfolgreich und entsprechend genau angesehen. 
         
     \pagebreak
     
@@ -287,7 +288,7 @@ citestyle=numeric
       Wie aus den Reaktionen ersichtlich, wird \ch{Mg\pch[2]\aq{}} benötigt, um die Indikation zu ermöglichen. Ist dieses in der Wasserprobe nicht vorhanden, kann eine Indikatorverreibung mit \ch{Mg\pch[2]} Ionen verwendet werden. Grundsätzlich ist bei der Titration mit EDTA auf die korrekte Einstellung des \pH-Wertes zu achten, da die gebildeten Komplexe nicht bei allen \pH-Werten die gewünschte Stabilität haben. Auch sind Nebenreaktionen denkbar. Beispielsweise fällt bei $\pH=13$ Magnesium als Hydroxid aus und kann nicht mehr komplexiert werden \cite[S. 146]{JanderBlasius}.
       
       \subsubsection{Versuchsdurchführung} \label{sec:Versucharte}
-        Zu Beginn wurde eine \SI[mode=text,separate-uncertainty=true]{25.000(75)}{\milli\litre} Bürette mit EDTA Lösung gespült. Anschließend wurde sie mithilfe einer Universalklemme an einem Stativ befestigt und mit \SI[mode=text]{0.010}{M} EDTA Maßlösung befüllt. Etwas Lösung wurde abgelassen, um auch den Bürettenhahn zu füllen. Etwaige Luftblasen in der Bürette, vor allem im Bürettenhahn wurden entfernt. Unter der Bürette wurde ein Magnetrührer platziert. 
+        Zu Beginn wurde eine \SI[mode=text,separate-uncertainty=true]{25)}{\milli\litre} Bürette mit EDTA Lösung gespült. Anschließend wurde sie mithilfe einer Universalklemme an einem Stativ befestigt und mit \SI[mode=text]{0.010}{M} EDTA Maßlösung befüllt. Etwas Lösung wurde abgelassen, um auch den Bürettenhahn zu füllen. Etwaige Luftblasen in der Bürette, vor allem im Bürettenhahn wurden entfernt. Unter der Bürette wurde ein Magnetrührer platziert. 
         
         Nun wurden mit einer Vollpipette 4-mal je \SI[mode=text]{25}{\milli\liter} einer Leitungswasserprobe aus dem Wasserhahn im Labor in einen \SI[mode=text]{250}{\milli\liter} Erlenmeyerkolben pipettiert. Mit einem \SI[mode=text]{10}{\milli\liter} Messzylinder wurden \SI[mode=text]{5}{\milli\liter} eines \ch{NH3}/\ch{NH4Cl} Puffers ($\pH=10$) zugegeben. Anschließend wurde eine Spatelspitze einer Erio-T/\ch{NaCl} Indikatorverreibung hinzugegeben. Nach der Zugabe eines Rührfisch wurde der Kolben auf den zuvor vorbereiteten Magnetrührer gestellt. Um den Farbumschlag besser erkennen zu können, wurde ein weißes Papier unter dem Kolben platziert.  Unter Rühren (ca. \SI[mode=text]{70}{rpm}) wurde mit der EDTA Lösung bis zum Umschlagspunkt (blass weinrot auf reines blau) titriert. In der Nähe des Umschlagpunktes wurde langsam titriert, um nicht zuviel hinzuzugeben. Das Volumen der verbrauchten EDTA Lösung wurde notiert. Die Titration wurde ein weiteres Mal wiederholt, wobei die selbe Leitungswasserprobe verwendet wurde.
         
@@ -327,9 +328,9 @@ citestyle=numeric
       
         Das gemessene Volumen beträgt demnach $V_{EDTA} = \SI[mode=text,separate-uncertainty]{11.95(22)}{\milli\liter}$ ($s = \num{\pm 0.071}, \alpha=0.05,N=2$). Durch Einsetzen in \eqref{eq:ED} und \eqref{eq:Harte} ergibt sich $c_{gesamt} = \SI[mode=text]{1.20}{\milli\mole\per\liter}$ und $^\circ dH = 6.7$. Dieser Wert stimmt mit dem von der IKB angegebenen Wert von $^\circ dH = 6.9$ (für Zone 1) relativ gut überein \cite{ikb}. Es handelt sich also um ein weiches Leitungswasser. \\
         
-        Im Folgenden wird auf etwaige Fehlerquellen bei der komplexometrischen Titration eingegangen. Weitere Fehler, die bei Titrationen grundsätzlich auftreten, wurden bereits in \ref{sec:ErgebnisseHCL} und \ref{sec:ErgebnisseMang} erwähnt.  
+        Im Folgenden wird auf etwaige Fehlerquellen bei der komplexometrischen Titration eingegangen. Weitere Fehler, die bei Titrationen grundsätzlich auftreten, wurden bereits in \ref{sec:ErgebnisseHCLzz} und \ref{sec:ErgebnisseMang} erwähnt.  
         
-        Wie bereits in \ref{sec:harte} erwähnt, hat der \pH-Wert einen großen Einfluss auf den Erfolg der Titration. Wird etwa vergessen, den \ch{NH3}/\ch{NH4Cl} Puffer zuzugeben, führt dies zu einer falschen Bestimmung der Konzentrationen, sofern diese überhaupt funktioniert. Eine weitere Fehlerquelle liegt in der Erkennung des Äuqivalenzpunktes. Wird etwa zuviel ErioT zugegeben, liegt eine dunkelrote Lösung vor. Der Kontrast zur bläulichen Lösung am Umschlagpunkt ist demnach nicht so groß ist, weswegen dieser schwerer zu bestimmen ist. Es wird tendenziell zuviel EDTA zugegeben, was eine zu groß bestimmte Ionenkonzentration und Härte zur Folge hat. \\
+        Wie bereits in \ref{sec:harte} erwähnt, hat der \pH-Wert einen großen Einfluss auf den Erfolg der Titration. Wird etwa vergessen, den \ch{NH3}/\ch{NH4Cl} Puffer zuzugeben, führt dies zu einer falschen Bestimmung der Konzentrationen, sofern diese überhaupt funktioniert. Eine weitere Fehlerquelle liegt in der Erkennung des Äuqivalenzpunktes. Wird etwa zuviel ErioT zugegeben, liegt eine dunkelrote Lösung vor. Der Kontrast zur bläulichen Lösung am Umschlagpunkt ist demnach nicht so groß, weswegen dieser schwerer zu bestimmen ist. Es wird tendenziell zuviel EDTA zugegeben, was eine zu groß bestimmte Ionenkonzentration und Härte zur Folge hat. \\
         
        Aufgrund der oben angeführten, guten Übereinstimmung mit dem Literaturwert und der geringen Streuung der Messwerte, werden die Ergebnisse als zufriedenstellend bewertet. Während der Versuchsdurchführung wurde insbesondere darauf geachtet, die angeführten Fehlerquellen möglichst zu vermeiden.
        

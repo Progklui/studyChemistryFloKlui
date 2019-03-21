@@ -14,6 +14,7 @@
   
 %% Maths
 \usepackage{amsmath,amssymb,amsthm,textcomp}
+\DeclareMathSymbol{*}{\mathbin}{symbols}{"01}
 
 %% Physics
 \usepackage{siunitx}
@@ -214,7 +215,7 @@ umgänglich, Methoden ihrer Bestimmung zu kennen.
       
     \subsection{Messergebnisse und Literaturwerte}
     
-      In Tabelle \ref{tab:Messdaten} sind alle Messwerte angeführt, die im Rahmen der Versuchsdurchführung wie in \ref{sec:Versuch} beschrieben, gemessen wurden. Volumina sind in L, Konzentrationen in M angegeben. Die einzelnen aus den Messdaten errechneten Werte wurden gemäß den in \ref{sec:Auswertung} angeführten Beziehungen berechnet.
+      In Tabelle \ref{tab:Messdaten} sind alle Messwerte angeführt, die im Rahmen der Versuchsdurchführung wie in \ref{sec:Versuch} beschrieben, gemessen wurden. Volumina sind in L, Konzentrationen in \si{\mole\per\liter} angegeben. Die einzelnen aus den Messdaten errechneten Werte wurden gemäß den in \ref{sec:Auswertung} angeführten Beziehungen berechnet.
       
       \begin{table}[H]
         \centering
@@ -244,11 +245,11 @@ umgänglich, Methoden ihrer Bestimmung zu kennen.
     
     Ein Vergleich mit dem Literaturwert ($K_{L}=\num{9.8d-9}$ bei \SI[mode=text]{25}{\degreeCelsius} \cite[S. 8-819]{solubilityConstants}) zeigt, dass der Wert der Extrapolation mit LibreOfficeCalc um eine Größenordnung abweicht. Der Wert der Extrapolation mit Mathematica hingegen kommt dem Literaturwert erstaunlich nahe. Diese Abweichungen sollen im Folgenden diskutiert werden. 
     
-    Eine Internetrecherche lieferte sehr unterschiedliche Werte für das Löslichkeitsprodukt - siehe z. B. \cite{solubitliyWikizwei}, \cite{solubilityWikipedia} oder \cite{solubilityOtherOne}. Wie man sieht, unterscheiden sich auch die deutsche und englische Wikipedia.org Seite. Die auf diesen Seiten gefundenen Werte für das Löslichkeitsprodukt liegen zwischen \num{1.4d-8} und \num{9.8d-9}. Als Literaturwert wurde \num{9.8d-9} herangezogen, da die angegebene Quelle als am vertrauenswürdigsten erscheint. 
+    Eine Internetrecherche lieferte sehr unterschiedliche Werte für das Löslichkeitsprodukt - siehe z. B. \cite{solubitliyWikizwei}, \cite{solubilityWikipedia} oder \cite{solubilityOtherOne}. Wie man sieht, unterscheiden sich auch die deutsche und englische Wikipedia.org Seite. Die auf diesen Seiten gefundene Werte für das Löslichkeitsprodukt liegen zwischen \num{1.4d-8} und \num{9.8d-9}. Als Literaturwert wurde \num{9.8d-9} herangezogen, da die oben angegebene Quelle als am vertrauenswürdigsten erscheint. 
     
     Der Unterschied zwischen den beiden verwendeten Extrapolationsmethoden erklärt sich dadurch, dass Mathematica keinen analytischen Ausdruck erzeugt im Gegensatz zu LibreOfficeCalc und dadurch mehr \textit{Freiheiten} beim Folgen des Trends hat, weswegen es die Extrapolationsfunktion diesem besser anpassen kann. Dafür fehlt eine Art Bestimmtheitsmaß, mit dem die Methode auf Genauigkeit abgeschätzt werden kann. Dennoch wird der Wert der Extrapolation mit Mathematica als \textit{besser} eingeschätzt. \\
     
-    Grundsätzliche Fehlerquellen werden im Folgenden diskutiert: es gilt zu bedenken, dass die Messungen nicht bei \SI[mode=text]{25}{\degreeCelsius} durchgeführt wurden. Die Messtemperaturen können Tabelle \ref{tab:Messdaten} entnommen werden. Da das Löslichkeitsprodukt grundsätzlich stark temperaturabhängig ist, kann dies eine gewisse Abweichung der Messungen vom Literaturwert erklären. Man müsste die gemessenen Löslichkeitsprodukte mithilfe der Van't Hoff Beziehung auf \SI[mode=text]{25}{\degreeCelsius} \textit{umrechnen}. Der vermutlich größte Fehler liegt beim Erkennen des Endpunktes der Titration. Dieser ist erreicht, wenn sich die Lösung etwas trüblich gelb färbt, was in der Praxis mit freiem Auge schwierig zu erkennen ist (Streulicht, Reflexionen, Sehkraft des Experimentators, ...). Eine Möglichkeit, die Genauigkeit schlagartig zu verbessern, wäre z. B. die Verwendung eines Photometers zur Endpunktanzeige. Eine weitere Fehlerquelle liegt in der Herstellung der Verdünnungsreihe. Wird am Anfang falsch pipettiert, hat dies Auswirkungen auf alle weiteren Messungen.\\
+    Grundsätzliche Fehlerquellen werden im Folgenden diskutiert: es gilt zu bedenken, dass die Messungen nicht bei \SI[mode=text]{25}{\degreeCelsius} durchgeführt wurden. Die Messtemperaturen können Tabelle \ref{tab:Messdaten} entnommen werden. Da das Löslichkeitsprodukt grundsätzlich stark temperaturabhängig ist, kann dies eine gewisse Abweichung der Messungen vom Literaturwert erklären. Man müsste die gemessenen Löslichkeitsprodukte mithilfe der Van't Hoff Beziehung auf \SI[mode=text]{25}{\degreeCelsius} \textit{umrechnen}. Der vermutlich größte Fehler liegt jedoch beim Erkennen des Endpunktes der Titration. Dieser ist erreicht, wenn sich die Lösung etwas trüblich gelb färbt, was in der Praxis mit freiem Auge schwierig zu erkennen ist (Streulicht, Reflexionen, Sehkraft des Experimentators, ...). Eine Möglichkeit, die Genauigkeit schlagartig zu verbessern, wäre z. B. die Verwendung eines Photometers zur Endpunktanzeige. Eine weitere Fehlerquelle liegt in der Herstellung der Verdünnungsreihe. Wird am Anfang falsch pipettiert, hat dies Auswirkungen auf alle weiteren Messungen.\\
     
     Zusammenfassend wird das Experiment als gelungen angesehen mit folgenden Ergebnissen: $K_{L}=\num{3.66d-9}$, $L_{M} = $\SI[mode=text, separate-uncertainty]{9.70d-4}{\mole\per\liter} $\equiv$ \SI[mode=text, separate-uncertainty]{0.45}{\gram\per\liter}. 
     

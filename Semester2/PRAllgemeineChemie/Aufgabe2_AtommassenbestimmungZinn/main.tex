@@ -15,6 +15,7 @@
   
 %% Maths
 \usepackage{amsmath,amssymb,amsthm,textcomp}
+\DeclareMathSymbol{*}{\mathbin}{symbols}{"01}
 
 %% Physics
 \usepackage{siunitx}
@@ -155,7 +156,7 @@ citestyle=numeric
           \toprule
             Geräte & Hersteller & Chemikalie & bezogen von \\ \midrule
             Porzellantiegel &  & elementares \ch{Sn} & Vorrat \\
-            \SI[mode=text,separate-uncertainty]{10.0(1)}{\milli\litre} Messzylinder &  & halbkonzentrierte \ch{HNO3} & Vorrat \\
+            \SI[mode=text,separate-uncertainty]{10.0(1)}{\milli\litre} Messzylinder & BRAND & halbkonzentrierte \ch{HNO3} & Vorrat \\
             Sandbad &  &  &  \\
             Bunsenbrenner &  &  &  \\
             Analysenwaage &  &  &  \\
@@ -168,7 +169,7 @@ citestyle=numeric
     
       Aufgrund der Giftigkeit der beim Versuch entstehenden nitrosen Gase (\ch{NO}\textsubscript{x}) wurden die folgenden Schritte bis auf das Wiegen alle im Abzug durchgeführt. 
       
-      Die Masse des Porzellantiegels ($m_{Tiegel}$) und des darin befindlichen Zinn ($m_{\ch{Sn}}$) waren vorgegeben. Das Zinn wurde mithilfe eines \SI[mode=text]{10}{\milli\litre} Messzylinders im Porzellantiegel mit ca. \SI[mode=text]{3}{\milli\litre} halbkonzentrierter \ch{HNO3} versetzt. Dabei wurde die \ch{HNO3} portionsweise zugegeben. Es wurde abgewartet, bis keine braunen Dämpfe mehr sichtbar waren. Im Anschluss hat man den Porzellantiegel im Sandbad erhitzt, mit dem Zweck, die flüssige Phase abzudampfen, um im nächsten Schritt einen Siedeverzug zu vermeiden. Im Anschluss wurde der Porzellantiegel\footnote{Rückstand im Porzellantiegel nun weiß} für ca. \SI[mode=text]{10}{\minute} auf einem Tondreieck platziert und über die Bunsenbrennerflamme gehalten, um verbleibende Rückstände von \ch{HNO3} und \ch{H2O} so gut wie möglich zu entfernen und das Zinnoxid in die Wägeform zu bringen\footnote{der weiße Rückstand enthält diverse Zinnhydroxide sowie Zinn(II)oxid - durch starkes erhitzen werden diese in das gewünschte Zinn(IV)oxid überführt}. Anzumerken ist, dass der Porzellantiegel zu Beginn nicht direkt über die Flamme gehalten wurde, um einen Siedeverzug durch Wasserreste zu vermeiden. Erst nachdem die Gasentwicklung aufgehört hatte, wurde  bei voller Flamme direkt über dem Bunsenbrenner erhitzt\footnote{in Höhe der heißesten Flamme}. Das Resultat war ein gelblicher, poröser Feststoff. Der Tiegel wurde nun abgekühlt und dessen Masse ($m_{Tiegel+Zinnoxid}$) mithilfe einer Analysenwaage bestimmt.
+      Die Masse des Porzellantiegels ($m_{Tiegel}$) und des darin befindlichen Zinn ($m_{\ch{Sn}}$) waren vorgegeben. Das Zinn wurde mithilfe eines \SI[mode=text]{10}{\milli\litre} Messzylinders im Porzellantiegel mit ca. \SI[mode=text]{3}{\milli\litre} halbkonzentrierter \ch{HNO3} versetzt. Dabei wurde die \ch{HNO3} portionsweise zugegeben. Es wurde abgewartet, bis keine braunen Dämpfe mehr sichtbar waren. Im Anschluss hat man den Porzellantiegel im Sandbad erhitzt, mit dem Zweck, die flüssige Phase abzudampfen, um im nächsten Schritt einen Siedeverzug zu vermeiden. Im Anschluss wurde der Porzellantiegel\footnote{Rückstand im Porzellantiegel nun weiß} für ca. \SI[mode=text]{10}{\minute} auf einem Tondreieck platziert und über die Bunsenbrennerflamme gehalten, um verbleibende Rückstände von \ch{HNO3} und \ch{H2O} so gut wie möglich zu entfernen und das Zinnoxid in die Wägeform zu bringen\footnote{der weiße Rückstand enthält diverse Zinnhydroxide sowie Zinn(II)oxid - durch starkes erhitzen werden diese in das gewünschte Zinn(IV)oxid überführt}. Anzumerken ist, dass der Porzellantiegel zu Beginn nicht direkt über die Flamme gehalten wurde, um einen Siedeverzug durch Wasserreste zu vermeiden. Erst nachdem die (braune) Gasentwicklung aufgehört hatte, wurde  bei voller Flamme direkt über dem Bunsenbrenner erhitzt\footnote{in Höhe der heißesten Flamme}. Das Resultat war ein gelblicher, poröser Feststoff. Der Tiegel wurde nun abgekühlt und dessen Masse ($m_{Tiegel+Zinnoxid}$) mithilfe einer Analysenwaage bestimmt.
     
     \pagebreak
      
@@ -196,7 +197,7 @@ citestyle=numeric
         y = \frac{m_{Sn\textsubscript{x}O\textsubscript{y}}}{m_{\ch{O}}} * (1 - \frac{M_{\ch{O}} * m_{\ch{Sn}}^2}{M_{\ch{Sn}} * m_{\ch{O}}^2 + M_{\ch{O}} * m_{\ch{Sn}}^2}) \label{eq:y}
       \end{equation}
       
-      Nimmt man umgekehrt die Zusammensetzung des Zinnoxids sowie Atommasse von Sauerstoff als bekannt voraus, errechnet sich die gesuchte molare Masse von Zinn wie unten angegeben.
+      Setzt man umgekehrt die Zusammensetzung des Zinnoxids sowie die Atommasse von Sauerstoff als bekannt voraus, errechnet sich die gesuchte molare Masse von Zinn wie unten angegeben.
       
       \begin{equation}
         n_{Sn} = \frac{x}{y}n_{O} = \frac{x}{y} * \frac{m_{O}}{M_{O}} \Rightarrow M_{Sn} = \frac{y}{x} * \frac{m_{Sn}*M_{O}}{m_{O}} \label{eq:Mol}
@@ -232,7 +233,7 @@ citestyle=numeric
     Ein Blick in die Literatur zeigt, dass bei Reaktion \ref{rec:NOzwei} bevorzugt \ch{SnO2} entsteht \cite{ReactionProof}. Die ablaufende Reaktiongsgleichung lautet dann wie folgt:
     
     \begin{reactions}
-        4 H\pch[] + 4 NO3\mch[] + Sn &-> SnO2 + 4 NO2 + 2 H2O \label{rec:NOzwei}
+        4 HNO3\aq{} + Sn\sld{} -> SnO2\sld{} + 4 NO2\gas{} + 2 H2O \label{rec:NO}
     \end{reactions}
     
     Im Folgenden werden Fehlerquellen und ihre Auswirkungen auf das Ergebnis diskutiert. Beim Verdampfen der Flüssigkeit im Sandbad kann es bei zu hohen Temperaturen zum Siedeverzug kommen. Wird dabei Probe aus dem Porzellantiegel herausgeschleudert, verringert dies die gemessene Masse an Zinn(IV)oxid. Dies hat zur Folge, dass die berechnete molare Masse von Zinn zu groß ist. Ein Siedeverzug kann aber auch beim Glühen über der Bunsenbrennerflamme vorkommen. Wird der Porzellantiegel unmittelbar nach dem Sandbad direkt über die Bunsenbrennerflamme gehalten, ist ein Siedeverzug sehr wahrscheinlich, da immer noch Restfeuchte und \ch{HNO3} vorhanden sind, die bei zu schnellem erhitzen einen Siedeverzug verursachen können. Der Effekt auf das Ergebnis ist der selbe wie beschrieben. 
@@ -247,7 +248,7 @@ citestyle=numeric
   
   \listofreactions
   \printbibliography[title=Literaturverzeichnis]
-  \listoffigures
+  % \listoffigures
   \listoftables
   
 \end{document}
