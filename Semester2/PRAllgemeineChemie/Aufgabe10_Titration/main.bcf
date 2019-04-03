@@ -2027,14 +2027,15 @@
   </bcf:bibdata>
   <bcf:section number="0">
     <bcf:citekey order="1">Versuchsvorschrift</bcf:citekey>
-    <bcf:citekey order="2">Phenolphtalein</bcf:citekey>
-    <bcf:citekey order="3">ikb</bcf:citekey>
-    <bcf:citekey order="4">JanderBlasius</bcf:citekey>
+    <bcf:citekey order="2">ikb</bcf:citekey>
+    <bcf:citekey order="3">Phenolphtalein</bcf:citekey>
+    <bcf:citekey order="4">ikb</bcf:citekey>
     <bcf:citekey order="5">JanderBlasius</bcf:citekey>
     <bcf:citekey order="6">JanderBlasius</bcf:citekey>
-    <bcf:citekey order="7">deutscherharte</bcf:citekey>
-    <bcf:citekey order="8">Wasserharte</bcf:citekey>
-    <bcf:citekey order="9">ikb</bcf:citekey>
+    <bcf:citekey order="7">JanderBlasius</bcf:citekey>
+    <bcf:citekey order="8">deutscherharte</bcf:citekey>
+    <bcf:citekey order="9">Wasserharte</bcf:citekey>
+    <bcf:citekey order="10">ikb</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="none/global" type="entry" sortscheme="none" sortnamekeyscheme="global">
   <bcf:sorting>
