@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.9.30)  30 SEP 2019 14:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.9.30)  12 OCT 2019 21:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3554,6 +3554,31 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 3.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 3.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 26.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 26.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 49.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 49.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 49.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 49.
+ [2]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 50.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 50.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 65.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 65.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 82.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 82.
 )
 
 Package glossaries Warning: No \printglossary or \printglossaries found. 
@@ -3568,7 +3593,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 20.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 20.
-[2
+[3
 runsystem(makeindex -s AssignmentsWS201920_Thermodynamics_FlorianKluibenschedl.
 ist -t AssignmentsWS201920_Thermodynamics_FlorianKluibenschedl.glg -o Assignmen
 tsWS201920_Thermodynamics_FlorianKluibenschedl.gls AssignmentsWS201920_Thermody
@@ -3582,31 +3607,38 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 20.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 20.
 Package rerunfilecheck Info: File `AssignmentsWS201920_Thermodynamics_FlorianKl
 uibenschedl.out' has not changed.
-(rerunfilecheck)             Checksum: C3CBCC50B6AF6CCAF71716E482EDD68A;100.
+(rerunfilecheck)             Checksum: A96DAF4B1BDDE3DA0630560970C7393A;550.
 Package logreq Info: Writing requests to 'AssignmentsWS201920_Thermodynamics_Fl
 orianKluibenschedl.run.xml'.
 \openout1 = `AssignmentsWS201920_Thermodynamics_FlorianKluibenschedl.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 52491 strings out of 494757
- 1071132 string characters out of 6175785
- 1506128 words of memory out of 5000000
- 54989 multiletter control sequences out of 15000+600000
+ 52527 strings out of 494757
+ 1071634 string characters out of 6175785
+ 1511439 words of memory out of 5000000
+ 55011 multiletter control sequences out of 15000+600000
  546168 words of font info for 82 fonts, out of 8000000 for 9000
  85 hyphenation exceptions out of 8191
- 74i,12n,123p,10453b,1674s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 74i,24n,123p,10453b,1680s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmr17.pfb>
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb
+>
 Output written on AssignmentsWS201920_Thermodynamics_FlorianKluibenschedl.pdf (
-2 pages, 71601 bytes).
+3 pages, 147202 bytes).
 PDF statistics:
- 56 PDF objects out of 1000 (max. 8388607)
- 45 compressed objects within 1 object stream
- 6 named destinations out of 1000 (max. 500000)
- 29 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 122 PDF objects out of 1000 (max. 8388607)
+ 102 compressed objects within 2 object streams
+ 20 named destinations out of 1000 (max. 500000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
 

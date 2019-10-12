@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.9.30)  30 SEP 2019 14:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.9.30)  12 OCT 2019 21:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3524,6 +3524,38 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 3.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 3.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 26.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 26.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 49.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 49.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 49.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 49.
+ [1
+Non-PDF special ignored!{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+
+
+\openout6 = `Blatt.ist'.
+
+]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 50.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 50.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 65.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 65.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 82.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 82.
 )
 
 Package glossaries Warning: No \printglossary or \printglossaries found. 
@@ -3538,43 +3570,43 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 11.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 11.
-[1
-Non-PDF special ignored!{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
-
-
-
-\openout6 = `Blatt.ist'.
-
+[2
 runsystem(makeindex -s Blatt.ist -t Blatt.glg -o Blatt.gls Blatt.glo)...execute
 d safely (allowed).
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 11.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 11.
-
-(./Blatt.aux)
+ (./Blatt.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 11.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 11.
 Package rerunfilecheck Info: File `Blatt.out' has not changed.
-(rerunfilecheck)             Checksum: C3CBCC50B6AF6CCAF71716E482EDD68A;100.
+(rerunfilecheck)             Checksum: A96DAF4B1BDDE3DA0630560970C7393A;550.
 Package logreq Info: Writing requests to 'Blatt.run.xml'.
 \openout1 = `Blatt.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 52424 strings out of 494757
- 1069137 string characters out of 6175785
- 1503717 words of memory out of 5000000
- 54949 multiletter control sequences out of 15000+600000
+ 52460 strings out of 494757
+ 1069639 string characters out of 6175785
+ 1511028 words of memory out of 5000000
+ 54971 multiletter control sequences out of 15000+600000
  537347 words of font info for 49 fonts, out of 8000000 for 9000
  85 hyphenation exceptions out of 8191
- 74i,12n,123p,10396b,1641s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 74i,24n,123p,10396b,1645s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-Output written on Blatt.pdf (1 page, 27022 bytes).
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/symbols/msam10.pfb>
+Output written on Blatt.pdf (2 pages, 102086 bytes).
 PDF statistics:
- 33 PDF objects out of 1000 (max. 8388607)
- 27 compressed objects within 1 object stream
- 4 named destinations out of 1000 (max. 500000)
- 29 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 93 PDF objects out of 1000 (max. 8388607)
+ 79 compressed objects within 1 object stream
+ 18 named destinations out of 1000 (max. 500000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
 

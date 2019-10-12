@@ -1,3 +1,94 @@
-\section{Blatt 1}
+\section{Zustandsgrößen und totale Differentiale}
 
-\subsection{Aufgabe 1}
+  \subsection{Extensive und Intensive Zustandsgrößen}
+
+    Extensive Zustandsgrößen hängen von der Größe des Systems ab. Intensive   Zustandsgrößen sind demgegenüber unabhängig von der Systemgröße.
+
+      \begin{table}[H]
+        \centering
+        \caption[Beispiele für Zustandsgrößen, Quelle: Autor]{Beispiele für Zustandsgrößen und Einteilung in intensive und extensive}
+        \label{tab:Zustande}
+        
+        \begin{tabular}{@{}l|l@{}}
+          \toprule
+            Intensive Zustandsgrößen & Extensive Zustandsgrößen  \\ \midrule
+            Molvolumen & Entropie \\
+            Temperatur & Stoffmenge \\
+            Druck & Volumen \\
+            Partialdruck & innere Energie \\
+            molare Masse & Enthalpie \\
+            Konzentration & Masse \\
+            Dichte &  \\
+            spezifisches Volumen & \\ \bottomrule
+        \end{tabular}
+      \end{table}
+
+  \subsection{Das Volumen eines Zylinders ein totales Differential?}
+  
+    Das Volumen eines Zylinders kann mit
+      
+      \begin{equation}
+        V(r,h) = r^2 \pi h \label{eq:VolumenZylinder}
+      \end{equation}            
+    berechnet werden. Das totale Differential berechnet sich zu
+    
+      \begin{equation}
+        \text{d}V = \left(\frac{\partial V}{\partial r}\right)_{h} \text{d}r + \left(\frac{\partial V}{\partial h}\right)_{r} \text{d} h = 2r\pi h \text{d}r + r^2 \pi \text{d} h. \label{eq:totalesDifferentialAllgemein} 
+      \end{equation}
+    Um zu überprüfen, ob $V(r,h)$ eine Zustandsfunktion ist, muss untersucht werden, ob die gemischten zweiten partiellen Ableitungen gleich sind. Auf einem sternförmigen Gebiet gelten dann die Integrabilitätsbedingungen sowie der Satz von Schwarz. Es gilt 
+    
+      \begin{equation}
+        \begin{split}
+          \partial_{r}\partial_{h} V &= 2 r\pi  \\
+          \partial_{h}\partial_{r} V &= 2 r\pi. \label{eq:ZeiteAbleitungVolumen}
+        \end{split}
+      \end{equation}
+    Daraus folgt, dass $\partial_{r}\partial_{h} V = \partial_{h}\partial_{r} V$ und damit ist $V(r,h)$ eine Zustandsfunktion. $\square$
+
+  \pagebreak
+  
+  \subsection{Totales Differential einer exemplarischen Funktion}
+  
+    Wir betrachten die Funktion
+    
+      \begin{equation}
+        f(x,y) = x^4 + xy
+      \end{equation}
+    und bilden $J = \begin{pmatrix} \partial_{x} \, f(x,y) & \partial_y \, f(x,y)\end{pmatrix} = \begin{pmatrix} 4x^3 + y & x \end{pmatrix}$
+    sowie die Hesse-Matrix 
+    
+      \begin{equation} 
+        H_f = \begin{pmatrix} \partial_{xx} \, f(x,y) & \partial_{yx} \, f(x,y)\\ \partial_{xy} \, f(x,y)& \partial_{yy} \, f(x,y) \end{pmatrix} = \begin{pmatrix} 12x^2& 1\\ 1& 0 \end{pmatrix}.
+      \end{equation}
+    Aufgrund der Symmetrie von $H_f$ ist auf einem sternförmigen Gebiet der Satz von Schwarz erfüllt und damit $f(x,y)$ eine Zustandsfunktion.
+    
+  \subsection{Das molare Volumen ein totales Differential?}
+  
+    Wir betrachten das totale Differential
+    
+      \begin{equation}
+        \text{d} V_m = \left(\frac{R}{p}\right)_p \text{d} T - \left(\frac{RT}{p^2}\right)_T \text{d}p.
+      \end{equation}
+    Die gemischten zweiten partiellen Ableitungen lauten
+    
+      \begin{equation}
+        \begin{split}
+          \partial_{p}\partial_{T} \, V_m &= -\frac{R}{p^2} \\
+          \partial_{T}\partial_{p} \, V_m &= -\frac{R}{p^2}
+        \end{split}
+      \end{equation}
+    und damit ist $V_m$ eine Zustandsfunktion, was wiederum impliziert, dass $\text{d} V_m$ wirklich ein totales Differential ist.
+    
+  \subsection{Zusammensetzung eines Gasgemisches}
+  
+    Folgende Daten eines Gasgemisches der drei Komponenten A, B, C sind gegeben: $p_{Ges.} = \SI[mode=text]{1.00}{\bar}$, $V_{Ges.} = \SI[mode=text]{1}{m^3}$, $T = \SI[mode=text]{298}{\kelvin}$, $x_A = \SI[mode=text]{0.3}{}$ und $p_B = \SI[mode=text]{0.25}{\bar}$. Wir rechnen wie folgt:
+    
+    \begin{equation}
+      \begin{split}
+        p_A &= 0.3 p \\
+        \Rightarrow p_C &= p - p_B - p_A \\
+        \Rightarrow n_C &= \frac{p_C V}{RT} \\
+        \Rightarrow m_C &= n_C \cdot M_{\ch{N2}} = \SI[mode=text]{508.6}{\gram}
+      \end{split}
+    \end{equation}
+    

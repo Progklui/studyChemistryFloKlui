@@ -1,4 +1,8 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {ngerman}{}
-\contentsline {section}{\numberline {1}Blatt 1}{2}{section.1}
-\contentsline {subsection}{\numberline {1.1}Aufgabe 1}{2}{subsection.1.1}
+\contentsline {section}{\numberline {1}Zustandsgr\IeC {\"o}\IeC {\ss }en und totale Differentiale}{2}{section.1}
+\contentsline {subsection}{\numberline {1.1}Extensive und Intensive Zustandsgr\IeC {\"o}\IeC {\ss }en}{2}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Das Volumen eines Zylinders ein totales Differential?}{2}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}Totales Differential einer exemplarischen Funktion}{3}{subsection.1.3}
+\contentsline {subsection}{\numberline {1.4}Das molare Volumen ein totales Differential?}{3}{subsection.1.4}
+\contentsline {subsection}{\numberline {1.5}Zusammensetzung eines Gasgemisches}{3}{subsection.1.5}
