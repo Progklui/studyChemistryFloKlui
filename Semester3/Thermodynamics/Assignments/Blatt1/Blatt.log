@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.9.30)  12 OCT 2019 21:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.9.30)  15 OCT 2019 18:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3549,13 +3549,13 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 50.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 65.
+(babel)             in language  on input line 70.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 65.
+(babel)             in language  on input line 70.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 82.
+(babel)             in language  on input line 87.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 82.
+(babel)             in language  on input line 87.
 )
 
 Package glossaries Warning: No \printglossary or \printglossaries found. 
@@ -3587,9 +3587,9 @@ Package logreq Info: Writing requests to 'Blatt.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 52460 strings out of 494757
- 1069639 string characters out of 6175785
- 1511028 words of memory out of 5000000
+ 52461 strings out of 494757
+ 1069651 string characters out of 6175785
+ 1512028 words of memory out of 5000000
  54971 multiletter control sequences out of 15000+600000
  537347 words of font info for 49 fonts, out of 8000000 for 9000
  85 hyphenation exceptions out of 8191
@@ -3603,10 +3603,10 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist
 ype1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
 lic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
 sfonts/symbols/msam10.pfb>
-Output written on Blatt.pdf (2 pages, 102086 bytes).
+Output written on Blatt.pdf (2 pages, 102859 bytes).
 PDF statistics:
- 93 PDF objects out of 1000 (max. 8388607)
- 79 compressed objects within 1 object stream
- 18 named destinations out of 1000 (max. 500000)
+ 95 PDF objects out of 1000 (max. 8388607)
+ 81 compressed objects within 1 object stream
+ 19 named destinations out of 1000 (max. 500000)
  61 words of extra memory for PDF output out of 10000 (max. 10000000)
 

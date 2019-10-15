@@ -60,7 +60,12 @@
       \begin{equation} 
         H_f = \begin{pmatrix} \partial_{xx} \, f(x,y) & \partial_{yx} \, f(x,y)\\ \partial_{xy} \, f(x,y)& \partial_{yy} \, f(x,y) \end{pmatrix} = \begin{pmatrix} 12x^2& 1\\ 1& 0 \end{pmatrix}.
       \end{equation}
-    Aufgrund der Symmetrie von $H_f$ ist auf einem sternförmigen Gebiet der Satz von Schwarz erfüllt und damit $f(x,y)$ eine Zustandsfunktion.
+    Aufgrund der Symmetrie von $H_f$ ist auf einem sternförmigen Gebiet der Satz von Schwarz erfüllt und damit $f(x,y)$ eine Zustandsfunktion. Das totale Differential lässt sich schreiben als
+    
+      \begin{equation}
+        \text{d} f(x,y) = \left(\partial_{x} \, f(x,y)\right)_y \text{d} x + \left(\partial_{y} \, f(x,y)\right)_x \text{d} y = \left(4x^3 + y\right) \, \text{d} x + \left(x\right) \, \text{d} x,
+      \end{equation}
+    wobei die Einträge der oben angegebenen Jakobi-Matrix eingesetzt wurden.
     
   \subsection{Das molare Volumen ein totales Differential?}
   
@@ -85,10 +90,10 @@
     
     \begin{equation}
       \begin{split}
-        p_A &= 0.3 p \\
-        \Rightarrow p_C &= p - p_B - p_A \\
-        \Rightarrow n_C &= \frac{p_C V}{RT} \\
+        p_A &= x_A \cdot p_{Ges.} \\
+        \Rightarrow p_C &= p_{Ges.} - p_B - p_A \\
+        \Rightarrow n_C &= \frac{p_C \cdot V_{Ges.}}{RT} \\
         \Rightarrow m_C &= n_C \cdot M_{\ch{N2}} = \SI[mode=text]{508.6}{\gram}
       \end{split}
     \end{equation}
-    
+    Das Gasgemisch enthält demnach \SI[mode=text]{508.6}{\gram} an \ch{N2}.
