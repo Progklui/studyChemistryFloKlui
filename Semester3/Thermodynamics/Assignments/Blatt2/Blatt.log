@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.9.30)  22 OCT 2019 23:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.9.30)  22 OCT 2019 23:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**AssignmentsWS201920_Thermodynamics_FlorianKluibenschedl.tex
-(./AssignmentsWS201920_Thermodynamics_FlorianKluibenschedl.tex
+**Blatt.tex
+(./Blatt.tex
 LaTeX2e <2017-04-15>
 Babel <3.18> and hyphenation patterns for 14 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -23,7 +23,7 @@ File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(./Blatt1/ReferenceStyle/preamble.tex
+(./ReferenceStyle/preamble.tex
 (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2015/03/17 v1.2c Input encoding file
 \inpenc@prehook=\toks14
@@ -2749,10 +2749,9 @@ Package: glossary-tree 2017/11/14 v4.35 (NLCT)
 (./ReferenceStyle/abbrevations.tex)
 \glswrite=\write6
 \glo@main@file=\write7
-\openout7 = `AssignmentsWS201920_Thermodynamics_FlorianKluibenschedl.glo'.
+\openout7 = `Blatt.glo'.
 
-Package glossaries Info: Writing glossary file AssignmentsWS201920_Thermodynami
-cs_FlorianKluibenschedl.glo on input line 53.
+Package glossaries Info: Writing glossary file Blatt.glo on input line 53.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
@@ -3330,30 +3329,29 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 
 \@quotelevel=\count524
 \@quotereset=\count525
-(./AssignmentsWS201920_Thermodynamics_FlorianKluibenschedl.aux)
-\openout1 = `AssignmentsWS201920_Thermodynamics_FlorianKluibenschedl.aux'.
+(./Blatt.aux)
+\openout1 = `Blatt.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 14.
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 9.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 9.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
 
 ABD: EveryShipout initializing macros
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -3392,11 +3390,11 @@ File: translations-basic-dictionary-german.trsl (german translation file `trans
 lations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `ngerman'. on input line 14.
+or `ngerman'. on input line 9.
 .................................................
 . chemgreek info: "mapping-activated"
 . 
-. Activating mapping `default' on line 14.
+. Activating mapping `default' on line 9.
 .................................................
 
 *************************************************
@@ -3409,17 +3407,17 @@ or `ngerman'. on input line 14.
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \insitu with sig. 'O{}' on line 14.
+. Defining command \insitu with sig. 'O{}' on line 9.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \abinitio with sig. 'O{}' on line 14.
+. Defining command \abinitio with sig. 'O{}' on line 9.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \invacuo with sig. 'O{}' on line 14.
+. Defining command \invacuo with sig. 'O{}' on line 9.
 .................................................
 
 (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-basic-dictionary
@@ -3474,7 +3472,7 @@ Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
 Package caption Info: supertabular package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box121
-Package hyperref Info: Link coloring ON on input line 14.
+Package hyperref Info: Link coloring ON on input line 9.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -3484,132 +3482,68 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count533
 )
-LaTeX Info: Redefining \ref on input line 14.
-LaTeX Info: Redefining \pageref on input line 14.
-LaTeX Info: Redefining \nameref on input line 14.
+LaTeX Info: Redefining \ref on input line 9.
+LaTeX Info: Redefining \pageref on input line 9.
+LaTeX Info: Redefining \nameref on input line 9.
 
-(./AssignmentsWS201920_Thermodynamics_FlorianKluibenschedl.out)
-(./AssignmentsWS201920_Thermodynamics_FlorianKluibenschedl.out)
+(./Blatt.out) (./Blatt.out)
 \@outlinefile=\write10
-\openout10 = `AssignmentsWS201920_Thermodynamics_FlorianKluibenschedl.out'.
+\openout10 = `Blatt.out'.
 
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
-\openout9 = `AssignmentsWS201920_Thermodynamics_FlorianKluibenschedl.bcf'.
+\openout9 = `Blatt.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'AssignmentsWS201920_Thermodynamics_FlorianKlui
-benschedl.bbl' not found.
+Package biblatex Info: ... file 'Blatt.bbl' not found.
 
-No file AssignmentsWS201920_Thermodynamics_FlorianKluibenschedl.bbl.
-Package biblatex Info: Reference section=0 on input line 14.
-Package biblatex Info: Reference segment=0 on input line 14.
+No file Blatt.bbl.
+Package biblatex Info: Reference section=0 on input line 9.
+Package biblatex Info: Reference segment=0 on input line 9.
 (/usr/share/texlive/texmf-dist/tex/latex/elements/elements_names_german.def)
 \c__siunitx_mathsf_int=\count534
-LaTeX Font Info:    Try loading font information for U+msa on input line 14.
+LaTeX Font Info:    Try loading font information for U+msa on input line 9.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 14.
+LaTeX Font Info:    Try loading font information for U+msb on input line 9.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 \c__siunitx_mathtt_int=\count535
 
-(./ReferenceStyle/frontpage.tex
-Underfull \hbox (badness 10000) in paragraph at lines 11--12
-[]|\OT1/cmr/m/n/10 Dipl.-Chem. Dr. Ju-lia
- []
-
-(./AssignmentsWS201920_Thermodynamics_FlorianKluibenschedl.toc)
-\tf@toc=\write11
-\openout11 = `AssignmentsWS201920_Thermodynamics_FlorianKluibenschedl.toc'.
-
-)
+(./content/Blatt2.tex
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 3.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 3.
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 17.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 17.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 17.
+(babel)             in language  on input line 37.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 17.
+(babel)             in language  on input line 37.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 37.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 37.
  [1
-Non-PDF special ignored!
+Non-PDF special ignored!{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
 
-\openout6 = `AssignmentsWS201920_Thermodynamics_FlorianKluibenschedl.ist'.
+\openout6 = `Blatt.ist'.
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-(./Blatt1/content/Blatt1.tex
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 1.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 3.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 3.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 26.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 26.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 49.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 49.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 49.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 49.
- [2]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 50.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 50.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 70.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 70.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 87.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 87.
-) (./Blatt2/content/Blatt2.tex
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 1.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 3.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 3.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 7.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 7.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 7.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 7.
- [3]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 17.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 17.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 37.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 37.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 37.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 37.
- [4]
+]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 38.
 Package babel Info: Redefining ngerman shorthand "~
@@ -3621,62 +3555,52 @@ Package glossaries Warning: No \printglossary or \printglossaries found.
 This document will not have a glossary.
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 21.
+(babel)             in language  on input line 11.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 21.
+(babel)             in language  on input line 11.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 21.
+(babel)             in language  on input line 11.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 21.
-[5
-runsystem(makeindex -s AssignmentsWS201920_Thermodynamics_FlorianKluibenschedl.
-ist -t AssignmentsWS201920_Thermodynamics_FlorianKluibenschedl.glg -o Assignmen
-tsWS201920_Thermodynamics_FlorianKluibenschedl.gls AssignmentsWS201920_Thermody
-namics_FlorianKluibenschedl.glo)...executed safely (allowed).
+(babel)             in language  on input line 11.
+[2
+runsystem(makeindex -s Blatt.ist -t Blatt.glg -o Blatt.gls Blatt.glo)...execute
+d safely (allowed).
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 21.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 21.
- (./AssignmentsWS201920_Thermodynamics_FlorianKluibenschedl.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 21.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 21.
-Package rerunfilecheck Info: File `AssignmentsWS201920_Thermodynamics_FlorianKl
-uibenschedl.out' has not changed.
-(rerunfilecheck)             Checksum: 058149EFE4EE13005FB12680ECD44C58;885.
-Package logreq Info: Writing requests to 'AssignmentsWS201920_Thermodynamics_Fl
-orianKluibenschedl.run.xml'.
-\openout1 = `AssignmentsWS201920_Thermodynamics_FlorianKluibenschedl.run.xml'.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 11.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 11.
+ (./Blatt.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 11.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 11.
+Package rerunfilecheck Info: File `Blatt.out' has not changed.
+(rerunfilecheck)             Checksum: 35642D117FDC8C5D30044CFAD1FEF4E4;334.
+Package logreq Info: Writing requests to 'Blatt.run.xml'.
+\openout1 = `Blatt.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 52559 strings out of 494757
- 1072125 string characters out of 6175785
- 1512560 words of memory out of 5000000
- 55023 multiletter control sequences out of 15000+600000
- 547181 words of font info for 85 fonts, out of 8000000 for 9000
+ 52504 strings out of 494757
+ 1070065 string characters out of 6175785
+ 1508834 words of memory out of 5000000
+ 55001 multiletter control sequences out of 15000+600000
+ 546581 words of font info for 83 fonts, out of 8000000 for 9000
  85 hyphenation exceptions out of 8191
- 74i,24n,123p,10453b,1837s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 74i,15n,123p,10396b,1645s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/admin_klui/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm070
-0.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on AssignmentsWS201920_Thermodynamics_FlorianKluibenschedl.pdf (
-5 pages, 185145 bytes).
+0.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmsy7.pfb>
+Output written on Blatt.pdf (2 pages, 108667 bytes).
 PDF statistics:
- 176 PDF objects out of 1000 (max. 8388607)
- 150 compressed objects within 2 object streams
- 33 named destinations out of 1000 (max. 500000)
- 93 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 91 PDF objects out of 1000 (max. 8388607)
+ 75 compressed objects within 1 object stream
+ 13 named destinations out of 1000 (max. 500000)
+ 45 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,0 +1,56 @@
+\section{Kinetische Gastheorie}
+
+  \subsection{Energieverteilung und wahrscheinlichste Energie}
+
+    Wir betrachten die Energieverteilung ($E_K$ ist die kinetische Energie)
+
+      \begin{equation}
+        f(E_{K}) \, \text{d}E_K= \frac{2\pi}{\left(\pi k T\right)^{3/2}} \cdot \sqrt{E_{K}} \cdot \mathrm{e}^{-\frac{E_{K}}{kT}} \, \text{d}E_K,
+      \end{equation}
+    die sich aus $f(v) \text{d}v$ ergibt. Die erste Ableitung
+    
+      \begin{equation}
+        f'(E_{K}) = \frac{2\pi}{\left(\pi k T\right)^{3/2}} \cdot \mathrm{e}^{-\frac{E_{K}}{kT}}  \left(\frac{1}{2\sqrt{E_{K}}}  - \frac{\sqrt{E_{K}}}{kT} \right) \overset{!}{=} 0
+      \end{equation}
+      wird null gesetzt, woraus folgt, dass $E_K = \frac{1}{2} kT$. Daraus folgt, wie bereits des öfteren erwähnt, dass die Temperatur ein Maß für die Kinetische Energie ist. Für $T = \SI[mode=text]{20}{\degreeCelsius}$ ist $E_K = \SI[mode=text]{2.02e-21}{\joule}$.
+
+  \subsection{Zusammenstöße in einem \ch{N2} Kolben}
+  
+    Wir betrachten einen Kolben mit reinem \ch{N2} bei einer Temperatur von \SI[mode=text]{217}{\kelvin} und einem Druck von \SI[mode=text]{0.05}{atm}, $\sigma = \SI[mode=text]{0.43}{nm^2}$. Bewegt sich nur ein Teilchen, so kann die Zahl der Zusammenstöße pro Sekunde mit 
+    
+      \begin{equation}
+        z_{1} = \sqrt{2} \sigma < v > \frac{p}{kT}  
+      \end{equation}
+    berechnet werden. Die mittlere Geschwindigkeit 
+
+      \begin{equation}
+        < v > = \sqrt{\frac{8RT}{\pi M}}
+      \end{equation}          
+    ergibt sich aus der Boltzmann Verteilung. Es ergeben sich $z_1 = \SI[mode=text]{4.8e8}{Stöße\per\second}$. Die Gesamtzahl aller Zusammenstöße kann mit 
+    
+      \begin{equation}
+        z_{11} = \frac{1}{\sqrt{2}} \sigma < v > \left(\frac{p}{kT}\right)^2
+      \end{equation}
+      berechnet werden. Es ergeben sich also $z_{11} = \SI[mode=text]{4.02e32}{Stöße\per\second}$.
+  
+  \pagebreak
+  
+  \subsection{Freiheitsgrade und Beitrag zur inneren Energie}
+  
+    Die Anzahl an möglichen Freiheitsgraden setzt sich aus den Freiheitsgraden der Translation, Rotation und Schwingung zusammen ($FG_G = FG_T + FG_R + FG_S$). Für die Freiheitsgrade der Schwingung gilt $FG_{S} = 3 N - 3 - FG_{R}$. Jeder Freiheitsgrad trägt mit $\frac{1}{2} kT$ zur inneren Energie bei, also $U = \frac{1}{2} \left(FG_T + FG_R + 2 FG_S\right) kT$. In der folgenden Tabelle wird dies für einige Moleküle festgehalten ($U$ bei \SI[mode=text]{1000}{\kelvin}). 
+    
+      \begin{table}[H]
+        \centering
+        \caption[Freiheitsgrade und Beiträge zur inneren Energie einiger Beispielmoleküle, Quelle: Autor]{Moleküle und ihre zugehörigen Freiheitsgrade}
+        \label{tab:Freiheitsgrade}
+        
+        \begin{tabular}{@{}l|lllll@{}}
+          \toprule
+             & $FG_T$ & $FG_R$ & $FG_S$ & $FG_G$ & $U$ \\ \midrule
+            \ch{CO2} & 3 & 2 & 4 & 9 & \SI[mode=text]{8.97e-20}{\joule} \\
+            \ch{Ar} & 3 & 0 & 0 & 3 & \SI[mode=text]{2.07e-20}{\joule} \\
+            \ch{C2H2} & 3 & 2 & 7 & 12 & \SI[mode=text]{1.31e-19}{\joule} \\
+            \ch{N2} & 3 & 2 & 1 & 6 & \SI[mode=text]{4.83e-20}{\joule} \\
+            \ch{H2O} & 3 & 3 & 3 & 9 & \SI[mode=text]{8.28e-20}{\joule} \\ \bottomrule
+        \end{tabular}
+      \end{table}
