@@ -10,3 +10,5 @@
 \contentsline {subsection}{\numberline {2.1}Energieverteilung und wahrscheinlichste Energie}{4}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}Zusammenst\IeC {\"o}\IeC {\ss }e in einem \ch {N2} Kolben}{4}{subsection.2.2}
 \contentsline {subsection}{\numberline {2.3}Freiheitsgrade und Beitrag zur inneren Energie}{5}{subsection.2.3}
+\contentsline {section}{\numberline {3}Betrachtung von realen Gasen}{5}{section.3}
+\contentsline {subsection}{\numberline {3.1}Volumensarbeit eines realen und idealen Gases}{5}{subsection.3.1}

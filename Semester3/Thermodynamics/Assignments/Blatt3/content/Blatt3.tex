@@ -1,0 +1,28 @@
+\section{Betrachtung von realen Gasen}
+
+  \subsection{Volumensarbeit eines realen und idealen Gases}
+  
+    Wir betrachten Stickstoff ($n = \SI[mode=text]{1}{\mole}$) bei einer Temperatur von \SI[mode=text]{298}{\kelvin}. Mithilfe der Van-Waals-Gleichung
+    
+    \begin{equation}
+      p = \frac{RTn}{V - nb} - a \frac{n^2}{V^2}
+    \end{equation}
+    kann die Volumensarbeit des realen Gases $W_r$ bei einer Expansion von \SI[mode=text]{20}{\liter} auf \SI[mode=text]{40}{\liter} berechnet werden. Dazu setzen wir obigen Ausdruck für den Druck ein und integrieren.
+    
+    \begin{equation}
+      \begin{split}
+        W_r &= - \int_{V_1}^{V_2} p \text{d}V = - \int_{V_1}^{V_2} \frac{RTn}{V - nb} - a \frac{n^2}{V^2} \text{d} V\\
+          &= \left[ - RTn \ln(V-nb) - a \frac{n^2}{V} \right]_{V_1}^{V_2} \\
+          &= RTn \ln\left(\frac{V_1 - nb}{V_2 - nb}\right) + a n^2 \left(\frac{1}{V_1} - \frac{1}{V_2}\right) = \SI[mode=text]{-1716.2}{\joule\per\mole}
+      \end{split}
+    \end{equation}
+    
+    Betrachten wir ein ideales Gas, so setzen wir für den Druck die ideale Gasgleichung ein und integrieren analog.
+    
+    \begin{equation}
+      \begin{split}
+        W_i &= - \int_{V_1}^{V_2} p \text{d} V = - \int_{V_1}^{V_2} \frac{RTn}{V} \text{d} V \\
+          &= \left[-RTn \ln(V)\right]_{V_1}^{V_2} = -RTn\ln\left(\frac{V_2}{V_1}\right) = \SI[mode=text]{-1717.3}{\joule\per\mole}
+      \end{split}
+    \end{equation}
+    Damit wird bei der Expansion eines idealen Gases mehr Arbeit theoretisch frei werden wie beim realen Gas. Dies kann durch die nicht berücksichtigten Wechselwirkungen im idealen Gas erklärt werden.
