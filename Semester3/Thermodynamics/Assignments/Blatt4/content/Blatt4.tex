@@ -1,0 +1,91 @@
+\section{Erster Hauptsatz}
+
+  \subsection{Zylinder gefüllt mit \ch{CO}}
+    
+      Im Folgenden betrachten wir \SI[mode=text]{0.5}{\mole} von idealem Kohlenmonoxid-Gas bei einem Druck $p_1 = \SI[mode=text]{5}{bar}$ und $T_1 = \SI[mode=text]{25}{\degreeCelsius}$. \ch{CO} ist ein lineares Molekül mit $FG_T = 3, FG_R = 2, FG_V = 3N - FG_T - FG_R = 1$ und damit gilt für die innere Energie
+    
+        \begin{equation}
+          U = (FG_T + FG_R + 2 FG_V)\frac{1}{2} RT = \frac{6}{2} RT = 3 RT.
+        \end{equation}
+      Aus der Definition der isochoren Wärmekapazität $C_V = \partial_T U$ ist $C_V = 3R$. Aus der idealen Gasgleichung folgt 
+      
+        \begin{equation}
+          p_1 V_1 = p_2 V_2
+        \end{equation}
+      und damit ergibt sich bei einer Expansion auf das doppelte Volumen für den Druck
+      
+        \begin{equation}
+          p_2 = \frac{p_1 V_1}{V_2} = \frac{p_1 V_1}{2 V_1} = \frac{1}{2} p_1 = \SI[mode=text]{2.5}{bar}.
+        \end{equation}
+      
+      Für die isotherme Volumensarbeit gilt
+      
+        \begin{equation}
+          w = - \int_{V_1}^{V_2} p \, \text{d} V = - \int_{V_1}^{V_2} \frac{RTn}{V} \, \text{d} V = - RTn \ln\left(\frac{V_2}{V_1}\right) = - RTn \ln(2) = \SI[mode=text]{-858.66}{\joule}
+        \end{equation}
+      und wegen $\Delta U = 0$ folgt $q = -w = \SI[mode=text]{+858.66}{\joule}$. Betrachten wir nun dieselbe Expansion unter adiabatischen Bedingungen ($q = 0$). Für das Verhältnis zwischen den Drücken und Volumina am Anfangs- und Endzustand gilt mit dem Adiabatenkoeffizienten $\gamma = \frac{FG_{eff} + 2}{FG_{eff}} = \frac{5 + 2}{5} = 1.4$ (für ein lineares Molekül unter Vernachlässigung von $FG_V$)
+      
+        \begin{equation}
+          p_1 V_1^{\gamma} = p_2 V_2^{\gamma} \Leftarrow p(V) = p_1 V_1^{\gamma} \frac{1}{V^{\gamma}}.
+        \end{equation}
+      Damit ergibt sich für die Volumensarbeit und die innere Energie
+      
+        \begin{equation}
+          \Delta U = w = - \int_{V_1}^{V_2} p \, \text{d} V = - \frac{p_1 V_1}{\gamma - 1} \cdot \left(\frac{V_1^{\gamma - a}}{V_2^{\gamma - 1}} - 1\right) = \SI[mode=text]{-749.9}{\joule}.
+        \end{equation}
+      Unter Vernachlässigung der Schwingungsfreiheitsgrade gilt für die isochore Wärmekapazität $C_V = (FG_T + FG_R)\frac{1}{2} R = \frac{5}{2} RT$. Aufgrund der Definition gilt
+      
+        \begin{equation}
+          \Delta U = \int_{T_1}^{T_2} C_V \, \text{t} T = \frac{5}{2} R \left(T_2 - T_1\right) =  \frac{5}{2} R \Delta T.
+        \end{equation}
+        Daraus berechnet sich die Temperatur nach der adiabatischen Expansion zu 
+        
+          \begin{equation}
+            T_2 = \frac{2}{5} \cdot \frac{U}{R} + T_1 = \SI[mode=text]{261.9}{\joule\per\mole}.
+          \end{equation}
+          
+  \subsection{Schrittweise Verminderung des Drucks eines idealen Gases}
+  
+    Wir betrachten ein ideales Gas ($n = \SI[mode=text]{1}{\mole}, T = \SI[mode=text]{298}{\kelvin}, p_1 = \SI[mode=text]{100}{bar}$ und komprimieren schrittweise isotherm auf $p_2 = \SI[mode=text]{50}{bar}, p_3 = \SI[mode=text]{10}{bar}, p_4 = \SI[mode=text]{1}{bar}$. Die Volumensarbeit berechnet sich allgemein zu
+    
+      \begin{equation}
+        w_i = - RTn \ln\left(\frac{V_{i+1}}{V_i}\right) = - RTn \ln\left(\frac{p_i}{p_{i+1}}\right) = RTn \ln\left(\frac{p_{i+1}}{p_i}\right),
+      \end{equation}
+      wobei für $V_1$ und $V_2$ die ideale Gasgleichung eingesetzt wurde. Einsetzen liefert $w_1 = \SI[mode=text]{-1717.3}{\joule}, w_2 = \SI[mode=text]{-3987.5}{\joule}, w_3 = \SI[mode=text]{-5704.8}{\joule}$. Angenommen, wir expandieren das Gas von \SI[mode=text]{100}{bar} auf \SI[mode=text]{1}{bar}, ergibt sich $w_4 = \SI[mode=text]{-11409.6}{\joule}$. 
+      
+  \subsection{Erhitzen von Ethan unter konstantem Druck}
+  
+    Wir betrachten \SI[mode=text]{1}{\mole} Ethan bei einem konstantem Druck von \SI[mode=text]{1}{bar} und erhitzen von \SI[mode=text]{25}{\degreeCelsius} auf \SI[mode=text]{1200}{\degreeCelsius}. Für die isobare Wärmekapazität verwenden wir die Entwicklung
+    
+      \begin{equation}
+        C_p = R \left(0.04636 + \num{2.137e-2} T - \num{8.263e-6}T^2 + \num{1.024e-9} T^3\right)
+      \end{equation}
+      Aus der Definition von $C_p = \left(\frac{\partial H}{\partial T}\right)_p$ kann $\Delta H$ berechnet werden
+      
+        \begin{equation}
+          \begin{split}
+            \Delta H &= \int_{T_1}^{T_2} C_p \, \text{d} T \\
+                     &= R \left[0.04636 T + \frac{1}{2} \num{2.137e-2} T^2 - \frac{1}{3} \num{8.263e-6}T^3 + \frac{1}{4} \num{1.024e-9} T^4\right]_{T_1}^{T_2} \\
+                     &= \SI[mode=text]{15708}{\joule}.
+          \end{split}
+        \end{equation}
+      
+      Da der Druck konstant ist gilt für die Volumensarbeit ($V_1$ und $V_2$ können über die Gasgleichung berechnet werden)
+      
+        \begin{equation}
+          w = \int_{V_1}^{V_2} p_{ext.} \, \text{d} V = p_{ext.} \Delta V = \SI[mode=text]{97.69}{\joule}.      
+        \end{equation}
+      Für die übertragene Wärem $q$ gilt nach der Definition $\Delta H = q$. Aus der Definition der Enthalpie 
+      
+        \begin{equation}
+          H = U + pV
+        \end{equation}
+        folt, dass 
+        
+        \begin{equation}
+          \Delta U = \Delta H - p_{ext.} \Delta V = \SI[mode=text]{-9753242}{\joule}.
+        \end{equation}
+      
+      
+  
+    
