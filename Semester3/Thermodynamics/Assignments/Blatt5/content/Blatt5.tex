@@ -1,0 +1,38 @@
+\section{Erster Hauptsatz}
+
+  \subsection{Born-Haber-Kreisprozess von \ch{BaBr2}}
+  
+    Wir betrachten den Born-Haber Kreisprozess anhand von \ch{BaBr2}. Dazu sind folgende Daten gegeben: \enthalpy(b){-758}, \enthalpy(sub){182}, \enthalpy(ion){1469}, $\state[subscript-right=Diss]{U} = \SI[mode=text]{192.8}{\kilo\joule\per\mole}$, \enthalpy(verdampf){29.6}, $\state[subscript-right=Gitter]{E} = \SI[mode=text]{1984}{\kilo\joule\per\mole}$. \\
+    
+    Die Dissoziationsenthalpie \enthalpy*(Diss){} von \ch{Br2\gas}, welches nach 
+    
+    \begin{reaction}
+      Br2 \gas -> 2 Br\gas
+    \end{reaction}
+    zerfällt, berechnet sich mit 
+    
+      \begin{equation}
+        \enthalpy*(Diss){} = \state[subscript-right=Diss]{U} + \Delta n RT
+      \end{equation}
+    und ergibt \enthalpy(Diss){195.3}, wobei $\Delta n = 1, T = \SI[mode=text]{298}{\kelvin}$ verwendet wurde. Betrachten wir die Dissoziationsenthalpie \enthalpy*(Diss2){} von \ch{Br2\lqd}, welches nach 
+    
+     \begin{reaction}
+       Br2 \lqd -> 2 Br\gas     
+     \end{reaction}
+     zerfällt, muss die Verdampfungsenthalpie \enthalpy*(verdampf){} berücksichtigt werden. Es gilt
+     
+       \begin{equation}
+         \enthalpy*(Diss2){} = \enthalpy*(Diss){} + \enthalpy*(verdampf){}
+       \end{equation}
+     und damit \enthalpy(Diss2){224.9}. Im Born-Haber Kreisprozess sind bis auf die Elektronenaffinität \state[subscript-right=A]{E} alle Größen nun bekannt, weswegen \state[subscript-right=A]{E} berechnet werden kann. 
+    
+      \begin{equation}
+        \begin{split}
+        &- \enthalpy*(b){} + \enthalpy*(Diss){} + \enthalpy*(sub){} + \enthalpy*(ion){} - 2 \state[subscript-right=A]{E} - \state[subscript-right=Gitter]{E} = 0 \\
+        &\Rightarrow \state[subscript-right=A]{E} = - \frac{1}{2} \enthalpy*(b){} + \enthalpy*(Diss){} + \enthalpy*(sub){} + \enthalpy*(ion){} - \state[subscript-right=Gitter]{E}
+        \end{split}
+      \end{equation}
+    Damit ergibt sich $\state[subscript-right=A]{E} = \SI[mode=text]{-310.2}{\kilo\joule\per\mole}$. Der Bildungsprozess aus den Elementen ist exotherm.
+      
+  
+    
