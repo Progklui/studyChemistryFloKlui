@@ -1,0 +1,91 @@
+
+%% ========================================================================
+%%%% List of dependencies and packages
+%% ========================================================================
+
+\usepackage[utf8]{inputenc}
+\usepackage[english,ngerman]{babel}
+
+%% Chemistry
+\usepackage{chemfig,chemmacros}
+\chemsetup{modules = all}
+\chemsetup[redox]{explicit-sign = true}
+\chemsetup[phases]{pos=sub}
+%\chemsetup[reactions]{before-tag = {R}, tag-open = [, tag-close = ]}
+  
+%% Maths
+\usepackage{amsmath,amssymb,amsthm,textcomp}
+
+%% Physics
+\usepackage{siunitx}
+
+%% Graphics
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{rotating}
+%\usepackage{subfig}
+\usepackage{tcolorbox}
+
+%% Tables and Lists
+\usepackage{enumerate}
+\usepackage{multicol}
+\usepackage{geometry}
+\usepackage{tabu}
+\usepackage{listings}
+\usepackage{tabularx}
+
+%% Structures and Style
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{booktabs}
+\usepackage{colortbl}
+
+\usepackage{xcolor}
+\usepackage{xfrac}
+\usepackage[export]{adjustbox}[2011/08/13]
+
+\usepackage{booktabs}
+\usepackage{float}
+
+\usepackage{fancyhdr}
+
+\usepackage[toc,automake]{glossaries}
+\include{ReferenceStyle/abbrevations}
+\makeglossaries
+
+\usepackage[colorlinks=true,linkcolor=blue]{hyperref}
+
+
+%% ========================================================================
+%%%% Settings of the citing module
+%% ========================================================================
+
+\usepackage[backend=biber,
+            style=numeric,
+            backref=true, 
+            natbib=true, %% offering natbib-compatible commands
+            hyperref=true, %% using hyperref-package references
+            sorting= none,
+            doi=true,
+            maxcitenames=10,
+            maxbibnames=100,
+            citestyle=numeric]{biblatex}
+
+\addbibresource{ReferenceStyle/references.bib}
+
+
+%% Figure settings
+\renewcommand{\figurename}{Abbildung}
+\renewcommand{\tablename}{Tabelle}
+\renewcommand{\listfigurename}{Abbildungsverzeichnis}
+\renewcommand{\listtablename}{Tabellenverzeichnis}
+
+%% ========================================================================
+%%%% Settings of page style and headers
+%% ========================================================================
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{PR Anorganische Synthese - WS2019-2020}
+\lhead{Universität Innsbruck}
+\rfoot{Seite \thepage}

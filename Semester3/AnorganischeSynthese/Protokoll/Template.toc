@@ -1,0 +1,23 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {ngerman}{}
+\contentsline {section}{\numberline {1}Synthese von \ch {KAl(SO4)2.H2O}}{3}{section.1}
+\contentsline {section}{\numberline {2}Synthese von \ch {KCr(SO4)2. 12 H2O}}{4}{section.2}
+\contentsline {section}{\numberline {3}Synthese von \ch {[Co(NH3)4CO3]2SO4. 3 H2O}}{5}{section.3}
+\contentsline {section}{\numberline {4}Synthese von \ch {[Co(NH3)4(H2O)2]2(SO4)3. 3 H2O}}{6}{section.4}
+\contentsline {section}{\numberline {5}Synthese von \ch {[Co[(OH)2Co(NH3) 4]3](SO4)3 . 9 H2O}}{7}{section.5}
+\contentsline {section}{\numberline {6}Synthese von \ch {[Ni(NH3)6]Cl2}}{8}{section.6}
+\contentsline {section}{\numberline {7}Synthese von \ch {[Co(NH3)6]Cl3}}{9}{section.7}
+\contentsline {section}{\numberline {8}Synthese von \ch {[Cu(H2NCH2CO2)2]} - Cu(II)-Glycinat}{10}{section.8}
+\contentsline {section}{\numberline {9}Synthese von \ch {CuI}}{11}{section.9}
+\contentsline {section}{\numberline {10}Synthese von \ch {[Cu(C2H4(NH2)2)2][CuI2]2}}{12}{section.10}
+\contentsline {section}{\numberline {11}Synthese von \ch {[NH4][BF4]}}{13}{section.11}
+\contentsline {section}{\numberline {12}Synthese von \ch {[Zn(NH3)4][BF4]2}}{14}{section.12}
+\contentsline {section}{\numberline {13}Synthese von \ch {[VO(C5H7O2)2]} - Vanadyl-Acetylacetonat}{15}{section.13}
+\contentsline {section}{\numberline {14}Synthese von \ch {[Cr(C5H7O2)3]} - Cr(III)-Acetylacetonat}{16}{section.14}
+\contentsline {section}{\numberline {15}Synthese von \ch {[Mn(C5H7O2)3]} - Mn(III)-Acetylacetonat}{17}{section.15}
+\contentsline {section}{\numberline {16}Synthese von \ch {[Fe(C5H7O2)3]} - Fe(III)-Acetylacetonat}{18}{section.16}
+\contentsline {section}{\numberline {17}Synthese von \ch {[Co(C5H7O2)3]} - Co(III)-Acetylacetonat}{19}{section.17}
+\contentsline {section}{\numberline {18}Synthese von \ch {[Cu(C5H7O2)2]} - Cu(II)-Acetylacetonat}{20}{section.18}
+\contentsline {section}{\numberline {19}Synthese von \ch {Ni(NCS)2(PPh3)2}}{21}{section.19}
+\contentsline {section}{\numberline {20}Synthese von \ch {K3Cr(C2O4)3. 3 H2O}}{22}{section.20}
+\contentsline {section}{\numberline {21}Synthese von \ch {K3Fe(C2O4)3 . 3 H2O}}{23}{section.21}
