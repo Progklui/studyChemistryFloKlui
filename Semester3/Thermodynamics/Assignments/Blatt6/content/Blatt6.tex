@@ -1,0 +1,75 @@
+\section{Erster Hauptsatz}
+
+  \subsection{Beziehung zwischen $\Delta U$ und $\Delta H$}
+  
+    Wir betrachten die Umwandlung von \SI[mode=text]{1.0}{\mole} an Calcit (\ch{CaCO3}) in Aragonit. Bei einem Druck von \SI[mode=text]{0.1}{MPa} beträgt die Änderung der Inneren Energie \SI[mode=text]{0.21}{\kilo\joule}. Die Änderung des Volumens $\Delta V$ kann mit 
+    
+    \begin{equation}
+      \Delta V = V_2 - V_1 = n M_{\ch{CaCO3}} \cdot \left(\frac{1}{\rho_2} - \frac{1}{\rho_1}\right)
+    \end{equation}
+    berechnet werden. Damit ergibt sich für die Enthalpieänderung
+    
+    \begin{equation}
+      \enthalpy*{123} = \Delta U + p \Delta V = \SI[mode=text]{}{\kilo\joule}.
+    \end{equation}
+    
+  \subsection{Verbrennungswärme mithilfe des Kirchhoff'schen Gesetz}
+  
+    Wir betrachten die Verbrennung von Graphit zu \ch{CO2\gas} bei \SI[mode=text]{1500}{\kelvin} und \SI[mode=text]{1}{bar}. Neben \enthalpy(f){-393.51} benötigen wir folgende Entwicklungen der isobaren Wärmekapazitäten $C_p$:
+    
+    \begin{equation}
+      \begin{split}
+        C_p \left(\ch{C}\right) &= 16.86 + 4.77 \cdot 10^{-3} T - 8.54 \cdot 10^5 T^{-2} \\
+        C_p \left(\ch{O2\gas}\right) &= 29.96 + 4.18 \cdot 10^{-3} T - 1.67 \cdot 10^5 T^{-2} \\
+        C_p \left(\ch{CO2\gas}\right) &= 42.22 + 8.79 \cdot 10^{-3} T - 8.62 \cdot 10^5 T^{-2}.
+      \end{split}
+    \end{equation}
+  Mithilfe der Verbrennungsreaktion 
+  
+    \begin{reaction}
+      C\sld \, + O2 \gas -> CO2 \gas 
+    \end{reaction}
+  berechnet sich die Wärmekapazität $C_p$ der Reaktion gemäß
+  
+    \begin{equation}
+      \begin{split}
+        C_p &= C_p \left(\ch{CO2\gas}\right) - C_p \left(\ch{O2\gas}\right) - C_p \left(\ch{C}\right) \\
+            &= - 4.6 - 0.16 \cdot 10^{-3} T + 1.59 \cdot 10^5 T^{-2}.
+      \end{split}
+    \end{equation}
+  und mit dem Kirchhoff'schen Gesetz kann die Enthalpie berechnet werden:
+  
+  \begin{equation}
+    \begin{split}
+      H_{T_2} &= H_{T_1} + \int_{T_1}^{T_2} C_p \, \text{d} T \\
+              &= H_{T_1} + \left[- 4.6 T - \frac{1}{2} 0.16 \cdot 10^{-3} T^2 - \frac{1}{3}1.59 \cdot 10^5 T^{-3}\right]_{T_1}^{T_2} \\
+              &= \SI[mode=text]{}{\kilo\joule}.
+    \end{split}
+  \end{equation}
+  
+  \subsection{Kreisprozess}
+  
+    Ein Mol eines ein-atomigen, idealen Gases ($C_V = \frac{3}{2} R$) wird einem Kreisprozess unterworfen ($p_A = \SI[mode=text]{1}{bar}, T_A = \SI[mode=text]{273}{\kelvin}$). Bei der reversiblen adiabatischen Expansion auf das doppelte Volumen ($V_E = 2 V_A$) ist $\Delta U = w_{ad}, q = 0$. Die Volumensarbeit $w_{ad}$ berechnet sich mit
+    
+    \begin{equation}
+      \begin{split}
+        w_{ad} &= \frac{p_A V_A}{\gamma - 1} \cdot \left(\frac{V_A^{\gamma - 1}}{V_E^{\gamma - 1}} - 1\right) \\
+             &= \frac{p_A V_A}{\gamma - 1} \cdot \left(\frac{1}{2^{\gamma - 1}} - 1\right) = \SI[mode=text]{}{\joule}.
+      \end{split}
+    \end{equation}
+    Bei der isochoren Erwärmung auf $T_H$ wird keine Volumensarbeit verrichtet. Die Änderung der inneren Energie und der Wärme berechnet sich wie folgt:
+    
+      \begin{equation}
+        \Delta U = q = C_V \Delta T = C_V \left(T_H - T_A\right) = \SI[mode=text]{}{\joule}.
+      \end{equation}
+    Beim letzten Schritt, der isothermen, reversiblen Kompression auf $V_A$ ist $\Delta U = 0$ und damit $q = -w$, wobei
+    
+    
+    \begin{equation}
+      w = -RTn \ln\left(\frac{V_A}{V_E}\right) = RTn \ln(2) = \SI[mode=text]{}{\joule}.
+    \end{equation}
+    
+  
+      
+  
+    
