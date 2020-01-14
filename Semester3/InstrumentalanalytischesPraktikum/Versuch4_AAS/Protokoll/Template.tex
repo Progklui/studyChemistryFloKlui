@@ -1,0 +1,60 @@
+\documentclass{article}
+
+\input{ReferenceStyle/preamble.tex}
+
+%% ========================================================================
+%%%% Document Information
+%% ========================================================================
+
+%% Title settings
+\title{Instrumentalanalytisches Grundpraktikum \\ Versuch 4 - Atomspektroskopie \cite{Versuchsvorschrift}} % Title
+\author{Autor: Florian \textsc{Kluibenschedl}} % Author name
+\date{Bericht verfasst am: \today} % Date for the report
+
+\begin{document}
+  \input{ReferenceStyle/frontpage.tex}
+  \pagebreak
+
+  \tableofcontents
+  \pagebreak  
+  
+  \input{chapters/Ziel.tex}
+  \pagebreak
+  
+  \input{chapters/Theorie.tex}
+  \pagebreak
+  
+  \section{Atomabsorptionsspektroskopische Bestimmung von Blei}
+  
+    \input{chapters/PraktischerTeilAAS.tex}
+    \pagebreak
+  
+    \input{chapters/ResultatAAS.tex}
+  
+    \input{chapters/DiskussionAAS.tex}
+    \pagebreak
+  
+  \section{Flammenemissionsspektroskopische Bestimmung von Calcium}
+  
+    \input{chapters/PraktischerTeilFES.tex}
+    \pagebreak
+  
+    \input{chapters/ResultatFES.tex}
+  
+    \input{chapters/DiskussionFES.tex}
+    \pagebreak
+  
+  
+  \addcontentsline{toc}{section}{Literaturverzeichnis}
+  \printbibliography[title=Literaturverzeichnis]
+  
+  \addcontentsline{toc}{section}{Reaktionsverzeichnis}
+  \listofreactions
+  
+  \addcontentsline{toc}{section}{Abbildungsverzeichnis}
+  \listoffigures
+  
+  \addcontentsline{toc}{section}{Tabellenverzeichnis}
+  \listoftables
+    
+\end{document}

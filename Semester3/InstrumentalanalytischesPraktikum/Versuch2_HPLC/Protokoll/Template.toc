@@ -1,0 +1,30 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {ngerman}{}
+\contentsline {section}{\numberline {1}Ziel des Experiments}{3}{section.1}
+\contentsline {section}{\numberline {2}Theoretische Grundlagen}{4}{section.2}
+\contentsline {subsection}{\numberline {2.1}Aufbau der HPLC und Ablauf einer Analyse}{4}{subsection.2.1}
+\contentsline {subsubsection}{\numberline {2.1.1}Probenaufgabe}{4}{subsubsection.2.1.1}
+\contentsline {subsubsection}{\numberline {2.1.2}L\IeC {\"o}sungsmittel und Entgaser}{5}{subsubsection.2.1.2}
+\contentsline {subsubsection}{\numberline {2.1.3}Pumpe und Gradientenentwicklung}{5}{subsubsection.2.1.3}
+\contentsline {subsubsection}{\numberline {2.1.4}Trenns\IeC {\"a}ule}{5}{subsubsection.2.1.4}
+\contentsline {subsubsection}{\numberline {2.1.5}Detektor}{5}{subsubsection.2.1.5}
+\contentsline {subsection}{\numberline {2.2}Trennmechanismen und station\IeC {\"a}re Phasen}{6}{subsection.2.2}
+\contentsline {subsubsection}{\numberline {2.2.1}Normalphasenchromatographie}{6}{subsubsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.2}Umkehrphasenchromatographie}{6}{subsubsection.2.2.2}
+\contentsline {subsection}{\numberline {2.3}Chromatographische Parameter}{6}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Elutionsmechanismen der Umkehrphasenchromatographie}{7}{subsection.2.4}
+\contentsline {subsubsection}{\numberline {2.4.1}Isokratische Elution}{7}{subsubsection.2.4.1}
+\contentsline {subsubsection}{\numberline {2.4.2}Gradienten Elution}{8}{subsubsection.2.4.2}
+\contentsline {subsection}{\numberline {2.5}Kalibrierung \IeC {\"u}ber einen externen Standard}{8}{subsection.2.5}
+\contentsline {section}{\numberline {3}Praktischer Teil}{9}{section.3}
+\contentsline {subsection}{\numberline {3.1}Ger\IeC {\"a}teparameter}{9}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Chemikalienliste}{9}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Bestimmung einer optimalen Eluentenzusammensetzung}{10}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Qualitative und quantitative Bestimmung von Wasserr\IeC {\"u}ckst\IeC {\"a}nden nach der Methode des externen Standards}{11}{subsection.3.4}
+\contentsline {section}{\numberline {4}Ergebnisse und Auswertung}{12}{section.4}
+\contentsline {subsection}{\numberline {4.1}Qualitative Bestimmung von Wasserr\IeC {\"u}ckst\IeC {\"a}nden und Berechnung chromatographischer Parameter}{12}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Quantitative Bestimmung von Wasserr\IeC {\"u}ckst\IeC {\"a}nden nach der Methode des externen Standards}{13}{subsection.4.2}
+\contentsline {section}{\numberline {5}Fazit und Diskussion}{15}{section.5}
+\contentsline {section}{Literaturverzeichnis}{16}{section.5}
+\contentsline {section}{Abbildungsverzeichnis}{16}{section*.17}
+\contentsline {section}{Tabellenverzeichnis}{16}{section*.18}

@@ -1,0 +1,11 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {ngerman}{}
+\contentsline {section}{\numberline {1}Ziel des Experiments}{3}{section.1}
+\contentsline {section}{\numberline {2}Theoretische Grundlagen}{4}{section.2}
+\contentsline {section}{\numberline {3}Praktischer Teil}{5}{section.3}
+\contentsline {section}{\numberline {4}Ergebnisse und Auswertung}{6}{section.4}
+\contentsline {section}{\numberline {5}Fazit und Diskussion}{7}{section.5}
+\contentsline {section}{Literaturverzeichnis}{8}{section.5}
+\contentsline {section}{Reaktionsverzeichnis}{8}{section*.4}
+\contentsline {section}{Abbildungsverzeichnis}{8}{section*.5}
+\contentsline {section}{Tabellenverzeichnis}{8}{section*.6}

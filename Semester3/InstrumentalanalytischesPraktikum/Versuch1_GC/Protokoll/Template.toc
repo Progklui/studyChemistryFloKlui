@@ -1,0 +1,19 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {ngerman}{}
+\contentsline {section}{\numberline {1}Ziel des Experiments}{3}{section.1}
+\contentsline {section}{\numberline {2}Theoretische Grundlagen}{4}{section.2}
+\contentsline {subsection}{\numberline {2.1}Aufbau eines Gas-Chromatographen und Ablauf einer Analyse}{4}{subsection.2.1}
+\contentsline {subsubsection}{\numberline {2.1.1}Injektionssystem}{4}{subsubsection.2.1.1}
+\contentsline {subsubsection}{\numberline {2.1.2}Mobile Phase - Tr\IeC {\"a}gergas}{5}{subsubsection.2.1.2}
+\contentsline {subsubsection}{\numberline {2.1.3}Station\IeC {\"a}re Phase - Trenns\IeC {\"a}ule}{5}{subsubsection.2.1.3}
+\contentsline {subsubsection}{\numberline {2.1.4}S\IeC {\"a}ulenofen}{5}{subsubsection.2.1.4}
+\contentsline {subsubsection}{\numberline {2.1.5}Detektor}{5}{subsubsection.2.1.5}
+\contentsline {subsection}{\numberline {2.2}Chromatographische Parameter}{6}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Kalibrierung \IeC {\"u}ber einen internen Standard}{7}{subsection.2.3}
+\contentsline {section}{\numberline {3}Praktischer Teil}{9}{section.3}
+\contentsline {section}{\numberline {4}Ergebnisse und Auswertung}{10}{section.4}
+\contentsline {section}{\numberline {5}Fazit und Diskussion}{11}{section.5}
+\contentsline {section}{Literaturverzeichnis}{12}{section.5}
+\contentsline {section}{Reaktionsverzeichnis}{12}{section*.5}
+\contentsline {section}{Abbildungsverzeichnis}{12}{section*.6}
+\contentsline {section}{Tabellenverzeichnis}{12}{section*.7}

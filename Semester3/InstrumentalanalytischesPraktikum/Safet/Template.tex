@@ -1,0 +1,48 @@
+\documentclass{article}
+
+\input{ReferenceStyle/preamble.tex}
+
+%% ========================================================================
+%%%% Document Information
+%% ========================================================================
+
+%% Title settings
+\title{Instrumentalanalytisches Grundpraktikum \\ Versuch 2 - Umkehrphasen-HPLC von Wasserrückstännden \cite{Versuchsvorschrift}} % Title
+\author{Autor: Florian \textsc{Kluibenschedl}} % Author name
+\date{Bericht verfasst am: \today} % Date for the report
+
+\begin{document}
+  \input{ReferenceStyle/frontpage.tex}
+  \pagebreak
+
+  \tableofcontents
+  \pagebreak  
+  
+  \input{chapters/Ziel.tex}
+  \pagebreak
+  
+  \input{chapters/Theorie.tex}
+  \pagebreak
+  
+  \input{chapters/PraktischerTeil.tex}
+  \pagebreak
+  
+  \input{chapters/Resultat.tex}
+  \pagebreak
+  
+  \input{chapters/Diskussion.tex}
+  \pagebreak
+  
+  \addcontentsline{toc}{section}{Literaturverzeichnis}
+  \printbibliography[title=Literaturverzeichnis]
+  
+  \addcontentsline{toc}{section}{Reaktionsverzeichnis}
+  \listofreactions
+  
+  \addcontentsline{toc}{section}{Abbildungsverzeichnis}
+  \listoffigures
+  
+  \addcontentsline{toc}{section}{Tabellenverzeichnis}
+  \listoftables
+    
+\end{document}

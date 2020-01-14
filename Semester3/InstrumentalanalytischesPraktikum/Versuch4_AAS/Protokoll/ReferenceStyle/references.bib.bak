@@ -1,0 +1,36 @@
+% Encoding: UTF-8
+
+@Manual{Versuchsvorschrift,
+  author    = {Bonn Günther et al.},
+  title     = {Arbeitsunterlagen Instrumentalanalytisches Grundpraktikum - Universität Innsbruck},
+  year      = {2019},
+  subtitle  = {für Chemiker und Lehramtskandidaten},
+  location  = {Innsbruck},
+  owner     = {Florian Kluibenschedl},
+  timestamp = {2020-12-08},
+}
+
+@Book{PhysicalChemistryAtkings,
+  Title                    = {Physical Chemistry},
+  Author                   = {Peter Atkins, Julio de Paula, James Keeler},
+  Publisher                = {Oxford University Press},
+  Year                     = {2018},
+
+  Address                  = {Oxford, United Kingdom},
+  Edition                  = {11th},
+
+  Owner                    = {Florian Kluibenschedl},
+  Timestamp                = {2019.02.26}
+}
+
+@Book{,
+  author    = {Georg Schwedt},
+  title     = {Taschenatlas der Analytik},
+  year      = {2007},
+  edition   = {3},
+  location  = {Weinheim},
+  owner     = {Florian Kluibenschedl},
+  timestamp = {2020-12-08},
+}
+
+@Comment{jabref-meta: databaseType:biblatex;}

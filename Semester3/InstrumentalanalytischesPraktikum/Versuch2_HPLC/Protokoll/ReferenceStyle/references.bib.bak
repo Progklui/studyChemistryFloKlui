@@ -1,0 +1,87 @@
+% Encoding: UTF-8
+
+@Manual{Versuchsvorschrift,
+  author    = {Bonn Günther et al.},
+  title     = {Arbeitsunterlagen Instrumentalanalytisches Grundpraktikum},
+  year      = {2019},
+  subtitle  = {Für Chemiker und Lehramtskandidaten},
+  location  = {Innsbruck},
+  owner     = {Florian Kluibenschedl},
+  timestamp = {2020-12-08}
+}
+
+@Book{PhysicalChemistryAtkings,
+  Title                    = {Physical Chemistry},
+  Author                   = {Peter Atkins, Julio de Paula, James Keeler},
+  Publisher                = {Oxford University Press},
+  Year                     = {2018},
+
+  Address                  = {Oxford, United Kingdom},
+  Edition                  = {11th},
+
+  Owner                    = {Florian Kluibenschedl},
+  Timestamp                = {2019.02.26}
+}
+
+@Book{Taschenatlas,
+  title     = {Taschenatlas der Analytik},
+  publisher = {Wiley-VCH},
+  year      = {2007},
+  author    = {Georg Schwedt},
+  edition   = {3},
+  location  = {Weinheim},
+  owner     = {Florian Kluibenschedl},
+  timestamp = {2020-12-08},
+}
+
+@Manual{AnalytikIII,
+  author    = {Christian Huck},
+  title     = {Analytische Chemie III},
+  year      = {2019},
+  subtitle  = {Atomspektroskopie},
+  publisher = {Institut für Analytische Chemie und Radiochemie - Universität Innsbruck},
+  location  = {Innsbruck},
+  owner     = {Florian Kluibenschedl},
+}
+
+@Book{PhysikIII,
+  title     = {Experimentalphysik 3},
+  publisher = {Springer},
+  year      = {2016},
+  author    = {Wolfgang Demtröder},
+  edition   = {5},
+  location  = {Berlin},
+  subtitle  = {Atome, Moleküle und Festkörper},
+}
+
+@Manual{SkriptHPLC,
+  title  = {Umkehrphasen HPLC von Wasserrückständen - Instrumentalanalytisches Grundpraktikum Wintersemester 2019/20},
+  author = {Susanne Huber},
+  year   = {2019},
+  owner  = {Florian Kluibenschedl},
+}
+
+@Book{InstrumentelleAnalytikSkoog,
+  title     = {Principles of Instrumental Analysis},
+  publisher = {Cengage Learning},
+  year      = {2016},
+  author    = {Douglas Skoog and James Holler and Stanley Crouch},
+  address   = {Boston},
+  edition   = {7},
+}
+
+@Book{QuantitativeAnalyseHarris,
+  title     = {Lehrbuch der Quantitativen Analyse},
+  publisher = {Springer},
+  year      = {2014},
+  author    = {Harris},
+}
+
+@Book{ModernLiquidChromatography,
+  title     = {Introduction to Modern Liquid Chromatography},
+  publisher = {Wiley-VCH},
+  year      = {2010},
+  author    = {Snyder and Kirkland and Dolan},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}

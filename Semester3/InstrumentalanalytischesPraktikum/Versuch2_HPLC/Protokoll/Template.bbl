@@ -1,0 +1,217 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{Versuchsvorschrift}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=5ec2ce25d205e702e566278323165fdb}{%
+           family={al.},
+           familyi={a\bibinitperiod},
+           given={Bonn\bibnamedelima Günther},
+           giveni={B\bibinitperiod\bibinitdelim G\bibinitperiod},
+           prefix={et},
+           prefixi={e\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Innsbruck}%
+      }
+      \strng{namehash}{5ec2ce25d205e702e566278323165fdb}
+      \strng{fullhash}{5ec2ce25d205e702e566278323165fdb}
+      \strng{bibnamehash}{5ec2ce25d205e702e566278323165fdb}
+      \strng{authorbibnamehash}{5ec2ce25d205e702e566278323165fdb}
+      \strng{authornamehash}{5ec2ce25d205e702e566278323165fdb}
+      \strng{authorfullhash}{5ec2ce25d205e702e566278323165fdb}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{subtitle}{Für Chemiker und Lehramtskandidaten}
+      \field{title}{Arbeitsunterlagen Instrumentalanalytisches Grundpraktikum}
+      \field{year}{2019}
+    \endentry
+    \entry{MedicamentsORF}{online}{}
+      \name{author}{1}{}{%
+        {{hash=80b7e4042515f9c22593d8d53e132456}{%
+           family={Ronzheimer},
+           familyi={R\bibinitperiod},
+           given={Hanna},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{80b7e4042515f9c22593d8d53e132456}
+      \strng{fullhash}{80b7e4042515f9c22593d8d53e132456}
+      \strng{bibnamehash}{80b7e4042515f9c22593d8d53e132456}
+      \strng{authorbibnamehash}{80b7e4042515f9c22593d8d53e132456}
+      \strng{authornamehash}{80b7e4042515f9c22593d8d53e132456}
+      \strng{authorfullhash}{80b7e4042515f9c22593d8d53e132456}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{01}
+      \field{title}{Medikamente im Wasser gefährden Umwelt}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://science.orf.at/stories/2966086/
+      \endverb
+      \verb{url}
+      \verb https://science.orf.at/stories/2966086/
+      \endverb
+    \endentry
+    \entry{SkriptHPLC}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=e86f49c5f229150b4ef06e890b156d0b}{%
+           family={Huber},
+           familyi={H\bibinitperiod},
+           given={Susanne},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{e86f49c5f229150b4ef06e890b156d0b}
+      \strng{fullhash}{e86f49c5f229150b4ef06e890b156d0b}
+      \strng{bibnamehash}{e86f49c5f229150b4ef06e890b156d0b}
+      \strng{authorbibnamehash}{e86f49c5f229150b4ef06e890b156d0b}
+      \strng{authornamehash}{e86f49c5f229150b4ef06e890b156d0b}
+      \strng{authorfullhash}{e86f49c5f229150b4ef06e890b156d0b}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Umkehrphasen HPLC von Wasserrückständen - Instrumentalanalytisches Grundpraktikum Wintersemester 2019/20}
+      \field{year}{2019}
+    \endentry
+    \entry{QuantitativeAnalyseHarris}{book}{}
+      \name{author}{1}{}{%
+        {{hash=d53a0abaa0cbeb339cb02898fa4fbe96}{%
+           family={Harris},
+           familyi={H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{d53a0abaa0cbeb339cb02898fa4fbe96}
+      \strng{fullhash}{d53a0abaa0cbeb339cb02898fa4fbe96}
+      \strng{bibnamehash}{d53a0abaa0cbeb339cb02898fa4fbe96}
+      \strng{authorbibnamehash}{d53a0abaa0cbeb339cb02898fa4fbe96}
+      \strng{authornamehash}{d53a0abaa0cbeb339cb02898fa4fbe96}
+      \strng{authorfullhash}{d53a0abaa0cbeb339cb02898fa4fbe96}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Lehrbuch der Quantitativen Analyse}
+      \field{year}{2014}
+    \endentry
+    \entry{InstrumentelleAnalytikSkoog}{book}{}
+      \name{author}{3}{}{%
+        {{hash=749fdd02bfb4b232e381f94f455de2dd}{%
+           family={Skoog},
+           familyi={S\bibinitperiod},
+           given={Douglas},
+           giveni={D\bibinitperiod}}}%
+        {{hash=9605022d1bb7e197f51a1d945a72fee1}{%
+           family={Holler},
+           familyi={H\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod}}}%
+        {{hash=b410e0cbf399155cfafec19ee035150e}{%
+           family={Crouch},
+           familyi={C\bibinitperiod},
+           given={Stanley},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Boston}%
+      }
+      \list{publisher}{1}{%
+        {Cengage Learning}%
+      }
+      \strng{namehash}{d7f22c93fa92189ebf9b8efbf570894d}
+      \strng{fullhash}{d7f22c93fa92189ebf9b8efbf570894d}
+      \strng{bibnamehash}{d7f22c93fa92189ebf9b8efbf570894d}
+      \strng{authorbibnamehash}{d7f22c93fa92189ebf9b8efbf570894d}
+      \strng{authornamehash}{d7f22c93fa92189ebf9b8efbf570894d}
+      \strng{authorfullhash}{d7f22c93fa92189ebf9b8efbf570894d}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{7}
+      \field{title}{Principles of Instrumental Analysis}
+      \field{year}{2016}
+    \endentry
+    \entry{ModernLiquidChromatography}{book}{}
+      \name{author}{3}{}{%
+        {{hash=aaa8f77efbf644a3a530c112f56b463a}{%
+           family={Snyder},
+           familyi={S\bibinitperiod}}}%
+        {{hash=49df813c5030dc03c6aedba5a447825e}{%
+           family={Kirkland},
+           familyi={K\bibinitperiod}}}%
+        {{hash=2f710a3f07987462186553cac2df2c4f}{%
+           family={Dolan},
+           familyi={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley-VCH}%
+      }
+      \strng{namehash}{9ba77abd775ae69cbed280805d95b76b}
+      \strng{fullhash}{9ba77abd775ae69cbed280805d95b76b}
+      \strng{bibnamehash}{9ba77abd775ae69cbed280805d95b76b}
+      \strng{authorbibnamehash}{9ba77abd775ae69cbed280805d95b76b}
+      \strng{authornamehash}{9ba77abd775ae69cbed280805d95b76b}
+      \strng{authorfullhash}{9ba77abd775ae69cbed280805d95b76b}
+      \field{sortinit}{7}
+      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Introduction to Modern Liquid Chromatography}
+      \field{year}{2010}
+    \endentry
+    \entry{Taschenatlas}{book}{}
+      \name{author}{1}{}{%
+        {{hash=22992cbefdee163032738737c47e543d}{%
+           family={Schwedt},
+           familyi={S\bibinitperiod},
+           given={Georg},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Weinheim}%
+      }
+      \list{publisher}{1}{%
+        {Wiley-VCH}%
+      }
+      \strng{namehash}{22992cbefdee163032738737c47e543d}
+      \strng{fullhash}{22992cbefdee163032738737c47e543d}
+      \strng{bibnamehash}{22992cbefdee163032738737c47e543d}
+      \strng{authorbibnamehash}{22992cbefdee163032738737c47e543d}
+      \strng{authornamehash}{22992cbefdee163032738737c47e543d}
+      \strng{authorfullhash}{22992cbefdee163032738737c47e543d}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{3}
+      \field{title}{Taschenatlas der Analytik}
+      \field{year}{2007}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

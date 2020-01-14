@@ -1,0 +1,147 @@
+QtiPlot 0.9.8 project file
+<scripting-lang>	muParser
+<windows>	2
+<table>
+Table1	30	2	13.01.20 14:30
+geometry	0	0	445	430	active
+header	1[X]	2[Y]
+ColWidth	100	100	
+<com>
+</com>
+ColType	0;0/13	0;0/13
+ReadOnlyColumn	0	0
+HiddenColumn	0	0
+Comments			
+WindowLabel		2
+<data>
+0	0	27
+1	0	34
+2	0	38
+3	5	151
+4	5	145
+5	5	142
+6	10	268
+7	10	273
+8	10	279
+9	15	377
+10	15	384
+11	15	386
+12	20	503
+13	20	505
+14	20	511
+</data>
+</table>
+<multiLayer>
+Graph1	1	1	13.01.20 14:36
+geometry	445	0	895	469	
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	400	300
+Alignement	0	0
+<AlignPolicy>0</AlignPolicy>
+<CommonAxes>0</CommonAxes>
+<graph>
+ggeometry	5	5	876	406
+<PageGeometry>0.00563698	0.0118765	0.987599	0.964371</PageGeometry>
+PlotTitle	 	#000000	4228
+<Antialiasing>0</Antialiasing>
+<Autoscaling>1</Autoscaling>
+<ScaleFonts>1</ScaleFonts>
+<GridOnTop>0</GridOnTop>
+<MissingDataGap>1</MissingDataGap>
+Background	#ffffff	0
+Margin	0
+Border	0	#000000
+grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
+EnabledAxes	1	1	1	1	
+AxesTitles	Konzentration <i>c<sub>Std.</sub></i> in ppm	Intensität <i>I</i>(422.7 nm) in AU		 	
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	5124	5124	5124	5124
+AxesTitleDistance	2	2	2	2
+InvertedTitle	0	0	0	0
+TitleFont	Ubuntu	13	75	0	0	0
+ScaleFont0	Ubuntu	11	75	0	0	0
+ScaleFont1	Ubuntu	11	75	0	0	0
+ScaleFont2	Ubuntu	11	75	0	0	0
+ScaleFont3	Ubuntu	11	75	0	0	0
+AxisFont0	Ubuntu	11	50	0	0	0
+AxisFont1	Ubuntu	11	50	0	0	0
+AxisFont2	Ubuntu	11	50	0	0	0
+AxisFont3	Ubuntu	11	50	0	0	0
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#3c3c3c	#3c3c3c	#3c3c3c	#3c3c3c
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffff	0
+curve	Table1_1	Table1_2	1	0	#000000	0	1	7	1	#000000	#000000	0	#000000	14	1	2	0	0	14	1
+<Function>
+<Type>0</Type>
+<Title>LinearFit2</Title>
+<Expression>A*x+B</Expression>
+<Variable>x</Variable>
+<Range>-2	20</Range>
+<Points>100</Points>
+<Constant>A	23.66</Constant>
+<Constant>B	31.6</Constant>
+<Style>0</Style>
+<LineStyle>1</LineStyle>
+<Pen>
+	<Color>#ff0000</Color>
+	<Style>0</Style>
+	<Width>1</Width>
+</Pen>
+<xAxis>2</xAxis>
+<yAxis>0</yAxis>
+<CurveType>0</CurveType>
+<Visible>1</Visible>
+</Function>
+scale	0	0	600	0	7	5	0	0
+scale	1	0	600	0	7	5	0	0
+scale	2	-2	22	0	6	5	0	0
+scale	3	-2	22	0	6	5	0	0
+LabelsFormat	0	6	0	6	0	6	0	6
+AxisType	0	0	0	0	
+MajorTicks	1	1	1	1
+MinorTicks	1	1	1	1
+TicksLength	5	9
+DrawAxesBackbone	1	1	1	1	1
+AxesLineWidth	1
+LabelsRotation	0	0	0	0
+LabelsPrefix				
+LabelsSuffix				
+TickLabelsSpace	4	4	4	4
+ShowTicksPolicy	0	0	0	0
+EnabledTickLabels	1	1	1	1
+</graph>
+<LinkXAxes>0</LinkXAxes>
+<ScaleLayers>1</ScaleLayers>
+</multiLayer>
+<open>1</open>
+<log>
+[13.01.20 14:36	Plot: ''Graph1'']
+Linear Regression of dataset: Table1_2, using function: A*x+B
+Weighting Method: No weighting
+From x = 0.0000000000000e+00 to x = 2.0000000000000e+01
+B (y-intercept) = 3.1600000000000e+01 +/- 2.5830810464071e+00
+A (slope) = 2.3660000000000e+01 +/- 2.1090768426506e-01
+--------------------------------------------------------------------------------------
+Chi^2/doF = 3.3361538461538e+01
+R^2 = 0.9989680698886
+Adjusted R^2 = 0.9987960815367
+RMSE (Root Mean Squared Error) = 5.775944811158
+RSS (Residual Sum of Squares) = 433.7
+---------------------------------------------------------------------------------------
+[13.01.20 14:37	Plot: ''Graph1'']
+Linear Regression of dataset: Table1_2, using function: A*x+B
+Weighting Method: No weighting
+From x = 0.0000000000000e+00 to x = 2.0000000000000e+01
+B (y-intercept) = 3.1600000000000e+01 +/- 2.5830810464071e+00
+A (slope) = 2.3660000000000e+01 +/- 2.1090768426506e-01
+--------------------------------------------------------------------------------------
+Chi^2/doF = 3.3361538461538e+01
+R^2 = 0.9989680698886
+Adjusted R^2 = 0.9987960815367
+RMSE (Root Mean Squared Error) = 5.775944811158
+RSS (Residual Sum of Squares) = 433.7
+---------------------------------------------------------------------------------------
+</log>

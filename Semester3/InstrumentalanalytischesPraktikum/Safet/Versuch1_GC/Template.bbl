@@ -1,0 +1,105 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{Versuchsvorschrift}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=5ec2ce25d205e702e566278323165fdb}{%
+           family={al.},
+           familyi={a\bibinitperiod},
+           given={Bonn\bibnamedelima Günther},
+           giveni={B\bibinitperiod\bibinitdelim G\bibinitperiod},
+           prefix={et},
+           prefixi={e\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Innsbruck}%
+      }
+      \strng{namehash}{5ec2ce25d205e702e566278323165fdb}
+      \strng{fullhash}{5ec2ce25d205e702e566278323165fdb}
+      \strng{bibnamehash}{5ec2ce25d205e702e566278323165fdb}
+      \strng{authorbibnamehash}{5ec2ce25d205e702e566278323165fdb}
+      \strng{authornamehash}{5ec2ce25d205e702e566278323165fdb}
+      \strng{authorfullhash}{5ec2ce25d205e702e566278323165fdb}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{subtitle}{Für Chemiker und Lehramtskandidaten}
+      \field{title}{Arbeitsunterlagen Instrumentalanalytisches Grundpraktikum}
+      \field{year}{2019}
+    \endentry
+    \entry{Taschenatlas}{book}{}
+      \name{author}{1}{}{%
+        {{hash=22992cbefdee163032738737c47e543d}{%
+           family={Schwedt},
+           familyi={S\bibinitperiod},
+           given={Georg},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Weinheim}%
+      }
+      \strng{namehash}{22992cbefdee163032738737c47e543d}
+      \strng{fullhash}{22992cbefdee163032738737c47e543d}
+      \strng{bibnamehash}{22992cbefdee163032738737c47e543d}
+      \strng{authorbibnamehash}{22992cbefdee163032738737c47e543d}
+      \strng{authornamehash}{22992cbefdee163032738737c47e543d}
+      \strng{authorfullhash}{22992cbefdee163032738737c47e543d}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{3}
+      \field{title}{Taschenatlas der Analytik}
+      \field{year}{2007}
+    \endentry
+    \entry{AnalytikIII}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=8175610c3f4269231a1497431c95e212}{%
+           family={Huck},
+           familyi={H\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Innsbruck}%
+      }
+      \list{publisher}{1}{%
+        {Institut für Analytische Chemie und Radiochemie - Universität Innsbruck}%
+      }
+      \strng{namehash}{8175610c3f4269231a1497431c95e212}
+      \strng{fullhash}{8175610c3f4269231a1497431c95e212}
+      \strng{bibnamehash}{8175610c3f4269231a1497431c95e212}
+      \strng{authorbibnamehash}{8175610c3f4269231a1497431c95e212}
+      \strng{authornamehash}{8175610c3f4269231a1497431c95e212}
+      \strng{authorfullhash}{8175610c3f4269231a1497431c95e212}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{subtitle}{Atomspektroskopie}
+      \field{title}{Analytische Chemie III}
+      \field{year}{2019}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
