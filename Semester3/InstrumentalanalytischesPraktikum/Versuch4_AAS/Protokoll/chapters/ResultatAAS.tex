@@ -1,4 +1,4 @@
-\subsection{Ergebnisse und Auswertung}
+\subsection{Ergebnisse und Auswertung} \label{sec:ErgebnisseAAS}
   
   In Tabelle \ref{tab:ErgebnisseAAS} befinden sich die Ergebnisse der Standardaddition. In Abbildung ist die entsprechende Kalibriergerade dargestellt. Folgende Parameter der Kalibriergeraden wurden bestimmt: Steigung $b = \SI[mode=text,separate-uncertainty]{0.00107(8)}{AU\per ppm}$, Ordinatenabschnitt $a = \SI[mode=text, separate-uncertainty]{0.0269(9)}{AU}$, Bestimmtheitsmaß $R^2 = 0.9396$, Reststandardabweichung $s_y = 0.002067$, F-Wert $F = 202.1434$ und Freiheitsgrade $df = 13$. Die Konzentration der Probe, $c_{Probe}$ wird über den Schnittpunkt der Kalibriergeraden mit der $x$-Achse bestimmt:
   
@@ -15,11 +15,18 @@
     \begin{equation}
       \begin{split}
         s_x &= \frac{s_y}{b} \sqrt{\frac{1}{N} + \frac{\overline{y}^2}{b^2 \sum_{i=1}^N \left(x_i - \overline{x}\right)^2}} \\
-            &= \frac{0.002067}{0.00107} \sqrt{\frac{1}{12} + \frac{0.0376^2}{0.00107^2 \cdot 750}} = \SI[mode=text]{}{ppm} \\
-   \Rightarrow s_x &= s_x \frac{V_{Mess.}}{V_{Probe}} = 5 s_x = \SI[mode=text]{2.54}{ppm}.
+            &= \frac{0.002067}{0.00107} \sqrt{\frac{1}{15} + \frac{0.0376^2}{0.00107^2 \cdot 750}} = \SI[mode=text]{2.53}{ppm} \\
+   \Rightarrow s_c &= \frac{V_{Mess.}}{V_{Probe}} s_x = 5 s_x = \SI[mode=text]{12.6}{ppm} \\
+   \Rightarrow T_c &= s_c t = \SI[mode=text]{27.3}{ppm}.
       \end{split}
     \end{equation}
-  Damit ist das Ergebnis: $c_{Probe} = \SI[mode=text, multi-part-units = brackets, separate-uncertainty]{126(6)}{ppm} \left(N = 15, s_x = \SI[mode=text]{4}{ppm}, \alpha = 0.05\right)$.
+  Damit ist das Ergebnis: $c_{Probe} = \SI[mode=text, multi-part-units = brackets, separate-uncertainty]{126(27)}{ppm} \left(N = 15, s_c = \pm \SI[mode=text]{12.6}{ppm}, \alpha = 0.05\right)$.
+  
+  \begin{figure}[H]
+    \includegraphics[scale=0.5, center]{images/KalibriergeradeAASPb.png} 
+    \caption[Messdaten und Kalibriergerade für die AAS von \ch{Pb}, Quelle: Autor]{Messdaten und Kalibriergerade für die AAS von \ch{Pb} in der Form $y = a + bx$.}
+    \label{fig:KalibriergeradeBlei}
+  \end{figure}
   
   \begin{table}[H]
     \centering
@@ -46,9 +53,3 @@
         V & 1/10 & 20.0 & 20.0 & 50.0 & 10.0 & 0.048 \\ \bottomrule
     \end{tabular}
   \end{table}
-  
-  \begin{figure}[H]
-    \includegraphics[scale=0.5, center]{images/KalibriergeradeAASPb.png} 
-    \caption[Messdaten und Kalibriergerade für die AAS von \ch{Pb}, Quelle: Autor]{Messdaten und Kalibriergerade für die AAS von \ch{Pb} in der Form $y = a + bx$.}
-    \label{fig:KalibriergeradeBlei}
-  \end{figure}

@@ -2,12 +2,12 @@
 
 @Manual{Versuchsvorschrift,
   author    = {Bonn Günther et al.},
-  title     = {Arbeitsunterlagen Instrumentalanalytisches Grundpraktikum - Universität Innsbruck},
+  title     = {Arbeitsunterlagen Instrumentalanalytisches Grundpraktikum},
   year      = {2019},
-  subtitle  = {für Chemiker und Lehramtskandidaten},
+  subtitle  = {Für Chemiker und Lehramtskandidaten},
   location  = {Innsbruck},
   owner     = {Florian Kluibenschedl},
-  timestamp = {2020-12-08},
+  timestamp = {2020-12-08}
 }
 
 @Book{PhysicalChemistryAtkings,
@@ -23,14 +23,67 @@
   Timestamp                = {2019.02.26}
 }
 
-@Book{,
+@Book{Taschenatlas,
   author    = {Georg Schwedt},
   title     = {Taschenatlas der Analytik},
   year      = {2007},
   edition   = {3},
   location  = {Weinheim},
   owner     = {Florian Kluibenschedl},
-  timestamp = {2020-12-08},
+  timestamp = {2020-12-08}
 }
 
-@Comment{jabref-meta: databaseType:biblatex;}
+@Manual{AnalytikIII,
+  author    = {Christian Huck},
+  title     = {Analytische Chemie III},
+  year      = {2019},
+  subtitle  = {Atomspektroskopie},
+  publisher = {Institut für Analytische Chemie und Radiochemie - Universität Innsbruck},
+  location  = {Innsbruck},
+  owner     = {Florian Kluibenschedl},
+}
+
+@Book{PhysikIII,
+  author   = {Wolfgang Demtröder},
+  title    = {Experimentalphysik 3},
+  year     = {2016},
+  subtitle = {Atome, Moleküle und Festkörper},
+  edition  = {5},
+  location = {Berlin},
+}
+
+@Electronic{UmweltbundesamtBlei,
+  author = {Umweltbundesamt},
+  month  = {05},
+  year   = {2018},
+  title  = {Blei im Trinkwasser},
+  url    = {https://www.umweltbundesamt.de/umwelttipps-fuer-den-alltag/essen-trinken/blei-im-trinkwasser#textpart-1 (Zugegriffen am 15.01.2020)},
+}
+
+@Article{Mikromethode,
+  author  = {H. Berndt and J. Messerschmidt},
+  title   = {Eine mikromethode der flammen-atomabsorptions- und emissions-spektrometrie (platinschlaufen-methode)—I. Die grundlagen der methode—anwendung auf die bestimmung von blei und cadmium in trinkwasser},
+  journal = {Spectrochimica Acta Part B: Atomic Spectroscopy},
+  year    = {1979},
+  volume  = {34},
+  pages   = {241-256},
+  doi     = {https://doi.org/10.1016/0584-8547(79)80029-4},
+}
+
+@Electronic{BodenBlei,
+  author = {Dr. M. Otto},
+  month  = {06},
+  year   = {2018},
+  title  = {Blei und Trinkwasser},
+  url    = {https://www.allum.de/stoffe-und-ausloeser/blei/grenzwerterichtwerte (Zugegriffen am 15.01.2020)},
+}
+
+@Electronic{CalciumGrenzwert,
+  author = {wasserwerk.at},
+  month  = {01},
+  year   = {2020},
+  title  = {Gesundheit},
+  url    = {http://www.wasserwerk.at/home/wasserqualitaet/wasserhaerte/40 (Zugegriffen am 15.01.2020)},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}

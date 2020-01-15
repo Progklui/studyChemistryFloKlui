@@ -5,14 +5,35 @@
     \caption[Geräteparameter und Chemikalienliste, Quelle: Autor]{Geräteparameter und Chemikalienliste}
     
     \label{tab:GerateparameterFES}
-    \begin{tabular}{@{}ll|lp{4.5cm}l@{}}
+    \begin{tabular}{@{}lll|lp{4.5cm}l@{}}
       \toprule
-      Geräteparameter & & Materialien   \\ \midrule
-        Gerät &  & Probelösung  \\ 
-        Methode &  & Blei-Urstandardlösung (\SI[mode=text]{1000}{ppm} \\
-        Brenngas &  & Deionat \\
-        Oxidans &  &  \\
-        Brenner &  &  \\
-        Lampe &  &  \\ \bottomrule
+      Geräteparameter &  &  & Materialien   \\ \midrule
+        Gerät & AAnalyst 800 PERKIN ELMER &  & Probelösung  \\ 
+        Temperatur & 2200-\SI[mode=text]{2500}{\degreeCelsius} &  & Calcium-Urstandardlösung (\SI[mode=text]{1000}{ppm}) \\
+        Brenngas & Acetylen (Flussrate \SI[mode=text]{2.0}{\milli\liter\per\minute}) &  & Deionat \\
+        Oxidans & Luft (Flussrate \SI[mode=text]{17.0}{\milli\liter\per\minute}) &  & \ch{LaCl3}-Lösung \\
+        Wellenlänge & \SI[mode=text]{422.7}{\nano\meter} &  &  \\ \bottomrule
     \end{tabular}
   \end{table}
+  
+  Die Probelösung wird mit 3-5 Tropfen an \ch{LaCl3} versetzt und im \SI[mode=text]{100}{\milli\liter} Messkolben unter homogenisieren bis zur Marke mit Deionat aufgefüllt. In einem \SI[mode=text]{100}{\milli\liter} Messkolben werden \SI[mode=text]{100}{\milli\liter} eines \SI[mode=text]{100}{ppm} Standards hergestellt. Dazu werden \SI[mode=text]{10}{\milli\liter} eines \SI[mode=text]{1000}{ppm} \ch{Ca} Ur-Standards mit einer \SI[mode=text]{10}{\milli\liter} Vollpipette in einen \SI[mode=text]{100}{\milli\liter} Messkolben überführt und bis zur Marke aufgefüllt. Aus diesem \SI[mode=text]{100}{ppm} Standard werden jeweil 5, 10, 15 und \SI[mode=text]{20}{\milli\liter} entnommen und in einen \SI[mode=text]{100}{\milli\liter} Messkolben überführt. In diese 4 Messkolben und einen weiteren, in dem sich keine Standardlösung befindet, werden jeweils 3-5 Tropfen an \ch{LaCl3} zugegeben. Der Messvorgang für Standard und Probelösung läuft grundsätzlich gleich ab, wie in Kapitel \ref{sec:PraktischerTeilAAS} beschrieben. 
+  
+  \subsection{Herstellung eines \SI[mode=text]{1000}{ppm} \ch{Ca} Ur-Standards}
+  
+    Im Folgenden wird die Herstellung von \SI[mode=text]{1}{\liter} eines \SI[mode=text]{1000}{ppm} \ch{Ca} Ur-Standards beschrieben. Die Konzentration an \ch{Ca} sollte also \SI[mode=text]{1000}{\milli\gram\per\liter} betragen. Die benötigte Stoffmenge kann mit 
+        
+      \begin{equation}
+        n_{\ch{Ca}} = \frac{m_{\ch{Ca}}}{M_{\ch{Ca}}} = \frac{\SI[mode=text]{1}{\gram}}{\SI[mode=text]{40.08}{\gram\per\mole}} = \SI[mode=text]{0.0250}{\mole}
+      \end{equation}   
+    berechnet werden. Daraus kann die Einwaage an \ch{CaCO3} gemäß 
+        
+      \begin{equation}
+        m_{\ch{CaCO3}} = n_{\ch{Ca}} M_{\ch{CaCO3}} = \SI[mode=text]{2.497}{\gram}
+      \end{equation}
+    berechnet werden. Diese Menge wird in einen \SI[mode=text]{1000}{\milli\liter} Maßkolben eingewogen und bis zur Marke aufgefüllt. 
+      
+  \subsection{Gründe für die Zugabe von \ch{LaCl3}}
+    
+    Wie oben beschrieben, werde zur Probe- und den Standardlösungen jeweils einige Tropfen an \ch{LaCl3} zugegeben. Das \ch{LaCl3} dient hierbei als Releasing Agent, da Lanthan eine höhere Affinität zu Phosphationen als Calcium hat. Ansonsten würden eventuell vorhandene Phosphationen mit Calcium zu schwerlöslichem \ch{Ca3(PO4)3} reagieren, was die gemessene Probenkonzentration verfälscht. 
+    
+    

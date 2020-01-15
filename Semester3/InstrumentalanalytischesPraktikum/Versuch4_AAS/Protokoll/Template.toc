@@ -13,15 +13,17 @@
 \contentsline {subsection}{\numberline {2.5}St\IeC {\"o}rungen beim Messvorgang}{6}{subsection.2.5}
 \contentsline {subsubsection}{\numberline {2.5.1}Chemische St\IeC {\"o}rungen}{6}{subsubsection.2.5.1}
 \contentsline {subsubsection}{\numberline {2.5.2}Spezifische und unspezifische spektrale St\IeC {\"o}rungen}{6}{subsubsection.2.5.2}
-\contentsline {section}{\numberline {3}Atomabsorptionsspektroskopische Bestimmung von Blei}{7}{section.3}
+\contentsline {section}{\numberline {3}Atomabsorptionsspektroskopische Bestimmung von Blei nach der Methode der Standardaddition}{7}{section.3}
 \contentsline {subsection}{\numberline {3.1}Praktischer Teil}{7}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Ergebnisse und Auswertung}{8}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Fazit und Diskussion}{9}{subsection.3.3}
-\contentsline {section}{\numberline {4}Flammenemissionsspektroskopische Bestimmung von Calcium}{10}{section.4}
+\contentsline {subsection}{\numberline {3.2}Herstellung eines \SI [mode=text]{1000}{ppm} \ch {Pb} Ur-Standards}{7}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Ergebnisse und Auswertung}{8}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Fazit und Diskussion}{9}{subsection.3.4}
+\contentsline {section}{\numberline {4}Flammenemissionsspektroskopische Bestimmung von Calcium nach der Methode der externen Kalibrierung}{10}{section.4}
 \contentsline {subsection}{\numberline {4.1}Praktischer Teil}{10}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Ergebnisse und Auswertung}{11}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Fazit und Diskussion}{12}{subsection.4.3}
-\contentsline {section}{Literaturverzeichnis}{13}{subsection.4.3}
-\contentsline {section}{Reaktionsverzeichnis}{13}{section*.8}
-\contentsline {section}{Abbildungsverzeichnis}{13}{section*.9}
-\contentsline {section}{Tabellenverzeichnis}{13}{section*.10}
+\contentsline {subsection}{\numberline {4.2}Herstellung eines \SI [mode=text]{1000}{ppm} \ch {Ca} Ur-Standards}{10}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Gr\IeC {\"u}nde f\IeC {\"u}r die Zugabe von \ch {LaCl3}}{10}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Ergebnisse und Auswertung}{11}{subsection.4.4}
+\contentsline {subsection}{\numberline {4.5}Fazit und Diskussion}{12}{subsection.4.5}
+\contentsline {section}{Literaturverzeichnis}{13}{subsection.4.5}
+\contentsline {section}{Abbildungsverzeichnis}{13}{section*.8}
+\contentsline {section}{Tabellenverzeichnis}{13}{section*.9}

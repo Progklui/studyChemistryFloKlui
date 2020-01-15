@@ -133,17 +133,17 @@
       \begin{equation}
         \begin{split}
           s_x &= \frac{s_y}{b} \sqrt{\frac{1}{n} + \frac{1}{m} + \frac{\left(y_0 - \overline{y}\right)^2}{b^2 \sum_{i=1}^{n} \left(x_i - \overline{x}\right)^2}} \\
-              &= \frac{28.81}{89.05} \sqrt{\frac{1}{15} + \frac{1}{3} + \frac{\left(3769.57 - 2661.16\right)^2}{89.05^2 \cdot 1000}} = \SI[mode=text]{0.241}{ppm}
+              &= \frac{28.81}{89.05} \sqrt{\frac{1}{15} + \frac{1}{3} + \frac{\left(3769.57 - 2661.16\right)^2}{89.05^2 \cdot 3000}} = \SI[mode=text]{0.217}{ppm}
         \end{split}
       \end{equation}
     berechnet werden (Anzahl an Kalibriermessungen $n$, Anzahl an Probemessungen $m$, Reststandardabweichung $s_y$, Steigung $b$, Mittelwert der Kalibriersignale $\overline{y}$, Mittelwert des Probensignals $y_0$, Konzentration des jeweiligen Standards $x_i$). Der Vertrauensbereich $T_x$ ($\alpha = 0.05$ und $t = 2.160$ für $df = 13$) kann mit 
     
       \begin{equation}
-        T_x = s_x t = \SI[mode=text]{0.521}{ppm}
+        T_c = s_x t = \SI[mode=text]{0.470}{ppm}
       \end{equation}  
     berechnet werden. Damit ist die Konzentration an Carbamazepin in der Probelösung: 
     
-    \noindent $c_{Probe} = \SI[mode=text, multi-part-units = brackets, separate-uncertainty]{42.5(5)}{ppm} \left(N = 15, m = 3, s_x = \SI[mode=text]{0.241}{ppm}, \alpha = 0.05\right)$.
+    \noindent $c_{Probe} = \SI[mode=text, multi-part-units = brackets, separate-uncertainty]{42.5(5)}{ppm} \left(N = 15, m = 3, s_c = \pm \SI[mode=text]{0.217}{ppm}, \alpha = 0.05\right)$.
       
       \begin{figure}[H]
         \includegraphics[scale=0.28, center]{images/Probemessung1.png} 

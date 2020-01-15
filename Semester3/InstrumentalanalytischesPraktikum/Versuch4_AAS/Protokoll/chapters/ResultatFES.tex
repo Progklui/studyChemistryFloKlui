@@ -1,6 +1,6 @@
-\subsection{Ergebnisse und Auswertung}
+\subsection{Ergebnisse und Auswertung} \label{sec:ErgebnisseFES}
   
-  In Tabelle \ref{tab:ErgebnisseFES} befinden sich die Ergebnisse der Kalibrier- und Probemessungen. Folgende Parameter der Kalibriergeraden wurden bestimmt: Steigung $b = \SI[mode=text,separate-uncertainty]{23.7(2)}{AU\per ppm}$, Ordinatenabschnitt $a = \SI[mode=text,separate-uncertainty]{32(3)}{AU}$, Bestimmtheitsmaß $R^2 = 0.9990$, Reststandardabweichung $s_y = 5.776$, F-Wert $F = 12584.75$ und Freiheitsgrade $df = 13$. Die Konzentration der Probe, $c_{Probe}$ wird durch Umstellen der Kalibriergeraden auf $x$ berechnet:
+  In Tabelle \ref{tab:ErgebnisseFES} befinden sich die Ergebnisse der Kalibrier- und Probemessungen. Die Kalibriergerade ist in Abbildung \ref{fig:KalibriergeradeEisen} dargestellt. Folgende Parameter der Kalibriergeraden wurden bestimmt: Steigung $b = \SI[mode=text,separate-uncertainty]{23.7(2)}{AU\per ppm}$, Ordinatenabschnitt $a = \SI[mode=text,separate-uncertainty]{32(3)}{AU}$, Bestimmtheitsmaß $R^2 = 0.9990$, Reststandardabweichung $s_y = 5.776$, F-Wert $F = 12584.75$ und Freiheitsgrade $df = 13$. Die Konzentration der Probe, $c_{Probe}$ wird durch Umstellen der Kalibriergeraden auf $x$ berechnet:
   
     \begin{equation}
       c_{Probe} = \frac{\overline{y_{Probe}} - a}{b} = \SI[mode=text]{10.5}{ppm}.
@@ -9,11 +9,12 @@
   
     \begin{equation}
       \begin{split}
-        s_x &= \frac{s_y}{b} \sqrt{\frac{1}{N} + \frac{1}{m} + \frac{\left(\overline{y_{Probe}} - \overline{y}\right)^2}{b^2 \sum_{i=1}^N \left(x_i - \overline{x}\right)^2}} \\
-            &= \frac{5.776}{23.7} \sqrt{\frac{1}{15} + \frac{1}{6} + \frac{\left(280 - 268\right)^2}{23.7^2 \cdot 750}} = \SI[mode=text]{0.12}{ppm}.
+        s_c &= \frac{s_y}{b} \sqrt{\frac{1}{N} + \frac{1}{m} + \frac{\left(\overline{y_{Probe}} - \overline{y}\right)^2}{b^2 \sum_{i=1}^N \left(x_i - \overline{x}\right)^2}} \\
+            &= \frac{5.776}{23.7} \sqrt{\frac{1}{15} + \frac{1}{6} + \frac{\left(280 - 268\right)^2}{23.7^2 \cdot 750}} = \SI[mode=text]{0.118}{ppm} \\
+     \Rightarrow T_c &= t s_c = \SI[mode=text]{0.255}{ppm}.
       \end{split}
     \end{equation}
-  Damit ist das Ergebnis: $c_{Probe} = \SI[mode=text, multi-part-units = brackets, separate-uncertainty]{10.5(2)}{ppm} \left(N = 15, s_x = \SI[mode=text]{0.12}{ppm}, \alpha = 0.05\right)$.
+  Damit ist das Ergebnis: $c_{Probe} = \SI[mode=text, multi-part-units = brackets, separate-uncertainty]{10.5(3)}{ppm} \left(N = 15, s_c = \pm \SI[mode=text]{0.12}{ppm}, \alpha = 0.05\right)$.
   
   \begin{figure}[H]
     \includegraphics[scale=0.5, center]{images/KalibriergeradeFESCa.png} 
