@@ -105,6 +105,32 @@
       \verb https://doi.org/10.1016/0584-8547(79)80029-4
       \endverb
     \endentry
+    \entry{CalciumGrenzwert}{online}{}
+      \name{author}{1}{}{%
+        {{hash=7b90804dacf6cda2f04d0248eb0ad4dd}{%
+           family={wasserwerk.at},
+           familyi={w\bibinitperiod}}}%
+      }
+      \strng{namehash}{7b90804dacf6cda2f04d0248eb0ad4dd}
+      \strng{fullhash}{7b90804dacf6cda2f04d0248eb0ad4dd}
+      \strng{bibnamehash}{7b90804dacf6cda2f04d0248eb0ad4dd}
+      \strng{authorbibnamehash}{7b90804dacf6cda2f04d0248eb0ad4dd}
+      \strng{authornamehash}{7b90804dacf6cda2f04d0248eb0ad4dd}
+      \strng{authorfullhash}{7b90804dacf6cda2f04d0248eb0ad4dd}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{01}
+      \field{title}{Gesundheit}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb http://www.wasserwerk.at/home/wasserqualitaet/wasserhaerte/40 (Zugegriffen-15.01.2020)
+      \endverb
+      \verb{url}
+      \verb http://www.wasserwerk.at/home/wasserqualitaet/wasserhaerte/40%20(Zugegriffen-15.01.2020)
+      \endverb
+    \endentry
     \entry{PhysikIII}{book}{}
       \name{author}{1}{}{%
         {{hash=59654c899d48eff28a4d8063e886fb5f}{%
@@ -122,8 +148,8 @@
       \strng{authorbibnamehash}{59654c899d48eff28a4d8063e886fb5f}
       \strng{authornamehash}{59654c899d48eff28a4d8063e886fb5f}
       \strng{authorfullhash}{59654c899d48eff28a4d8063e886fb5f}
-      \field{sortinit}{4}
-      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{5}
@@ -148,8 +174,8 @@
       \strng{authorbibnamehash}{22992cbefdee163032738737c47e543d}
       \strng{authornamehash}{22992cbefdee163032738737c47e543d}
       \strng{authorfullhash}{22992cbefdee163032738737c47e543d}
-      \field{sortinit}{5}
-      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{3}
@@ -176,8 +202,8 @@
       \strng{authorbibnamehash}{8175610c3f4269231a1497431c95e212}
       \strng{authornamehash}{8175610c3f4269231a1497431c95e212}
       \strng{authorfullhash}{8175610c3f4269231a1497431c95e212}
-      \field{sortinit}{9}
-      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{subtitle}{Atomspektroskopie}
@@ -210,32 +236,6 @@
       \endverb
       \verb{url}
       \verb https://www.allum.de/stoffe-und-ausloeser/blei/grenzwerterichtwerte%20(Zugegriffen-15.01.2020)
-      \endverb
-    \endentry
-    \entry{CalciumGrenzwert}{online}{}
-      \name{author}{1}{}{%
-        {{hash=7b90804dacf6cda2f04d0248eb0ad4dd}{%
-           family={wasserwerk.at},
-           familyi={w\bibinitperiod}}}%
-      }
-      \strng{namehash}{7b90804dacf6cda2f04d0248eb0ad4dd}
-      \strng{fullhash}{7b90804dacf6cda2f04d0248eb0ad4dd}
-      \strng{bibnamehash}{7b90804dacf6cda2f04d0248eb0ad4dd}
-      \strng{authorbibnamehash}{7b90804dacf6cda2f04d0248eb0ad4dd}
-      \strng{authornamehash}{7b90804dacf6cda2f04d0248eb0ad4dd}
-      \strng{authorfullhash}{7b90804dacf6cda2f04d0248eb0ad4dd}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{month}{01}
-      \field{title}{Gesundheit}
-      \field{year}{2020}
-      \verb{urlraw}
-      \verb http://www.wasserwerk.at/home/wasserqualitaet/wasserhaerte/40 (Zugegriffen-15.01.2020)
-      \endverb
-      \verb{url}
-      \verb http://www.wasserwerk.at/home/wasserqualitaet/wasserhaerte/40%20(Zugegriffen-15.01.2020)
       \endverb
     \endentry
   \enddatalist

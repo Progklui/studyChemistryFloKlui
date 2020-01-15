@@ -1,15 +1,15 @@
 [0] Config.pm:302> INFO - This is Biber 2.9
 [0] Config.pm:305> INFO - Logfile is 'Template.blg'
-[19] biber:313> INFO - === Mi Jän 15, 2020, 16:08:02
+[19] biber:313> INFO - === Mi Jän 15, 2020, 17:05:14
 [35] Biber.pm:371> INFO - Reading 'Template.bcf'
-[81] Biber.pm:857> INFO - Found 8 citekeys in bib section 0
-[91] Biber.pm:3981> INFO - Processing section 0
-[99] Biber.pm:4154> INFO - Looking for bibtex format file 'ReferenceStyle/references.bib' for section 0
-[100] bibtex.pm:1468> INFO - LaTeX decoding ...
-[112] bibtex.pm:1294> INFO - Found BibTeX data source 'ReferenceStyle/references.bib'
-[144] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[144] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[144] Biber.pm:3809> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'de-DE'
-[144] Biber.pm:3815> INFO - No sort tailoring available for locale 'de-DE'
-[151] bbl.pm:617> INFO - Writing 'Template.bbl' with encoding 'UTF-8'
-[153] bbl.pm:720> INFO - Output to Template.bbl
+[79] Biber.pm:857> INFO - Found 8 citekeys in bib section 0
+[88] Biber.pm:3981> INFO - Processing section 0
+[97] Biber.pm:4154> INFO - Looking for bibtex format file 'ReferenceStyle/references.bib' for section 0
+[98] bibtex.pm:1468> INFO - LaTeX decoding ...
+[106] bibtex.pm:1294> INFO - Found BibTeX data source 'ReferenceStyle/references.bib'
+[139] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[139] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[139] Biber.pm:3809> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'de-DE'
+[139] Biber.pm:3815> INFO - No sort tailoring available for locale 'de-DE'
+[146] bbl.pm:617> INFO - Writing 'Template.bbl' with encoding 'UTF-8'
+[149] bbl.pm:720> INFO - Output to Template.bbl
